@@ -180,4 +180,6 @@ t
     <color name="marketplace_background_gray">#E5E5E5</color>
     <color name="marketplace_banner_description">#2E4A7C</color>
 
+    <color name="bg_amount_gray_light">#fbfbfb</color>
+
 </resources>

@@ -1080,4 +1080,13 @@
     <string name="menu_nav_transfers">Transfers</string>
     <string name="menu_nav_ath_movil">ATH Móvil</string>
     <string name="menu_nav_more">Mas</string>
+
+    <!-- nuevo string -->
+
+    <string name="from_account">De la Cuenta</string>
+    <string name="to_account">A la Cuenta</string>
+    <string name="send_transfers">Enviar transferencia</string>
+    <string name="warning_transfer_text">Disponibilidad de fondos transferidos utilizando una \n cuenta externa (otro banco) podrían tomar hasta 5 \n días laborables.</string>
+    <string name="change">Cambiar</string>
+    <string name="send_transfer">Enviar transferencia</string>
 </resources>

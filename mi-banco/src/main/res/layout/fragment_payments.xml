@@ -20,7 +20,200 @@
                 style="@style/PaymentsAccountsBox"
                 android:layout_alignParentTop="true">
 
-                <LinearLayout style="@style/PaymentsTitlesBox">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        style="@style/CardSelection_box"
+                        android:background="@drawable/account_selector">
+
+                        <TextView
+                            style="@style/CardSelection"
+                            android:text="@string/from_account" />
+
+                        <ImageButton
+                            style="@style/CardSelection_image"
+                            android:background="@drawable/image_corner"
+                            android:clipToOutline="true"/>
+
+                        <LinearLayout
+                            android:id="@+id/acount_select_from"
+                            style="@style/CardSelectionNoData"
+                            android:visibility="gone">
+
+                            <ImageView
+                                style="@style/CardNumber"/>
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Seleccione la"
+                                android:gravity="center"/>
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Cuenta"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/acount_select_from_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Ahorro"/>
+
+                            <TextView
+                                style="@style/CardSelection_card_number"
+                                android:text="x3214"/>
+
+                            <TextView
+                                style="@style/CardSelection_ammount"
+                                android:text="$103,123.98"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iconTransfer"
+                        style="@style/CardSelectionIconTransfer"/>
+
+                    <LinearLayout
+                        style="@style/CardSelection_box"
+                        android:background="@drawable/account_selector">
+
+                        <TextView
+                            style="@style/CardSelection"
+                            android:text="@string/to_account"/>
+
+                        <ImageButton style="@style/CardSelection_image"
+                            android:background="@drawable/image_corner"
+                            android:clipToOutline="true"/>
+
+                        <LinearLayout
+                            android:id="@+id/acount_select_to"
+                            style="@style/CardSelectionNoData"
+                            android:visibility="gone">
+
+                            <ImageView
+                                style="@style/CardNumber"/>
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Seleccione la"
+                                android:gravity="center"/>
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Cuenta"
+                                android:gravity="center"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/acount_select_to_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="Corriente"/>
+
+                            <TextView
+                                style="@style/CardSelection_card_number"
+                                android:text="x3214"/>
+
+                            <TextView
+                                style="@style/CardSelection_ammount"
+                                android:text="$1,123.98"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/AmountBox">
+
+                    <LinearLayout
+                        style="@style/AmountBoxHead">
+
+                        <TextView
+                            style="@style/CardSelection"
+                            android:text="@string/amount"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+                                style="@style/AmountValueSimbol"
+                                android:text="$"/>
+
+                            <TextView
+                                style="@style/AmountValue"
+                                android:text="1,234.00"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/AmountBoxFoot">
+
+                        <ImageButton
+                            style="@style/AmountBoxFootIconCalendar"/>
+
+                        <TextView
+                            style="@style/CardSelection_card_number"
+                            android:text="14 de Julio del 2023"
+                            android:layout_weight="0.7"
+                            android:layout_marginEnd="5dp"/>
+
+                        <Button
+                            style="@style/AmountBoxFootBtn"
+                            android:background="@color/bg_amount_gray_light">
+
+                        </Button>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/WarningBox"
+                    android:id="@+id/warningTransfers"
+                    android:background="@drawable/warning_message">
+
+                    <ImageView
+                        style="@style/WarningBoxImg"/>
+
+                    <TextView
+                        style="@style/CardSelection_card_number"
+                        android:text="@string/warning_transfer_text"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:textAlignment="textStart"/>
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout style="@style/PaymentsTitlesBox"
+                    android:layout_marginTop="250dp">
 
                     <TextView
                         style="@style/PaymentsTitle"
@@ -134,7 +327,9 @@
                         style="@style/PaymentsRuler"
                         android:layout_margin="0dp" />
                 </LinearLayout>
+
             </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -319,14 +514,29 @@
 
 
             </LinearLayout>
+
+
         </RelativeLayout>
 
     </ScrollView>
 
     <Button
         android:id="@+id/pay_button"
-        style="@style/PaymentsPayButton"
-        android:layout_alignParentBottom="true" />
+        style="@style/PaymentsPayButtonV2"
+        android:background="@drawable/btn_transfer_blue"
+        android:layout_alignParentBottom="true" android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/custon_pay_button"
+        style="@style/BtnTransfer">
+
+        <ImageView
+            style="@style/BtnTransferIcon"/>
+
+        <TextView
+            style="@style/BtnTransferText"/>
+
+    </LinearLayout>
 
 </RelativeLayout>
 

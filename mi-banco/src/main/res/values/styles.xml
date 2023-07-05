@@ -2000,5 +2000,198 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <!--- new style -->
+    <style name="CardSelection_box">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">230dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="background">@drawable/account_selector</item>
+    </style>
+
+    <style name="CardSelection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/payments_gray_dark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardSelection_card_number">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">9dp</item>
+        <item name="android:textColor">@color/payments_gray_dark</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="CardSelection_ammount">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="CardSelection_image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:src">@drawable/account_image_477_advantage</item>
+        <item name="android:background">@drawable/image_corner</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="CardSelectionNoData">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CardSelectionIconTransfer">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">-20dp</item>
+        <item name="android:layout_marginEnd">-20dp</item>
+        <item name="android:layout_marginTop">-20dp</item>
+        <item name="android:translationZ">1dp</item>
+        <item name="android:src">@drawable/arrow_right_blue</item>
+    </style>
+
+    <style name="CardNumber">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/card_number</item>
+    </style>
+
+
+
+    <style name="AmountValueSimbol">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AmountValue">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AmountBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/amount_border</item>
+    </style>
+
+    <style name="AmountBoxHead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/amount_head_border</item>
+    </style>
+
+    <style name="AmountBoxFoot">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AmountBoxFootIconCalendar">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:src">@drawable/calendar_gray</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+
+    <style name="AmountBoxFootBtn">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:text">@string/change</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="background">@color/bg_amount_gray_light</item>
+    </style>
+
+    <style name="PaymentsPayButtonV2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <!--<item name="android:drawableLeft">@drawable/ic_sidebar_transfers</item>-->
+        <item name="android:text">@string/send_transfers</item>
+        <item name="android:gravity">center</item>
+        <item name="color">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+    </style>
+
+    <style name="WarningBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+    <style name="WarningBoxImg">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:tint">@color/black</item>
+        <item name="android:src">@drawable/information_black</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+    </style>
+
+    <style name="BtnTransfer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/btn_transfer_blue</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="BtnTransferIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:src">@drawable/transfer_white</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="BtnTransferText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:text">@string/send_transfer</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
 </resources>

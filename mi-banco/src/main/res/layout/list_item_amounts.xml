@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:padding="5dp"
+    android:weightSum="14" >
+
+    <RadioButton
+        android:id="@+id/item_title"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:gravity="left|center_vertical"
+        android:singleLine="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/item_amount"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="5"
+        android:gravity="right|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="1px"
+            android:layout_height="25dp"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/grey_lighter"
+            android:gravity="center"
+            tools:ignore="PxUsage" />
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            style="@style/ButtonDialogHoloLight"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/discard"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+</LinearLayout>

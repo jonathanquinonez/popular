@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        style="@style/NotificationCenterNotice"
+        android:id="@+id/notification_center_notice">
+
+        <RelativeLayout
+            style="@style/NotificationCenterRelativeLayout"
+            android:id="@+id/relativeLayout4"/>
+
+        <RelativeLayout
+            style="@style/NotificationCenterBackground"
+            android:layout_below="@+id/relativeLayout4">
+
+            <TextView
+                style="@style/NotificationCenterText"
+                android:text="@string/notification_center_text"/>
+
+            <ImageView
+                style="@style/NotificationCenterCloseButton"
+                android:id="@+id/notification_center_close_button"
+                tools:ignore="ContentDescription"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/notification_center_notice">
+
+        <LinearLayout
+            android:id="@+id/accounts_container"
+            style="@style/Accounts">
+
+
+            =<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:layout_marginBottom="16dp"
+            android:background="#1C3665"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:paddingRight="12dp"
+                android:layout_height="114dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="18dp"
+                android:scrollbars="horizontal" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_mobile_withdrawal"
+                    android:drawableLeft="@drawable/retiro_movil_icon"
+                    android:text="@string/account_title_btn_mobile_withdrawal"
+                    style="@style/BottomAccountBanner"
+                    />
+
+                <View
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btn_easy_deposit"
+                    android:drawableLeft="@drawable/deposit_tab_selected"
+                    android:text="@string/account_title_btn_easy_deposit"
+                    style="@style/BottomAccountBanner"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nuevo_y_borrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="16dp"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/cards_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_cca_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/cards_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/accounts_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_ida_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/accounts_list"
+                        style="@style/AccountsSectionList" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/loans_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_ila_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/loans_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mortgage_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_mla_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/mortgage_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rewards_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_rewards_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/rewards_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cds_iras_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_cda_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/cds_iras_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/other_accounts_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_other_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/other_accounts_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/secins_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_secins_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/secins_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/retplan_view"
+                    style="@style/AccountsSection">
+
+                    <Button
+                        android:id="@+id/retplan_view_new_alert"
+                        android:visibility="gone"
+                        style="@style/AccountSectionNewAlert" />
+
+                    <TextView
+                        android:id="@+id/retplan_view_text"
+                        android:text="@string/account_list_retplan_type"
+                        style="@style/AccountsSectionTitle" />
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:id="@+id/replan_view_bottom_line"-->
+                    <!--                    android:layout_below="@+id/retplan_view_text"-->
+                    <!--                    style="@style/AccountsSectionBottomLine"/>-->
+
+                    <LinearLayout
+                        android:id="@+id/retplan_list"
+                        style="@style/AccountsSectionList" />
+
+                    <TextView
+                        android:id="@+id/retplan_view_csr_downtimes_text"
+                        android:text="@string/account_list_retplan_csr_downtimes_text"
+                        android:autoLink = "web"
+                        android:visibility="gone"
+                        style="@style/RetPlanCsrDowntimeText"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/loading_ret_plan"
+                    style="@style/AccountsSection"
+                    android:layout_height="70dp">
+
+                    <ImageView
+                        android:id="@+id/ret_plan_loading"
+                        style="@style/RetirementPlanLoading"
+                        android:layout_centerInParent="true"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="70dp"
+                        android:maxHeight="70dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/small_loading" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/accounts_notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@null">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:id="@+id/relativeLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/top_edge_shadow" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/accounts_notice"
+            android:layout_below="@+id/relativeLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentTop="true"
+                android:background="@color/grey_light"
+                tools:ignore="PxUsage" />
+
+            <TextView
+                style="@style/AccountsNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:text="@string/accounts_notice"
+                android:textColor="@color/grey" />
+
+            <ImageView
+                android:id="@+id/close_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:src="@drawable/close"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

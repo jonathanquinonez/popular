@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item android:state_pressed="false">
+        <shape>
+            <stroke android:width="2px" android:color="@color/holo_blue_light"/>
+            <corners android:radius="15px"></corners>
+            <solid android:color="@color/cash_back_redemption_selected" />
+
+        </shape>
+    </item>
+</selector>

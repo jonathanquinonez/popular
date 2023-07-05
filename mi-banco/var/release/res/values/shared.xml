@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en" tools:ignore="MissingTranslation">
+
+    <string name="api_url">api_url_production</string>
+    <string name="api_ssl_port">api_ssl_port_production</string>
+    
+    <string name="api_url_production">https://mobile.bancopopular.com/cibp-web/</string>
+    <string name="api_url_qa">https://10.1.33.197:8443/cibp-web/</string>
+    <string name="api_url_test">http://192.168.37.107:4040/cibp-web/</string>
+    <string name="api_url_mock">http://10.1.53.60:8080/</string>
+    <string name="api_ssl_port_production">443</string>
+    <string name="api_ssl_port_qa">8443</string>
+
+    <string name="google_maps_api_key">0aRonJcl1CZVeRteDgib35t7r1XW789N_hTMirQ</string>
+    <string name="flurry_api_key">Q2GCQT7H3GRYYQBQWMY8</string>
+    <string name="bugsense_key">26fc1d26</string>
+    <string name="bugsense_active">false</string>
+    <string name="log_network_calls">false</string>
+    <string name="current_api_version">2</string>
+    <string name="market_base_url">market://details?id=</string>
+    <string name="popular_center_latitude">18.425152</string>
+    <string name="popular_center_longitude">-66.058507</string>
+    <string name="intro_image_url">http://apps.popular.com/mobile/bg-splashpage@2x.jpg</string>
+    <string name="enrollment_url">actions/enrollment?agentType=android&amp;lang=</string>
+    <string name="reset_password_url">actions/resetpassword?agentType=android&amp;lang=</string>
+
+    <!-- NEW RELIC -->
+    <string name="new_relic_active">true</string>
+    <string name="new_relic_application_token">AA47642747281cc1726d474b4117d0337204eaeaf3</string>
+    
+    <!-- Push Notifications -->
+    <string name="parse_application_id">MOZYbo5Stn7VkPNqmJ7mQYgyexDq8m33pgLZTTYc</string>
+    <string name="parse_client_key">z4DZvs7JoNW9xKFxseG2lq3OZBixL4tAh75GrNrx</string>
+
+    <string-array name="web_view_url_blacklist">
+        <item>actions/welcome</item>
+        <item>actions/portal</item>
+        <item>actions/login</item>
+    </string-array>
+
+</resources>

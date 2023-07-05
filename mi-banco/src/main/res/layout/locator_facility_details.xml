@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aspectratioimageview="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/contentBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativeImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ProgressBar
+            android:id="@+id/progressBarMap"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <com.popular.android.mibanco.view.AspectRatioImageView
+            android:id="@+id/mapImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            aspectratioimageview:fixedHeight="135dp"
+            aspectratioimageview:minScreenHeight="400px"
+            tools:ignore="PxUsage" />
+    </RelativeLayout>
+<!--
+        <RelativeLayout
+            android:id="@+id/relativeImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <ProgressBar
+                android:id="@+id/progressBarMap"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/mapImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@color/white"
+                android:visibility="invisible"
+                tools:ignore="ContentDescription"
+                android:layout_alignParentTop="true"/>
+
+
+        </RelativeLayout>
+-->
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:layout_below="@+id/relativeImageLayout"
+            android:padding="5dp"
+            android:weightSum="3" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left" >
+
+                <TextView
+                    android:id="@+id/header_location_type"
+                    style="@style/HeaderText"
+                    android:layout_width="wrap_content"
+                    android:text="@string/branch" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="right" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/distance_green_dark"
+                    android:orientation="horizontal"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/distance_text"
+                        style="@style/Text.Standard.Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@null"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/location_arrow_white"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/headerLine"
+            style="@style/HeaderSeparator"
+            android:layout_below="@+id/header"
+            android:orientation="horizontal" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerLine">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp" >
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/content_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_dark"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/hours_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_dark"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnGuideMe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="@string/guide_me"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

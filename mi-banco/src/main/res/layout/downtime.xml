@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/maintenance_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@string/desc_downtime"
+        android:src="@drawable/maintenance"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/maintenance_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/maintenance_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="@string/maintenance_mobile_banking"
+        android:textSize="16sp" />
+</RelativeLayout>

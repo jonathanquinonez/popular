@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:aspectratioimageview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/linearWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <com.popular.android.mibanco.view.AspectRatioImageView
+            android:id="@+id/welcomeImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            aspectratioimageview:fixedHeight="135dp"
+            aspectratioimageview:minScreenHeight="400px"
+            tools:ignore="PxUsage" />
+
+        <ImageView
+            android:id="@+id/camera_welcome_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignEnd="@id/welcomeImage"
+            android:layout_alignTop="@id/welcomeImage"
+            android:padding="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            aspectratioimageview:srcCompat="@drawable/camera_icon"
+            tools:ignore="ContentDescription" />
+
+        <include
+            layout="@layout/enter_username_header"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/welcomeImage"/>
+
+        <include
+            layout="@layout/enter_username_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"/>
+
+        <include
+            layout="@layout/enter_username_list_saved"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"/>
+
+        <TextView
+            android:id="@+id/enviroment_port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/img_fingerprint_button"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textColor="@color/dialog_holo_title_divider"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fingerprint_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/img_fingerprint_button"
+            android:background="@color/white_transparent"
+            android:visibility="invisible"
+            android:paddingBottom="18dp"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/enter_username_other"/>
+
+</LinearLayout>

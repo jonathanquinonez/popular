@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/sidebar_open_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start|center_vertical"
+    android:gravity="start|center_vertical">
+
+    <LinearLayout
+        android:id="@+id/btn_sidebar_open"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_action_bar"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_sidebar_open" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/sidebar_open_separator" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="14dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/athm_logo_toolbar" />
+</LinearLayout>

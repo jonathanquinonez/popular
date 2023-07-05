@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/select_acct_msg_layout"
+            android:background="@drawable/athm_phone_call_hint_background"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:src="@drawable/warning" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/athm_select_account_warning"
+                android:id="@+id/txtSelectAcctDisclamer"
+                android:textColor="@color/black_87" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/HeaderText"
+            android:text="@string/athm_select_account_header"
+            android:id="@+id/txtTitle"/>
+
+        <LinearLayout style="@style/HeaderSeparator" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent" />
+</LinearLayout>

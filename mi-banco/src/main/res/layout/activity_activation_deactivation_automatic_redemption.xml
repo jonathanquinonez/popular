@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.popular.android.mibanco.activity.AutomaticRedemptionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cash_rewards_1030_650">
+
+                <TextView
+                    android:id="@+id/ar_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TsysLoyaltyRewardsRedemptionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ar_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black_87"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/ar_question"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black_87"
+                    android:textSize="17sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ar_activate_btn"
+                style="@style/TsysLoyaltyRewardsRedemptionConfirmationBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_confirmation_rounded_corners"/>
+
+            <Button
+                android:id="@+id/ar_pause_btn"
+                style="@style/TsysLoyaltyRewardsRedemptionConfirmationBtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_red_border"
+                android:textColor="#E91E1E"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

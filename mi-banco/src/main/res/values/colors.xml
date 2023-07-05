@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="holo_grey_disabled">#4e4e4e</color>
+    <color name="holo_grey_enabled">#354045</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="almost_black">#191919</color>
+    <color name="blue">#3784d2</color>
+    <color name="red">#ff0000</color>
+    <color name="green_dark">#4f7e05</color>
+    <color name="green_forest">#228B22</color>
+    <color name="grey">#777</color>
+    <color name="grey_light">#bbb</color>
+    <color name="grey_lighter">#dedfde</color>
+    <color name="grey_dark">#444</color>
+    <color name="grey_darkest">#808080</color>
+    <color name="grey_light_transparent">#aabbbbbb</color>
+    <color name="white_transparent">#faffffff</color>
+    <color name="black_87">#B3000000</color>
+    <color name="black_54">#8A000000</color>
+    <color name="black_26">#42000000</color>
+    <color name="black_15">#26000000</color>
+
+    <!-- Icon Notification Color -->
+    <color name="icon_notification_color">#E0393E</color>
+
+    <!-- BUTTONS -->
+    <color name="btn_grey">#DBDBDB</color>
+    <color name="btn_green">#B9DE75</color>
+    <color name="btn_blue">#4A90E2</color>
+    <color name="btn_green_athm">#90c241</color>
+
+    <!-- TITLE BAR -->
+    <color name="title_bar_background">#003e7e</color>
+    <color name="title_bar_underline">#003265</color>
+    <color name="title_bar_action_button_pressed">#1684bb</color>
+
+    <!-- FIRST LEVEL TABS -->
+    <color name="first_tabs_background">#666666</color>
+    <color name="first_tabs_line">#3784d2</color>
+
+    <!-- ACCOUNTS -->
+    <color name="accounts_section_title">#99000000</color>
+    <color name="accounts_section_title2">#2E4A7C</color>
+    <color name="accounts_item_title">#222222</color>
+    <color name="accounts_item_title2">#121212</color>
+    <color name="accounts_debit_balance">#dc0000</color>
+    <color name="accounts_item_number">#777777</color>
+    <color name="accounts_item_number2">#993C3C43</color>
+    <color name="accounts_item_footer">#717171</color>
+    <color name="accounts_credit_balance">#2F80ED</color>
+    <color name="accounts_section_bottom_line">#bbb</color>
+    <color name="accounts_list_divider">#F5F5F5</color>
+    <color name="accounts_notice">#ffffcc</color>
+
+    <!-- ACCOUNT DETAILS -->
+    <color name="account_details_pager_indicator_background">#333333</color>
+    <color name="account_details_header">#3784d2</color>
+    <color name="account_details_header_debit_balance">#dc0000</color>
+    <color name="account_details_header_credit_balance">#3784d2</color>
+    <color name="account_details_debit_sign">#dc0000</color>
+    <color name="account_details_credit">#0e6306</color>
+    <color name="account_details_debit">#dc0000</color>
+    <color name="account_details_pager_text_color">#b3ffffff</color>
+
+    <!-- PAYMENTS -->
+    <color name="payments_blue">#3784d2</color>
+    <color name="payments_gray">#b1b1b1</color>
+    <color name="payments_gray_dark">#707070</color>
+    <color name="payments_gray_light">#d6d6d6</color>
+    <color name="payments_wheel_bottom_line">#9cc0e0</color>
+    <color name="payments_white_70_opacity">#b3ffffff</color>
+    <color name="payments_receipt_error">#bf1e2e</color>
+    <color name="payments_yellow">#fce591</color>
+    <color name="payments_banner_blue">#7eb3e5</color>
+
+    <!-- HOLO LIGHT DIALOG -->
+    <color name="holo_blue_light">#4b90d4</color>
+    <color name="button_dialog_holo_light_pressed">#7bcfef</color>
+    <color name="dialog_holo_title_divider">#cccccc</color>
+    <color name="dialog_holo_buttons_divider">#dfdfdf</color>
+
+    <!-- ENTER AMOUNT SCREEN -->
+    <color name="amount_keypad_buttons_background">#333333</color>
+    <color name="amount_keypad_amount">#3784d2</color>
+    <color name="amount_keypad_double_zero_button">#b2b2b2</color>
+    <color name="coverflow_background">#e8e8e8</color>
+
+    <!-- BUTTON HOLO GREEN -->
+    <color name="button_holo_greeen_disabled_text">#97a281</color>
+
+    <!-- SIDEBAR -->
+    <color name="sidebar_upper_bar">#04203f</color>
+    <color name="sidebar_background">#052c56</color>
+    <color name="sidebar_menu_separator">#14385f</color>
+    <color name="sidebar_header_separator">#70869e</color>
+    <color name="sidebar_open_separator">#3b6b9c</color>
+
+    <!-- INTRO SCREEN -->
+    <color name="intro_side_buttons_text">#beffffff</color>
+    <color name="intro_divider">#19ffffff</color>
+    <color name="intro_top_bar_button_pressed">#40ffffff</color>
+
+    <!-- TRANSACTION STATUSES -->
+    <color name="transaction_status_error">#cd362c</color>
+    <color name="transaction_status_ok">#4f9a0a</color>
+    <color name="transaction_status_processing">#f8c533</color>
+
+    <!-- ATH MOBILE -->
+    <color name="athm_warning_background">#fdf8bb</color>
+    <color name="athm_header">#4a90e2</color>
+    <color name="athm_divider">#979797</color>
+    <color name="athm_registration_step">#9b9b9b</color>
+    <color name="athm_registration_step_inactive">#cfcfcf</color>
+    <color name="athm_phone_call_hint_background">#4cf8e71c</color>
+    <color name="athm_phone_call_hint_border">#f5a623</color>
+    <color name="athm_card_last_digits">#9b9b9b</color>
+    <color name="athm_select_account_divider">#3f979797</color>
+    <color name="athm_contact_secondary">#9b9b9b</color>
+
+    <color name="colorPrimaryDark">#00264d</color>
+
+
+    <array name="athm_contact_colors">
+        <item>#7ed321</item>
+        <item>#f8e71c</item>
+        <item>#f5a623</item>
+        <item>#bd10e0</item>
+        <item>#50e3c2</item>
+    </array>
+
+    <!-- MobileCash -->
+    <color name="mc_receipt_background">#FAFAFA</color>
+    <color name="mc_grey_font">#bbb</color>
+    <color name="mc_scan_guide">#5586B8</color>
+
+    <color name="warning_color">#f4511e</color>
+    <color name="hint_color">#42000000</color>
+    <color name="success_color">#009688</color>
+
+    <color name="campaign_background">#00264d</color>
+    <color name="campaign_text_color">#00264d</color>
+    <color name="grey_e6">#e6e6e6</color>
+
+    <color name="ec_status_green">#90C241</color>
+    <color name="ec_status_red">#F2664A</color>
+    <color name="ec_status_orange">#F8C533</color>
+
+    <!-- On Off -->
+    <color name="onoff_plastic_status">#F45844</color>
+    <color name="onoff_header_background">#FFFFFFFF</color>
+    <color name="switch_green">#FF80A24C</color>
+    <color name="switch_red">#F45844</color>
+
+    <!-- Tsys Loyalty Rewards -->
+    <color name="cash_back_background">#003E7E</color>
+    <color name="cash_back_disabled_background">#314261</color>
+    <color name="cash_back_disabled_text">#5C5D70</color>
+    <color name="cash_back_btn">#397cca</color>
+    <color name="cash_back_disabled_btn">#a3c3e3</color>
+    <color name="cash_back_redemption_text">#003E7E</color>
+    <color name="cash_back_redemption_type_text">#0e2452</color>
+    <color name="cash_back_redemption_selected">#eff3f7</color>
+t
+    <!-- Notification Center -->
+    <color name="nc_background_color">#3368B3</color>
+
+    <!-- Maintenance with Balances -->
+    <color name="maintenance_balance_negative_color">#F45844</color>
+    <color name="maintenance_balance_user_divider_color">#10FFFFFF</color>
+    <color name="maintenance_balance_divider_color">#20FFFFFF</color>
+    <color name="maintenance_balance_footer_text_color">#63FFFFFF</color>
+
+    <!--MBCC Marketplace-->
+    <color name="btn_marketplace_blue">#2278C9</color>
+    <color name="btn_marketplace_blue_light">#7F2278C9</color>
+    <color name="btn_marketplace_blue_dark">#00205c</color>
+    <color name="marketplace_blue">#2278C9</color>
+    <color name="marketplace_background_gray">#E5E5E5</color>
+    <color name="marketplace_banner_description">#2E4A7C</color>
+
+</resources>

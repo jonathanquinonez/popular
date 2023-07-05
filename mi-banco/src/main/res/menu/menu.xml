@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_navigation_back"
+        android:icon="@drawable/navigation_back"
+        app:showAsAction="ifRoom"
+        android:title="@string/navigation_back"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_navigation_forward"
+        android:icon="@drawable/navigation_forward"
+        app:showAsAction="ifRoom"
+        android:title="@string/navigation_forward"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_navigation_refresh"
+        android:icon="@drawable/navigation_refresh"
+        app:showAsAction="ifRoom"
+        android:title="@string/navigation_refresh"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_delete_transaction"
+        android:icon="@drawable/ic_action_delete"
+        app:showAsAction="ifRoom"
+        android:title="@string/delete_transaction_hint"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_save_receipt"
+        android:icon="@drawable/save_light"
+        app:showAsAction="ifRoom"
+        android:title="@string/save_to_gallery"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_select_statement"
+        android:icon="@drawable/calendar_holo"
+        app:showAsAction="ifRoom"
+        android:title="@string/select_statement"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_contact"
+        android:icon="@drawable/contactus_white"
+        android:title="@string/contactus"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_easycash_faq"
+        android:title="@string/faq"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_onoff_faq"
+        android:title="@string/faq"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_onoff_logout"
+        android:title="@string/logout"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_easycash_locator"
+        android:title="@string/locator"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_easycash_unbound"
+        android:title="@string/easycash_unbound"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_locator"
+        android:icon="@drawable/locator_holo"
+        android:title="@string/locator"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_settings"
+        android:title="@string/title_settings"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_automatic_redemption"
+        android:title="@string/title_automatic_redemption"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_logout"
+        android:orderInCategory="99"
+        app:showAsAction="ifRoom"
+        android:title="@string/logout"
+        android:visible="true" />
+    <item
+        android:id="@+id/menu_close"
+        android:icon="@drawable/ic_close"
+        android:title="@string/close"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_overflow"
+        android:icon="@drawable/action_overflow"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/menu"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_ebills"
+        android:icon="@drawable/ebills_holo"
+        app:showAsAction="ifRoom"
+        android:title="@string/ebills"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_add_payee"
+        android:title="@string/add_payees"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_edit_payee"
+        android:title="@string/edit_payees"
+        android:visible="false" />
+    <item
+        android:id="@+id/menu_payments_history"
+        android:title="@string/payments_history"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_transfers_history"
+        android:title="@string/transfers_history"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/easycash_pendingtrx_history"
+        android:title="@string/easycash_pendingtrx_history"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/easy_deposit_history"
+        android:title="@string/review_checks_sidebar"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/notification_center_ribbon"
+        android:actionLayout="@layout/notification_center_active_ribbon_layout"
+        app:showAsAction="ifRoom"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/notification_center_active"
+        app:actionLayout="@layout/notification_center_active_layout"
+        app:showAsAction="ifRoom"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/notification_center_normal"
+        app:actionLayout="@layout/notification_center_normal_layout"
+        app:showAsAction="ifRoom"
+        android:visible="false" />
+
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sidebar_open_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:id="@+id/notification_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:gravity="center"
+        android:onClick="onNotificationCenterClicked">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="38dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/bell_toolbar" />
+    </LinearLayout>
+
+<LinearLayout
+        android:id="@+id/btn_sidebar_open"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/btn_action_bar"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        android:gravity="right" >
+-
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_sidebar_open" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/image"
+        android:src="@drawable/logo_min_popular" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="28dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="2dp"
+        android:src="@drawable/information_circular_button_symbol" />
+
+    <TextView
+        android:id="@+id/mortgage_disclaimer"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_above="@+id/linearLayout4"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView3"
+        android:gravity="center_vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="This is a text baesed of another text wich is another text realated to a text of texters"
+        android:textSize="16sp" />
+
+    <LinearLayout style="@style/AccountsSectionBottomLineDisclaimer"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4" />
+
+</RelativeLayout>
+

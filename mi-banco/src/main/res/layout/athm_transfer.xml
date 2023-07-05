@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvHeadeFrom"
+                style="@style/HeaderText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/athm_sending_from_header" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgParticipants"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="?selectableItemBackground"
+                    android:padding="4dp"
+                    android:src="@drawable/athm_info" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+        <include layout="@layout/athm_card_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/spinner_grey_background" />
+
+        <LinearLayout
+            android:id="@+id/viewSelectRecipient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/viewContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/tvRecipientHint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="20dp"
+                    android:text="@string/athm_select_recipient_hint"
+                    android:textColor="@color/black_54"
+                    android:textSize="18sp"
+                    app:robotoTypeface="roboto_slab_bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_navigation_arrow_drop_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/spinner_grey_background" />
+
+        <TextView
+            style="@style/HeaderText"
+            android:text="@string/athm_amount_header" />
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+        <TextView
+            android:id="@+id/tvTransferAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textColor="@color/athm_header"
+            android:textSize="46sp" />
+
+        <LinearLayout
+            style="@style/HeaderSeparator"
+            android:layout_height="1px"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="0dp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/athm_amount_info"
+            android:textColor="@color/black_54"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="@string/athm_optional_message_hint"
+            android:inputType="text"
+            android:maxLength="45"
+            android:paddingBottom="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSendMoney"
+                style="@style/Button.GreenAthm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/athm_send_money"
+                android:theme="@style/Button.GreenAthm" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

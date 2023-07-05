@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="50dp">
+
+        <RelativeLayout style="@style/PaymentsPage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/accounts_box"
+                style="@style/PaymentsAccountsBox"
+                android:layout_alignParentTop="true">
+
+                <LinearLayout style="@style/PaymentsTitlesBox">
+
+                    <TextView
+                        style="@style/PaymentsTitle"
+                        android:text="@string/from_title" />
+
+                    <LinearLayout style="@style/PaymentsWheelsSeparatorNoImage" />
+
+                    <TextView
+                        style="@style/PaymentsTitle"
+                        android:text="@string/to_title" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/PaymentsThickRuler" />
+
+                <LinearLayout style="@style/PaymentsWheelsBox">
+
+                    <LinearLayout
+                        android:id="@+id/wheel_from_box"
+                        style="@style/PaymentsWheelBox">
+
+                        <LinearLayout
+                            android:id="@+id/up_from"
+                            style="@style/PaymentsUpArrowBox">
+
+                            <ImageView
+                                style="@style/PaymentsWheelUpArrow"
+                                android:src="@drawable/up_arrow_holo"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <com.popular.android.mibanco.view.pickerview.WheelView
+                            android:id="@+id/wheel_from"
+                            style="@style/PaymentsWheel"
+                            myapp:shaddowHeight="0" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/PaymentsWheelsSeparator">
+
+                        <ImageView
+                            style="@style/PaymentsWheelSeparatorArrow"
+                            android:src="@drawable/wheel_arrow_holo"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/PaymentsWheelBox">
+
+                        <LinearLayout
+                            android:id="@+id/up_to"
+                            style="@style/PaymentsUpArrowBox">
+
+                            <ImageView
+                                style="@style/PaymentsWheelUpArrow"
+                                android:src="@drawable/up_arrow_holo"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <com.popular.android.mibanco.view.pickerview.WheelView
+                                android:id="@+id/wheel_to"
+                                style="@style/PaymentsWheel"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                myapp:shaddowHeight="0" />
+
+                            <ImageView
+                                android:id="@+id/imageViewIconRealTime"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="10dp"
+                                android:padding="3.5dp"
+                                myapp:srcCompat="@drawable/ic_realtimepayments"
+                                tools:ignore="ContentDescription" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout style="@style/PaymentsWheelBottomSection">
+
+                    <LinearLayout style="@style/PaymentsWheelBottomLine" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout style="@style/PaymentsDownArrowBox">
+
+                            <ImageView
+                                style="@style/PaymentsWheelDownArrow"
+                                android:src="@drawable/down_arrow_holo"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/PaymentsWheelsSeparatorNoImage" />
+
+                        <LinearLayout style="@style/PaymentsDownArrowBox">
+
+                            <ImageView
+                                style="@style/PaymentsWheelDownArrow"
+                                android:src="@drawable/down_arrow_holo"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/PaymentsRuler"
+                        android:layout_margin="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accounts_box"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/amount_button"
+                        style="@style/PaymentsAmountButtonBox"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <TextView style="@style/PaymentsAmountTitle" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/amount_text"
+                                style="@style/PaymentsAmountText"
+                                android:text="@string/zero_amount" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/amount_arrow_holo_cut"
+                            tools:ignore="ContentDescription" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        style="@style/PaymentsThinRuler"
+                        android:layout_marginTop="0dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout style="@style/PaymentsDateBox">
+
+                            <TextView
+                                android:id="@+id/schedule_text"
+                                style="@style/PaymentsDateScheduleText"
+                                android:text="@string/schedule_payment" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center_vertical">
+
+                                <TextView
+                                    style="@style/PaymentsDateText"
+                                    android:text="@string/on_payment" />
+
+                                <TextView
+                                    android:id="@+id/date_text"
+                                    style="@style/PaymentsDateText" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout style="@style/PaymentsCalendarBox">
+
+                            <LinearLayout style="@style/PaymentsAmountSeparator" />
+
+                            <ImageButton
+                                android:id="@+id/calendar_button"
+                                style="@style/PaymentsCalendarButton"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/PaymentsThinRuler" />
+
+                    <Button
+                        android:id="@+id/last_ammount_btn"
+                        style="?android:attr/borderlessButtonStyle"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:background="@drawable/btn_lastamount_style"
+                        android:text="@string/last_payment"
+                        android:textAllCaps="false"
+                        android:textColor="@color/account_details_header_credit_balance"
+                        android:textSize="16sp"
+                        android:visibility="gone"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutRealTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="11.5dp"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="3.5dp"
+                            myapp:srcCompat="@drawable/ic_realtimepayments"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center|left"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="@string/pay_instant"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/textViewSeeMore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_weight="100"
+                            android:gravity="right|center"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp"
+                            android:text="@string/pay_see_more"
+                            android:textColor="@color/payments_banner_blue"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutSeeMore"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="40dp"
+                            android:paddingRight="40dp"
+                            android:text="@string/description_pay_instant"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/pay_button"
+        style="@style/PaymentsPayButton"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+

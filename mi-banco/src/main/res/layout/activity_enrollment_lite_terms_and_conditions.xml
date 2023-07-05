@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        style="@style/HeaderText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/athm_terms_and_conditions_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:gravity="right" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="145dp"
+        android:gravity="right" />
+
+    <Button
+        android:id="@+id/btnAgree"
+        style="@style/Button.Blue"
+        android:text="@string/athm_terms_and_conditions_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/Button.Blue" />
+
+    <Button
+        android:id="@+id/btnDisagree"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/athm_terms_and_conditions_disagree"
+        android:minLines="2"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:theme="@style/Button.Grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="160dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/customborder"
+        android:orientation="vertical" >
+        <WebView
+            android:id="@+id/webViewTerms"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</RelativeLayout>

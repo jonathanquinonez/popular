@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/linearSelectUser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:layout_below="@+id/header"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/select_un_content"
+                android:layout_marginBottom="80dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/textHeaderSelectUsername"
+                        style="@style/HeaderText"
+                        android:text="@string/username" />
+                    <TextView
+                        android:id="@+id/privacy_policy_textview_saved_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_policy"
+                        android:textColorLink="@color/campaign_text_color"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+
+                <LinearLayout style="@style/HeaderSeparator" />
+
+                <ListView
+                    android:id="@+id/users_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@color/grey_lighter"
+                    android:dividerHeight="1px"
+                    tools:ignore="PxUsage" />
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/Separator"
+                android:layout_marginTop="0dp" />
+        </RelativeLayout>
+
+</LinearLayout>

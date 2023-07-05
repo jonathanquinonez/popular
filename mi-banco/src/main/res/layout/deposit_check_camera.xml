@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <SurfaceView
+        android:id="@+id/camera_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/camera_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:scaleType="fitXY"
+        android:src="@drawable/spinner_bg_holo"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/camera_progress_bar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/camera_text_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="@string/deposit_check_camera_text_top"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/camera_text_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/camera_surfaceview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="@string/deposit_check_camera_text_bottom"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/guidelines_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="66dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/guidelines_left" />
+
+    <ImageView
+        android:id="@+id/guidelines_right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="66dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/guidelines_right" />
+
+    <ImageView
+        android:id="@+id/guide_tl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/guide_tl"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/guide_tr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/guide_tr"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/guide_bl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/camera_surfaceview"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/guide_bl"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/guide_br"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/camera_surfaceview"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/guide_br"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/title_bar_background"
+        android:baselineAligned="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="left">
+
+            <TextView
+                android:id="@+id/camera_cancel"
+                style="@style/DepositCheckX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:text="@string/rdc_take_picture_cancel" />
+
+            <LinearLayout
+                android:id="@+id/camera_cancel_line"
+                style="@style/DepositCheckXLine"
+                android:layout_toRightOf="@id/camera_cancel"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/camera_check_side"
+                style="@style/DepositCheckSide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/camera_cancel"
+                android:layout_toRightOf="@+id/camera_cancel_line"
+                android:text="@string/camera_front_side" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/flash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/flash"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/camera_flash_status"
+                style="@style/DepositCheckFlashStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/flash"
+                android:text="@string/camera_flash_off" />
+
+            <LinearLayout
+                android:id="@+id/camera_snap_line"
+                style="@style/DepositCheckSnapLine"
+                android:layout_toRightOf="@id/camera_flash_status"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:id="@+id/camera_clickable_area"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/camera_snap_line"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/camera_snap"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/camera_snap"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/camera_use_button"
+                style="@style/DepositCheckUseButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/camera_snap_line"
+                android:text="@string/camera_use"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

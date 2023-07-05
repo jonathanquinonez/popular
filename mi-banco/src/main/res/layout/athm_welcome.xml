@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:paddingTop="40dp"
+            android:text="@string/athm_welcome_title"
+            android:textColor="@color/athm_header"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/detail_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="@string/athm_welcome_details"
+            android:textColor="@color/black_87" />
+
+        <ImageView
+            android:id="@+id/image_section"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginBottom="40dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/athm_sso_logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:paddingBottom="16dp">
+
+            <Button
+                android:id="@+id/btnContinue"
+                style="@style/Button.Blue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/continue_phrase"
+                android:theme="@style/Button.Blue"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

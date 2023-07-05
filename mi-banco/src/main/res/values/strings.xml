@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+
+    <!-- DATA STRINGS -->
+    <!--<string name="app_name">MiBanco</string>-->
+    <string name="locator_url">https://locator.popular.com/?lang=en</string>
+    <string name="privacy_policy_url">https://www.popular.com/en/privacy#GA=BPPR_Privacy</string>
+    <string name="not_available_url">https://mobile.bancopopular.com/cibp-web/actions/mobileSwitch?target=login&amp;version=classic&amp;lang=en</string>
+    <string name="account_blocked_regain_access_url">https://mobile.bancopopular.com/cibp-web/actions/mobileSwitch?target=resetpassword&amp;version=classic&amp;lang=en</string>
+    <!-- Deposito Facil Movil -->
+    <string name="base_remote_deposit_instructions_url">https://apps.popular.com/mobile/deposito-facil.php?t=%1$s&amp;l=en</string>
+    <string name="remote_deposit_instructions_url">https://apps.popular.com/mobile/deposito-facil/ING.html</string>
+    <!-- Deposito Facil Movil -->
+    <string name="athm_website_url">https://www.athmovil.com</string>
+    <string name="athm_forgot_password_url">https://www.athmovil.com/web/forgotPassword.htm?language=en</string>
+    <string name="athm_terms_and_conditions_url">https://apps.popular.com/mobile/terms/ath-movil/en.html</string>
+    <string name="athm_institutions_url">https://apps.popular.com/mobile/ath-movil/participantes-en.html</string>
+    <!--<string name="google_app_id">1:1037797805577:android:f4ba5fd328f93845</string>-->
+    <string name="help_section_url">https://helpcenter.popular.com/?p=590&amp;lang=en</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_fallback_notification_channel</string>
+
+    <!-- COMMON PHRASES -->
+    <string name="save">Save</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="continue_phrase">Continue</string>
+    <string name="welcome">HELLO!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="please_wait">Loading…</string>
+    <string name="english">English</string>
+    <string name="espanol">Español</string>
+    <string name="today">Today</string>
+    <string name="logout_app">Logout from current session?</string>
+    <string name="title_exit">Exit</string>
+    <string name="zero_amount">$0.00</string>
+    <string name="title_logout_app">Logout</string>
+    <string name="logging_out">Logging out…</string>
+    <string name="not_available">N/A</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- LOCATOR -->
+    <string name="locator">Locator</string>
+    <string name="atm">ATM</string>
+    <string name="branches_tab">Branches</string>
+    <string name="branch">BRANCH</string>
+    <string name="map">Map</string>
+    <string name="my_location_error">An error occurred while trying to retrieve your location.</string>
+    <string name="my_location_permission">Please accept the location permission.</string>
+    <string name="try_locate">Trying to establish current user location…</string>
+    <string name="guide_me">Guide me</string>
+    <string name="locating">Locating…</string>
+    <string name="locator_services_unavailable">Enable location services to get information about your current location.</string>
+    <string name="location_unavailable">Location unavailable.</string>
+    <string name="branch_singular">Branch</string>
+    <string name="branch_plural">Branches</string>
+    <string name="atm_singular">ATM</string>
+    <string name="atm_plural">ATMs</string>
+    <string name="and">and</string>
+    <string name="miles_away">miles away</string>
+    <string name="miles">miles</string>
+    <string name="current_location">Current location</string>
+
+    <!-- LOGIN -->
+    <string name="remember_username">Remember Username</string>
+    <string name="remember_device">Remember Device?</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">Submit</string>
+    <string name="login">Log in</string>
+    <string name="select_username">Select Username</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="username">Username</string>
+    <string name="other_username">+ Other Username</string>
+    <string name="other_username_header">Other Username</string>
+    <string name="answer">Answer</string>
+    <string name="logout">Log out</string>
+    <string name="enter_valid_username">Invalid username</string>
+    <string name="enter_answer">Invalid answer</string>
+    <string name="enter_valid_answer">Invalid answer</string>
+    <string name="enter_valid_password">Your password was incorrect.\n\nRemember that your password may have:\n\n&#8226; Capital letters\n&#8226; Numbers \n&#8226; Special characters</string>
+    <string name="title_security_question">Question</string>
+    <string name="security_question">Security Question Answer</string>
+
+    <!-- USER MANAGEMENT -->
+    <string name="no_more_users">There aren\'t any remembered users</string>
+    <string name="confirm_delete_user">Do you really want to delete this user?</string>
+    <string name="forget_user">Forget</string>
+
+    <!-- EBILLS -->
+    <string name="ebills">e-Bills</string>
+    <string name="ebill_date">Date</string>
+    <string name="ebill_due_date">due</string>
+    <string name="ebills_choose_amount_text" formatted="false" tools:ignore="StringFormatInvalid">%s has a minimum payment of %s. Balance due is %s.</string>
+    <string name="ebills_pay">Pay %s</string>
+    <string name="ebills_header">EBILLS</string>
+
+    <!-- PAYMENTS AND TRANSFERS -->
+    <string name="deposit">Deposit</string>
+    <string name="pay">Pay</string>
+    <string name="payment_verb">Send Payment</string>
+    <string name="transfer_verb">Transfer</string>
+    <string name="transfer_verb_button">Make Transfer</string>
+    <string name="from">From</string>
+    <string name="from_colon">From:</string>
+    <string name="to">To</string>
+    <string name="to_colon">To:</string>
+    <string name="on">On</string>
+    <string name="payment_processed">Payment processed</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="transfer_now">Transfer Now</string>
+    <string name="schedule_payment">Schedule payment</string>
+    <string name="schedule_transfer">Schedule transfer</string>
+    <string name="on_payment">on\u0020</string>
+    <string name="transfer_processed">Transfer processed</string>
+    <string name="your_receipt_nr_is">Your receipt number is:</string>
+    <string name="from_title">FROM</string>
+    <string name="to_title">TO</string>
+    <string name="amount">Amount</string>
+    <string name="amount_colon">Amount:</string>
+    <string name="amount_title">AMOUNT</string>
+    <string name="date">Date:</string>
+    <string name="confirm_your_payment">Confirm your payment</string>
+    <string name="confirm_your_transfer">Confirm your transfer</string>
+    <string name="close">Close</string>
+    <string name="save_to_gallery">Save to gallery?</string>
+    <string name="receipt">receipt</string>
+    <string name="transfer_noun">transfer</string>
+    <string name="payment_noun">payment</string>
+    <string name="rdc_noun">remote deposit</string>
+    <string name="refreshing_balances">Refreshing Balance…</string>
+    <string name="loading_payments">Loading Payments…</string>
+    <string name="loading_transfers">Loading Transfers…</string>
+    <string name="processing_transaction">Processing…</string>
+    <string name="transfer_future">Transfer on \u0020</string>
+    <string name="payment_future">Pay on \u0020</string>
+    <string name="last_payment">Last processed payment:\n %1$s\u0020 \u0020%2$s</string>
+    <string name="pay_see_more">Learn more</string>
+    <string name="pay_instant"><b>Real Time Payment</b></string>
+    <string name="description_pay_instant">Cannot be deleted or edited.</string>
+
+    <!-- CALENDAR -->
+    <string name="calendar_title">Select Date</string>
+
+    <!-- ACCOUNTS -->
+    <string name="account_home">home</string>
+    <string name="details">Account details</string>
+    <string name="account_list_cca_type">CREDIT CARDS</string>
+    <string name="account_list_ida_type">ACCOUNTS</string>
+    <string name="account_list_ila_type">LOANS</string>
+    <string name="account_list_mla_type">MORTGAGE</string>
+    <string name="account_list_cda_type">CDS / IRAS</string>
+    <string name="account_list_other_type">OTHER ACCOUNTS</string>
+    <string name="account_list_rewards_type">REWARDS</string>
+    <string name="account_list_secins_type">INSURANCE &amp; SECURITIES</string>
+    <string name="account_list_retplan_type">RETIREMENT PLANS</string>
+    <string name="account_list_retplan_new_alert">NEW</string>
+    <string name="account_list_retplan_csr_downtimes_text">Balance not available. For more information, please visit <a href="http://popular.com/401k/">popular.com/401k</a></string>
+    <string name="accounts_notice">Turn your mobile and personalize your account.</string>
+    <string name="accounts_item_footer_more">More…</string>
+    <string name="retplan_preview_terms_and_conditions">You are now leaving Popular’s app and entering a third-party website (referred as to “Linked Website”).\u0020</string>
+    <string name="retplan_full_terms_and_conditions">By clicking on your retirement account, you acknowledge and agree that (i) you have authorized Banco Popular de Puerto Rico and/or its parent company, Popular, Inc. (collectively referred to as “Popular”),  to display in Mi Banco certain information related to your retirement plan offered by your plan sponsor/employer; and (ii) you are in agreement with the continued display of such information in Mi Banco.
+                    \n\nFurther, you acknowledge and understand that the Linked Website’s privacy policy and security practices may differ from Popular’s.  You should refer to the Linked Website privacy disclosures for further information.
+                    \n\nPopular is not responsible for any product, service or content of information contained in the Linked Website and does not guarantee that the information provided in this Linked Website is correct, complete, or up-to-date. Popular expressly disclaims all liability for damages of any kind, reference to or reliance upon the information contained in the Linked Website.</string>
+    <string name="account_title_btn_mobile_withdrawal">Mobile Withdrawal</string>
+    <string name="account_title_btn_easy_deposit">Easy Deposit</string>
+
+    <!-- ENTER/SAVE AMOUNT -->
+    <string name="remember_amount">Remember amount</string>
+    <string name="name_current_amount">Name current amount</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="my_amounts">My amounts</string>
+    <string name="amount_saved">Amount successfully saved!</string>
+    <string name="amount_cant_be_saved">Amount can\'t be saved!</string>
+    <string name="amount_exists">Amount name already in use. Update value?</string>
+    <string name="amount_removed">Amount removed</string>
+    <string name="amount_cant_be_removed">Amount can\'t be removed!</string>
+    <string name="set">OK</string>
+    <string name="select_amount">Select Amount</string>
+    <string name="select">Select</string>
+    <string name="double_zero">00</string>
+
+    <!-- STATEMENTS -->
+    <string name="debit">Debit</string>
+    <string name="credit">Credit</string>
+    <string name="all">All</string>
+    <string name="select_statement_to">to\u0020</string>
+    <string name="nothing_to_display">There are no transactions in this statement</string>
+    <string name="nothing_to_display_non_trans">No transactions</string>
+    <string name="select_statement" tools:ignore="StringFormatInvalid">Select statement</string>
+    <string name="transactions">Transactions</string>
+    <string name="current_statement">Current Statement</string>
+    <string name="statement_date_range" formatted="false" tools:ignore="StringFormatInvalid">%s to %s</string>
+    <string name="statement_in_process">In process</string>
+    <string name="see_more_transactions">See more transactions</string>
+    <string name="statement_in_process_caps">IN PROCESS</string>
+    <string name="no_statements">No statements available</string>
+    <string name="mortgage_disclaimer">The amount and transactions can include a late fee.</string>
+
+    <!-- LANGUAGE SWITCH -->
+    <string name="choose_language_restart_needed">Choose language (restart is required)</string>
+    <string name="ask_restart">Do you want to restart application now?</string>
+
+
+    <!-- CALL BACK -->
+    <string name="unblock_local_phone_number">787‒724‒3655</string>
+    <string name="unblock_toll_free_phone_number">1–888–724–3655</string>
+
+    <!-- COVER FLOW -->
+    <string name="coverflow_rotate_info">Rotate your phone to leave gallery.</string>
+    <string name="coverflow_hidden_card_numbers" tools:ignore="Typos">XXXX XXXX XXXX\u0020</string>
+    <string name="coverflow_align_photo">Align photo on card</string>
+    <string name="coverflow_take_photo">Take photo</string>
+    <string name="coverflow_use_default">Use default</string>
+    <string name="coverflow_my_photos">My photos</string>
+    <string name="coverflow_personalize_account">Personalize account</string>
+
+    <!-- SETTINGS LIST -->
+    <string name="title_settings">Settings</string>
+    <string name="manage_users">Manage users</string>
+    <string name="language">Language</string>
+    <string name="email_change">Edit e-mail</string>
+    <string name="settings_fingerprint_auth">Fingerprint Authentication</string>
+    <string name="cookies_preference_settings">Privacy Settings</string>
+    <string name="about">About Us</string>
+    <string name="faq">FAQs</string>
+    <string name="fraud_prevention">Fraud Prevention</string>
+    <string name="terms">Terms &amp; Conditions</string>
+    <string name="policy">Privacy policy</string>
+    <string name="faq1_title">What can I do with this APP?</string>
+    <string name="faq2_title">How do we protect you?</string>
+    <string name="alerts_tab">Alerts</string>
+    <string name="push_disabled_warning">Push notification alerts are disabled on your device.</string>
+    <string name="go_to_push_settings">go to settings</string>
+    <string name="push_notifications">Push Notifications</string>
+
+
+    <!-- CONTACT INFORMATION -->
+    <string name="contactus">Contact Us</string>
+    <string-array name="contacts">
+        <item>@array/contact_telebanco</item>
+        <item>@array/contact_internet_help_desk</item>
+        <item>@array/contact_popular_mortgage</item>
+        <item>@array/contact_popular_auto</item>
+        <item>@array/contact_insurance_center</item>
+        <item>@array/contact_investments</item>
+        <item>@array/contact_popular_one</item>
+    </string-array>
+    <string-array name="contact_telebanco">
+        <item name="header">Telebanco Popular</item>
+        <item name="email" />
+        <item>Puerto Rico</item>
+        <item>(787) 724–3650</item>
+        <item>United States / Virgin Islands</item>
+        <item>1 (888) 724–3650</item>
+    </string-array>
+    <string-array name="contact_internet_help_desk">
+        <item name="header">Internet Banking Help Desk</item>
+        <item name="email">internet@bppr.com</item>
+        <item>Puerto Rico</item>
+        <item>(787) 724–3655</item>
+        <item>United States / Virgin Islands</item>
+        <item>1 (888) 724–3655</item>
+    </string-array>
+    <string-array name="contact_popular_mortgage">
+        <item name="header">Popular Mortgage</item>
+        <item name="email" />
+        <item>Financing</item>
+        <item>(787) 707–7070</item>
+        <item>Financing</item>
+        <item>1 (866) 358–7070</item>
+        <item>Servicing</item>
+        <item>(787) 775–1100</item>
+        <item>Servicing</item>
+        <item>1 (800) 981–1982</item>
+    </string-array>
+    <string-array name="contact_popular_auto">
+        <item name="header">Popular Auto</item>
+        <item name="email" />
+        <item>Financing</item>
+        <item>(787) 724–3656</item>
+        <item>Servicing</item>
+        <item>(787) 792&#8211;9282</item>
+    </string-array>
+    <string-array name="contact_insurance_center">
+        <item name="header">Insurance Center</item>
+        <item name="email" />
+        <item>Popular Insurance</item>
+        <item>(787) 706–4111</item>
+        <item>Popular Insurance</item>
+        <item>1 (800) 806–0080</item>
+        <item>Popular Risk Services</item>
+        <item>(787) 731–6900</item>
+    </string-array>
+    <string-array name="contact_investments">
+        <item name="header">Investments</item>
+        <item name="email" />
+        <item>Popular Securities</item>
+        <item>(787) 758&#8211;7400</item>
+    </string-array>
+    <string-array name="contact_popular_one">
+        <item name="header">Popular One</item>
+        <item name="email" />
+        <item>Advisors</item>
+        <item>(787) 281&#8211;7272</item>
+        <item>Web</item>
+        <item>www.popularone.com</item>
+    </string-array>
+
+    <!-- ERROR MESSAGES -->
+    <string name="error">Error:</string>
+    <string name="error_occurred">Sorry, error occurred. Please try again later.</string>
+    <string name="session_has_expired">Session has expired</string>
+    <string name="no_application_found">No application found to handle this action.</string>
+    <string name="account_blocked_title">Access Blocked</string>
+    <string name="account_blocked_description">Your access to Online Banking has been blocked.</string>
+    <string name="account_blocked_actionsheet_title">Select Regain Access or call us to unblock your account.</string>
+    <string name="account_blocked_callto_action">Call %s</string>
+    <string name="account_blocked_regain_access_action">Regain Access</string>
+    <string name="account_blocked_button_action">Unblock</string>
+    <string name="no_connection_description">Your connection seems to be experiencing problems at the moment. Please try again later.</string>
+    <string name="no_connection_ssl">Secure connection has been boken. Please restart the application.</string>
+    <string name="invalid_response_description">Mobile banking is not available at this moment.</string>
+    <string name="maintenance_title">Maintenance</string>
+    <string name="maintenance_personal_banking">Personal banking is not available at this moment.</string>
+    <string name="maintenance_mobile_banking">Mobile banking is not available at this moment.</string>
+    <string name="load_balancer_connection_limit">We’re experiencing an extraordinary volume of visits to Mi Banco. Please, try again in a few minutes. Sorry for the inconvenience.</string>
+    <string name="maintenance_rdc">Mobile Easy Deposit is not available at this moment. Please try again later.</string>
+    <string name="maintenance_payments">Payments is not available at this moment. Please try again later.</string>
+    <string name="maintenance_transfers">Transfers is not available at this moment. Please try again later.</string>
+    <string name="maintenance_mobilecash">Mobile Withdrawal is not available at this moment. Please try again later.</string>
+    <string name="not_available_description">Your profile requires you to login from a computer before using our mobile site.</string>
+    <string name="not_available_open_full_site">Open website</string>
+    <string name="check_connection">Please check your internet connection.</string>
+    <string name="update">Update</string>
+    <string name="update_description">Please update to the latest version in the Google Play.</string>
+    <string name="transaction_failed_title">Transaction error</string>
+    <string name="transaction_failed_message">This transaction could not be completed. Please try again.</string>
+    <string name="transaction_error_code_overpay_en">amount is higher</string>
+    <string name="transaction_error_code_overpay_es">cantidad es mayor</string>
+    <string name="transaction_error_larger_than_max">Amount larger than max</string>
+    <string name="transaction_confirm_effective_date_title">ALERT!</string>
+    <string name="transaction_confirm_effective_date_message">The effective date for this payment will be %s.</string>
+    <string name="transaction_unknown_error">Unknown error! Logging out…</string>
+    <string name="transaction_overpay_title">ALERT!</string>
+    <string name="transaction_overpay_message">The amount is higher than your account\'s balance.</string>
+    <string name="transaction_invalid_data_title">Invalid transaction information</string>
+    <string name="transaction_invalid_data_amount">Please Enter a Valid Amount</string>
+    <string name="transaction_invalid_data_account">Cannot transfer to same account</string>
+    <string name="payment_failed_title">Payment error</string>
+    <string name="payment_failed_message">This payment could not be processed.</string>
+    <string name="payment_failed_same_date_title">Payment error</string>
+    <string name="payment_failed_same_date_message">Another payment was already set in the same date.</string>
+    <string name="transfer_failed_title">Transfer error</string>
+    <string name="transfer_failed_message">This transfer could not be processed.</string>
+    <string name="transfer_failed_duplicate_title">Duplicate Transfer</string>
+    <string name="transfer_failed_duplicate_message">Duplicate amount transfer, please try another amount.</string>
+    <string name="transfer_failed_account_number_title">Transfer error</string>
+    <string name="transfer_failed_account_number_message">Can\'t transfer between these accounts.</string>
+    <string name="transfer_failed_same_date_title">Transfer error</string>
+    <string name="transfer_failed_same_date_message">Another transfer was already set in the same date.</string>
+    <string name="transfer_failed_zero_or_negative_balance">The amount is higher than your account\'s balance.</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="all_accounts">All accounts</string>
+    <string name="recent_transfers">Sent transfers</string>
+    <string name="all_payees">All payees</string>
+    <string name="recent_payments">Sent payments</string>
+    <string name="from_caps">FROM</string>
+
+    <!-- SIDEBAR -->
+    <string name="accounts_sidebar">My Accounts</string>
+    <string name="payments_sidebar">Make Payments</string>
+    <string name="ebills_sidebar">eBills</string>
+    <string name="payment_receipts_sidebar">Payment Receipts</string>
+    <string name="transfers_sidebar">Make Transfers</string>
+    <string name="athm_sidebar">ATH&#174; Móvil</string>
+    <string name="mobilecash_sidebar">Mobile Withdrawal</string>
+    <string name="transfer_receipts_sidebar">Transfer Receipts</string>
+    <string name="deposit_check_sidebar">Check Deposit</string>
+    <string name="deposit_check_sidebar_MBMT_417">Easy Deposit</string>
+    <string name="review_checks_sidebar">History</string>
+    <string name="request_documents">Request Documents</string>
+    <string name="more_info">More Info</string>
+    <string name="locator_sidebar">Locator</string>
+    <string name="contactus_sidebar">Contact Us</string>
+    <string name="marketplace_sidebar">Marketplace</string>
+    <string name="settings_sidebar">Settings</string>
+    <!-- MBSFE-1712 -->
+    <string name="go_to_desktop_sidebar">Go to Desktop Version</string>
+    <string name="go_to_desktop_url">actions/mobileSwitch?target=login&amp;version=classic&amp;lang=en</string>
+    <!-- END MBSFE-1712 -->
+    <string name="rsa_enroll_sidebar">2 Step Verification</string>
+    <string name="rsa_edit_questions_sidebar">Edit Security Questions</string>
+    <!-- END MBSFIS-571 -->
+    <string name="call_advisor">Llamar</string>
+    <!-- PAYMENT/TRANSFER HISTORY -->
+    <string name="image">Image</string>
+    <string name="by_month">By Month</string>
+    <string name="by_payee">By Payee</string>
+    <string name="by_account">By Account</string>
+    <string name="sent_payment_caps">SENT PAYMENTS</string>
+    <string name="sent_transfers_caps">SENT TRANSFERS</string>
+    <string name="select_payee">SELECT PAYEE</string>
+    <string name="select_account">SELECT ACCOUNT</string>
+    <string name="select_month">SELECT MONTH</string>
+    <string name="when">SENT PAYMENTS</string>
+    <string name="no_transfers_receipts_found">There are no transactions available</string>
+    <string name="no_payments_receipts_found">There are no transactions available</string>
+    <string name="processed_payment">Processed payment</string>
+    <string name="processed_transfer">Processed transfer</string>
+    <string name="deleting">Deleting…</string>
+    <string name="delete_error_description">Unable to delete the transaction.</string>
+    <string name="delete_transaction_question">Are you sure you want to delete this transaction?</string>
+    <string name="delete_transaction_hint">Delete transaction?</string>
+    <string name="add_payees">Add Payees</string>
+    <string name="no_payees_add_new_payees">No Payees, Add new Payees to continue</string>
+    <string name="edit_payees">Edit Payees</string>
+    <string name="payments_history">History</string>
+    <string name="transfers_history">History</string>
+
+    <!-- INTRO SCREEN -->
+    <string name="intro_locator">Locator</string>
+    <string name="intro_contactus">Contact Us</string>
+    <string name="intro_info">More Info</string>
+    <string name="intro_log_in">Log in</string>
+    <string name="intro_enrollment">Enroll</string>
+
+    <!-- WEB VIEW -->
+    <string name="navigation_back">Back</string>
+    <string name="navigation_forward">Forward</string>
+    <string name="navigation_refresh">Refresh</string>
+    <string name="menu">Menu</string>
+    <string name="title_info">Info</string>
+    <string name="no_payees">No Payees</string>
+    <string name="status_processing">Processing</string>
+    <string name="status_title">Status</string>
+    <string name="frequency_title">Frequency</string>
+    <string name="forgot_username"><u>Forgot your username?</u></string>
+    <string name="forgot_password"><u>Forgot your password?</u></string>
+    <string name="terms_and_conditions_url">https://documents.popular.com/terms/depositos/Contrato+de+servicios+bancarios+electronicos+Eng.htm</string>
+
+    <!-- QA -->
+    <string name="quality_main_url">Main URL</string>
+    <string name="quality_port">Port</string>
+    <string name="quality_url_path">URL Path</string>
+    <string name="quality_current_base_url">Current Base URL</string>
+    <string name="quality_restore_defaults">Restore Defaults</string>
+    <string name="quality_base_url_saved">Base URL has been saved.</string>
+    <string name="quality_field_required">Field required.</string>
+    <string name="quality_invalid_url">Resultant URL is invalid.</string>
+
+    <!-- RDC -->
+    <string name="to_rdc">To</string>
+    <string name="rdc_history_pending">In process</string>
+    <string name="rdc_history_processed">Sent Deposits</string>
+    <string name="rdc_history_deposit_date">Sent Date</string>
+    <string name="rdc_history_reference_num">Reference Num.</string>
+    <string name="rdc_history_deposit_status">Deposit Status</string>
+    <string name="rdc_history_deposit_status_submitted">Submitted</string>
+    <string name="rdc_history_deposit_status_approved">Approved</string>
+    <string name="rdc_history_deposit_status_declined">Declined</string>
+    <string name="rdc_history_images">CHECK PHOTOS</string>
+    <string name="rdc_history_front">Front</string>
+    <string name="rdc_history_back">Back</string>
+    <string name="rdc_history_deposit_info">Deposit Info</string>
+    <string name="rdc_history_no_items">There are no deposits to display</string>
+    <string name="deposit_check_deposit_to">DEPOSIT TO</string>
+    <string name="deposit_check_deposited_to">DEPOSITED TO</string>
+    <string name="deposit_check_amount">Amount</string>
+    <string name="deposit_check_add_check">CHECK PHOTOS</string>
+    <string name="deposit_check_instructions">Snap photos of the front and back</string>
+    <string name="deposit_check_popular_text"><Data><![CDATA[ Deposit checks to your account easily by taking a picture, just follow these steps:<br/><ol style="margin-bottom:0;margin-left:10;padding-left:10"><li>Sign the back of your check; write &quot;For Deposit only at BPPR&quot; and the account number.</li><br/><li>Snap photos of the front and back of the check.</li></ol><br/><ul style="margin-top:0;margin-left:15;padding-left:15"><li>We reserve the right to refuse any image for processing.</li><li>Deposit made before 6:00 pm on Business Day will be processed on the same day, subject to deposit verification and validation.</li><li>Once accepted, your deposit will be available according to our Availability of Funds Policy.</li><li>Deposit limits: $1,500 per check, $1,500 per day total and $4,500 per month.</li><li>For more information about Mobile Easy Deposit and our Availability of Funds Policy, visit popular.com.</li></ul> ]]> </Data></string>
+    <string name="deposit_check_select_account">Select Account</string>
+    <string name="deposit_check_change_front_picture">Front</string>
+    <string name="deposit_check_change_back_picture">Back</string>
+    <string name="deposit_check_front_instructions">Snap Front Photo</string>
+    <string name="deposit_check_back_instructions">Snap Back Photo</string>
+    <string name="deposit_check_deposit">Send Deposit</string>
+    <string name="deposit_check_confirm_deposit">CONFIRM YOUR DEPOSIT</string>
+    <string name="deposit_check_deposit_now">Send Deposit Now</string>
+    <string name="deposit_check_deposit_sent">CHECK RECEIVED</string>
+    <string name="deposit_check_error">CHECK ERROR</string>
+    <string name="deposit_check_noun">Deposit Check</string>
+    <string name="deposit_check_failed_message">The check could not be deposited. Please try again.</string>
+    <string name="camera_front_side">FRONT OF CHECK</string>
+    <string name="camera_back_side">BACK OF CHECK</string>
+    <string name="camera_flash_off">OFF</string>
+    <string name="camera_flash_on">ON</string>
+    <string name="camera_flash_auto">AUTO</string>
+    <string name="camera_use">Use</string>
+    <string name="deposit_check_camera_text_top">Position check inside the blue box on a flat and well lit surface</string>
+    <string name="deposit_check_camera_text_bottom">Sign back of check; write \"For Deposit only at BPPR\" and account number</string>
+
+    <!-- ATH MOBILE -->
+    <string name="athm_select_account_warning">You can only choose accounts that have an active ATH&#174; card attached and it will be your primary account.</string>
+    <string name="athm_select_account_header">SELECT ACCOUNT</string>
+    <string name="athm_select_account_hint">Select Account</string>
+    <string name="athm_account_information_header">ACCOUNT INFORMATION</string>
+    <string name="athm_card_number_hint">ATH&#174; card number</string>
+    <string name="athm_card_expiration_date_hint">Expiration date</string>
+    <string name="athm_registration_information_header">ATH&#174; MÓVIL REGISTRATION INFORMATION</string>
+    <string name="athm_username_hint">Username</string>
+    <string name="athm_password_hint">Password</string>
+    <string name="athm_confirm_password_hint">Confirm Password</string>
+    <string name="athm_accept_terms_and_conditions">Accept terms and conditions</string>
+    <string name="athm_login_information_header">ATH&#174; MÓVIL LOGIN INFORMATION</string>
+    <string name="athm_enter_login_password">Enter your ATH&#174; Móvil username and password.</string>
+    <string name="athm_forgot_username_or_password">Forgot username or password?</string>
+    <string name="athm_phone_call_header">PHONE CALL</string>
+    <string name="athm_phone_call_info">A call will be made to the mobile phone number provided. When requested, enter the following code.</string>
+    <string name="athm_phone_number_header">MOBILE PHONE NUMBER</string>
+    <string name="athm_phone_number_hint">Enter Phone Number</string>
+    <string name="athm_select_provider_hint">Select Provider</string>
+    <string name="athm_phone_number_info">To use this service you must enter the mobile phone number you want to use in ATH&#174; Móvil.</string>
+    <string name="athm_sending_from_header">SENDING FROM</string>
+    <string name="athm_sending_to_header">TO</string>
+    <string name="athm_select_recipient_hint">Select contact</string>
+    <string name="athm_amount_header">AMOUNT</string>
+    <string name="athm_amount_info">The amount transferred must be between $1 and $500</string>
+    <string name="athm_optional_message_hint">Optional message</string>
+    <string name="athm_send_money">Send Money</string>
+    <string name="athm_recents_header">RECENTS</string>
+    <string name="athm_contacts_header">CONTACTS</string>
+    <string name="athm_transfer_sent">Your transfer has been sent.</string>
+    <string name="athm_transfer_details" formatted="false">You sent %1$s to %2$s</string>
+    <string name="athm_registration_completed">Registration Completed</string>
+    <string name="athm_registration_details">Now you can send money using ATH&#174; Móvil through Mi Banco.</string>
+    <string name="athm_learn_more">Learn more</string>
+    <string name="athm_enroll_title">Send money easily, securely and in real-time.</string>
+    <string name="athm_enroll_details">ATH&#174; Móvil is a new service provided by the ATH&#174; Network that allows person-to-person transactions in real-time.\n\nThe service is available to all participating financial institutions in Puerto Rico.</string>
+    <string name="athm_enroll">Start</string>
+    <string name="athm_terms_and_conditions_header">TERMS AND CONDITIONS</string>
+    <string name="athm_terms_and_conditions_agree">Agree</string>
+    <string name="athm_terms_and_conditions_disagree">Disagree</string>
+    <string name="athm_invalid_phone_number">This phone number is not valid</string>
+    <string name="athm_enter_phone_or_name">Enter Phone or Name</string>
+    <string name="athm_no_contacts">No contacts found.</string>
+    <string name="athm_transfer_message" formatted="false">You are sending %1$s to %2$s\nProcessing Fee: %3$s</string>
+    <string name="athm_down_error_text">ATH&#174; Móvil service is not available.</string>
+    <string name="athm_blocked_error_title">Account Blocked</string>
+    <string name="athm_blocked_error_text">Username blocked</string>
+    <string name="athm_card_length_error_alert">The card number should be 16 digits</string>
+    <string name="athm_password_confirmation_match_error">The password and password confirmation do not match</string>
+    <string name="athm_generic_error_processing_alert">Error processing request</string>
+    <string name="athm_contacts_other">Other phone</string>
+    <string name="athm_password_guidelines">8&#8211;15 characters. Combination of letters, numbers, AND a capital letter are required. Special characters are optional</string>
+    <string name="athm_expiration_year">Year</string>
+    <string name="athm_expiration_month">Month</string>
+    <string name="athm_welcome_title">Transfer money to people and businesses directly from ATH Móvil.</string>
+    <string name="athm_welcome_details">For your convenience, you can now connect to the ATH Móvil app [Evertec, Inc.] through a link in Mi Banco Mobile. Once in ATH Móvil app, you could add, change or modify an ATH card linked to this app. With this service, you will have an all access experience to send money instantly.</string>
+
+    <string name="athm_redirect_title">You are almost set!</string>
+    <string name="athm_redirect_details">Make sure to download the ATH Móvil app and update to have the latest version. Then come back to Mi Banco Mobile to finalize the sign in process.</string>
+    <string name="athm_redirect_btn_title">Go to Play Store</string>
+    <string name="athm_settings_logout">Log out from ATH Móvil</string>
+    <string name="athm_settings_logout_dialog_title">Do you wish to log out from ATH Móvil?</string>
+    <string name="athm_settings_logout_error">There was an error completing your request. Please try again later.</string>
+    <string name="athm_redirect_disclaimer">You are being linked to ATH Móvil App. ATH Móvil App is NOT owned by Banco Popular de Puerto Rico</string>
+
+
+    <string name="week_sunday">Sunday</string>
+    <string name="week_monday">Monday</string>
+    <string name="week_tuesday">Tuesday</string>
+    <string name="week_wednesday">Wednesday</string>
+    <string name="week_thursday">Thursday</string>
+    <string name="week_friday">Friday</string>
+    <string name="week_saturday">Saturday</string>
+    <string name="week_to">to</string>
+    <string name="week_closed">Closed</string>
+    <string name="next_holiday">Next Holiday</string>
+    <string name="services">Service</string>
+
+    <string name="branch_service_commercial">Commercial Line</string>
+    <string name="branch_service_popularone">Popular One</string>
+    <string name="branch_service_popularmortgage">Popular Mortgage</string>
+    <string name="branch_service_popularsecurities">Popular Securities</string>
+    <string name="branch_service_nightdeposit">Night Deposit</string>
+    <string name="branch_service_autobanco">Auto banco</string>
+
+    <string name="phone_number">Phone number</string>
+
+
+    <!-- MOBILE CASH-->
+    <string name="mc_account_info_header">WITHDRAWAL INFORMATION</string>
+    <string name="mc_select_account_hint">Select Account</string>
+    <string name="mc_amount_disclaimer" formatted="false">Amount to select will be in increments of $%s</string>
+    <string name="mc_amount_disclaimer_MBMT_417" formatted="false">The amount will be in multiples of $%s up to $%s.</string>
+    <string name="mc_amount_header">CHOOSE AMOUNT</string>
+    <string name="mc_send_money">Continue</string>
+    <string name="mc_select_account_warning">You can only choose an account with an ATH&#174; Regular card. At this time the service is not available with an ATH&#174; International Visa card.</string>
+    <string name="mc_transfer_confirm" formatted="false">Withdraw: %1$s \nFrom: %2$s</string>
+    <string name="mc_transfer_confirm_for_other" formatted="false">Send: %1$s \nFrom: %2$s \nTo: %3$s </string>
+    <string name="mc_confirm_stage">CONFIRM</string>
+    <string name="mc_confirm_stage_title">CONFIRM WITHDRAWAL</string>
+
+    <string name="mc_stage_receipt_title">Your cash is ready for pickup!</string>
+    <string name="mc_stage_receipt_toother_title">The cash is ready for pickup!</string>
+    <string name="mc_stage_receipt_tranid">Reference number:</string>
+    <string name="mc_stage_receipt_from">From:</string>
+    <string name="mc_stage_receipt_to">To:</string>
+    <string name="mc_stage_receipt_amount">Amount:</string>
+    <string name="mc_stage_receipt_expiration">Expires:</string>
+    <string name="mc_stage_receipt_note">Message:</string>
+    <string name="mc_stage_receipt_location">Location:</string>
+    <string name="mc_stage_receipt_completion">Completed:</string>
+
+    <string name="mc_stage_receipt_instruction_title">It\'s fast and easy!</string>
+    <string name="mc_stage_receipt_instruction_1">Visit the participating ATM of your choice</string>
+    <string name="mc_stage_receipt_instruction_2">Connect to Mi Banco Mobile App and press Mobile Withdrawal</string>
+    <string name="mc_stage_receipt_instruction_3">Scan the QR code in the ATM Screen</string>
+    <string name="mc_stage_receipt_instruction_4">Withdraw your cash!</string>
+
+    <string name="ec_stage_receipt_instruction_1">Your contact should go to the participating ATM of their choice</string>
+    <string name="ec_stage_receipt_instruction_2">Press Mobile Withdrawal and scan the QR code in the ATM Screen with Mi Banco Mobile App</string>
+    <string name="ec_stage_receipt_instruction_3">Withdraw the cash!</string>
+    <string name="ec_stage_receipt_button">Send withdrawal information</string>
+    <string name="ec_forother_text_message">Hi, I sent you %1$s through Mobile Withdrawal. More info http://popular.com/en/retiromovil</string>
+
+    <string name="mc_scan_info_title">WITHDRAWAL INFORMATION</string>
+    <string name="ec_scan_info_title">MY WITHDRAW</string>
+    <string name="mc_stage_receipt_btn_scan">Scan</string>
+    <string name="mc_pickup_atm_title">Continue at the ATM</string>
+    <string name="mc_pickup_last4num">ENDING WITH (?)</string>
+    <string name="mc_pickup_expiration">EXPIRES %s</string>
+    <string name="mc_pickup_past_expiration">EXPIRED %s</string>
+    <string name="mc_pickup_past_completed">COMPLETED %s</string>
+    <string name="mc_deletetrx_title">DELETE</string>
+    <string name="mc_filtertrx_title">FILTER</string>
+    <string name="mc_deletetrx_message">Delete withdrawal?</string>
+    <string name="mc_deletetrx_back">BACK</string>
+    <string name="mc_service_error_title">ERROR</string>
+    <string name="mc_service_error_message">There was an error completing your request. Please try again later.</string>
+    <string name="mc_accounts_error_message">It seems there is no ATH&#174; card attached to your accounts.</string>
+    <string name="mc_error_minbalance">The account doesn\'t have the sufficient funds to make the transaction.</string>
+    <string name="mc_ath_regular">ATH&#174; Regular</string>
+    <string name="mc_ath_international">International ATH Visa</string>
+    <string name="mc_date_today" formatted="false">TODAY AT %1$s</string>
+    <string name="mc_date_yesterday" formatted="false">YESTERDAY AT %1$s</string>
+    <string name="mc_date_tomorow" formatted="false">TOMORROW AT %1$s</string>
+    <string name="mc_date_more" formatted="false">%1$s AT %2$s</string>
+    <string name="mc_date_format">MM/dd/yyyy</string>
+    <string name="mc_error_wrong_qr">Oops! Looks like there was an error when reading the code, please try again.</string>
+    <string name="mc_no_camera_permission_title">Please, allow Mi Banco to take pictures.</string>
+    <string name="mc_no_camera_permission">Go to the Settings App → Apps → Mi Banco → Permissions and turn on permission for Camera.</string>
+
+    <string name="select_card_header">SELECT CARD</string>
+    <string name="select_card_hint">Select card</string>
+
+    <!-- OOB AUTH -->
+    <string name="verification_code"> Verification Code</string>
+    <string name="oob_sms_primary_instructions">Enter the verification code we just sent to your phone number:</string>
+    <string name="oob_call_primary_instructions">Input this code on your phone when you receive our call to your registered number:</string>
+    <string name="oob_code">Code (6 digits)</string>
+    <string name="resend_code">Resend code</string>
+    <string name="oob_no_phone">Don\'t have my phone available</string>
+    <string name="invalid_code">Invalid code</string>
+    <string name="new_code_sent">New code sent</string>
+    <string name="new_code_error">Unable to send code at this time</string>
+    <string name="invalid_action">Invalid action</string>
+    <string name="oob_use_alt_phone">Send to alternate number</string>
+    <string name="oob_use_alt_phone_call">Call to alternate number</string>
+    <string name="oob_use_primary_phone">Send to primary number</string>
+    <string name="oob_use_primary_phone_call">Call to primary number</string>
+    <string name="oob_use_rec_code">Use my recovery code</string>
+    <string name="oob_none_codes">I have none of the codes</string>
+    <string name="oob_sms_alternate_instructions">Enter the verification code we just sent to your alternate number:</string>
+    <string name="oob_call_alternate_instructions">Input this code on your phone when you receive our call to your alternate number:</string>
+    <string name="title_use_my_recovery_code">RECOVERY CODE</string>
+    <string name="text_recovery_code">To make use of the recovery code, you need to use it through Mi Banco web on desktop</string>
+    <string name="submit_go_mi_banco">Go to Mi Banco (desktop)</string>
+    <string name="title_none_of_the_codes">NONE OF THE CODES</string>
+    <string name="text_nearest_branch">If you don\'t have access to your primary phone number, alternate number or recovery code, you must visit any of our branches so that we may assist you in deactivating 2 Step Verification for your account.</string>
+    <string name="submit_nearest_branch">Find the nearest branch</string>
+    <string name="text_contact_call">If you have any questions, contact the Mi Banco Help-Desk at (787) 724&#8211;3655 or 1&#8211;888&#8211;724&#8211;3655 (United States / Virgin Islands).</string>
+    <string name="submit_call_now">Call now</string>
+    <string name="oob_make_new_call">Make new call</string>
+    <string name="new_call_made">New phone call requested</string>
+    <string name="invalid_code_call">Input the code on your phone, before clicking continue.</string>
+    <string name="oob_timeout_code">Expired code </string>
+    <string name="oob_validation_error">Unable to validate code</string>
+
+    <!-- Wallet Authentication-->
+    <string name="wallet_authentication">Wallet Authentication</string>
+    <string name="wallet_authentication_msg">Authenticating Card</string>
+    <string name="wallet_website_url">http://www.popular.com/en/mi-banco/mobil/wallets</string>
+    <string name="wallet_authentication_details_samsung_pay">Your card was registered successfully!\nYou may confirm it by going to your Samsung Pay app.</string>
+    <string name="wallet_authentication_details_android_pay">Your card was registered successfully!\nYou may confirm it by going to your Google Pay app.</string>
+    <string name="wallet_authentication_successful">Validation Successful!</string>
+    <string name="wallet_authentication_error">\n\nWe could not validate\nthe information provided.</string>
+    <string name="wallet_authentication_error_error">\n\nWe were unable to process the transaction due to a communication error. Please try again later.</string>
+    <string name="wallet_authentication_error_not_found">\n\nWe couldn’t find your card in your Mi Banco profile, please try again. If you think it’s an error, please call TeleBanco at 787&#8211;724&#8211;3650</string>
+    <string name="wallet_authentication_error_error_vts">\n\nYour card couldn’t be validated at this moment. Please call TeleBanco for additional information, 787&#8211;724&#8211;3650</string>
+    <string name="wallet_authentication_error_fingerprint_delay_hours">\nYou will be able to use the Digital Wallets in %s hours.\nFor your protection, a waiting period is required before you use the service when you use this authentication method.</string>
+    <string name="wallet_authentication_error_fingerprint_delay_minutes">\nYou will be able to use the Digital Wallets in %s minutes.\nFor your protection, a waiting period is required before you use the service when you use this authentication method.</string>
+    <string name="wallet_authentication_error_no_minimun_fingerprint_req">Your device doesn’t have fingerprint authentication feature.</string>
+    <string name="wallet_authentication_error_no_fingerprint_in_app">In order to use this service, it is required to have active fingerprint authentication in Mi Banco app.</string>
+    <string name="wallet_authentication_error_no_user_saved">In order to use this service, it is required to save the username on Mi Banco app.</string>
+    <string name="wallet_authentication_error_fingerprint_canceled">In order to use this service, it is required to have active fingerprint authentication in Mi Banco app.
+</string>
+    <string name="wallet_name_samsung">Samsung Pay</string>
+    <string name="wallet_name_android">Google Pay</string>
+
+    <string name="permission_mandatory">To access Mi Banco it is necessary to accept the required permissions. Would you like to modify the application\'s permissions?</string>
+    <string name="permission_location_mandatory">To return values based on your location, it is required to accept the location permission. Would you like to modify the application\'s permissions?</string>
+    <string name="permission_rdc_mandatory">To take check photos, it is required to accept the camera permission. Would you like to modify the application\'s permissions?</string>
+    <string name="permission_custom_image_mandatory">To set a personalized photo, it is required to accept the camera permission. Would you like to modify the application\'s permissions?</string>
+
+    <string name="sign_in">Log in</string>
+    <string name="fingerprint_description">Confirm your fingerprint to log in to Mi Banco.</string>
+    <string name="fingerprint_easycash_description">Confirm your fingerprint to use this service.</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="use_fingerprint_to_authenticate_key">use_fingerprint_to_authenticate_key</string>
+
+    <string name="fp_no_setup">Secure lock screen has not been set up.\nGo to Settings > Security > Fingerprint to set up a fingerprint</string>
+    <string name="fp_no_fingerprint">If you would like to use the fingerprint authentication method, please go to Settings > Security > Fingerprint and register at least one fingerprint.</string>
+
+    <string name="fp_campaign_title">Fingerprint authentication</string>
+    <string name="fp_campaign_content">Enjoy the safety and convenience of having access to your accounts with a single touch.\n\nAfter setting up Fingerprint authentication on your device, you will need to log in to Mi Banco App with your username and password and turn on fingerprint sign in from the Mi Banco App settings menu. Select \'Remember your username\' to be able to access Mi Banco with just one touch.</string>
+    <string name="fp_campaign_button_no">NO, THANKS</string>
+    <string name="fp_campaign_button_yes">ACTIVATE NOW</string>
+    <string name="fp_campaign_button_next">NEXT</string>
+    <string name="fp_mibanco_setup">In order to use fingerprint authentication in Mi Banco, first you have to save a username by pressing the Remember username switch and login with that user by the traditional method.</string>
+    <string name="fp_password_setup">Please login with a user on the list to use fingerprint authentication.</string>
+
+    <string name="rdc_take_picture_cancel">X</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_downtime">Downtime image</string>
+    <string name="desc_rdc_check_image">Remote deposit check image</string>
+    <string name="desc_ath_card_image">ATH Card image</string>
+    <string name="desc_menu_icon">Sidebar menu icon</string>
+    <string name="desc_fingerprint_image">Fingerprint image</string>
+
+    <string name="cashdrop_welcome_client_instr">To access Mobile Withdrawal please provide your phone number and service provider.</string>
+    <string name="cashdrop_welcome_nonclient_instr">To access Mobile Withdrawal please provide the following information:</string>
+    <string name="cashdrop_welcome_personal_info">PERSONAL INFORMATION</string>
+    <string name="cashdrop_welcome_personal_name_hint">Name</string>
+    <string name="cashdrop_welcome_personal_lastname_hint">Last Name</string>
+    <string name="cashdrop_welcome_personal_country">Country</string>
+    <string name="cashdrop_welcome_access_info">ACCESS INFORMATION</string>
+    <string name="cashdrop_welcome_access_email_hint">E-mail</string>
+    <string name="cashdrop_welcome_access_phonenumber_hint">Phone number</string>
+    <string name="cashdrop_welcome_access_provider">Provider</string>
+    <string name="cashdrop_welcome_disclaimer">
+        Banco Popular will not charge your bank account or mobile phone account for this service. You should see your service provider\'s
+        contract for details regarding charges for text messages.
+        These charges depend on your service provider and the text message service plan you have acquired.
+    </string>
+    <string name="cashdrop_continue_button">Continue</string>
+
+    <string name="enrollment_lite_smscode_instructions">
+        We just sent a passcode via text message to your mobile phone. If you do not receive it within 2 minutes, click \"Resend Code\" to get a new one
+        or contact your mobile carrier to make sure your device is SMS enabled.
+    </string>
+
+    <string name="enrollment_lite_smscode_disclaimer">
+        Banco Popular will not charge your bank account or mobile phone account for this service. You should see your service provider\'s contract for details
+        regarding charges for text messages. These charges depend on your service provider and the text message service plan you have acquired.
+    </string>
+
+    <string name="enrollment_lite_smscode_hint">####</string>
+
+    <string name="enrollment_lite_registration_complete">Your registration was completed</string>
+    <string name="enrollment_lite_terms_and_conditions_url">https://documents.popular.com/terms/mi_banco/mb_tc_alerts.html#app</string>
+
+    <string name="easycash_customer_faq_url">http://helpcenter.popular.com/?tag=faq-retiro-movil-cliente&amp;lang=en</string>
+    <string name="easycash_noncustomer_faq_url">http://helpcenter.popular.com/?tag=faq-retiro-movil-receiver&amp;lang=en</string>
+    <string name="easycash_locator_url">http://popular.com/en/retiromovil-atms</string>
+
+    <string name="enrollment_lite_existing_email_title">We have found your email</string>
+    <string name="enrollment_lite_existing_email_msg">We have found your e-mail in our records.</string>
+    <string name="btn_positive_existing_email">Log-In to Mi Banco</string>
+    <string name="btn_negative_existing_email">Continue</string>
+    <string name="enrollment_lite_missing_info">Please complete all required fields.</string>
+    <string name="enrollment_lite_wrong_sms">Incorrect verification code</string>
+    <string name="enrollment_lite_sms_fail_reached">You have exceeded the number of attempts. Try signing in again.</string>
+
+    <string name="enrollment_lite_client_title">Send and withdraw cash with your smartphone </string>
+    <string name="enrollment_lite_client_details">
+        Withdraw cash with your smartphone in any of our ATMs without using your Banco Popular debit card. With Mobile Withdrawal, you can also send cash to anyone without a bank account. Register your phone number from where you will send and receive withdrawals to start using the service.
+        Mi Banco Mobile registers and saves your phone number on our servers for you to send or receive cash with that number.
+
+        &lt;br>&lt;br>Access our
+        &lt;a href=https://www.popular.com/en/privacy/>Privacy Policy &lt;/a>
+        to learn how we protect your personal information.
+
+        Easy, Fast and Secure
+
+    </string>
+    <string name="enrollment_lite_client_details2">Learn more on [link]</string>
+    <string name="easycash_link_learnmore">http://popular.com/retiromovil</string>
+    <string name="easycash_linktext_learnmore">popular.com/retiromovil</string>
+
+    <string name="enrollment_lite_nonclient_title">Receive cash in your smartphone</string>
+    <string name="enrollment_lite_nonclient_details">
+        Receive and obtain cash through Mi Banco app with Mobile Withdrawal.
+        Register your telephone number in which you will receive the money and use to obtain it with your smartphone at Banco Popular ATMs.
+
+        Mi Banco Mobile registers and stores on our servers your phone number for you to receive the cash that is sent to that number.
+
+        &lt;br>&lt;br>Access our
+        &lt;a href=https://www.popular.com/en/privacy/>Privacy Policy &lt;/a>
+        to learn how we protect your personal information.
+
+        &lt;br>&lt;br>EASY, FAST AND SECURE.
+    </string>
+    <string name="enrollment_lite_aggre">Agree</string>
+
+    <string name="enrollment_lite_existing_alerts_phone_message">Do you want to use the phone number registered in Mi Banco Alerts? (?)</string>
+    <string name="enrollment_lite_sms_resend_reached">You have exceeded the number of attempts. Try signing in again.</string>
+    <string name="mc_sms_resent">Verification code sent</string>
+
+    <string name="enrollment_lite_resend_code">Resend Code</string>
+    <string name="ec_send_money_to_me">For Me</string>
+    <string name="ec_send_money_to_other">For Other</string>
+    <string name="ec_send_money_withdraw">Withdraw</string>
+    <string name="ec_for_other_hint_optional">Optional message</string>
+
+
+    <string name="ec_history">HISTORY</string>
+    <string name="ec_history_inprocess">IN PROCESS</string>
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+
+    <string name="enrollment_lite_fingerprint_req_title">Fingerprint for "Mi Banco"</string>
+    <string name="enrollment_lite_fingerprint_required">Fingerprint is required to use this service.</string>
+    <string name="enrollment_lite_phone_blacklist">Phone number entered is not eligible for this service.</string>
+
+    <string name="easycash_pendingtrx_alert" formatted="false">Want to withdraw your %1$s? \n%2$s</string>
+    <string name="easycash_pendingtrx_alert_yes">Yes, scan</string>
+    <string name="easycash_pendingtrx_alert_no">No, send cash</string>
+    <string name="easycash_pendingtrx_history">History</string>
+
+    <string name="easycash_sent_to">SENT TO %s</string>
+    <string name="easycash_received_from">RECEIVED FROM %s</string>
+    <string name="easycash_expiration_date">Expires: %s</string>
+
+    <string name="ec_filter_all">All</string>
+    <string name="ec_filter_received">Received</string>
+    <string name="ec_filter_sent">Sent</string>
+    <string name="ec_filter_forme">For Me</string>
+
+    <string name="ec_history_not_available">Here you will see your cash withdrawal transactions.</string>
+    \
+    <string name="ec_history_no_trx">There is no pending cash to withdraw.</string>
+    <string name="ec_history_no_trx2">Here you will see your withdrawal transactions.</string>
+
+    <string name="ec_received_from">Received from %s</string>
+    <string name="ec_message_from">Message: %s</string>
+
+    <string name="ec_date_format">"MMMM d, yyyy"</string>
+
+    <string name="cashdrop_history_status_success">Transaction successfully completed.</string>
+    <string name="cashdrop_history_status_expired">Expired transaction.</string>
+    <string name="cashdrop_history_status_exception">Transaction completed. Verify amount dispensed.</string>
+    <string name="cashdrop_history_status_error_sender">Transaction denied.</string>
+    <string name="cashdrop_history_status_error_receiver">Transaction denied. Contact withdrawal sender.</string>
+    <string name="cashdrop_history_status_processing">Waiting for ATM status.</string>
+    <string name="cashdrop_history_status_pending_atm_sender">Please confirm transaction in your account statement.</string>
+    <string name="cashdrop_history_status_pending_atm_receiver">Please contact sender to confirm transaction completion.</string>
+
+    <string name="easycash_unbound">Remove phone number</string>
+    <string name="easycash_unbound_title">Remove phone number %s</string>
+    <string name="easycash_unbound_message">Would you like to disable Mobile Withdrawal?\n\nRemoving your phone number would disable Mobile Withdrawal. To re-enable the service, add your phone number.</string>
+    <string name="easycash_fingerprint_delay">We are completing the security settings for your profile.</string>
+    <string name="easycash_fingerprint_many_attemps">You have exceeded the number of attempts.</string>
+    <string name="easycash_fingerprint_try_later">Please try again later.</string>
+    <string name="easycash_settings_unbound_message">Removing your phone number would disable Mobile Withdrawal. To re-enable the service, add your phone number.</string>
+
+    <string name="easycash_blacklist_sender">We can not process your transaction with the registered phone number.</string>
+    <string name="easycash_blacklist_receiver">We can not process your transaction to the selected phone number.</string>
+    <string name="easycash_blacklist_redeem">We can not process your transaction with the registered phone number.</string>
+
+    <string name="easycash_alerts_phone_yes">Yes</string>
+    <string name="easycash_alerts_phone_no">No</string>
+
+    <string name="easycash_passcode_title">A passcode needs to be configured to use the service.</string>
+    <string name="easycash_passcode_message">You can setup your passcode in: Settings > Security > Screen Lock</string>
+    <string name="easycash_ofac_hit">We cannot provide you with this service. Sorry for the inconvenience.</string>
+
+    <string name="send_cash">Send cash</string>
+
+    <string name="ec_send_cash_alert">Want to send cash?</string>
+    <string name="ec_send_cash_alert_yes">Register to Mi Banco</string>
+    <string name="ec_send_cash_alert_no">Cancel</string>
+
+    <string name="ec_fingerprint_wait_title">You will be able to use the Mobile Withdrawal for others service in %s hours.</string>
+    <string name="ec_fingerprint_wait_minutes_title">You will be able to use the Mobile Withdrawal for others service in %s minutes.</string>
+    <string name="ec_fingerprint_wait_message">You will be able to use the Mobile Withdrawal for others service in a few minutes.</string>
+
+    <string name="fingerprint_disable_message">Please log in and access Settings from the menu to disable fingerprint authentication.</string>
+    <string name="ec_alert_selfsend_not_allowed">Please choose a different phone number.</string>
+
+    <string name="on_off">ON / OFF</string>
+    <string name="on_off_indicator">OFF</string>
+    <string name="on_off_toggle_on">ON</string>
+    <string name="on_off_accept">Accept</string>
+    <string name="on_off_desc">Take control of your International ATH&#174; Visa. Turn it off temporarily to avoid unauthorized use by tapping the ON/OFF button. You may, however, continue to make transactions that do not require a card. &#185;
+        </string>
+    <string name="on_off_description_2">&#185;Automatic deposits and recurring or pre-authorized payments will not be affected. Also, you will be able to withdraw at ATMs through Mobile Withdrawal and/or deposit using Easy Deposit Mobile even if your card is turned OFF.
+        Both services are available in Mi Banco Mobile app.</string>
+    <string name="on_off_description_3">\nIf you have lost your card, call +1&#8209;787&#8209;724&#8209;3659 or +1&#8209;888&#8209;724&#8209;3659 to cancel it.\n</string>
+    <string name="on_off_plastics">CARDS</string>
+    <string name="on_off_change_onstatus_title">Do you want to turn this card ON?</string>
+    <string name="on_off_change_status_title">Do you want to turn this card OFF?</string>
+    <string name="on_off_change_onstatus_desc">Once you turn it on, you\’ll be able to make purchases or withdrawals with your International ATH&#174; Visa debit card again.</string>
+    <string name="on_off_change_status_desc">Once you turn it off, you won\'t be able to make purchases or withdrawals with your International ATH&#174; Visa debit card until you turn it back on.</string>
+    <string name="on_off_toggle_desc">Tap your card\nto turn it ON.</string>
+    <string name="on_off_faq">https://helpcenter.popular.com/?tag=faq-on-off&amp;lang=en</string>
+    <string name="on_off_plasticimage_header_desc">Plastic Image View</string>
+    <string name="on_off_error_plastics">Lo sentimos, hubo un error al buscar sus tarjetas</string>
+    <string name="onoff_toggle_on_error_message">Oops! Your card could not be turned ON, please try again later.</string>
+    <string name="onoff_toggle_off_error_message">Oops! Your card could not be turned OFF, please try again later.</string>
+    <string name="on_off_last_date_off">Date Turned OFF: </string>
+    <string name="on_off_last_transaction">Last Transaction: </string>
+    <string name="onoff_oops_title">Oops!</string>
+
+    <!-- Custom Login Image -->
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="edit_your_image">Edit Photo</string>
+    <string name="custom_image_personalize">Personalize your photo</string>
+    <string name="custom_image_choose_photo">Choose Photo</string>
+    <string name="remove_image_toast">The photo was successfully removed.</string>
+
+    <!-- DFM MBC -->
+    <string name="accept_terms_title">Terms</string>
+    <string name="accept_terms_description">I accept the Terms and Conditions of the Mobile Easy Deposit Service and the charges (%s) that I will receive to my account, as well as all communication related to my accounts electronically.</string>
+    <string name="accept_terms_terms">Show all Terms and Conditions</string>
+    <string name="accept_terms_accept">Accept and Continue</string>
+    <string name="accept_terms_cancel_url">https://www.bancopopular.com/cibp-web/actions/login</string>
+    <string name="accept_terms_nocharge_description">Save time with \n Mobile Easy Deposit!</string>
+    <string name="accept_terms_nocharge_description2">Deposit limit up to $25,000 per day, up to $50,000 per month.</string>
+    <string name="accept_terms_nocharge_description3">Deposit up to 20 checks per day, 50 per month.</string>
+    <string name="accept_terms_nocharge_trerms">See all the &#60;a href&#61;&#34;https://documents.popular.com/terms/mibanco/terms-conditions-en&#34;&#62;Terms and Conditions&#60;/a&#62;</string>
+    <string name="accept_terms_nocherge_title">Learn about Mobile Easy Deposit</string>
+
+    <!-- Tsys Loyalty Rewards -->
+    <string name="tsys_loyalty_rewards_description">Rewards:&#160;</string>
+    <string name="tsys_loyalty_rewards_no_balance_placeholder">N/A</string>
+    <string name="tsys_loyalty_rewards_customer_service_error_message">At this time you can’t redeem, please call Customer Service at 787-758-0505.</string>
+    <string name="tsys_loyalty_rewards_account_selection_title">How would you like to redeem?</string>
+    <string name="tsys_loyalty_rewards_statement_credit_redemption_title">Statement Credit</string>
+    <string name="tsys_loyalty_rewards_account_deposit_redemption_title">Account Deposit</string>
+    <string name="tsys_loyalty_rewards_account_deposit_redemption_select">Select an account</string>
+    <string name="tsys_loyalty_rewards_statement_credit_disclaimer"><b>Important:</b> The statement credit reduces your balance due, but you still need to make the minimum payment. </string>
+    <string name="tsys_loyalty_rewards_frequent_redemption_type">Frequent Redemption</string>
+    <string name="tsys_loyalty_rewards_one_time_redemption_type">One Time</string>
+    <string name="tsys_loyalty_rewards_automatic_redemption_type">Automatic</string>
+    <string name="tsys_loyalty_rewards_amount_title">Select the Amount</string>
+    <string name="tsys_loyalty_rewards_amount_disclaimer">The amount to be inserted must range between $10.00 and </string>
+    <string name="tsys_loyalty_rewards_min_amount_error_message">The minimum amount to redeem your Cash Rewards is $10.00</string>
+    <string name="tsys_loyalty_rewards_minimum_balance_error_message">The minimum amount to redeem your Cash Rewards is $10.00</string>
+    <string name="tsys_loyalty_rewards_max_amount_title">The amount entered exceeded</string>
+    <string name="tsys_loyalty_rewards_max_amount">The amount entered is greater than the available amount to redeem</string>
+    <string name="tsys_set">Continue</string>
+    <string name="tsys_terms_and_conditions">Accept all <a style="text-decoration:none" href="https://www.popular.com/en/cards/cash-rewards/terms/">Terms and Conditions</a></string>
+    <string name="tsys_loyalty_rewards_confirmation_title">Amount:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_date">Redemption Date:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_deposit">Deposit to:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type">Redemption Type:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type_statement_credit">Statement Credit</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type_account_deposit">Account Deposit</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information">Verify the amount to redeem, the redemption type, the account and the desired date of the transaction.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information1">-All redemption requests are final.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information2">-Your Account deposit or statement credit redemption may take up to 5 business days to post to your account.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information3">-Statement credits will reduce your balance, but you are still required to make at least your minimum payment.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_edit">Edit</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_continue">Confirm and Redeem</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_title">Redemption</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_title">The request to redeem your Cash Rewards was completed!</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_message">Thank you! You will receive evidence of this transaction by email.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_return">Return to My Accounts</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_return">Return</string>
+    <string name="tsys_loyalty_rewards_confirmation_number">Receipt Number: </string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_title">We are sorry, the request to redeem your Cash Rewards could not be processed.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_message">Please try again later or contact our Customer Service Center at 787-758-0505/1-800-981-9505.</string>
+
+    <!-- Automatic Redemption -->
+    <string name="title_automatic_redemption">Automatic Redemption</string>
+
+
+    <!-- Notification Center -->
+    <string name="notification_center">Notification Center</string>
+    <string name="notification_center_text">You have a new message</string>
+
+    <!-- Push Welcome Screens -->
+    <string name="push_welcome_splash_cancel">Skip</string>
+    <string name="push_welcome_splash_title">Configure your alerts</string>
+    <string name="push_welcome_splash_text">NEW:  Now you can monitor your purchases and accounts receiving push notification alerts instead of text messages. Activate now! </string>
+    <string name="push_welcome_splash_text_SMS">NEW: Now you can monitor your purchases and accounts receiving push notification alerts on your phone. Activate now!</string>
+    <string name="push_welcome_splash_accept">Confirm</string>
+    <string name="push_welcome_splash_accept_SMS">Continue</string>
+    <string name="push_welcome_splash_decline">Not Now</string>
+
+    <!--Activation Deactivation Automatic Redemption-->
+    <string name="activation_automatic_redemption_title">Automatic Redemption Active</string>
+    <string name="deactivation_automatic_redemption_title">Activate Automatic Redemption</string>
+    <string name="activation_automatic_redemption_text">Currently you have active your Cash Rewards  automatic redemption service. If you have accumulated more than $10.00, it will be processed at the end of your statement date.</string>
+    <string name="deactivation_automatic_redemption_bullet_one">\u2022 The automatic redemption is only available for Statement Credit.</string>
+    <string name="deactivation_automatic_redemption_bullet_two">\n\n\u2022 The minimum amount needed to redeem is $10.00 which will take place at the end of your statement date.</string>
+    <string name="deactivation_automatic_redemption_bullet_three">\n\n\u2022 The statement credit reduces your balance due, but you still need to make the minimum payment.</string>
+    <string name="deactivation_automatic_redemption_bullet_four">\n\n\u2022 You can deactivate the Automatic Redemption functionality anytime.</string>
+    <string name="activation_automatic_redemption_question">Do you want to pause this action?</string>
+    <string name="activation_automatic_redemption_button_continue">No, continue</string>
+    <string name="deactivation_automatic_redemption_button_activate">Activate</string>
+    <string name="activation_automatic_redemption_button_pause">Yes, pause</string>
+    <string name="automatic_redemption_close_title">Close</string>
+    <string name="activation_automatic_redemption_success_title">The Automatic Redemption Activation was completed!</string>
+    <string name="activation_automatic_redemption_success_message">Thank you! You will receive evidence of this transaction by email.</string>
+    <string name="activation_automatic_redemption_success_return">Return To My Accounts</string>
+    <string name="activation_automatic_redemption_unsuccess_return">Return To My Accounts</string>
+    <string name="activation_automatic_redemption_unsuccess_title">We are sorry, there was a problem activating the Automatic Redemption.</string>
+    <string name="activation_automatic_redemption_unsuccess_message">Please, try again later or contact our Customer Service Center at 787-758-0505/ 1-800-981-9505.</string>
+    <string name="deactivation_automatic_redemption_success_title">The Automatic Redemption Deactivation was completed!</string>
+    <string name="deactivation_automatic_redemption_success_message">Thank you! You will receive evidence of this transaction by email.</string>
+    <string name="deactivation_automatic_redemption_success_return">Return To My Accounts</string>
+    <string name="deactivation_automatic_redemption_unsuccess_return">Return To My Accounts</string>
+    <string name="deactivation_automatic_redemption_unsuccess_title">We are sorry, there was a problem deactivating the Automatic Redemption.</string>
+    <string name="deactivation_automatic_redemption_unsuccess_message">Please, try again later or contact our Customer Service Center at 787-758-0505/ 1-800-981-9505.</string>
+
+
+    <!--MBCC Marketplace-->
+    <string name="marketplace_banner_desc">Open an account or apply for a credit card</string>
+    <string name="marketplace_terms_button">Accept and Continue</string>
+    <string name="marketplace_pr_url">https://www.popular.com/en/cards/personal?header=0&amp;footer=0&amp;help=0&amp;related=0&amp;phone=0&amp;hero=0&amp;lang_redirect=0</string>
+    <string name="marketplace_vi_url">https://www.popular.vi/cards/credit-cards?header=0&amp;footer=0&amp;help=0&amp;related=0&amp;phone=0&amp;hero=0&amp;lang_redirect=0</string>
+    <string name="marketplace_credit_card_title">Credit Cards</string>
+    <string name="marketplace_credit_card_subtitle">Find the perfect credit card for you</string>
+    <string name="marketplace_credit_card_button">View All</string>
+    <string name="marketplace_eaccount_title">e-account</string>
+    <string name="marketplace_eaccount_subtitle">The only 100% online checking account in Puerto Rico</string>
+    <string name="marketplace_eaccount_usvi_subtitle">A checking account that is 100% online</string>
+    <string name="marketplace_eaccount_button">Open Now</string>
+
+    <!--Otp Authentication-->
+    <string name="otp_resend_code">Resend code</string>
+    <string name="otp_code_limit">Code (6 digits)</string>
+    <string name="otp_code_sent_message">We have sent you a verification code to your registered email</string>
+    <string name="otp_incorrect_code_sent_message">Incorrect Code.</string>
+    <string name="otp_incorrect_code">Incorrect Code</string>
+    <string name="otp_resend_code_msj">New Code Sent</string>
+    <string name="otp_verification_code">Verification Code</string>
+    <string name="otp_expired_code">Expired Code</string>
+    <string name="otp_generic_error">We could not process your request right now. Please try again later</string>
+    <string name="otp_incorrect_code_text">Try again or request a new one</string>
+    <string name="otp_expired_code_text">Request a new one in \"Resend Code\"</string>
+
+
+    <!-- PREMIA CATALOG -->
+    <string name="premia_account_subtype">PRM</string>
+    <string name="please_wait_premia_catalog">You are leaving Banco Popular de Puerto Rico’s website to be redirected to premia.com website, owned by Popular, Inc. and operated by a third party under Banco Popular of Puerto Rico’s privacy policies and security practices.</string>
+    <string name="premia_no_balance_placeholder">N/A</string>
+
+    <!--Maintenance with Balances-->
+    <string name="maintenance_balances_footer">Balance may not reflect transactions in process.</string>
+    <string name="maintenance_balances_view_balances">View balances</string>
+    <string name="maintenance_balances_hide_balances">Hide balances</string>
+    <string name="maintenance_balances_today_at">&#160;Today at&#160;</string>
+    <string name="maintenance_balances_high_volume_title">We are experiencing an extraordinary volume of visits to Mi Banco.</string>
+    <string name="maintenance_balances_sub">Please try again later and enjoy the benefits offered by the application. Sorry for the inconvenience.</string>
+    <string name="maintenance_balances_maintenance_title">Mi Banco Mobile is currently unavailable.</string>
+
+    <!-- ACCOUNTS ACTION DISABLED -->
+    <string-array name="accounts_action_disabled">
+        <item>RVA</item>
+        <item>CDA</item>
+    </string-array>
+
+    <string name="account_pending_enroll_title">Request in progress, come back later.</string>
+    <string name="account_pending_enroll">You can reach us at 787-294-2578 or 1-888-724-3655 option #3</string>
+
+    <string name="permission_info_description">Mi Banco Mobile will only request permissions and necessary personal data for the use of the application. It’s important that you know how we collect and use your data and how you can control or restrict it.
+        Popular uses this information to provide a better user experience, improve our services and protect your information. Some of the permissions and data we request include:</string>
+    <string name="permission_info_phone_title">Phone permissions:</string>
+    <string name="permission_info_storage_title">Media and Storage permissions:</string>
+    <string name="permission_info_contact_title">Contact permissions:</string>
+    <string name="permission_info_notification_title">Notification permissions:</string>
+    <string name="permission_info_phone_description">Offer and improve customer experience and for security purposes. We also use your phone number in the following services: 2 Step Verification, Mi Banco Alerts and for sending and receiving cash with Mobile Withdrawal.</string>
+    <string name="permission_info_storage_description">Improve customer experience, personalization, and receipt storage.</string>
+    <string name="permission_info_contact_description">Facilitate sending cash to your contacts with Mobile Withdrawal.</string>
+    <string name="permission_info_notification_description">Receive push notifications from our app, including Mi Banco Alerts service.</string>
+    <string name="permission_info_policy">Access our &lt;a href=https://www.popular.com/en/privacy/>Privacy Policy&lt;/a> to learn how we protect your personal information.</string>
+    <string name="permission_info_post_policy">The application permissions will be found when accepting this information and you must accept each one to continue using Mi Banco Mobile.</string>
+    <string name="permission_info_button">AGREE</string>
+    <string name="permission_info_button_cancel">CANCEL</string>
+    <string name="privacy_policy"><a href="https://www.popular.com/en/privacy/">Privacy Policy</a></string>
+
+    <!-- REQUEST DOCUMENTS -->
+    <string name="url_request_documents">https://www.popular.com/en/services/online-document-request/?mobile=1</string>
+
+    <!-- MENU NAVIATION BUTTOM -->
+    <string name="menu_nav_accounts">Accounts</string>
+    <string name="menu_nav_payments">Payments</string>
+    <string name="menu_nav_transfers">Transfers</string>
+    <string name="menu_nav_ath_movil">ATH Móvil</string>
+    <string name="menu_nav_more">More</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

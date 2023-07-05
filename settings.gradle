@@ -1,0 +1,1 @@
+include ':spinner-extended', ':mi-banco', 'view-pager-indicator'

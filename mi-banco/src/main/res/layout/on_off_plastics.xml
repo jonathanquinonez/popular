@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="235dp">
+
+        <RelativeLayout
+            android:id="@+id/onoff_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:clipChildren="false">
+
+            <ImageView
+                android:id="@+id/onoff_plastic_image"
+                style="@style/OnOffCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/on_off_plasticimage_header_desc" />
+
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/OnOffCardEmbossedDetails"
+                android:layout_alignBottom="@+id/onoff_plastic_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="40dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/item_comment"
+                style="@style/OnOffCardEmbossedDetails"
+                android:layout_alignBottom="@+id/onoff_plastic_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/onoff_overlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/rounded_overlay"
+            android:radius="2dp"
+            android:visibility="gone">
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/date_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/grey" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/switchOnOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/onoff_card_view"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:textSize="10sp"
+            app:kswBackColor="@color/switch_red"
+            app:kswTextAdjust="-2sp"
+            app:kswTextExtra="8sp"
+            app:kswTextOff="@string/on_off_indicator"
+            app:kswTextOn="@string/on_off_toggle_on"
+            app:kswThumbDrawable="@drawable/onoff_toggle_off"
+            app:kswThumbMargin="-7sp" />
+
+        <TextView
+            android:id="@+id/toggle_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/switchOnOff"
+            android:layout_alignStart="@+id/onoff_card_view"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/on_off_toggle_desc"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <LinearLayout style="@style/AccountsSectionBottomLine" />
+
+</LinearLayout>

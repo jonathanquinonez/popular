@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "1037797805577",
+    "firebase_url": "https://popular-ios-app.firebaseio.com",
+    "project_id": "popular-ios-app",
+    "storage_bucket": "popular-ios-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037797805577:android:f4ba5fd328f93845",
+        "android_client_info": {
+          "package_name": "com.popular.android.mibanco"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037797805577-4luf0dul8u2tpn79dquv6nsl59kfbr14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037797805577:android:270522ccd0a787a3",
+        "android_client_info": {
+          "package_name": "com.popular.android.mibanco.cert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037797805577-4luf0dul8u2tpn79dquv6nsl59kfbr14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037797805577:android:7d276c2e6ad1d17b",
+        "android_client_info": {
+          "package_name": "com.popular.android.mibanco.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037797805577-4luf0dul8u2tpn79dquv6nsl59kfbr14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037797805577:android:1f2b67f7e30f2ddf",
+        "android_client_info": {
+          "package_name": "com.popular.android.mibanco.pilot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1037797805577-4luf0dul8u2tpn79dquv6nsl59kfbr14.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

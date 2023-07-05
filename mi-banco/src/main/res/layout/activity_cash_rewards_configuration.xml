@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.popular.android.mibanco.activity.CashRewardsConfiguration">
+
+    <include layout="@layout/account_details_top_section" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout style="@style/TsysLoyaltyRewardsLinear">
+
+            <TextView
+                android:id="@+id/tsys_loyalty_rewards_account_title"
+                style="@style/TsysLoyaltyRewardsRedemptionTitle"
+                android:text="@string/tsys_loyalty_rewards_account_selection_title"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                style="@style/HeaderSeparator"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:id="@+id/account_deposit"
+                style="@style/TsysLoyaltyRewardsRedemptionBox"
+                android:paddingBottom="12dp"
+                android:visibility="gone"
+                android:layout_marginBottom="30dp">
+
+                <TextView
+                    style="@style/TsysLoyaltyRewardsRedemptionText"
+                    android:text="@string/tsys_loyalty_rewards_account_deposit_redemption_title"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/select_acct_deposit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/btn_border">
+
+                    <ImageView
+                        android:id="@+id/acct_deposit_image"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp" />
+
+                    <TextView
+                        android:id="@+id/txt_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"
+                        android:textStyle="bold"
+                        android:text="@string/tsys_loyalty_rewards_account_deposit_redemption_select" />
+
+                    <TextView
+                        android:id="@+id/acct_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/acct_deposit_image"
+                        android:layout_alignTop="@id/acct_deposit_image"
+                        android:textSize="15sp"
+                        android:layout_marginStart="20dp"
+                       android:textStyle="bold"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/acct_deposit_last4"
+                        android:layout_alignStart="@+id/acct_deposit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/acct_deposit"
+                        android:textColor="@color/grey_light"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/statement_credit"
+                style="@style/TsysLoyaltyRewardsRedemptionBox">
+
+                <LinearLayout style="@style/TsysLoyaltyRewardsRedemptionLayout">
+
+                    <TextView
+                        style="@style/TsysLoyaltyRewardsRedemptionText"
+                        android:text="@string/tsys_loyalty_rewards_statement_credit_redemption_title"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cash_rewards_last4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="top|end"
+                        android:paddingStart="1dp"
+                        android:paddingTop="1dp"
+                        android:paddingEnd="0dp"
+                        android:textAlignment="gravity" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tsys_loyalty_rewards_statement_credit_disclaimer" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TsysLoyaltyRewardsRedemptionTitle"
+                android:text="@string/tsys_loyalty_rewards_amount_title"
+                android:textAllCaps="true" />
+
+            <LinearLayout
+                style="@style/HeaderSeparator"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/grey_light"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:id="@+id/amount_button"
+                style="@style/PaymentsAmountButtonBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/zero_amount"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HeaderSeparator"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey_light" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/check_tsys_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:checked="false"
+                    android:text="@string/tsys_terms_and_conditions" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/set_button"
+                style="@style/TsysLoyaltyRewardsRedemptionDisabledConfigurationBtn"
+                android:text="@string/tsys_set" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

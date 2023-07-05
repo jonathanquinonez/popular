@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearOtherUsername"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="visible" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:shrinkColumns="0">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textHeaderOtherUsername"
+                    style="@style/HeaderText"
+                    android:text="@string/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    />
+                <TextView
+                    android:id="@+id/privacy_policy_textview_other_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="@string/privacy_policy"
+                    android:textColorLink="@color/campaign_text_color"
+                    android:textStyle="bold"
+                    android:layout_gravity="right"
+                    />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+        <EditText
+            android:id="@+id/editOtherUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="@string/enter_username"
+            android:inputType="textNoSuggestions"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_light" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="10" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:gravity="left|center_vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/remember_username"
+                    android:textColor="@color/grey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="right|center_vertical" >
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/switchRememberOtherUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/SwitchStyle"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/Button.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/login"
+                android:theme="@style/Button.Green" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

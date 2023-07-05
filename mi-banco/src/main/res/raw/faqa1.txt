@@ -1,0 +1,23 @@
+
+For those on the go: an improved Mi Banco Mobile user experience customized for Android users. 
+Available for all Banco Popular customers enrolled in Mi Banco Online.
+
+Enroll now at www.popular.com
+
+FEATURES
+• 24/7 access to your accounts and balances
+• See your account activity including transactions from last 18 months
+• View and pay your e-Bills and bills.
+• Make transfers from your various accounts.
+• Remember amounts
+• Calendar display for e-Bills and scheduled payments
+• Save receipts
+• Locator | Find ATMs and branches nearby
+• Contact us for support
+
+
+Currently the following operating systems support Mi Banco Móvil for Android: 
+• Android Froyo 2.2
+• Android gingerbread 2.3 
+• Android Honeycomb 3.0
+• Android Ice Cream Sandwich 4.0

@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- DATA STRINGS -->
+    <!--<string name="app_name">MiBanco</string>-->
+    <string name="locator_url">https://locator.popular.com/?lang=es</string>
+    <string name="privacy_policy_url">https://www.popular.com/privacidad#GA=BPPR_Privacy</string>
+    <string name="not_available_url">https://mobile.bancopopular.com/cibp-web/actions/mobileSwitch?target=login&amp;version=classic&amp;lang=en</string>
+    <string name="account_blocked_regain_access_url">https://mobile.bancopopular.com/cibp-web/actions/mobileSwitch?target=resetpassword&amp;version=classic&amp;lang=en</string>
+    <!-- Deposito Facil Movil -->
+    <string name="remote_deposit_instructions_url" tools:ignore="Typos">https://apps.popular.com/mobile/deposito-facil/ESP.html</string>
+    <string name="base_remote_deposit_instructions_url">https://apps.popular.com/mobile/deposito-facil.php?t=%1$s&amp;l=es</string>
+    <!-- Deposito Facil Movil -->
+    <string name="athm_website_url">https://www.athmovil.com</string>
+    <string name="athm_forgot_password_url">https://www.athmovil.com/web/forgotPassword.htm?language=es</string>
+    <string name="athm_terms_and_conditions_url" tools:ignore="Typos">https://apps.popular.com/mobile/terms/ath-movil/es.html</string>
+    <string name="athm_institutions_url" tools:ignore="Typos">https://apps.popular.com/mobile/ath-movil/participantes-es.html</string>
+    <!--<string name="google_app_id">1:1037797805577:android:f4ba5fd328f93845</string> -->
+    <string name="help_section_url">https://helpcenter.popular.com/?p=590</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_fallback_notification_channel</string>
+
+    <!-- COMMON PHRASES -->
+    <string name="save">Almacenar</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="continue_phrase">Continuar</string>
+    <string name="welcome">¡HOLA!</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+    <string name="please_wait">Procesando…</string>
+    <string name="english">English</string>
+    <string name="espanol">Español</string>
+    <string name="today">hoy</string>
+    <string name="logout_app">¿Terminar sesión?</string>
+    <string name="title_exit">Cerrar</string>
+    <string name="zero_amount">$0.00</string>
+    <string name="title_logout_app">Salir</string>
+    <string name="logging_out">Desconectando…</string>
+    <string name="not_available">N/A</string>
+    <string name="confirm">Confirmar</string>
+
+    <!-- LOCATOR -->
+    <string name="locator">Localizador</string>
+    <string name="atm">ATM</string>
+    <string name="branches_tab">Sucursales</string>
+    <string name="branch">SUCURSAL</string>
+    <string name="map">Mapa</string>
+    <string name="my_location_error">Ocurrió un error al intentar ubicarte.</string>
+    <string name="my_location_permission">Favor de aceptar el permiso de localización.</string>
+    <string name="try_locate">Estableciendo localización…</string>
+    <string name="guide_me">Dirígeme</string>
+    <string name="locating">Ubicando…</string>
+    <string name="locator_services_unavailable">Habilita el servicio de localización para poder ubicarte.</string>
+    <string name="location_unavailable">Ubicación no disponible.</string>
+    <string name="branch_singular">Sucursal</string>
+    <string name="branch_plural">Sucursales</string>
+    <string name="atm_singular">ATM</string>
+    <string name="atm_plural">ATMs</string>
+    <string name="and">y</string>
+    <string name="miles_away">miles away</string>
+    <string name="miles">miles</string>
+    <string name="current_location">Ubicación actual</string>
+
+    <!-- LOGIN -->
+    <string name="remember_username">Recordar usuario</string>
+    <string name="remember_device">Recuerda este dispositivo</string>
+    <string name="enter_password">Entrar contraseña</string>
+    <string name="submit">Enviar</string>
+    <string name="login">Entrar</string>
+    <string name="select_username">Nombre de usuario</string>
+    <string name="enter_username">Usuario</string>
+    <string name="username">Entrar nombre de usuario</string>
+    <string name="other_username">+ Entrar otro nombre</string>
+    <string name="other_username_header">Entrar otro nombre</string>
+    <string name="answer">Contestación</string>
+    <string name="logout">Salir</string>
+    <string name="enter_valid_username">Nombre de usuario inválido</string>
+    <string name="enter_answer">Contestación incorrecta</string>
+    <string name="enter_valid_answer">Contestación incorrecta</string>
+    <string name="enter_valid_password">La contraseña es inválida\n\nRecuerda que tu contraseña puede contener:\n\n&#8226; Letras mayúsculas\n&#8226; Números\n&#8226; Caracteres especiales</string>
+    <string name="title_security_question">Pregunta</string>
+    <string name="security_question">Contestación a pregunta de seguridad</string>
+
+    <!-- USER MANAGEMENT -->
+    <string name="no_more_users">No hay usuarios guardados</string>
+    <string name="confirm_delete_user">¿Deseas borrar este nombre de usuario?</string>
+    <string name="forget_user">Olvidar</string>
+
+    <!-- EBILLS -->
+    <string name="ebills">e-Bills</string>
+    <string name="ebill_date">Fecha</string>
+    <string name="ebill_due_date">vence</string>
+    <string name="ebills_choose_amount_text" formatted="false">%s tiene un pago mínimo de %s. Balance adeudado es %s.</string>
+    <string name="ebills_pay">Pagar %s</string>
+    <string name="ebills_header">EBILLS</string>
+
+    <!-- PAYMENTS AND TRANSFERS -->
+    <string name="deposit">Depositar</string>
+    <string name="pay">Pagar</string>
+    <string name="payment_verb">Hacer pago</string>
+    <string name="transfer_verb">Transferir</string>
+    <string name="transfer_verb_button">Hacer transferencia</string>
+    <string name="from">De</string>
+    <string name="from_colon">De:</string>
+    <string name="to">A</string>
+    <string name="to_colon">A:</string>
+    <string name="on">El</string>
+    <string name="payment_processed">Pago procesado</string>
+    <string name="pay_now">Pagar ahora</string>
+    <string name="transfer_now">Transferir ahora</string>
+    <string name="schedule_payment">Efectuar pago</string>
+    <string name="schedule_transfer">Efectuar transferencia</string>
+    <string name="on_payment">el\u0020</string>
+    <string name="transfer_processed">Transferencia procesada</string>
+    <string name="your_receipt_nr_is">Número de referencia:</string>
+    <string name="from_title">DE</string>
+    <string name="to_title">A</string>
+    <string name="amount">Cantidad</string>
+    <string name="amount_colon">Cantidad:</string>
+    <string name="amount_title">CANTIDAD</string>
+    <string name="date">Fecha:</string>
+    <string name="confirm_your_payment">Confirma tu pago</string>
+    <string name="confirm_your_transfer">Confirma tu transferencia</string>
+    <string name="close">Cerrar</string>
+    <string name="save_to_gallery">¿Guardar a galeria fotos?</string>
+    <string name="receipt">recibo</string>
+    <string name="transfer_noun">transferencia</string>
+    <string name="payment_noun">pago</string>
+    <string name="rdc_noun">depósito fácil</string>
+    <string name="refreshing_balances">Actualizando balances…</string>
+    <string name="loading_payments">Actualizando pagos…</string>
+    <string name="loading_transfers">Actualizando transferencias…</string>
+    <string name="processing_transaction">Procesando…</string>
+    <string name="transfer_future">Transferir en \u0020</string>
+    <string name="payment_future">Pagar en \u0020</string>
+    <string name="last_payment">Último pago procesado:\n %1$s\u0020 \u0020%2$s</string>
+    <string name="pay_see_more">Ver más</string>
+    <string name="pay_instant"><b>Pago al Instante</b></string>
+    <string name="description_pay_instant">No podrá ser borrado o editado.</string>
+
+    <!-- CALENDAR -->
+    <string name="calendar_title">Fecha</string>
+
+    <!-- ACCOUNTS -->
+    <string name="account_home">home</string>
+    <string name="details">Detalles de la cuenta</string>
+    <string name="account_list_cca_type">TARJETAS DE CRÉDITO</string>
+    <string name="account_list_ida_type">CUENTAS DE DEPÓSITO</string>
+    <string name="account_list_ila_type">PRESTAMOS</string>
+    <string name="account_list_mla_type">HIPOTECA</string>
+    <string name="account_list_cda_type">CDS / IRAS</string>
+    <string name="account_list_other_type">OTRAS CUENTAS</string>
+    <string name="account_list_rewards_type">PROGRAMA DE OFERTAS</string>
+    <string name="account_list_secins_type">SEGUROS / INVERSIONES</string>
+    <string name="account_list_retplan_type">PLANES DE RETIRO</string>
+    <string name="account_list_retplan_new_alert">NUEVO</string>
+    <string name="account_list_retplan_csr_downtimes_text">Balance no disponible. Para más información por favor visite <a href= "http://popular.com/401k/">popular.com/401k</a></string>
+    <string name="accounts_notice">Gira el móvil y personaliza tu cuenta.</string>
+    <string name="accounts_item_footer_more">Más…</string>
+    <string name="retplan_preview_terms_and_conditions">Estás saliendo de la aplicación de Popular y entrando a un sitio web de un tercero (en adelante “Sitio Web Vinculado”).\u0020</string>
+    <string name="retplan_full_terms_and_conditions">Al presionar tu cuenta de retiro, reconoces y aceptas que (i) has autorizado a Banco Popular de Puerto Rico y/o a su compañía matriz, Popular, Inc. (en conjunto, “Popular”), a mostrar en Mi Banco cierta información relacionada a tu Plan de Retiro ofrecido por tu patrocinador/patrono; y (ii) estás de acuerdo en que la información se muestre en Mi Banco de forma continua.
+                \n\nAdemás, reconoces y entiendes que la política de privacidad y las prácticas de seguridad del Sitio Web Vinculado podrían ser distintas a las de Popular. Para mayor información, debes referirte a las divulgaciones de privacidad del Sitio Web Vinculado.
+                \n\nPopular no es responsable de producto, servicio o contenido alguno disponible en el Sitio Web Vinculado, y no garantiza que la información provista en el Sitio Web Vinculado sea correcta, completa, o actualizada. Popular niega expresamente toda responsabilidad por daños de cualquier tipo por el uso de, referencia a, o confianza en cualquier información contenida en el Sitio Web Vinculado.</string>
+    <string name="account_title_btn_mobile_withdrawal">Retiro móvil</string>
+    <string name="account_title_btn_easy_deposit">Depósito Fácil</string>
+
+
+    <!-- ENTER/SAVE AMOUNT -->
+    <string name="remember_amount">Recordar cantidad</string>
+    <string name="name_current_amount">Nombra cantidad</string>
+    <string name="enter_amount">Entrar Cantidad</string>
+    <string name="my_amounts">Mis cantidades</string>
+    <string name="amount_saved">Cantidad guardada</string>
+    <string name="amount_cant_be_saved">Cantidad no pudo se guardar</string>
+    <string name="amount_exists">Nombre de la cantidad ya está en uso. ¿Actualiza el valor?</string>
+    <string name="amount_removed">Cantidad borrada</string>
+    <string name="amount_cant_be_removed">Cantidad no se pudo borrar</string>
+    <string name="set">OK</string>
+    <string name="select_amount">Selecciona cantidad</string>
+    <string name="select">Selecciona</string>
+    <string name="double_zero">00</string>
+
+    <!-- STATEMENTS -->
+    <string name="debit">Débito</string>
+    <string name="credit">Crédito</string>
+    <string name="all">Todas</string>
+    <string name="select_statement_to">a\u0020</string>
+    <string name="nothing_to_display">No hay transacciones en este estado</string>
+    <string name="nothing_to_display_non_trans">No hay transacciones</string>
+    <string name="select_statement">Selecciona estado de cuenta</string>
+    <string name="current_statement">Estado Corriente</string>
+    <string name="transactions">Transacciones</string>
+    <string name="statement_date_range" formatted="false">%s a %s</string>
+    <string name="statement_in_process">En proceso</string>
+    <string name="see_more_transactions">Ver más transacciones</string>
+    <string name="statement_in_process_caps">EN PROCESO</string>
+    <string name="no_statements">No hay estados disponibles</string>
+    <string name="mortgage_disclaimer">Las cantidades y transacciones pueden reflejar cargos por atraso.</string>
+
+    <!-- LANGUAGE SWITCH -->
+    <string name="choose_language_restart_needed">Escoge idioma (requiere reinicio)</string>
+    <string name="ask_restart">¿Deseas reanudar la aplicación?</string>
+
+    <!-- CALL BACK -->
+    <string name="unblock_local_phone_number">787‒724‒3655</string>
+    <string name="unblock_toll_free_phone_number">1–888–724–3655</string>
+
+    <!-- COVER FLOW -->
+    <string name="coverflow_rotate_info">Rota tu teléfono para dejar la galería.</string>
+    <string name="coverflow_hidden_card_numbers" tools:ignore="Typos">XXXX XXXX XXXX\u0020</string>
+    <string name="coverflow_align_photo">Acomoda tu foto en la tarjeta</string>
+    <string name="coverflow_take_photo">Tomar foto</string>
+    <string name="coverflow_use_default">Eliminar foto</string>
+    <string name="coverflow_my_photos">Escoger foto</string>
+    <string name="coverflow_personalize_account">Personaliza tu cuenta</string>
+
+    <!-- SETTINGS LIST -->
+    <string name="title_settings">Ajustes</string>
+    <string name="manage_users">Manejar usuarios</string>
+    <string name="language">Idioma</string>
+    <string name="email_change">Editar e-mail</string>
+    <string name="settings_fingerprint_auth">Autenticación por huella dactilar</string>
+    <string name="cookies_preference_settings">Configuración de Privacidad</string>
+    <string name="about">Nosotros</string>
+    <string name="faq">Preguntas frecuentes</string>
+    <string name="fraud_prevention">Prevención de fraude</string>
+    <string name="terms">Términos</string>
+    <string name="policy">Política de privacidad</string>
+    <string name="faq1_title">¿Qué puedo hacer con esta aplicación?</string>
+    <string name="faq2_title">¿Cómo te protegemos?</string>
+    <string name="alerts_tab">Alertas</string>
+    <string name="push_disabled_warning">Las alertas con notificaciones push están desactivadas en los ajustes de tu dispositivo.</string>
+    <string name="go_to_push_settings">ir a ajustes</string>
+    <string name="push_notifications">Notificaciones Push</string>
+
+    <!-- CONTACT INFORMATION -->
+    <string name="contactus">Contacto</string>
+    <string-array name="contacts">
+        <item>@array/contact_telebanco</item>
+        <item>@array/contact_internet_help_desk</item>
+        <item>@array/contact_popular_mortgage</item>
+        <item>@array/contact_popular_auto</item>
+        <item>@array/contact_insurance_center</item>
+        <item>@array/contact_investments</item>
+        <item>@array/contact_popular_one</item>
+    </string-array>
+    <string-array name="contact_telebanco">
+        <item name="header">Telebanco Popular</item>
+        <item name="email" />
+        <item>Puerto Rico</item>
+        <item>(787) 724–3650</item>
+        <item>Estados Unidos / Islas Vírgenes</item>
+        <item>1 (888) 724–3650</item>
+    </string-array>
+    <string-array name="contact_internet_help_desk">
+        <item name="header">Grupo de Apoyo de Banca por internet</item>
+        <item name="email">internet@bppr.com</item>
+        <item>Puerto Rico</item>
+        <item>(787) 724–3655</item>
+        <item>Estados Unidos / Islas Vírgenes</item>
+        <item>1 (888) 724–3655</item>
+    </string-array>
+    <string-array name="contact_popular_mortgage">
+        <item name="header">Popular Mortgage</item>
+        <item name="email" />
+        <item>Financiamiento</item>
+        <item>(787) 707–7070</item>
+        <item>Financiamiento</item>
+        <item>1 (866) 358–7070</item>
+        <item>Servicio</item>
+        <item>(787) 775–1100</item>
+        <item>Servicio</item>
+        <item>1 (800) 981–1982</item>
+    </string-array>
+    <string-array name="contact_popular_auto">
+        <item name="header">Popular Auto</item>
+        <item name="email" />
+        <item>Financiamiento</item>
+        <item>(787) 724–3656</item>
+        <item>Servicio</item>
+        <item>(787) 792&#8211;9282</item>
+    </string-array>
+    <string-array name="contact_insurance_center">
+        <item name="header">Centro de Seguros</item>
+        <item name="email" />
+        <item>Popular Insurance</item>
+        <item>(787) 706–4111</item>
+        <item>Popular Insurance</item>
+        <item>1 (800) 806–0080</item>
+        <item>Popular Risk Services</item>
+        <item>(787) 731–6900</item>
+    </string-array>
+    <string-array name="contact_investments">
+        <item name="header">Inversiones</item>
+        <item name="email" />
+        <item>Popular Securities</item>
+        <item>(787) 758&#8211;7400</item>
+    </string-array>
+    <string-array name="contact_popular_one">
+        <item name="header">Popular One</item>
+        <item name="email" />
+        <item>Asesores</item>
+        <item>(787) 281&#8211;7272</item>
+        <item>Web</item>
+        <item>www.popularone.com</item>
+    </string-array>
+
+
+    <!-- ERROR MESSAGES -->
+    <string name="error">Error:</string>
+    <string name="error_occurred">Hubo un error. Por favor intenta más tarde.</string>
+    <string name="session_has_expired">Sesión ha expirado</string>
+    <string name="no_application_found">La aplicación no fue encontrada para manejar esta acción.</string>
+    <string name="account_blocked_title">Acceso bloqueado</string>
+    <string name="account_blocked_description">Tu acceso a Banca por Internet ha sido bloqueado.</string>
+    <string name="account_blocked_actionsheet_title">Selecciona Recuperar Acceso o llámanos para desbloquear tu cuenta.</string>
+    <string name="account_blocked_callto_action">Llamar al %s</string>
+    <string name="account_blocked_regain_access_action">Recuperar Acceso</string>
+    <string name="account_blocked_button_action">Desbloquear</string>
+    <string name="no_connection_description">Tu conexión esta teniendo problemas en este instante.</string>
+    <string name="no_connection_ssl">Conexión no segura. Reinicia la aplicación.</string>
+    <string name="invalid_response_description">Banca móvil no está disponible en estos momentos.</string>
+    <string name="maintenance_title">Mantenimiento</string>
+    <string name="maintenance_personal_banking">Banca personal no está disponible en estos momentos.</string>
+    <string name="maintenance_mobile_banking">Banca móvil no está disponible en estos momentos.</string>
+    <string name="load_balancer_connection_limit">Estamos experimentando un volumen extraordinario de visitas a Mi Banco. Por favor intenta nuevamente en unos minutos. Disculpa los inconvenientes que esto te pueda ocasionar.</string>
+    <string name="maintenance_rdc">Depósito Fácil Móvil no está disponible en estos momentos. Por favor, inténtalo más tarde.</string>
+    <string name="maintenance_payments">La sección de Pagos no está disponible en estos momentos. Por favor, inténtalo más tarde.</string>
+    <string name="maintenance_transfers">La sección de Transferencias no está disponible en estos momentos. Por favor, inténtalo más tarde.</string>
+    <string name="maintenance_mobilecash">La sección de Retiro Móvil no está disponible en estos momentos. Por favor, inténtalo más tarde.</string>
+    <string name="not_available_description">Tu perfil requiere que te conectes desde una computadora antes de usar la página móvil.</string>
+    <string name="not_available_open_full_site">Navegar al website</string>
+    <string name="check_connection">Verifica tu conexión del internet.</string>
+    <string name="update">Actualizar</string>
+    <string name="update_description">Favor de actualizar a la versión mas reciente en el Google Play.</string>
+    <string name="transaction_failed_title">Error en transacción</string>
+    <string name="transaction_failed_message">Esta transacción no pudo ser completada. Por favor trata de nuevo.</string>
+    <string name="transaction_error_code_overpay_en">amount is higher</string>
+    <string name="transaction_error_code_overpay_es">cantidad es mayor</string>
+    <string name="transaction_error_larger_than_max">Cantidad mayor al máximo</string>
+    <string name="transaction_confirm_effective_date_title">¡Alerta!</string>
+    <string name="transaction_confirm_effective_date_message">La fecha de efectividad para este pago sería %s.</string>
+    <string name="transaction_unknown_error">¡Error general! Desconectando…</string>
+    <string name="transaction_overpay_title">¡Alerta!</string>
+    <string name="transaction_overpay_message">La cantidad es mayor al balance en tu cuenta.</string>
+    <string name="transaction_invalid_data_title">Información inválida</string>
+    <string name="transaction_invalid_data_amount">Por favor entra una cantidad válida</string>
+    <string name="transaction_invalid_data_account">No podemos transferir a la misma cuenta</string>
+    <string name="payment_failed_title">Error en pago</string>
+    <string name="payment_failed_message">Pago no pudo ser procesado.</string>
+    <string name="payment_failed_same_date_title">Error en pago</string>
+    <string name="payment_failed_same_date_message">Otro pago ya ha sido especificado para la misma fecha.</string>
+    <string name="transfer_failed_title">Error en transferencia</string>
+    <string name="transfer_failed_message">Transferencia no fue procesada.</string>
+    <string name="transfer_failed_duplicate_title">Transferencia duplicada</string>
+    <string name="transfer_failed_duplicate_message">Cantidad duplicada en la transferencia, por favor trata de nuevo con otra cantidad.</string>
+    <string name="transfer_failed_account_number_title">Error en transferencia</string>
+    <string name="transfer_failed_account_number_message">La transferencia entre estas cuentas no es válida.</string>
+    <string name="transfer_failed_same_date_title">Error en transferencia</string>
+    <string name="transfer_failed_same_date_message">Ya existe una transferencia con esta misma fecha.</string>
+    <string name="transfer_failed_zero_or_negative_balance">La cantidad es mayor al balance en tu cuenta.</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="all_accounts">Todas las cuentas</string>
+    <string name="recent_transfers">Transferencias enviadas</string>
+    <string name="all_payees">Todos los comercios</string>
+    <string name="recent_payments">Pagos enviados</string>
+    <string name="from_caps">DE</string>
+
+    <!-- SIDEBAR -->
+    <string name="accounts_sidebar">Mis Cuentas</string>
+    <string name="payments_sidebar">Haz pagos</string>
+    <string name="ebills_sidebar">eBills</string>
+    <string name="payment_receipts_sidebar">Recibos de pagos</string>
+    <string name="transfers_sidebar">Haz transferencias</string>
+    <string name="transfer_receipts_sidebar">Recibos de transferencias</string>
+    <string name="athm_sidebar">ATH&#174; Móvil</string>
+    <string name="mobilecash_sidebar">Retiro Móvil</string>
+    <string name="deposit_check_sidebar">Depósito Fácil</string>
+    <string name="deposit_check_sidebar_MBMT_417">Depósito Fácil</string>
+    <string name="review_checks_sidebar">Recibos de depósitos</string>
+    <string name="request_documents">Solicita Documentos</string>
+    <string name="more_info">Mas Info</string>
+    <string name="locator_sidebar">Localizador</string>
+    <string name="contactus_sidebar">Contacto</string>
+    <string name="marketplace_sidebar">Productos</string>
+    <string name="settings_sidebar">Configuración</string>
+    <!-- MBSFE-1712 -->
+    <string name="go_to_desktop_sidebar">Ir a Versión Desktop</string>
+    <string name="go_to_desktop_url">actions/mobileSwitch?target=login&amp;version=classic&amp;lang=es</string>
+    <!-- END MBSFE-1712 -->
+    <string name="rsa_enroll_sidebar">Verificacion de 2 Pasos</string>
+    <string name="rsa_edit_questions_sidebar">Editar preguntas secretas</string>
+    <!-- END MBSFIS-571 -->
+    <string name="call_advisor">Llamar</string>
+    <!-- PAYMENT/TRANSFER HISTORY -->
+    <string name="image">Image</string>
+    <string name="by_month">Por Mes</string>
+    <string name="by_payee">Por Comercio</string>
+    <string name="by_account">Por Cuenta</string>
+    <string name="sent_payment_caps">PAGOS ENVIADOS</string>
+    <string name="sent_transfers_caps">TRANSFERENCIAS ENVIADAS</string>
+    <string name="select_payee">SELECCIONA COMERCIO</string>
+    <string name="select_account">SELECCIONA CUENTA</string>
+    <string name="select_month">SELECCIONA MES</string>
+    <string name="when">PAGOS ENVIADOS</string>
+    <string name="no_transfers_receipts_found">No tienes transferencias disponibles</string>
+    <string name="no_payments_receipts_found">No tienes pagos disponibles</string>
+    <string name="processed_payment">Pago procesado</string>
+    <string name="processed_transfer">Transferencia procesada</string>
+    <string name="deleting">Borrando…</string>
+    <string name="delete_error_description">No pudimos borrar la transacción.</string>
+    <string name="delete_transaction_question">¿Estas seguro que quieres borrar esta transacción?</string>
+    <string name="delete_transaction_hint">¿Borrar transacción?</string>
+    <string name="add_payees">Añadir comercios </string>
+    <string name="no_payees_add_new_payees">No tienes comercios registrados, registra nuevos comercios para continuar</string>
+    <string name="edit_payees">Editar comercios</string>
+    <string name="payments_history">Historico</string>
+    <string name="transfers_history">Historico</string>
+
+    <!-- INTRO SCREEN -->
+    <string name="intro_locator">Localizador</string>
+    <string name="intro_contactus">Contacto</string>
+    <string name="intro_info">Más Info</string>
+    <string name="intro_log_in">Conéctate</string>
+    <string name="intro_enrollment">Inscríbete</string>
+
+    <!-- WEB VIEW -->
+    <string name="navigation_back">Regresar</string>
+    <string name="navigation_forward">Avanzar</string>
+    <string name="navigation_refresh">Refrescar</string>
+    <string name="menu">Menu</string>
+    <string name="title_info">Info</string>
+    <string name="no_payees">No tienes comercios registrados</string>
+    <string name="status_processing">En proceso</string>
+    <string name="status_title">Estatus</string>
+    <string name="frequency_title">Frecuencia</string>
+    <string name="forgot_username"><u>¿Olvidaste tu nombre de usuario?</u></string>
+    <string name="forgot_password"><u>¿Olvidaste tu contraseña?</u></string>
+    <string name="terms_and_conditions_url">https://documents.popular.com/terms/depositos/Contrato+de+servicios+bancarios+electronicos+Esp.htm</string>
+
+    <!-- QA -->
+    <string name="quality_main_url">Main URL</string>
+    <string name="quality_port">Port</string>
+    <string name="quality_url_path">URL Path</string>
+    <string name="quality_current_base_url">Current Base URL</string>
+    <string name="quality_restore_defaults">Restore Defaults</string>
+    <string name="quality_base_url_saved">Base URL has been saved.</string>
+    <string name="quality_field_required">Field required.</string>
+    <string name="quality_invalid_url">Resultant URL is invalid.</string>
+
+    <!-- RDC -->
+    <string name="to_rdc">To</string>
+    <string name="rdc_history_pending">En proceso</string>
+    <string name="rdc_history_processed">Depósitos enviados</string>
+    <string name="rdc_history_deposit_date">Fecha de envío</string>
+    <string name="rdc_history_reference_num">Núm. Referencia</string>
+    <string name="rdc_history_deposit_status">Estado del depósito</string>
+    <string name="rdc_history_deposit_status_submitted">Enviado</string>
+    <string name="rdc_history_deposit_status_approved">Aprobado</string>
+    <string name="rdc_history_deposit_status_declined">Declinado</string>
+    <string name="rdc_history_images">Fotos del cheque</string>
+    <string name="rdc_history_front">Frente</string>
+    <string name="rdc_history_back">Dorso</string>
+    <string name="rdc_history_no_items">No tienes recibos de depósitos</string>
+    <string name="rdc_history_deposit_info">Información del depósito</string>
+    <string name="deposit_check_deposit_to">DEPOSITA A</string>
+    <string name="deposit_check_deposited_to">DEPOSITADO A</string>
+    <string name="deposit_check_amount">Cantidad</string>
+    <string name="deposit_check_add_check">FOTOS DEL CHEQUE</string>
+    <string name="deposit_check_instructions">Toma fotos del frente y el dorso</string>
+    <string name="deposit_check_popular_text"><Data><![CDATA[ Depositar cheques a tu cuenta es tan f&aacute;cil como sacarles una foto, siguiendo estos pasos:<ol style="margin-bottom:0;margin-left:10;padding-left:10"><li>Firma el cheque al dorso y escribe &quot;For Deposit only at BPPR&quot; con el n&uacute;mero de cuenta.</li><br/><li>Toma fotos del frente y reverso del cheque.</li></ol><br/><ul style="margin-top:0;margin-left:15;padding-left:15"><li>Nos reservamos el derecho de rechazar las im&aacute;genes sometidas para procesamiento.</li><li>Dep&oacute;sitos antes de las 6:00pm en d&iacute;as laborables ser&aacute;n procesados el mismo d&iacute;a, sujetos a verificaci&oacute;n y validaci&oacute;n del dep&oacute;sito.</li><li>Una vez aceptado, tu dep&oacute;sito estar&aacute; disponible de acuerdo a nuestra Pol&iacute;tica de Disponibilidad de Fondos.</li><li>L&iacute;mites de Dep&oacute;sitos: $1,500 por cheque, $1,500 diarios total y $4,500 mensuales.</li><li>Visita Popular.com para m&aacute;s informaci&oacute;n sobre Dep&oacute;sito F&aacute;cil M&oacute;vil y nuestra Pol&iacute;tica de Disponibilidad de Fondos.</li></ul> ]]> </Data></string>
+    <string name="deposit_check_select_account">Escoge una cuenta</string>
+    <string name="deposit_check_change_front_picture">Frente</string>
+    <string name="deposit_check_change_back_picture">Dorso</string>
+    <string name="deposit_check_front_instructions">Toma foto del frente</string>
+    <string name="deposit_check_back_instructions">Toma foto del dorso</string>
+    <string name="deposit_check_deposit">Enviar depósito</string>
+    <string name="deposit_check_confirm_deposit">CONFIRME EL DEPOSITO</string>
+    <string name="deposit_check_deposit_now">Enviar depósito ahora</string>
+    <string name="deposit_check_deposit_sent">CHEQUE RECIBIDO</string>
+    <string name="deposit_check_error">ERROR EN CHEQUE</string>
+    <string name="deposit_check_noun">Depósito de cheque</string>
+    <string name="deposit_check_failed_message">El cheque no pude ser depositado. Favor intente de nuevo.</string>
+    <string name="camera_front_side">FRENTE DEL CHEQUE</string>
+    <string name="camera_back_side">DORSO DEL CHEQUE</string>
+    <string name="camera_flash_off">OFF</string>
+    <string name="camera_flash_on">ON</string>
+    <string name="camera_flash_auto">AUTO</string>
+    <string name="camera_use">Usar</string>
+    <string name="deposit_check_camera_text_top">Posiciona el cheque dentro de la caja azul en una superficie plana e iluminada</string>
+    <string name="deposit_check_camera_text_bottom">Firma el cheque al dorso; escribe \"For Deposit only at BPPR\" y el número de cuenta</string>
+
+    <!-- ATH MOBILE -->
+    <string name="athm_select_account_warning">Solo puedes seleccionar cuentas que cuentan con una tarjeta ATH® activa y la misma será la cuenta principal.</string>
+    <string name="athm_select_account_header">SELECCIONA CUENTA</string>
+    <string name="athm_select_account_hint">Selecciona cuenta</string>
+    <string name="athm_account_information_header">INFORMACIÓN SOBRE CUENTA</string>
+    <string name="athm_card_number_hint">Número de tarjeta ATH&#174;</string>
+    <string name="athm_card_expiration_date_hint">Fecha de expiración</string>
+    <string name="athm_registration_information_header">REGISTRO DE ATH&#174; MÓVIL</string>
+    <string name="athm_username_hint">Nombre de usuario</string>
+    <string name="athm_password_hint">Contraseña</string>
+    <string name="athm_confirm_password_hint">Confirmar contraseña</string>
+    <string name="athm_accept_terms_and_conditions">Aceptar términos y condiciones</string>
+    <string name="athm_login_information_header">CREDENCIALES DE ATH&#174; MÓVIL</string>
+    <string name="athm_enter_login_password">Entra tu nombre de usuario y contraseña de ATH&#174; Móvil</string>
+    <string name="athm_forgot_username_or_password">¿Olvidaste tu nombre de usuario o contraseña?</string>
+    <string name="athm_phone_call_header">LLAMADA TELEFÓNICA</string>
+    <string name="athm_phone_call_info">Te llamaremos al teléfono móvil provisto. Cuando sea solicitado entra el siguiente código.</string>
+    <string name="athm_phone_number_header">TELÉFONO MÓVIL</string>
+    <string name="athm_phone_number_hint">Teléfono</string>
+    <string name="athm_select_provider_hint">Seleccionar Proveedor</string>
+    <string name="athm_phone_number_info">Para poder utilizar este servicio debes proveer el número de teléfono que deseas usar en ATH&#174; Móvil</string>
+    <string name="athm_sending_from_header">ENVIANDO DESDE</string>
+    <string name="athm_sending_to_header">A</string>
+    <string name="athm_select_recipient_hint">Selecciona contacto</string>
+    <string name="athm_amount_header">CANTIDAD</string>
+    <string name="athm_amount_info">La cantidad a transferir debe ser entre $1 y $500</string>
+    <string name="athm_optional_message_hint">Mensaje opcional</string>
+    <string name="athm_send_money">Enviar dinero</string>
+    <string name="athm_recents_header">RECIENTES</string>
+    <string name="athm_contacts_header">CONTACTOS</string>
+    <string name="athm_transfer_sent">La transferencia fue enviada.</string>
+    <string name="athm_transfer_details" formatted="false">Enviaste %1$s a %2$s</string>
+    <string name="athm_registration_completed">Registro completado</string>
+    <string name="athm_registration_details">Ahora puedes enviar dinero con ATH&#174; Móvil a través de Mi Banco.</string>
+    <string name="athm_learn_more">Conocer más</string>
+    <string name="athm_enroll_title">Envía dinero de una forma fácil, segura y al instante.</string>
+    <string name="athm_enroll_details">ATH® Móvil es un nuevo servicio de la Red ATH&#174; diseñado para hacer transferencias al instante de persona a persona.\n\nEl servicio está disponible a todas las instituciones financieras participantes en Puerto Rico.</string>
+    <string name="athm_enroll">Comenzar</string>
+    <string name="athm_terms_and_conditions_header">TÉRMINOS Y CONDICIONES</string>
+    <string name="athm_terms_and_conditions_agree">Aceptar</string>
+    <string name="athm_terms_and_conditions_disagree">Declinar</string>
+    <string name="athm_invalid_phone_number">Número de teléfono inválido</string>
+    <string name="athm_enter_phone_or_name">Entrar nombre o número de teléfono</string>
+    <string name="athm_no_contacts">No se encontraron contactos.</string>
+    <string name="athm_transfer_message" formatted="false">Estas enviando %1$s a %2$s\nCargo por servicio: %3$s</string>
+    <string name="athm_down_error_text">El servicio de ATH&#174; Móvil no esta disponible.</string>
+    <string name="athm_blocked_error_title">Cuenta Bloqueada</string>
+    <string name="athm_blocked_error_text">Nombre de usuario bloqueado</string>
+    <string name="athm_card_length_error_alert">El número de la tarjeta debe ser de 16 digitos</string>
+    <string name="athm_password_confirmation_match_error">La confirmación de la contraseña y la contraseña no coinciden</string>
+    <string name="athm_generic_error_processing_alert">Error procesando el pedido</string>
+    <string name="athm_contacts_other">Otro teléfono</string>
+    <string name="athm_password_guidelines">8&#8211;15 caracteres. Combinación de letras, números Y una letra en mayúscula es requerido. Caracteres especiales son opcionales</string><string name="athm_expiration_year">Año</string>
+    <string name="athm_expiration_month">Mes</string>
+    <string name="athm_welcome_title">Transfiere dinero a personas y comercios directamente desde ATH Móvil.</string>
+    <string name="athm_welcome_details">Ahora puedes acceder al app de ATH Móvil [Evertec, Inc.] a través de un enlace desde Mi Banco Móvil. Una vez estés en el app de ATH Móvil, podrás añadir, cambiar o eliminar la tarjeta ATH atada al app. También tendrás acceso a nuevas funcionalidades y mejoras al sistema cuando bajes las actualizaciones del app.</string>
+    <string name="athm_redirect_title">¡Ya casi estás listo!</string>
+    <string name="athm_redirect_details">Asegúrate de descargar el app de ATH Móvil y tener su última actualización. Luego regresa a Mi Banco Móvil para finalizar el proceso de conexión.</string>
+    <string name="athm_redirect_btn_title">Ir al Play Store</string>
+    <string name="athm_settings_logout">Cerrar sesión de ATH Móvil</string>
+    <string name="athm_settings_logout_dialog_title">¿Deseas cerrar la sesión de ATH Móvil?</string>
+    <string name="athm_settings_logout_error">Hubo un error completando la acción. Favor de intentar más tarde.</string>
+    <string name="athm_redirect_disclaimer">Usted está siendo redirigido a la aplicación de ATH Móvil.  ATH Móvil NO es un App de Banco Popular de Puerto Rico. </string>
+
+    <string name="week_sunday">Domingo</string>
+    <string name="week_monday">Lunes</string>
+    <string name="week_tuesday">Martes</string>
+    <string name="week_wednesday">Miércoles</string>
+    <string name="week_thursday">Jueves</string>
+    <string name="week_friday">Viernes</string>
+    <string name="week_saturday">Sábado</string>
+    <string name="week_to">a</string>
+    <string name="week_closed">Cerrado</string>
+    <string name="next_holiday">Próximo día feriado</string>
+    <string name="services">Servicio</string>
+    <string name="branch_service_commercial">Línea comercial</string>
+    <string name="branch_service_popularone">Popular One</string>
+    <string name="branch_service_popularmortgage">Popular Mortgage</string>
+    <string name="branch_service_popularsecurities">Popular Securities</string>
+    <string name="branch_service_nightdeposit">Depósito Nocturno</string>
+    <string name="branch_service_autobanco">Auto banco</string>
+    <string name="phone_number">Número telefónico</string>
+
+    <!-- MOBILE CASH-->
+    <string name="mc_account_info_header">INFORMACIÓN DE ENVÍO</string>
+    <string name="mc_select_account_hint">Seleccionar cuenta</string>
+    <string name="mc_amount_disclaimer" formatted="false">La cantidad de retiro estará en múltiplos de $%s</string>
+    <string name="mc_amount_disclaimer_MBMT_417" formatted="false">La cantidad estará en múltiplos de $%s, hasta $%s.</string>
+    <string name="mc_amount_header">ESCOGE CANTIDAD</string>
+    <string name="mc_send_money">Continuar</string>
+    <string name="mc_select_account_warning">Solo podrás seleccionar una cuenta que tenga tarjeta ATH&#174; Regular. Por el momento el servicio no está disponible con tarjetas ATH&#174; Internacional Visa.</string>
+    <string name="mc_transfer_confirm" formatted="false">Retirar: %1$s \nDe: %2$s</string>
+    <string name="mc_transfer_confirm_for_other" formatted="false">Enviar: %1$s \nDe: %2$s \nA: %3$s </string>
+    <string name="mc_confirm_stage">CONFIRMAR</string>
+    <string name="mc_confirm_stage_title">CONFIRMAR RETIRO</string>
+
+    <string name="mc_stage_receipt_title">¡Ya puedes recoger tu efectivo!</string>
+    <string name="mc_stage_receipt_toother_title">¡El efectivo esta listo para ser recogido!</string>
+    <string name="mc_stage_receipt_tranid">Número de referencia:</string>
+    <string name="mc_stage_receipt_from">De:</string>
+    <string name="mc_stage_receipt_to">A:</string>
+    <string name="mc_stage_receipt_amount">Cantidad:</string>
+    <string name="mc_stage_receipt_expiration">Expira:</string>
+    <string name="mc_stage_receipt_note">Mensaje:</string>
+    <string name="mc_stage_receipt_location">Localidad:</string>
+    <string name="mc_stage_receipt_completion">Completada:</string>
+
+    <string name="mc_stage_receipt_instruction_title">¡Es sencillo y rápido!</string>
+    <string name="mc_stage_receipt_instruction_1">Ve al cajero automático participante de tu peferencia</string>
+    <string name="mc_stage_receipt_instruction_2">Conéctate al app Mi Banco Móvil y presiona Retiro Móvil</string>
+    <string name="mc_stage_receipt_instruction_3">Escanea el código QR en la pantalla del cajero automático</string>
+    <string name="mc_stage_receipt_instruction_4">¡Retira tu efectivo!</string>
+
+    <string name="ec_stage_receipt_instruction_1">Su contacto deberá ir al cajero automático participante de su preferencia.</string>
+    <string name="ec_stage_receipt_instruction_2">Seleccionar Retiro Móvil y escanear el código QR en la pantalla del cajero automático con el app de Mi Banco Móvil.</string>
+    <string name="ec_stage_receipt_instruction_3">¡Retirar el efectivo!</string>
+    <string name="ec_stage_receipt_button">Enviar información del retiro</string>
+    <string name="ec_forother_text_message">Hola, te envié %1$s por Retiro Móvil. Más info http://popular.com/retiromovil</string>
+
+    <string name="mc_scan_info_title">INFORMACIÓN DE RETIRO</string>
+    <string name="ec_scan_info_title">MI RETIRO</string>
+    <string name="mc_stage_receipt_btn_scan">Escanear</string>
+    <string name="mc_pickup_atm_title">Continúe en el cajero automático</string>
+    <string name="mc_pickup_last4num">TERMINANDO EN (?)</string>
+    <string name="mc_pickup_expiration">EXPIRA %s</string>
+    <string name="mc_pickup_past_expiration">EXPIRÓ %s</string>
+    <string name="mc_pickup_past_completed">COMPLETADA %s</string>
+    <string name="mc_deletetrx_title">ELIMINAR</string>
+    <string name="mc_deletetrx_message">¿Eliminar retiro?</string>
+    <string name="mc_deletetrx_back">REGRESAR</string>
+    <string name="mc_service_error_title">ERROR</string>
+    <string name="mc_service_error_message">Hubo un error completando la acción. Favor de intentar más tarde.</string>
+    <string name="mc_accounts_error_message">En este momento no tienes cuentas con tarjeta ATH&#174; disponible. </string>
+    <string name="mc_error_minbalance">La cuenta no tiene los fondos suficientes para hacer la transacción.</string>
+    <string name="mc_ath_regular">ATH&#174; Regular</string>
+    <string name="mc_ath_international">ATH&#174; Internacional Visa</string>
+    <string name="mc_date_today" formatted="false">HOY A LAS %1$s</string>
+    <string name="mc_date_yesterday" formatted="false">AYER A LAS %1$s</string>
+    <string name="mc_date_tomorow" formatted="false">MAÑANA A LAS %1$s</string>
+    <string name="mc_date_more" formatted="false">EL %1$s A LAS %2$s</string>
+    <string name="mc_date_format">dd/MM/yyyy</string>
+    <string name="mc_error_wrong_qr">¡Ups! Parece que hubo un error al leer el código, por favor inténtalo nuevamente.</string>
+    <string name="mc_no_camera_permission_title">Por favor, permita que Mi Banco tome fotografías.</string>
+    <string name="mc_no_camera_permission">Vaya a la aplicación de Configuración → Aplicaciones → Mi Banco → Permisos y encienda el permiso para la Cámara.</string>
+
+    <string name="select_card_header">SELECCIONA TARJETA</string>
+    <string name="select_card_hint">Selecciona tarjeta</string>
+
+    <!-- OOB AUTH -->
+    <string name="verification_code">Código de Verificación</string>
+    <string name="oob_sms_primary_instructions">Entra el código de verificación enviado a tu número registrado:</string>
+    <string name="oob_call_primary_instructions">Entra en tú teléfono este código al recibir nuestra llamada a tu número registrado:</string>
+    <string name="oob_code">Código (6 dígitos)</string>
+    <string name="resend_code">Enviar código nuevamente</string>
+    <string name="oob_no_phone">No tengo mi teléfono disponible</string>
+    <string name="invalid_code">Código incorrecto</string>
+    <string name="new_code_sent">Nuevo código enviado</string>
+    <string name="new_code_error">Problemas al enviar código en este momento.</string>
+    <string name="invalid_action">Acción inválida</string>
+    <string name="oob_use_alt_phone">Enviar a número alterno</string>
+    <string name="oob_use_primary_phone">Enviar a número principal</string>
+    <string name="oob_use_primary_phone_call">Llamar a número principal</string>
+    <string name="oob_use_alt_phone_call">Llamar a número alterno</string>
+    <string name="oob_use_rec_code">Usar código de recuperación</string>
+    <string name="oob_none_codes">No tengo ninguno de los códigos</string>
+    <string name="oob_sms_alternate_instructions">Entra el código de verificación enviado a tu número alterno:</string>
+    <string name="oob_call_alternate_instructions">Entra en tu teléfono este código al recibir nuestra llamada a tu número alterno:</string>
+    <string name="title_use_my_recovery_code">CÓDIGO DE RECUPERACIÓN</string>
+    <string name="text_recovery_code">Para hacer uso del código de recuperación, debes acceder la versión "desktop" de Mi Banco desde un navegador.</string>
+    <string name="submit_go_mi_banco">Ir a Mi Banco (desktop)</string>
+    <string name="title_none_of_the_codes">NINGUNO DE LOS CÓDIGOS</string>
+    <string name="text_nearest_branch">Si no tienes acceso a tu número de teléfono principal, número alterno o código de recuperación, debes visitarnos a cualquiera de nuestras sucursales para poder asistirte a desactivar la Verificación de 2 Pasos de tu cuenta.</string>
+    <string name="submit_nearest_branch">Buscar la sucursal más cercana</string>
+    <string name="text_contact_call">Cualquier duda o pregunta puedes comunicarte con el grupo de apoyo de Mi Banco al (787) 724&#8211;3655 o al 1&#8211;888&#8211;724&#8211;3655 (Estados Unidos/Islas Vírgenes).</string>
+    <string name="submit_call_now">Llamar</string>
+    <string name="oob_make_new_call">Hacer nueva llamada</string>
+    <string name="new_call_made">Nueva llamada solicitada</string>
+    <string name="invalid_code_call">Entra el código en tu teléfono, antes de continuar.</string>
+    <string name="oob_timeout_code">Código expirado</string>
+    <string name="oob_validation_error">Problemas al validar código</string>
+
+    <!-- Wallet Authentication-->
+    <string name="wallet_authentication">Wallet Authenticación</string>
+    <string name="wallet_authentication_msg">Validando Tarjeta</string>
+    <string name="wallet_website_url" tools:ignore="Typos">http://www.popular.com/mi-banco/movil/wallets</string>
+    <string name="wallet_authentication_details_samsung_pay">¡Tu tarjeta fue registrada exitosamente!\nPuedes confirmar que la misma fue añadida, entrando al app de Samsung Pay.</string>
+    <string name="wallet_authentication_details_android_pay">¡Tu tarjeta fue registrada exitosamente!\nPuedes confirmar que la misma fue añadida, entrando al app de Google Pay.</string>
+    <string name="wallet_authentication_successful">Validación Exitosa!</string>
+    <string name="wallet_authentication_error">\n\nNo pudimos validar\nla información entrada.</string>
+    <string name="wallet_authentication_error_error">\n\nNo pudimos procesar la transacción debido a un error de comunicación. Por favor intenta más tarde.</string>
+    <string name="wallet_authentication_error_not_found">\n\nNo encontramos la tarjeta en tu perfil de Mi Banco, por favor intenta nuevamente. Si crees fue un error, llámanos al 787&#8211;724&#8211;3650</string>
+    <string name="wallet_authentication_error_error_vts">\n\nTu tarjeta no pudo ser validada en este momento. Por favor llama a TeleBanco para información adicional, 787&#8211;724&#8211;3650</string>
+    <string name="wallet_authentication_error_fingerprint_delay_hours">\nPodrás utilizar tu cartera digital dentro de %s horas.\nPor tu seguridad, el utilizar este método de autenticación requiere de una espera antes de utilizarlo.</string>
+    <string name="wallet_authentication_error_fingerprint_delay_minutes">\nPodrás utilizar tu cartera digital dentro de %s minutos.\nPor tu seguridad, el utilizar este método de autenticación requiere de una espera antes de utilizarlo.</string>
+    <string name="wallet_authentication_error_no_minimun_fingerprint_req">Su dispositivo no tiene la capacidad para autenticarse con la huella dactilar.</string>
+    <string name="wallet_authentication_error_no_fingerprint_in_app">Es requerido tener la funcionalidad de la huella dactilar activada en la aplicación de Mi Banco Mobile para utilizar este servicio.</string>
+    <string name="wallet_authentication_error_no_user_saved">Es requerido guardar el nombre de usurio en la aplicación de Mi Banco Móvil para utilizar este servicio.</string>
+    <string name="wallet_authentication_error_fingerprint_canceled">Es requerido tener la funcionalidad de huella dactilar activada en la aplicación de Mi Banco Mobile para utilizar este servicio.
+</string>
+    <string name="wallet_name_samsung">Samsung Pay</string>
+    <string name="wallet_name_android">Google Pay</string>
+
+    <string name="permission_mandatory">Para acceder Mi Banco es necesario aceptar los permisos solicitados. ¿Deseas modificar los permisos de la aplicación?</string>
+    <string name="permission_location_mandatory">Para mostrar resultados basados en tu localización es necesario aceptar el permiso requerido. ¿Deseas modificar los permisos de la aplicación?</string>
+    <string name="permission_rdc_mandatory">Para tomar fotos del cheque, es necesario aceptar el permiso requerido. ¿Deseas modificar los permisos de la aplicación?</string>
+    <string name="permission_custom_image_mandatory">Para usar fotos personalizadas, es necesario aceptar el permiso requerido. ¿Deseas modificar los permisos de la aplicación?</string>
+
+    <string name="sign_in">Conéctate</string>
+    <string name="fingerprint_description">Confirma tu huella dactilar para conectarte a Mi Banco.</string>
+    <string name="fingerprint_easycash_description">Confirma tu huella dactilar para usar este servicio.</string>
+    <string name="fingerprint_hint">Toca el sensor</string>
+    <string name="fingerprint_not_recognized">Huella no reconocida. Intenta nuevamente.</string>
+    <string name="fingerprint_success">Huella reconocida.</string>
+    <string name="new_fingerprint_enrolled_description">Una nueva huella fue añadida a este dispositivo.</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="use_fingerprint_to_authenticate_key" >use_fingerprint_to_authenticate_key</string>
+
+    <string name="fp_no_setup">Pantalla de bloqueo seguro no ha sido establecida \n Ir a Ajustes > Seguridad > Huella Digital para establecer una huella digital</string>
+    <string name="fp_no_fingerprint">Si quieres utilizar la autenticación por huella digital, favor ir a Configuración > Seguridad > Huella digital y registrar al menos una huella.</string>
+
+    <string name="fp_campaign_title">Autenticación por huella dactilar</string>
+    <string name="fp_campaign_content">Disfruta de la seguridad y conveniencia de tener acceso a tus cuentas con solo un toque.\n\nLuego de registrarte en el servicio de autenticación por huella dactilar de tu dispositivo, tendrás que conectarte al app de Mi Banco con tu nombre de usuario y contraseña, y activar el acceso con huella desde el menú de Configuración dentro del app de Mi Banco. Selecciona \'Recordar tu nombre de usuario\', para poder acceder a Mi Banco con un solo toque.</string>
+    <string name="fp_campaign_button_no">NO, GRACIAS</string>
+    <string name="fp_campaign_button_yes">ACTIVAR AHORA</string>
+    <string name="fp_campaign_button_next">PRÓXIMO</string>
+    <string name="fp_mibanco_setup">Para utilizar la autenticación por huella en Mi Banco, es necesario guardar un nombre de usuario presionando el interruptor de Recordar usuario. Luego iniciar sesión mediante el método tradicional.</string>
+    <string name="fp_password_setup">Favor de iniciar sesión con un usuario en la lista para poder utilizar la autenticación por huella digital.</string>
+
+    <string name="rdc_take_picture_cancel">X</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_downtime">Imagen de mantenimiento</string>
+    <string name="desc_rdc_check_image">Imagen de cheque depositado</string>
+    <string name="desc_ath_card_image">Imagen de tarjeta ATH</string>
+    <string name="desc_menu_icon">Imagen de elemento de menu</string>
+    <string name="desc_fingerprint_image">Imagen de huella dactilar</string>
+
+    <string name="cashdrop_welcome_client_instr">Para acceder Retiro Móvil, favor provea su número de teléfono y proveedor de servicio.</string>
+    <string name="cashdrop_welcome_nonclient_instr">Para acceder Retiro Móvil, favor provea la siguiente información:</string>
+    <string name="cashdrop_welcome_personal_info">INFORMACIÓN PERSONAL</string>
+    <string name="cashdrop_welcome_personal_name_hint">Nombre</string>
+    <string name="cashdrop_welcome_personal_lastname_hint">Apellido</string>
+    <string name="cashdrop_welcome_personal_country">País</string>
+    <string name="cashdrop_welcome_access_info">INFORMACIÓN DE ACCESO</string>
+    <string name="cashdrop_welcome_access_email_hint">E-mail</string>
+    <string name="cashdrop_welcome_access_phonenumber_hint">Número de teléfono</string>
+    <string name="cashdrop_welcome_access_provider">Proveedor</string>
+    <string name="cashdrop_welcome_disclaimer">
+        Banco Popular no emitirá cargos a su cuenta bancaria ni a su cuenta de teléfono móvil por este servicio. Consulte el contrato de su proveedor de servicios
+        para más detalles sobre los cargos para SMS. Estos cargos dependen de su proveedor de servicios y del plan de servicio de mensajes de texto que usted haya adquirido.
+    </string>
+    <string name="cashdrop_continue_button">Continuar</string>
+
+    <string name="enrollment_lite_smscode_instructions">
+        El código de confirmación fue enviado a su dispositivo móvil por mensaje de texto. Si no lo recibe en los próximos 2 minutos,
+        oprima \"Reenviar Código\" para obtener uno nuevo o contacte a su proveedor de servicio para verificar que su dispositivo esté habilitado para SMS.
+    </string>
+
+    <string name="enrollment_lite_smscode_disclaimer">
+        Banco Popular no emitirá cargos a su cuenta bancaria ni a su cuenta de teléfono móvil por este servicio. Consulte el contrato de su proveedor de
+        servicios para más detalles sobre los cargos para SMS. Estos cargos dependen de su proveedor de servicios y del plan de servicio de mensajes de
+        texto que usted haya adquirido.
+    </string>
+
+    <string name="enrollment_lite_smscode_hint">####</string>
+
+    <string name="enrollment_lite_registration_complete">Su registro ha sido completado</string>
+    <string name="enrollment_lite_terms_and_conditions_url" tools:ignore="Typos">https://documents.popular.com/terms/mi_banco/mb_tc_alertas.html#app</string>
+
+    <string name="easycash_customer_faq_url">http://helpcenter.popular.com/?tag=faq-retiro-movil-cliente</string>
+    <string name="easycash_noncustomer_faq_url">http://helpcenter.popular.com/?tag=faq-retiro-movil-receiver</string>
+    <string name="easycash_locator_url">http://popular.com/retiromovil-atms</string>
+
+    <string name="enrollment_lite_existing_email_title">Hemos encontrado tu correo electrónico</string>
+    <string name="enrollment_lite_existing_email_msg">Hemos encontrado su correo electrónico en Mi Banco.</string>
+    <string name="btn_positive_existing_email">Conéctate a Mi Banco</string>
+    <string name="btn_negative_existing_email">Continuar</string>
+    <string name="enrollment_lite_missing_info">Favor de llenar todos los campos.</string>
+    <string name="enrollment_lite_wrong_sms">Código de verificación incorrecto</string>
+    <string name="enrollment_lite_sms_fail_reached">Usted excedió el número de intentos. Intente registrarse nuevamente.</string>
+    <string name="enrollment_lite_client_title">Envía y retira efectivo con tu celular</string>
+    <string name="enrollment_lite_client_details">
+        Retira efectivo con tu celular en todos nuestros cajeros automáticos sin usar tu tarjeta de débito de Banco Popular. Con Retiro Móvil, también puedes enviar efectivo a quien quieras, aunque no tenga cuenta de banco. Registra tu número de teléfono desde donde enviarás o recibirás los retiros para comenzar a usar el servicio.
+        Mi Banco Móvil registra y guarda en nuestros servidores tu número de teléfono para que puedas enviar o recibir efectivo con ese número.
+
+        &lt;br>&lt;br>Accede nuestra
+        &lt;a href=https://www.popular.com/privacidad/>Política de Privacidad &lt;/a>
+        para conocer cómo protegemos tu información personal.
+    </string>
+    <string name="enrollment_lite_client_details2">Conozca más en [link]</string>
+    <string name="easycash_link_learnmore">http://popular.com/retiromovil</string>
+    <string name="easycash_linktext_learnmore">popular.com/retiromovil</string>
+
+    <string name="enrollment_lite_nonclient_title">Recibe efectivo en tu celular</string>
+    <string name="enrollment_lite_nonclient_details">
+        Con Retiro Móvil, recibe y obtén efectivo a través de la aplicación Mi Banco Móvil.
+        Registra tu número de teléfono en el cual recibirás el dinero y usarás para obtenerlo utilizando tu celular en los cajeros automáticos de Banco Popular.
+
+        Mi Banco Móvil registra y guarda en nuestros servidores tu número de teléfono para que puedas recibir el efectivo enviado a ese número.
+
+        &lt;br>&lt;br>Accede nuestra
+        &lt;a href=https://www.popular.com/privacidad/>Política de Privacidad &lt;/a>
+        para conocer cómo protegemos tu información personal.
+
+        &lt;br>&lt;br>FÁCIL, RÁPIDO Y SEGURO.
+    </string>
+    <string name="enrollment_lite_aggre">Aceptar</string>
+
+    <string name="enrollment_lite_existing_alerts_phone_message">¿Desea utilizar el número de teléfono registrado en Mi Banco Alertas? (?)</string>
+    <string name="enrollment_lite_sms_resend_reached">Usted excedió el número de intentos. Intente registrarse nuevamente.</string>
+    <string name="mc_sms_resent">Código de verificación enviado</string>
+
+    <string name="enrollment_lite_resend_code">Reenviar Código</string>
+    <string name="ec_send_money_to_me">Para Mi</string>
+    <string name="ec_send_money_to_other">Para Otro</string>
+    <string name="ec_send_money_withdraw">Retirar</string>
+    <string name="ec_for_other_hint_optional">Mensaje opcional</string>
+
+    <string name="ec_history">HISTORIAL</string>
+    <string name="ec_history_inprocess">EN PROCESO</string>
+    <string name="sent">Enviado</string>
+    <string name="received">Recibido</string>
+
+    <string name="enrollment_lite_fingerprint_req_title">Huella dactilar para "Mi Banco"</string>
+    <string name="enrollment_lite_fingerprint_required">Se necesita autenticación por huella dactilar para utilizar este servicio.</string>
+    <string name="enrollment_lite_phone_blacklist">El número de móvil entrado no es elegible para este servicio.</string>
+
+    <string name="easycash_pendingtrx_alert" formatted="false">¿Deseas retirar tus %1$s? \n%2$s</string>
+    <string name="easycash_pendingtrx_alert_yes" formatted="false">Sí, escanear</string>
+    <string name="easycash_pendingtrx_alert_no" formatted="false">No, enviar efectivo</string>
+    <string name="easycash_pendingtrx_history">Historico</string>
+
+    <string name="easycash_sent_to">ENVIADO A %s</string>
+    <string name="easycash_received_from">RECIBIDO DE %s</string>
+    <string name="easycash_expiration_date">Expira: %s</string>
+
+    <string name="ec_filter_all">Todos</string>
+    <string name="ec_filter_received">Recibidos</string>
+    <string name="ec_filter_sent">Enviados</string>
+    <string name="ec_filter_forme">Para mi</string>
+    <string name="mc_filtertrx_title">FILTRO</string>
+
+    <string name="ec_history_not_available">Aquí se mostrarán sus transacciones de retiro en efectivo.</string>
+    <string name="ec_history_no_trx">No tiene efectivo pendiente por retirar.</string>
+    <string name="ec_history_no_trx2">Aquí se mostrarán sus transacciones de retiro en efectivo.</string>
+
+    <string name="ec_received_from">Recibido de %s</string>
+    <string name="ec_message_from">Mensaje: %s</string>
+
+    <string name="ec_date_format">"MMMM d, yyyy"</string>
+
+    <string name="cashdrop_history_status_success">Transacción completada satisfactoriamente.</string>
+    <string name="cashdrop_history_status_expired">Transacción expirada.</string>
+    <string name="cashdrop_history_status_exception">Transacción completada. Verifique la cantidad dispensada.</string>
+    <string name="cashdrop_history_status_error_sender">Transacción denegada.</string>
+    <string name="cashdrop_history_status_error_receiver">Transacción denegada. Contacte a quien programó el retiro.</string>
+    <string name="cashdrop_history_status_processing">Esperando resultados de la ATM.</string>
+    <string name="cashdrop_history_status_pending_atm_sender">Confirma esta transacción en tu estado de cuenta.</string>
+    <string name="cashdrop_history_status_pending_atm_receiver">Contacte al remitente para confirmar la finalización de la transacción.</string>
+
+    <string name="easycash_unbound">Remover número</string>
+    <string name="easycash_unbound_title">Remover número %s</string>
+    <string name="easycash_unbound_message">¿Desea desactivar Retiro Móvil?\n\nRemover el número desactivaría Retiro Móvil para tu número de teléfono. Para reactivar el servicio, añada su número de teléfono.</string>
+    <string name="easycash_fingerprint_delay">Estamos completando las configuraciones de seguridad para su perfil.</string>
+    <string name="easycash_fingerprint_many_attemps">Usted ha excedido el número de intentos.</string>
+    <string name="easycash_fingerprint_try_later">Favor de intentar más tarde.</string>
+    <string name="easycash_settings_unbound_message">Remover el número desactivaría Retiro Móvil para tu número de teléfono. Para reactivar el servicio, añada su número de teléfono.</string>
+
+
+    <string name="easycash_blacklist_sender">No podemos procesar tu transacción con el número de teléfono registrado.</string>
+    <string name="easycash_blacklist_receiver">No podemos procesar tu transacción hacia el número de teléfono seleccionado.</string>
+    <string name="easycash_blacklist_redeem">No podemos procesar tu transacción con el número de teléfono registrado.</string>
+
+    <string name="easycash_alerts_phone_yes">Sí</string>
+    <string name="easycash_alerts_phone_no">No</string>
+    <string name="easycash_passcode_title">Es necesario añadir código de seguridad para utilizar este servicio.</string>
+    <string name="easycash_passcode_message">Puede configurar su código en: Ajustes > Seguridad > Bloqueo de pantalla</string>
+    <string name="easycash_ofac_hit">Al momento no podemos ofrecerle el servicio. Disculpe los inconvenientes.</string>
+
+    <string name="send_cash">Envía efectivo</string>
+    <string name="ec_send_cash_alert">¿Quieres enviar efectivo?</string>
+    <string name="ec_send_cash_alert_yes">Inscríbete en Mi Banco</string>
+    <string name="ec_send_cash_alert_no">Cancelar</string>
+
+    <string name="ec_fingerprint_wait_title">Podrás usar Retiro Móvil para otros dentro de %s horas</string>
+    <string name="ec_fingerprint_wait_minutes_title">Podrás usar Retiro Móvil para otros dentro de %s minutos</string>
+    <string name="ec_fingerprint_wait_message">Podrás usar Retiro Móvil para otros en unos minutos</string>
+
+    <string name="fingerprint_disable_message">Favor de conectarse a Mi Banco y acceder la configuración para deshabilitar la autenticación por huella dactilar.</string>
+    <string name="ec_alert_selfsend_not_allowed">Favor de escoger un número de teléfono diferente.</string>
+
+    <string name="on_off">ON / OFF</string>
+    <string name="on_off_indicator">OFF</string>
+    <string name="on_off_toggle_on">ON</string>
+    <string name="on_off_accept">Aceptar</string>
+    <string name="on_off_desc">Toma control de tu tarjeta ATH&#174; INTERNACIONAL VISA. Apágala temporeramente para evitar su uso no autorizado tocando
+        el botón de ON/OFF. Podrás, sin embargo, continuar haciendo transacciones que no requieran una tarjeta. &#185;
+    </string>
+    <string name="on_off_description_3">\nEn caso de que hayas perdido tu tarjeta, llama al +1&#8209;787&#8209;724&#8209;3650 o al +1&#8209;888&#8209;724&#8209;3650 para cancelarla.\n</string>
+    <string name="on_off_description_2">&#185;Los depósitos automáticos y pagos recurrentes o preautorizados no se afectan.
+        Además, podrás retirar en cajeros automáticos a través de Retiro Móvil y/o depositar usando Depósito Fácil Móvil aunque tu tarjeta esté apagada. Ambos servicios están disponibles en Mi Banco Móvil app.</string>
+    <string name="on_off_plastics">TARJETAS</string>
+    <string name="on_off_change_onstatus_title">¿Deseas prender esta tarjeta?</string>
+    <string name="on_off_change_status_title">¿Deseas apagar esta tarjeta?</string>
+    <string name="on_off_change_onstatus_desc">Al prenderla, podrás realizar compras o retiros con tu tarjeta ATH&#174; Internacional Visa débito nuevamente.</string>
+    <string name="on_off_change_status_desc">Al apagarla, no podrás realizar compras o retiros con tu tarjeta ATH&#174; Internacional Visa débito hasta volver a prenderla.</string>
+    <string name="on_off_toggle_desc">Presiona la tarjeta\npara prenderla.</string>
+    <string name="on_off_faq">https://helpcenter.popular.com/?tag=faq-on-off</string>
+    <string name="on_off_plasticimage_header_desc">Plastic Image View</string>
+    <string name="on_off_error_plastics">Lo sentimos, hubo un error al buscar sus tarjetas</string>
+    <string name="onoff_toggle_on_error_message">Lo sentimos, su tarjeta no pudo ser prendida. Intente más tarde.</string>
+    <string name="onoff_toggle_off_error_message">Lo sentimos, su tarjeta no pudo ser apagada. Intente más tarde.</string>
+    <string name="on_off_last_date_off">Fecha OFF: </string>
+    <string name="on_off_last_transaction">Última Transacción: </string>
+    <string name="onoff_oops_title">Oops!</string>
+
+    <!-- CUSTOM LOGIN IMAGE -->
+    <string name="crop_image_menu_crop">Recortar</string>
+    <string name="edit_your_image">Editar Foto</string>
+    <string name="custom_image_personalize">Personaliza tu foto</string>
+    <string name="custom_image_choose_photo">Escoger foto</string>
+    <string name="remove_image_toast">La foto ha sido removida exitosamente.</string>
+
+    <!-- DFM MBC -->
+    <string name="accept_terms_title">Términos</string>
+    <string name="accept_terms_description">Acepto los Términos y Condiciones del Servicio de Depósito Fácil Móvil y los cargos (%s) que recibiré a mi cuenta, así como toda comunicación relacionada a mis cuentas de forma electrónica.</string>
+    <string name="accept_terms_terms">Ver todos los Términos y Condiciones</string>
+    <string name="accept_terms_accept">Aceptar y Continuar</string>
+    <string name="accept_terms_cancel_url">https://www.bancopopular.com/cibp-web/actions/login</string>
+    <string name="accept_terms_nocharge_description">¡Ahorra tiempo con \n  Depósito Fácil Móvil!</string>
+    <string name="accept_terms_nocharge_description2">Límite de depósitos diarios hasta $25,000 y mensuales hasta $50,000.</string>
+    <string name="accept_terms_nocharge_description3">Puedes depositar hasta 20 cheques diarios y 50 mensuales.</string>
+    <string name="accept_terms_nocharge_trerms" >Ver todos los &#60;a href&#61;&#34;https://documents.popular.com/terms/mibanco/terms-conditions-es&#34;&#62;Términos y Condiciones&#60;/a&#62;</string>
+    <string name="accept_terms_nocherge_title">Conoce Depósito Fácil Móvil</string>
+
+    <!-- Tsys Loyalty Rewards -->
+    <string name="tsys_loyalty_rewards_description">Rewards:&#160;</string>
+    <string name="tsys_loyalty_rewards_no_balance_placeholder">N/A</string>
+    <string name="tsys_loyalty_rewards_customer_service_error_message">En estos momentos no puede redimir, favor comunicarse con el Centro de Servicio al Cliente al 787-758-0505.</string>
+    <string name="tsys_loyalty_rewards_minimum_balance_error_message">La cantidad mínima para poder redimir tu Cash Rewards es de $10.00</string>
+
+    <string name="tsys_loyalty_rewards_account_selection_title">¿Cómo deseas redimirlo?</string>
+    <string name="tsys_loyalty_rewards_statement_credit_redemption_title">Crédito a la tarjeta</string>
+    <string name="tsys_loyalty_rewards_account_deposit_redemption_title">Depósito a Cuenta</string>
+    <string name="tsys_loyalty_rewards_account_deposit_redemption_select">Seleccione una cuenta</string>
+    <string name="tsys_loyalty_rewards_statement_credit_disclaimer"><b>Importante:</b> El crédito en tu estado de cuenta reduce el balance adeudado, pero aún así tienes que efectuar el pago mínimo requerido.</string>
+    <string name="tsys_loyalty_rewards_amount_title">Seleccione Cantidad</string>
+    <string name="tsys_loyalty_rewards_frequent_redemption_type">Frecuencia de Redención</string>
+    <string name="tsys_loyalty_rewards_one_time_redemption_type">Una sola vez</string>
+    <string name="tsys_loyalty_rewards_automatic_redemption_type">Automática</string>
+    <string name="tsys_loyalty_rewards_amount_disclaimer">La cantidad a ingresar debe ser entre $10.00 y </string>
+    <string name="tsys_loyalty_rewards_max_amount_title">Cantidad de Redención Excedida</string>
+    <string name="tsys_loyalty_rewards_max_amount">La cantidad que has ingresado es mayor a la que puedes redimir.</string>
+    <string name="tsys_loyalty_rewards_min_amount_error_message">La cantidad mínima para redimir tu Cash Rewards es de $10.00.</string>
+    <string name="tsys_terms_and_conditions">Acepto los <a href="https://www.popular.com/tarjetas/cash-rewards/terminos/" style="text-decoration:none">Términos y Condiciones</a></string>
+    <string name="tsys_set">Continuar</string>
+    <string name="tsys_loyalty_rewards_confirmation_title">Cantidad:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_date">Fecha de Redención:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_deposit">Cuenta a Depositar:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type">Tipo de Redención:</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type_statement_credit">Crédito a la tarjeta</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_type_account_deposit">Depósito a cuenta</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information">Verifique la cantidad a redimir, tipo de redención, cuenta y fecha en que desea realizar la transacción.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information1">-Toda solicitud de redención es final.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information2">-La redención de depósito a cuenta o crédito al estado de cuenta puede tomar hasta 5 días laborables en reflejarse en su cuenta.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_information3">-El crédito en el estado de cuenta reduce su balance, pero no reemplaza el pago mínimo requerido.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_edit">Editar</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_continue">Confirmar y redimir</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_title">Redención</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_title">¡La solicitud para redimir tu Cash Rewards fue completada!</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_message">¡Gracias! Recibirás evidencia de esta transacción por correo electrónico.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_success_return">Regresar a mis cuentas</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_return">Regresar</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_title">Lo sentimos, no pudimos procesar su redención de Cash Rewards.</string>
+    <string name="tsys_loyalty_rewards_confirmation_redemption_unsuccess_message">Por favor, intenta nuevamente más tarde o comunícate con nuestro Centro de Servicio al Cliente 787-758-0505/1-800-981-9505.</string>
+    <string name="tsys_loyalty_rewards_confirmation_number">Número de Recibo: </string>
+
+    <!-- Automatic Redemption -->
+    <string name="title_automatic_redemption">"Redención Automática"</string>
+
+    <!-- Notification Center -->
+    <string name="notification_center">Notification Center</string>
+    <string name="notification_center_text">Tienes un nuevo mensaje</string>
+
+    <!-- Push Welcome Screens -->
+    <string name="push_welcome_splash_cancel">Omitir</string>
+    <string name="push_welcome_splash_title">Configura tus alertas</string>
+    <string name="push_welcome_splash_text">NUEVO: Ahora puedes monitorear tus compras y cuentas recibiendo notificaciones push en lugar de mensajes de texto. ¡Actívalas ahora!</string>
+    <string name="push_welcome_splash_text_SMS">NUEVO: Ahora puedes monitorear tus compras y cuentas recibiendo notificaciones push en tu celular. ¡Actívalas ahora!</string>
+    <string name="push_welcome_splash_accept">Confirmar</string>
+    <string name="push_welcome_splash_accept_SMS">Continuar</string>
+    <string name="push_welcome_splash_decline">Luego</string>
+
+    <!--Activation Deactivation Automatic Redemption-->
+    <string name="activation_automatic_redemption_title">Redención Automática Activada</string>
+    <string name="deactivation_automatic_redemption_title">Activación de Redención Automática</string>
+    <string name="activation_automatic_redemption_text">Actualmente tienes activo el servicio de redención automática de Cash Rewards. De tener más de $10.00 acumulados se procesará en el próximo cierre del estado de  tu tarjeta.</string>
+    <string name="deactivation_automatic_redemption_bullet_one">\u2022 La redención automática solamente está disponible para crédito a la tarjeta.</string>
+    <string name="deactivation_automatic_redemption_bullet_two">\n\n\u2022 El valor mínimo para redimir serán $10.00 el cuál se llevara acabo al cierre del estado de tu tarjeta.</string>
+    <string name="deactivation_automatic_redemption_bullet_three">\n\n\u2022 El crédito en tu estado de cuenta reduce el balance adeudado, pero aún así tienes que efectuar el pago mínimo requerido.</string>
+    <string name="deactivation_automatic_redemption_bullet_four">\n\n\u2022 Usted puede desactivar la funcionalidad de Redención Automática en cualquier momento.</string>
+    <string name="activation_automatic_redemption_question">¿Deseas pausar esta acción?</string>
+    <string name="activation_automatic_redemption_button_continue">No, continuar</string>
+    <string name="deactivation_automatic_redemption_button_activate">Activar</string>
+    <string name="activation_automatic_redemption_button_pause">Sí, pausar</string>
+    <string name="automatic_redemption_close_title">Cerrar</string>
+    <string name="activation_automatic_redemption_success_title">¡La activación de Redención Automática fue completada!</string>
+    <string name="activation_automatic_redemption_success_message">¡Gracias! Recibirás evidencia de esta transacción por correo electrónico.</string>
+    <string name="activation_automatic_redemption_success_return">Regresar a mis cuentas</string>
+    <string name="activation_automatic_redemption_unsuccess_return">Regresar a mis cuentas</string>
+    <string name="activation_automatic_redemption_unsuccess_title">Lo sentimos, hubo un problema activando la Redención Automática.</string>
+    <string name="activation_automatic_redemption_unsuccess_message">Por favor, intente nuevamente más tarde o comunícate con nuestro Centro de Servicio al Cliente al 787-758-0505/ 1-800-981-9505.</string>
+    <string name="deactivation_automatic_redemption_success_title">¡La desactivación de Redención Automática fue completada!</string>
+    <string name="deactivation_automatic_redemption_success_message">¡Gracias! Recibirás evidencia de esta transacción por correo electrónico.</string>
+    <string name="deactivation_automatic_redemption_success_return">Regresar a mis cuentas</string>
+    <string name="deactivation_automatic_redemption_unsuccess_return">Regresar a mis cuentas</string>
+    <string name="deactivation_automatic_redemption_unsuccess_title">Lo sentimos, hubo un problema desactivando la Redención Automática.</string>
+    <string name="deactivation_automatic_redemption_unsuccess_message">Por favor, intente nuevamente más tarde o comunícate con nuestro Centro de Servicio al Cliente al 787-758-0505/ 1-800-981-9505.</string>
+
+    <!--MBCC Marketplace-->
+    <string name="marketplace_banner_desc">Abre una cuenta o solicita una tarjeta de crédito</string>
+    <string name="marketplace_terms_button">Aceptar y Continuar</string>
+    <string name="marketplace_pr_url">https://www.popular.com/tarjetas/personal?header=0&amp;footer=0&amp;help=0&amp;related=0&amp;phone=0&amp;hero=0&amp;lang_redirect=0</string>
+    <string name="marketplace_vi_url">https://www.popular.vi/es/tarjetas-credito?header=0&amp;footer=0&amp;help=0&amp;related=0&amp;phone=0&amp;hero=0&amp;lang_redirect=0</string>
+    <string name="marketplace_credit_card_title">Tarjetas de crédito</string>
+    <string name="marketplace_credit_card_subtitle">Encuentra la tarjeta de crédito perfecta para ti</string>
+    <string name="marketplace_credit_card_button">Ver todas</string>
+    <string name="marketplace_eaccount_title">e-account</string>
+    <string name="marketplace_eaccount_subtitle">La única cuenta de cheques 100% online en Puerto Rico</string>
+    <string name="marketplace_eaccount_usvi_subtitle">Una cuenta de cheques 100% online</string>
+    <string name="marketplace_eaccount_button">Ábrela hoy</string>
+
+    <!--Otp Authentication-->
+    <string name="otp_resend_code">Reenviar código</string>
+    <string name="otp_code_limit">Código (6 dígitos)</string>
+    <string name="otp_code_sent_message">Te enviamos un código de verificación a tu email registrado</string>
+    <string name="otp_incorrect_code_sent_message">Código Incorrecto.</string>
+    <string name="otp_incorrect_code">Código incorrecto</string>
+    <string name="otp_resend_code_msj">Nuevo código enviado</string>
+    <string name="otp_verification_code">Código de Verificación</string>
+    <string name="otp_expired_code">Código expirado</string>
+    <string name="otp_generic_error">No podemos continuar con su pedido en estos momentos. Por favor, intente más tarde</string>
+    <string name="otp_incorrect_code_text">Intenta nuevamente o solicita otro</string>
+    <string name="otp_expired_code_text">Solicita uno nuevo en \"Reenviar código\"</string>
+
+
+    <!-- PREMIA CATALOG -->
+    <string name="premia_account_subtype">PRM</string>
+    <string name="please_wait_premia_catalog">Estás saliendo de la página web de Banco Popular de Puerto Rico para ser redirigido a la página web premia.com, propiedad de Popular, Inc. y operada por un tercero bajo las políticas de privacidad y las prácticas de seguridad de Banco Popular de Puerto Rico.</string>
+    <string name="premia_no_balance_placeholder">N/A</string>
+
+    <!--Maintenance with Balances-->
+    <string name="maintenance_balances_footer">Balance podría no reflejar transacciones en proceso.</string>
+    <string name="maintenance_balances_view_balances">Ver balances</string>
+    <string name="maintenance_balances_hide_balances">Esconder balances</string>
+    <string name="maintenance_balances_today_at">&#160;hoy a las&#160;</string>
+    <string name="maintenance_balances_high_volume_title">Estamos experimentando un volumen extraordinario de visitas a Mi Banco.</string>
+    <string name="maintenance_balances_sub">Por favor intenta más tarde y disfruta de los beneficios que te ofrece la aplicación. Disculpa los inconvenientes que esto pueda ocasionar.</string>
+    <string name="maintenance_balances_maintenance_title">Mi Banco Móvil no está disponible en estos momentos.</string>
+
+    <string name="account_pending_enroll_title">Solicitud en proceso, regresa luego.</string>
+    <string name="account_pending_enroll">Estamos para servirte llamando al 787-294-2578 ó 1-888-724-3655 opción #3</string>
+
+    <string name="permission_info_description">Mi Banco Móvil solo solicitará permisos y datos personales necesarios para el uso de la aplicación. Es importante que conozcas cómo recopilamos y utilizamos estos datos, y cómo podrías controlarlos o restringirlos.
+        Popular utiliza esta información para proveer una mejor experiencia de usuario, mejorar nuestros servicios y para proteger tu información. Algunos de los permisos y datos que solicitamos son:</string>
+    <string name="permission_info_phone_title">Permisos de teléfono:</string>
+    <string name="permission_info_storage_title">Permisos de medios y almacenamiento:</string>
+    <string name="permission_info_contact_title">Permisos de contactos: </string>
+    <string name="permission_info_notification_title">Permisos de Notificaciones:</string>
+    <string name="permission_info_phone_description">Mejora la experiencia y para propósitos de seguridad e identidad de seguridad. Además, utilizamos tu número de teléfono en los siguientes servicios: Verificación de 2 Pasos, Mi Banco Alertas y para el envío y recibo de efectivo con Retiro Móvil.</string>
+    <string name="permission_info_storage_description">Mejora la experiencia de usuario, personalización y almacenamiento de recibos.</string>
+    <string name="permission_info_contact_description">Facilita el envío de efectivo a tus contactos con el servicio de Retiro Móvil.</string>
+    <string name="permission_info_notification_description">Recibo de las notificaciones de la aplicación, incluyendo el servicio de Mi Banco Alertas.</string>
+    <string name="permission_info_policy">Accede nuestra &lt;a href=https://www.popular.com/privacidad/>Política de Privacidad&lt;/a> para conocer cómo protegemos tu información personal.</string>
+    <string name="permission_info_post_policy">Los permisos de la aplicación se encontrarán al aceptar esta información y deberás aceptar cada uno para continuar utilizando Mi Banco Móvil. Los permisos de la aplicación se encontrarán al aceptar esta información y deberás aceptar cada uno para continuar utilizando Mi Banco Móvil.</string>
+    <string name="permission_info_button">ACEPTO</string>
+    <string name="permission_info_button_cancel">CANCELAR</string>
+    <string name="privacy_policy"><a href="https://www.popular.com/privacidad/">Politica de Privacidad</a></string>
+
+    <!-- REQUEST DOCUMENTS -->
+    <string name="url_request_documents">https://www.popular.com/servicios/solicitud-de-documentos/?mobile=1</string>
+
+    <!-- MENU NAVIATION BUTTOM -->
+    <string name="menu_nav_accounts">Cuentas</string>
+    <string name="menu_nav_payments">Pagos</string>
+    <string name="menu_nav_transfers">Transfers</string>
+    <string name="menu_nav_ath_movil">ATH Móvil</string>
+    <string name="menu_nav_more">Mas</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector_holo_light"
+    android:minHeight="40dp"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_next"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/arrow"
+        android:background="@drawable/distance_green_dark"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:visibility="invisible" >
+
+        <TextView
+            android:id="@+id/distance_text"
+            style="@style/Text.Standard.Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/location_arrow_white"
+            tools:ignore="ContentDescription" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        style="@style/ListTextView.Title"
+        android:layout_width="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:singleLine="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/content_text"
+        style="@style/ListTextView.Content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/title_text"
+        android:layout_toLeftOf="@+id/linearLayoutDistance"
+        android:gravity="left"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"/>
+
+</RelativeLayout>

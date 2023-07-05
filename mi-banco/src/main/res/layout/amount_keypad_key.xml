@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/normal_key"
+        style="@style/AmountKeypadKeyPadding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_dialog_holo_light" >
+
+        <TextView
+            android:id="@+id/key_number"
+            style="@style/AmountKeypadNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:paddingBottom="-10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/holo_blue_light" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/key_number"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/key_number" >
+
+            <TextView
+                android:id="@+id/key_letters"
+                style="@style/AmountKeypadLetters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/key_line"
+                android:textColor="@color/grey_light" />
+
+            <LinearLayout
+                android:id="@+id/key_line"
+                style="@style/HeaderSeparator"
+                android:orientation="horizontal"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/double_zero"
+        style="@style/AmountKeypadKeyPadding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_dialog_holo_light"
+        android:gravity="center_horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            style="@style/AmountKeypadNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:paddingBottom="-10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:text="@string/double_zero"
+            android:textColor="@color/amount_keypad_double_zero_button" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/del_key"
+        style="@style/AmountKeypadKeyPadding"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn_dialog_holo_light"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/key_number_filler"
+            style="@style/AmountKeypadNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom"
+            android:paddingBottom="-10dp"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/holo_blue_light"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/key_number_filler"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/key_number_filler" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-5dp"
+                android:src="@drawable/backspace"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                style="@style/HeaderSeparator"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

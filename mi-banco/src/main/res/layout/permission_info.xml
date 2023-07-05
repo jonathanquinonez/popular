@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:text="@string/permission_info_description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_privacy_tip"
+                android:drawablePadding="8dp"
+                android:text="@string/permission_info_phone_title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/white"
+                android:text="@string/permission_info_phone_description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_privacy_tip"
+                android:drawablePadding="8dp"
+                android:text="@string/permission_info_storage_title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/white"
+                android:text="@string/permission_info_storage_description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_privacy_tip"
+                android:drawablePadding="8dp"
+                android:text="@string/permission_info_contact_title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/white"
+                android:text="@string/permission_info_contact_description"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_privacy_tip"
+                android:drawablePadding="8dp"
+                android:text="@string/permission_info_notification_title"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:background="@color/white"
+                android:text="@string/permission_info_notification_description"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/textView_permission_privacy_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:text="@string/permission_info_policy"
+                android:textColor="@color/black"
+                android:layout_marginTop="12dp"/>
+
+            <Button
+                android:id="@+id/button_permission_info_accept"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:paddingBottom="0dp"
+                android:text="@string/permission_info_button"
+                android:textColor="@color/grey"
+                android:textStyle="bold"
+                android:theme="@style/Button.Green" />
+
+            <Button
+                android:id="@+id/button_permission_info_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="12dp"
+                android:layout_weight="1"
+                android:padding="12dp"
+                android:text="@string/permission_info_button_cancel"
+                android:textStyle="bold"
+                android:theme="@style/Button.Grey" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

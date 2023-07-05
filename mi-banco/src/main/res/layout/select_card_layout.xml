@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/imgCard"
+        android:contentDescription="@string/desc_ath_card_image"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/account_image_default"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textSize="18sp"
+            app:robotoTypeface="roboto_medium" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvLast4Digits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/athm_card_last_digits"
+            android:textSize="12sp"
+            app:robotoTypeface="roboto_light"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>

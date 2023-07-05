@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/textHeaderNoneOfTheCodes"
+            style="@style/HeaderText"
+            android:text="@string/title_none_of_the_codes" />
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:id="@+id/oobTextNearestBranch"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/text_nearest_branch"
+            android:textColor="@color/black_54"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitNearestBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit_nearest_branch" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:id="@+id/oobTextContactCall"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/text_contact_call"
+            android:textColor="@color/black_54"
+            android:textSize="16sp"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/btnSubmitCallNow"
+            android:text="@string/submit_call_now"
+            style="@style/ButtonOOB" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/AccountsItem"
+        android:background="@color/black" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/item_image"
+                style="@style/AccountsItemImage"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout style="@style/AccountsItemInfoSection" >
+
+                <TextView
+                    android:id="@+id/item_name"
+                    style="@style/AccountsItemTitle"
+                    android:textColor="@color/white" />
+
+                <LinearLayout style="@style/AccountsItemInfoBottomSection" >
+
+                    <TextView
+                        android:id="@+id/item_value"
+                        style="@style/AccountsAccountHeaderBalance" />
+
+                    <TextView
+                        android:id="@+id/item_comment"
+                        style="@style/AccountsItemNumber" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/buttons_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tsys_loyalty_rewards_balance_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    style="@style/TsysLoyaltyRewardsContainer"
+                    android:onClick="onClickCashRewardsButton"
+                    android:visibility="gone">
+
+
+                    <TextView
+                        android:id="@+id/tsys_loyalty_rewards_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/TsysLoyaltyRewardsContainerText"
+                        android:text="@string/tsys_loyalty_rewards_description"/>
+
+                    <ImageView
+                        android:id="@+id/tsys_loyalty_rewards_loading"
+                        style="@style/TsysLoyaltyRewardsLoading"
+                        android:src="@drawable/small_loading"/>
+
+                    <TextView
+                        android:id="@+id/tsys_loyalty_rewards_balance"
+                        style="@style/TsysLoyaltyRewardsContainerText"/>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/onoff_statement_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/on_off_rounded_buttton"
+                    android:clickable="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/onoff_label"
+                        style="@style/AccountOnOffLabelView"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:drawableStart="@drawable/onoff_plastic_card_blue"
+                        android:drawablePadding="15dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/onoff_statement_frame"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="6dp">
+
+                        <LinearLayout
+                            style="@style/AccountPlasticsStatementView"
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp"
+                            android:paddingRight="6dp">
+
+                            <TextView
+                                android:id="@+id/onoff_plastic_count"
+                                style="@style/AccountsOnOffPlasticCount" />
+
+                            <TextView
+                                android:id="@+id/onoff_plastic_off"
+                                style="@style/AccountsOnOffPlasticView"
+                                android:text="@string/on_off_indicator"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tsys_loyalty_rewards_error_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:padding="20dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_below="@+id/buttons_container"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="top"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/tsys_loyalty_rewards_flag_orange"/>
+
+                <TextView
+                    android:id="@+id/tsys_loyalty_rewards_error_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="12dp">
+
+    <TextView
+        style="@style/HeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="0dp"
+        android:text="@string/athm_sending_to_header" />
+
+    <RelativeLayout
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imgContactPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/contact_photo_placeholder"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="1dp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactPhotoSection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:robotoTypeface="roboto_medium" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/athm_contact_secondary"
+            android:textSize="16sp"
+            app:robotoTypeface="roboto_light" />
+    </LinearLayout>
+</LinearLayout>

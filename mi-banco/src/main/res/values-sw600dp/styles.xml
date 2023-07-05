@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AmountKeypadKeyPadding">
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="AmountKeypadNumber">
+        <item name="android:textSize">50sp</item>
+    </style>
+
+    <style name="AmountKeypadLetters">
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="AmountKeypadAmountText">
+        <item name="android:textSize">55sp</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="AmountKeypadGridBox">
+        <item name="android:layout_width">400dp</item>
+    </style>
+
+    <style name="AmountKeypadButton">
+        <item name="android:layout_alignParentBottom">false</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_below">@+id/grid_box</item>
+    </style>
+
+    <style name="PaymentsMenuBox">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/athm_header</item>
+        <item name="android:textColorPrimary">@color/grey_dark</item>
+    </style>
+
+</resources>

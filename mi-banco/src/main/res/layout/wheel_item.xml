@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    style="@style/WheelItemRoot" >
+
+    <LinearLayout
+        android:id="@+id/filler"
+        android:orientation="horizontal"
+        style="@style/WheelItemFiller" />
+
+    <RelativeLayout
+        android:id="@+id/image_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filler" >
+
+        <ImageView
+            android:id="@+id/account_image"
+            style="@style/WheelItemImage"
+            tools:ignore="ContentDescription" />
+
+        <RelativeLayout
+            android:id="@+id/opacity_layer"
+            style="@style/WheelItemOpacityLayer"
+            android:layout_centerInParent="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_section"
+        style="@style/WheelItemTitleBox"
+        android:layout_below="@+id/image_section" >
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/WheelItemTitle" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_section"
+        style="@style/WheelItemBottomSection"
+        android:layout_below="@+id/title_section" >
+
+        <TextView
+            android:id="@+id/item_balance"
+            style="@style/WheelItemBalance"
+            android:layout_alignParentLeft="@+id/item_last4num" />
+
+        <TextView
+            android:id="@+id/item_last4num"
+            style="@style/WheelItemCode" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ruler"
+        android:orientation="horizontal"
+        style="@style/WheelItemDivider"
+        android:layout_below="@+id/bottom_section" />
+
+</RelativeLayout>

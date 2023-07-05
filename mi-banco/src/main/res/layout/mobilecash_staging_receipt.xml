@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentStart="true"
+    android:layout_above="@+id/btnScan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="-10dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/receipt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="384dp"
+            android:background="@drawable/receipt_background_lal">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:id="@+id/txtReceiptTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/mc_stage_receipt_title"
+                    android:textColor="@color/athm_header"
+                    android:textSize="20sp" />
+
+                <include
+                    android:id="@+id/transactionInfo"
+                    layout="@layout/mobilecash_helper_receiptinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txtReceiptTitle" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true">
+
+                <ImageView
+                    android:id="@+id/imgEasyCashStamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/stamp_retiro_facil_sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:id="@+id/instructionsLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mc_stage_receipt_instruction_title"
+            android:textSize="20sp"
+            android:textColor="@color/athm_header"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mc_location"
+                android:id="@+id/imageInstructions1"/>
+
+
+            <TextView
+                android:id="@+id/tvStageReceiptInstruction1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/mc_stage_receipt_instruction_1"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageInstructions2"
+                android:src="@drawable/ic_mc_lock" />
+
+
+            <TextView
+                android:id="@+id/tvStageReceiptInstruction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/mc_stage_receipt_instruction_2"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mc_phone"
+                android:id="@+id/imageInstructions3"/>
+
+
+            <TextView
+                android:id="@+id/tvStageReceiptInstruction3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/mc_stage_receipt_instruction_3"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/withdraw_instuctions">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_mc_withdraw"
+                android:id="@+id/imageInstructions4"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/tvStageReceiptInstruction4"
+                android:text="@string/mc_stage_receipt_instruction_4"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+<Button
+    android:id="@+id/btnScan"
+    style="@style/Button.Green"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:text="@string/mc_stage_receipt_btn_scan"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true" />
+</RelativeLayout>

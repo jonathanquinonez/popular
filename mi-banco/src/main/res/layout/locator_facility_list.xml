@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.popular.android.mibanco.view.CustomFastScrollView
+        android:id="@+id/fast_scroll_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        myapp:overlayHeight="110dp"
+        myapp:overlayScrollThumbWidth="60dp"
+        myapp:overlayTextSize="26dp"
+        myapp:overlayWidth="250dp" >
+
+        <ListView
+            android:id="@+id/list_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/grey_light"
+            android:dividerHeight="1dp" />
+    </com.popular.android.mibanco.view.CustomFastScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_update"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

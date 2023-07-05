@@ -1,0 +1,21 @@
+
+Para los que están en constante movimiento: una mejor experiencia de Banca por Móvil diseñada para usuarios de Android.
+Disponible para todos los clientes inscritos en Mi Banco Online.
+Inscríbete en www.popular.com
+
+Funcionalidades
+• Maneja tus cuentas y balances 24/7
+• Ve la actividad en tus cuentas incluyendo las transacciones hechas en los últimos 18 meses
+• Ve tus e-Bills
+• Haz transferencias entre cuentas
+• Recuerda montos establecidos
+• Provee calendario para e-Bills y pagos calendarizados
+• Guarda recibos
+• Localizador de ATHs y sucursales
+• Contáctanos para asistencia 
+
+Mi Banco Móvil para Android App está diseñada específicamente para los siguientes sistemas operativos:
+• Android Froyo 2.2
+• Android gingerbread 2.3 
+• Android Honeycomb 3.0
+• Android Ice Cream Sandwich 4.0 

@@ -1,0 +1,11 @@
+
+SEGURIDAD BANCA POR MÓVIL
+
+Utilizamos los mismos parámetros de seguridad que el servicio de Mi Banco Online. 
+Nosotros no guardamos el nombre del usuario ni la contraseña. Tu información personal está protegida por encriptación de 128 Bits.
+
+Deberás entrar el nombre de usuario, contestar una pregunta secreta y la contraseña que creaste al inscribirte en Mi Banco Online. Si escogiste recordar tu contraseña y recordar el dispositivo,  solo necesitarás colocar tu contraseña para accesar la cuenta.
+
+Mantén esta información confidencial. Si olvidas tu contraseña, puedes cambiarla en línea visitando www.bancopopular.com/password o comunicándote con nuestros representantes de servicio en TeleBanco Popular al (787) 724-3655 (Puerto Rico) ó 1-888-724-3655 (Estados Unidos / Islas Virgenes) para que te otorguen una contraseña nueva.
+
+Siempre descarga la aplicación de la tienda de Google Play.

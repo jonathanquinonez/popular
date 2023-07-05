@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/frame_layout" android:orientation="vertical">
+
+    <ImageButton
+        android:onClick="onClick"
+        android:id="@+id/notification_center_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:tooltipText="@string/notification_center"
+        android:src="@drawable/notification_normal_icon"/>
+</FrameLayout>

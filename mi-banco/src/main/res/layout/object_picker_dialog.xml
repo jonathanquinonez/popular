@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingTop="20dp">
+
+        <NumberPicker
+            android:id="@+id/picker1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:focusable="false"
+            android:inputType="none"
+            android:textIsSelectable="true"/>
+
+        <NumberPicker
+            android:id="@+id/picker2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnCancel"
+            style="@style/AlertDialogButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnSet"
+            style="@style/AlertDialogButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

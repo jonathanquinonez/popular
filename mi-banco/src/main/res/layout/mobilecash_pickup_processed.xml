@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_above="@+id/btnOk"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/mc_pickup_atm_title"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:gravity="center_horizontal"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/athm_header"
+                android:id="@+id/athmPickupTitle" />
+
+            <ImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/imageAtm"
+                android:src="@drawable/checkmark"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="54dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/athmPickupTitle"
+                android:layout_centerHorizontal="true" />
+
+            <include
+                layout="@layout/mobilecash_helper_receiptinfo"
+                android:layout_marginTop="4dp"
+                android:id="@+id/transactionInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageAtm"/>
+
+            <Button
+                android:id="@+id/btnOk"
+                style="@style/Button.Green"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/ok"
+                android:layout_below="@+id/transactionInfo"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

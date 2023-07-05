@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en" tools:ignore="MissingTranslation">
+
+    <string name="welcome_back">Welcome!</string>
+    <string name="please_sign_in">Please login to start</string>
+    <string name="see_balance_instructions">Please login first to Mi Banco Mobile and select remember username.</string>
+    <string name="last_updated_on">Last updated</string>
+    <string name="refresh_message">Update available in approximately (?) minute(s)</string>
+    <string name="refresh_message2">Update available in a few seconds</string>
+    
+    <!-- Content descriptors -->
+    <string name="logo_description">The Popular logo</string>
+    <string name="login_description">Image button to open login through Mi Banco app</string>
+    <string name="payments_description">Image button to execute payment through Mi Banco app</string>
+    <string name="transfers_description">Image button to execute transfers through Mi Banco app</string>
+    <string name="locator_description">Image button to open the locator in Mi Banco app</string>
+    <string name="refresh_description">Image button to refresh the balances</string>
+    
+</resources>

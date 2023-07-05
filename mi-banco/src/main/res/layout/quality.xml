@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                style="@style/AccountDetailsHeaderText"
+                android:text="@string/quality_main_url" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/accounts_section_bottom_line" />
+
+            <EditText
+                android:id="@+id/quality_main_url_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/quality_main_url"
+                android:inputType="textUri" />
+
+            <TextView
+                style="@style/AccountDetailsHeaderText"
+                android:text="@string/quality_port" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/accounts_section_bottom_line" />
+
+            <EditText
+                android:id="@+id/quality_port_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/quality_port"
+                android:inputType="numberSigned" />
+
+            <TextView
+                style="@style/AccountDetailsHeaderText"
+                android:text="@string/quality_url_path" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/accounts_section_bottom_line" />
+
+            <EditText
+                android:id="@+id/quality_url_path_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="@string/quality_url_path"
+                tools:ignore="TextFields" />
+
+            <TextView
+                style="@style/AccountDetailsHeaderText"
+                android:text="@string/quality_current_base_url" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/accounts_section_bottom_line" />
+
+            <EditText
+                android:id="@+id/quality_current_base_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:inputType="none"
+                tools:ignore="TextFields" />
+
+            <Button
+                android:id="@+id/save_button"
+                android:theme="@style/Button.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/save" />
+
+            <Button
+                android:id="@+id/restore_defaults_button"
+                android:theme="@style/Button.Grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quality_restore_defaults" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

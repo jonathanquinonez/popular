@@ -1,0 +1,326 @@
+
+ELECTRONIC BANKING SERVICE AGREEMENT
+
+I. Accepting the Service Agreement 
+
+You, the client (“You”), understand that You are under no obligation to accept this Service Agreement or register with this service. 
+
+This Service Agreement governs the services provided through the Internet Banking service and the TelePago Popular® service provided by Banco Popular de Puerto Rico (“Bank”). These electronic banking services permit You to perform a number of banking functions on accounts linked to such services through the use of a personal computer, telephone or cellular telephone. 
+
+You understand that the terms and conditions of the following Service Agreement are being provided in electronic form and any acceptance by You of such terms and conditions constitutes your consent to said terms and conditions and acknowledgement of the receipt of the disclosures.  You agree that all future notices about the electronic banking services will be provided electronically. You are responsible for notifying the Bank of any changes for the email address You provide. You will be able to notify any changes to the e-mail address at any time as indicated below. 
+
+Transactions made according to the provisions of this Service Agreement are governed by various Federal laws, including, the Electronic Funds Transfers Act, Truth in Savings Act, Fair Credit Billing Act, Truth in Lending Act, among others. The Bank is required to provide You certain disclosures and notices regarding your rights and responsibilities under certain Federal laws, including those referred to herein. 
+
+II.  E- SIGN DISCLOSURE 
+
+The Electronic Signatures in Global and National Commerce ACT (E-Sign) allows Banco Popular to provide by electronic means all the notices and disclosures related to the electronic banking services, account statements and Popular’s bill statements to satisfy any statute regulation that requires such information to be in writing, after first obtaining your affirmative consent. 
+
+A. Consent 
+
+a.  You understand that the terms and conditions of the following Service Agreement are being provided in electronic form and any acceptance by You of such terms and conditions constitutes your consent to said terms and conditions and acknowledgement of the receipt of the disclosures. 
+
+b.   You agree that all future notices about the electronic banking services, account statements and Popular’s bill statements will be provided electronically to your email address or will be published in the Bank’s website. 
+
+B. Right to withdraw your consent 
+
+You may withdraw your consent to electronic delivery of the notices at any time by connecting to the Internet Banking service and modifying this option or by contacting Tele Banco Popular at (787) 724-3659 or 1-888-724-3659 (option 4).
+ 
+a.  Electronic Banking Services - When withdrawing your consent to electronic delivery of the notices related to the electronic banking services, You can’t stay enrolled in the Internet Banking Service. 
+
+b.  E-Statement Service - When withdrawing your consent to electronic delivery of the notices related to your account statement, the Bank will allow You to receive paper copies of your statements. If your account does not provide this option, the Bank will allow You to change your account to an account that provides paper copies of the statements. 
+
+c.   E-Bill Service - When withdrawing your consent to electronic delivery of the notices related to your Popular’s bills, the Bank will allow You to receive paper copies of your bills. 
+  
+C. Right to receive documents 
+
+You have the right to receive any notice or disclosure in paper form, as well as a copy of this Service Agreement. The manner for obtaining said copies is by visiting any of our branches. 
+You may also call the following telephone numbers 7 days a week, 24 hours a day: 
+
+Tele Banco Popular ® 
+(787) 724-3659/1-888-724-3659 
+TelePago Popular® 
+(787) 724-3652/1-888-724-3652 
+Internet Banking 
+(787) 724-3655/1-888-724-3655 
+Hearing impaired clients (TDD) 
+(787) 753-9677/1-800-981-9666 
+  
+You may also write to: 
+
+Banco Popular de Puerto Rico
+Grupo de Internet Banking Support Group (772)
+PO Box 362708
+San Juan, Puerto Rico 00936-2708 
+
+Banco Popular de Puerto Rico
+Tele Banco Popular ® 
+PO Box 362708
+San Juan, Puerto Rico 00936-2708 
+
+Or send an email to: internet@bppr.com. 
+Or visit: www.popular.com. 
+
+D. Notifying Changes 
+
+You are responsible for notifying the Bank of any changes for the email address You provide. You will be able to notify any changes to the e-mail address at any time by contacting Tele Banco Popular at (787) 724-3659 or 1-888-724-3659 (option 4) or sending an email to: internet@bppr.com. 
+
+E. Necessary Equipment	 
+
+To be able to access the Internet Banking services through a personal computer, You must use a computer with Internet access utilizing a browser or navigator that uses SSL (Secured Socket Layer) 128 bit encryption; Internet Explorer version 6.0 or higher for Windows 2000 and XP, Mozilla version 1 or higher for Windows 2000 and XP, MAC OS 9 and X, or Safari version 1 or higher for MAC OS X. 
+
+F. AMENDMENTS 
+
+The Bank may amend this Service Agreement at any time.  We will notify you of such change by mail or electronic message.  If You initiate any transaction through the Service after the effective date of the change, You indicate your agreement to the change. 
+
+III . GENERAL PROVISIONS 
+
+Banco Popular de Puerto Rico (the “Bank”) offers you (“You”) a range of electronic banking services under the Internet Banking and TelePago Popular® services (hereinafter referred to collectively as the “Service”, unless indicated otherwise). 
+
+The terms and conditions of this Service Agreement govern the Service, however use of the Designated Account (as defined herein) shall continue to be governed by the corresponding terms and conditions of the deposit account agreement when the Designated Account is a deposit account or the terms and conditions of the corresponding rotating credit plan agreement when the Designated Account is a credit card (each to be referred to herein as an “Account Agreement”). 
+
+Furthermore, the Designated Account may be an account with the Bank or another financial institution and will continue to be governed by the corresponding Account Agreement of the account-holding institution. The terms and conditions of the Account Agreement shall be incorporated herein by reference. In the event of a conflict between the terms and conditions of this Service Agreement and those of the Account Agreement, the latter shall apply, otherwise the terms and conditions of this Service Agreement shall be interpreted as complimentary to those of the Account Agreement. The disclosures and notices regarding your rights and responsibilities under certain Federal laws, including those referred to herein, may vary depending on who the account-holding institution is. Please refer to the Electronic Funds Transfers Disclosures for more information. 
+
+A. Description of and Subscription to the Service 
+
+TelePago Popular® 
+TelePago Popular® is a service through which You may give instructions to the Bank to debit the account that You designate (the “Designated Account”), the amount corresponding to periodic payments to your creditors (“Payments”) or the amount corresponding to transfers of funds between accounts (“Transfers”) initiated by You, as set forth in this Service Agreement. This service will permit access to Designated Accounts held by financial institutions other than the Bank. 
+To subscribe to the TelePago Popular® service, You may enroll in the Internet Banking Service, or call TeleBanco Popular® at 787-724-3659/1-888-724-3659. Hearing impaired clients (TDD) may call 787-753-9677 or 1-800-981-9666. The subscription may also be made by visiting any branch to fill out a registration form stating specific information regarding the Designated Account and the accounts that You wish to include in the TelePago Popular® service. 
+Subscription to the TelePago Popular® service does not automatically enroll You in the Internet Banking service. 
+
+Internet Banking 
+The Bank's Internet Banking service allows You to give the Bank instructions for Payments and Transfers on-line. To subscribe to the Internet Banking service, You must enroll on-line through the Bank's webpage www.bancopopular.com, and follow the instructions listed therein or visit any branch to complete the registration with a bank officer. Upon subscribing to the Internet Banking service you will be automatically enrolled in the TelePago Popular® service and will be able to use the wide range of electronic banking services offered on-line. Once all the required information submitted by You is duly verified and authenticated, the Bank will begin to provide the service. You will have access to all the accounts at the Bank on which You are registered as account holder. 
+
+B. Customer Service/Copies of Notices and Disclosures 
+
+For any questions regarding the Service, including obtaining paper copies of this Service Agreement, the notices or disclosures related to the Service, or in order to notify any changes in your information, as well as notifying your desire to cancel the Service, You may visit any of the Bank’s branches. 
+You may also call the following telephone numbers 7 days a week, 24 hours a day:
+ 
+TeleBanco Popular® 
+(787) 724-3659/1-888-724-3659 
+
+TelePago Popular® 
+(787) 724-3652/1-888-724-3652 
+
+Internet Banking 
+(787) 724-3655/1-888-724-3655 
+
+Hearing impaired clients (TDD) 
+(787) 753-9677/1-800-981-9666 
+
+You may also write to: 
+
+Banco Popular de Puerto Rico
+Grupo de Internet Banking Support Group (772)
+PO Box 362708
+San Juan, Puerto Rico 00936-2708 
+
+Banco Popular de Puerto Rico
+TeleBanco Popular® 
+PO Box 362708
+San Juan, Puerto Rico 00936-2708 
+
+Or send an email to: internet@bppr.com. 
+
+Or visit: www.bancopopular.com. 
+
+IV. SERVICES OFFERED 
+
+This Service Agreement describes the basic electronic banking services provided under the Internet Banking and TelePago Popular® service. Other electronic banking services may be available depending on which services you subscribe to and utilize and depending on which financial institution is the account-holder of the Designated Account. The Bank may also add additional electronic banking services in the future. All such present and future electronic banking services shall be governed by the terms and conditions of this Service Agreement and the corresponding Account Agreement. To determine which electronic banking services are available please follow the instructions of the teleprompter when using the TelePago Popular® service or the Internet webpage links when using the Internet Banking service. 
+
+Payments through TelePago and AutoPay Service through Internet Banking 
+You may use the Service to make Payments to creditors who are enrolled in the Service and that have been designated by You. When you give the Bank an Instruction to make Payments, the Bank shall debit the Designated Account and 1) credit the creditor's account with the Bank; 2) send the creditor the Payment electronically; or 3) send an official check to the creditor through regular mail, if applicable. 
+
+Payments Categories that can be made through the TelePago Service: 
+
+1. Automatic Payments - These Payments allow you to give instructions to the Bank preauthorizing the Bank to make continual Payments without having to give additional instructions each time you want the Bank to make a Payment. Automatic Payments can be: 
+a. Fixed, meaning You authorize the Bank to debit from the Designated Account a fixed dollar amount for a set period of time. Fixed Automatic Payments require that your instructions include the day on which you want the Bank to debit the Designated Account and the period of time for which the Bank will make the debits. For example, you may instruct the Bank to pay the set amount of $20.00 to your credit card account on the 15th of each month for a period of 18 months. 
+b. Variable, meaning You authorize the Bank to debit from the Designated Account a dollar amount that may vary during each billing period. For example, You may instruct the Bank to pay the minimum monthly payment reflected on your credit card statement (which will vary depending on the average daily balance of the credit card account). The Bank will provide You with notice of the amount and date of Payment, unless You have indicated a particular range of payment amounts within which the Bank is authorized to process Payments, in which case, the Bank will provide You the ten (10) day advance notice only if the Payment amount falls outside such range. 
+
+2. One Time Payments - For One Time Payments, You shall gice the Bank instructions regarding the exact amount and date the Payments are to be made each time you access the Service. 
+
+SPECIAL PROVISIONS FOR THE AUTOPAY SERVICE THROUGH INTERNET BANKING
+
+By enrolling in the Banco Popular AutoPay Program (the "Program"), I am authorizing Banco Popular to debit the bank account I designate (the "Designated Account") each billing period to pay automatically the amount due on my Banco Popular Credit Card statement. 
+The amount of the payment and the date on which the debit occurred will be reflected on my next Credit Card Statement. Also, I will be able to see my next payment due date by login in to Internet Banking. 
+
+Autopay automatic payment categories:
+
+A. Pay the Total New Balance:
+
+If I select the "Total New Balance" automatic payment option, Banco Popular will debit my Designated Account for the entire New Balance shown on my billing statement. This amount could vary each month. I understand that I can select a maximum amount to be debited if I choose. I must have a deposit account with Banco Popular to use this option.
+
+B. Pay only the minimum payment:
+
+If I select the "Minimum Payment" automatic payment option, Banco Popular will debit my Designated Account for the Minimum Payment shown on my billing statement. This amount could vary each month. I must have a deposit account with Banco Popular to use this option.
+
+C. Pay a fixed payment amount:
+
+If I select the "Fixed Amount" automatic payment option, Banco Popular will debit my Designated Account for the fixed amount that I have selected. If the fixed amount is less than the Minimum Payment on my account, I understand that I would have to make additional payments to pay the Minimum Due. 
+
+You acknowledge that some of the Fixed Payments may vary during the term in which the Service is in effect. IF A CHANGE OCCURS IN THE AMOUNT OF THE FIXED PAYMENT, FREQUENCY OR ACCOUNT NUMBER WITH THE PAYEE, IT IS EXPRESSLY AGREED THAT IT SHALL BE YOUR OBLIGATION TO NOTIFY THESE CHANGES. This notice of change must be made 10 days before the effective day of the payment, in order that the adjustment’s effective date is processed before the date designated for the processing of the Payment. The adjustment in the Payment shall not be effective until the Bank receives and processes the notice of the change. The Bank will not be liable for discrepancies in any Fixed Payments made before receiving and processing the described notice of change. 
+
+You also acknowledge that in the case of Automatic Payments that are installment loans (personal or mortgage with the Bank or any other financial institution), the last installment may include late charges, penalties and other charges accumulated and not satisfied during the life of the loan. You expressly authorize the Bank to debit from the Designated Account the total amount of the last loan installment payment including the charges described previously. 
+
+Your instructions shall be given or shall designate a date at least seven (7) business days before the due date of the Payment, otherwise the Bank will not be liable nor guarantee that the Payment can be processed, transferred or sent before the due date. Furthermore, the Bank shall not be liable for: a) errors or delays by the creditor in crediting Payments made through the Service; or b) delays in the delivery and processing of Payments caused by the Postal Service. Upon receipt of a complaint from You in either of these cases, the Bank’s responsibility shall be limited to: a) diligently investigate the processing record of the Payment in controversy, and b) notify You with the results of said investigation within a period of ten (10) business days from the date an investigation pertaining to the Payment in controversy was requested. 
+
+Nor shall the Bank be liable for Payments not accepted by the creditor. If the Bank is notified by the creditor that the Payment was not accepted, the Bank’s responsibility shall be limited to: a) reverse the debit for the corresponding non accepted Payment on the same day in which the returned Payment is received; and b) notify You of the non acceptance of the Payment no later than the following business day in which the returned Payment is received. 
+
+IT IS EXPRESSLY AGREED THAT THE BANK WILL NOT BE LIABLE FOR LATE CHARGES OR ANY TYPE OF PENALTY THAT THE CREDITOR IMPOSES ON YOU, OR FOR DAMAGES OR INCONVENIENCES OF ANY KIND WHATSOEVER SUFFERED BY YOU AS A CONSEQUENCE OF PAYMENTS THAT ARE LOST IN THE MAIL OR PAYMENTS MADE AFTER THEIR DUE DATE IF SAID DELAY IN THE PAYMENT IS ATTRIBUTABLE TO A LATE NOTICE FROM YOU. If You fail to comply with the obligation of notifying the Bank the amount and date when any Payment will be made, the Bank’s obligation to provide the Service for said Payment shall cease. For more information regarding the Bank’s liability and error resolution procedures, please refer to the Electronic Funds Transfers Disclosures and/or your Account Agreement. 
+
+Transfers 
+
+You can issue instructions to the Bank to perform Transfers between your Designated Account and other authorized accounts. Based on your instructions, the Transfers will be made through debit to the Designated Accounts and the funds will be credited to the accounts that have been included in the Service. Only Fixed Automatic Transfers and One Time Transfers can be made through the Service (same instructions apply as those for Fixed Automatic Payments and One Time Payments). 
+
+V. USE OF THE DESIGNATED ACCOUNT 
+
+A. Sufficient Funds 
+
+You must maintain sufficient funds at all times to cover the Payments or Transfers to be debited from the Designated Account under the Service. IF THERE ARE INSUFFICIENT FUNDS IN THE DESIGNATED ACCOUNT, THE BANK WILL NOT HAVE ANY OBLIGATION WHATSOEVER TO COVER THE PAYMENTS OR PROCESS THE TRANSFERS. 
+
+The Bank shall charge a $15.00 fee for each Payment or Transfer that is returned because of insufficient funds or for any other reason. Any modification to this fee shall be notified to You, according to the terms of this Service Agreement. Other charges for transactions made with insufficient funds may apply depending on your Account Agreement. 
+
+B. Use of the PIN/Authorized Users 
+
+A username, password or personal identification number (PIN), (hereby referred to as “Access Parameters”) may be required in order to access the Service. You agree not to disclose or otherwise make these Access Parameters available to anyone not authorized on the Designated Account. If there are other authorized users on the Designated Account, You hereby authorize each of them to use the Access Parameters and the Service. Any signer on the Designated Account is authorized to make Payments and Transfers. 
+
+C. Designated Account Statement 
+
+All Payments and Transfers processed by the Bank will be reflected in your monthly account statement corresponding to the Designated Account. Please note that such monthly account statement will show each individual debit separately, even if You authorize several Payments on the same date. Please refer to your Account Agreement and accompanying disclosures for more detailed information regarding your Account Statement. 
+
+VI. INSTRUCTIONS TO THE BANK 
+
+A. Cutoff Hours 
+
+The Bank shall process Payments and Transfers Monday through Friday, excluding federal holidays (referred to herein as a “Business Day”). Even though the Bank may offer services to the public some Saturdays, Sundays and holidays, these days are not considered Business Days. 
+
+Any instruction from You required or permitted according to the provisions of this Service Agreement, that is received before 4:30 PM on any Business Day, will be processed on the same day it is received. If your instruction is received after that time or during any non-business day, it shall be processed on the next Business Day. However, depending on the nature of the transaction, the funds may be available immediately. 
+
+B. Honoring Instructions 
+
+The Bank will honor your instructions for Payments or Transfers only when You have complied with the terms and conditions of this Service Agreement. The Bank will be under no obligation to honor, either in whole or in part, any instruction that: a) exceeds your available funds in the Designated Account; b) is not in accordance with any condition indicated by You and agreed to by the Bank; c) the Bank has reason to believe may not be authorized by You; d) involves funds subject to a hold, dispute or legal process preventing their withdrawal from the Designated Account; e) would violate any law, rule, or regulation applicable to the Service, You or to the Bank; f) is not in accordance with any other requirement stated in the terms and conditions of this Service Agreement or any of the Bank’s policies, procedures, or practices; or g) for your protection or the protection of the Bank, the Bank has reasonable cause not to honor. 
+
+C. Erroneous Instructions 
+
+If the Bank receives an instruction authorized by You and the instruction is erroneous in any way, the Bank shall have no obligation or liability for the error. 
+
+VII. SERVICE FEES 
+
+You agree to pay the Bank the fees the Bank establishes for the Service and authorizes the Bank to charge such fees to the Designated Account. 
+
+You agree to pay the Bank for: a) any special services the Bank performs at your request, b) requests for copies of archived transaction documents, and c) the costs the Bank incurs in responding to subpoenas and other legal process related to your transactions. You may obtain information on these additional fees by referring to the Electronic Funds Transfers Disclosures and/or your Account 
+Agreement and by contacting TeleBanco Popular®. 
+
+VII. ERRORS OR QUESTIONS ABOUT THE DESIGNATED ACCOUNT STATEMENT 
+
+In case of errors or questions about the Designated Account statement, You should contact the account holding institution. If the Bank is the account-holding institution, You may call customer service or You may also send the claim to the Bank at the following address: Banco Popular de Puerto Rico, Research and Adjustments Department, PO Box 362708 , San Juan , Puerto Rico 00936-2708. For additional information regarding the procedures applicable to the resolution of errors in electronic transfers, please refer to the Electronic Funds Transfers Disclosures and/or your Account Agreement. 
+
+IX. LIMITATION OF LIABILITY 
+
+You are responsible for regular and prompt review of the monthly statements corresponding to the Designated Account and for the safekeeping of your Access Parameters. Under certain circumstances, the Bank may be liable. For more information regarding your liability or the Bank’s liability, please refer to the Electronic Funds Transfers Disclosures and/or your Account Agreement. 
+
+The Bank shall make all reasonable efforts to ensure full compliance of its obligations under the Service and to resolve problems that may arise with the Payments or the Transfers. However, the Bank shall not be liable for damages or inconveniences of any kind whatsoever that You may be subject to, if the Bank proceeds in accordance with the instructions given by You. 
+
+If the Bank does not comply with its obligations of processing and transferring the Payments according to the provisions of this Service Agreement, the Bank’s liability shall be limited to the reimbursement to You of those late charges imposed by contract against You by the corresponding creditor. 
+
+You agree that neither the Bank nor any party involved in creating or delivering the Service is liable for any direct, indirect, incidental, consequential or punitive damages arising out of your access to or use of the Service. The Bank assumes no responsibility for and will not be liable for any damages to or any viruses which may affect your computer equipment or other property on account of your access to, use of or downloading from the Service or www.bancopopular.com internet site. 
+
+X. TERMINATION 
+
+The provisions of this Service Agreement shall be in full force and effect until any of the parties notifies the other of the intention to terminate the Service. You may terminate this Service Agreement by giving written notice to the Bank (by mail, fax or email) or by calling TeleBanco Popular®. 
+
+The Bank reserves the right to terminate this Service Agreement or suspend your participation in the Service at any time, through previous notice. The Bank may immediately terminate the Service if: a) You or any authorized user of the Access Parameters breach any agreement with the Bank; b) the Bank has reason to believe there has been or may be an unauthorized use of the Access Parameters, the Designated Account, or the Service; c) any party associated with the Designated Account requests that the Bank do so; or d) there are conflicting claims to the funds in the Designated Account. 
+
+If You or another party asks the Bank to terminate the Service, or the Designated Account is closed for any reason, You will remain liable for transactions previously authorized. 
+
+XI. AMENDMENTS 
+
+The Bank may amend this Service Agreement at any time.  We will notify you of such change by mail or electronic message.  If You initiate any transaction through the Service after the effective date of the change, You indicate your agreement to the change. 
+DISCLOSURE OF ELECTRONIC FUNDS TRANSFERS  (REGULATION E) 
+In compliance with Regulation E, which regulates electronic fund transfers for individual accounts, the Bank provides you with this disclosure about the terms and conditions under which the Bank provides the electronic fund transfer services and your rights and responsibilities under said Regulation. These dispositions apply only to personal accounts, not to business or corporate accounts. 
+
+I. Banking Services Available 
+
+A. Banco Popular's Automated Teller Machines (ATHs) - You can use your ATH, ATH International and ATH International Gold validated card at any of our ATH machines for the following purposes: 
+-Withdrawals 
+-Deposits* 
+-Transfer fund from the checking section to savings, or vice versa, on the applicable accounts 
+-Balance verification* 
+-Make loan payments* 
+-Make payments through funds transfers between accounts 
+-Obtain cash advances 
+ (*) These transactions made through ATH services will not be considered electronic fund transfers. These services might not be available in some ATH machines. 
+
+B. Point of Sale (POS) - you can use your validated access card to pay purchases at businesses that have agreed to accept the Card as payment method. 
+
+C. Pre-Authorized Debit and Credit transfers. 
+
+D. Other Authorized Payments. 
+
+II. Limit on Transfer Accounts 
+
+At the ATH machines, cash withdrawals from your checking or savings account will not exceed $500 for each day. In the Popular Plus accounts and Private Management Account of Puerto Rico , the maximum amount will be $1,000 for each day. 
+
+III . Charges for Transfers 
+
+Automatic Teller Machine Not Affiliated to the ATH Network – Local cash withdrawals from ATM’s outside the ATH Network will have a fee of $1.50. 
+Any operator of an automatic teller machine which is not a participant member of the ATH Network may add a transaction fee to your electronic transaction regardless of the amount. 
+
+IV. Right to Receive Documentation or Verification Referring to the Transfers 
+
+Receipts - When using our ATH machines or POS terminals, you will receive a receipt of the transaction. Account statements - Every month you will receive an account statement from the Bank, showing all transactions processed by the Bank and the dates said transactions were processed. 
+
+V. Pre-Authorized Transactions 
+
+Pre-Authorized Credits - If your Account will be credited at least once every sixty (60) days through a credit (direct deposit) from the same payee, you can call TELEBANCO POPULAR at 787-724-3659 or 1-888-724-3659 (for P.R. Depositors); POPULAR TELEBANK, 1-888-724-3659 (for U.S.V.I. and Tortola Depositors), to confirm if the credit (direct deposit) has been processed. Telephone available for hearing impaired (TDD): 787-753-9677 (metropolitan area) or 1-800-981-9666 (outside metropolitan area, U.S.V.I. and Tortola ). 
+Pre-authorized debits: If you authorize varying amounts of automatic debits from your account, the beneficiary will notify you regarding the amount and the debit date ten (10) days prior to the date of the payment. You may choose to receive this notification only if the payment exceeds the previously established amount or if the amount falls outside the previously established boundaries. 
+
+VI. Business Days 
+
+The Bank's business days are Monday through Friday, excluding holidays. Even though we offer services to the public some Saturdays, Sundays and holidays, these are not considered business days. 
+
+VII. Responsibility for Unauthorized Transfers: Loss or Theft of the Access Device / Applicable Procedure to the Electronic Funds Transfer Error Resolution 
+
+If you believe that your card or Personal Identification Number (PIN) has been lost or stolen, call us at: 787-724-3659 or 1-888-724-3659 24 hours a day, 7 days a week; 1-888-724-3659 (for U.S.V.I. and Tortola Depositors). Telephone available for hearing impaired (TDD): 787-753-9677 (metropolitan area) or 1-800-981-9666 (outside metropolitan area, U.S.V.I. and Tortola ). You can also write us at: BANCO POPULAR DE PUERTO RICO, CUSTOMER RESOLUTION CENTER (685), PO BOX 362708, SAN JUAN , PUERTO RICO 00936-2708. 
+
+You could lose, under certain circumstances, the total amount of funds deposited in your account, plus your maximum line of credit. The fastest way to notify the Bank and reduce any possible losses to you is through a telephone call. 
+
+If you notify us within two (2) business days following the day you have knowledge of the loss, theft or possible unauthorized use of your card or PIN, your maximum responsibility will be $50. 
+
+If you do NOT notify us within two (2) business days following the day you have knowledge of the loss, theft or possible unauthorized use of your card, and the Bank can prove that the unauthorized use of your card could have been avoided if the Bank received the notification on time, you could lose up to $500. 
+Also, notify the Bank immediately if your monthly account statement shows transfers that you did not make or authorize. If you do NOT notify the Bank within sixty (60) days following the day the account statement was mailed and the Bank can prove that we could have avoided if the notification had been received on time, you may not have the right to any refund for transfers or withdrawal of funds made after this period. If a good reason, such as hospitalization or extended trip, kept you from notifying us on time, we could extend the time period to make your notice. 
+
+VIII. Disclosure of Account Information to Third Parties 
+
+The Bank will only disclose information about your accounts or transfers you have made: (a) to verify the existence and condition of your account to third parties, such as credit reporting agencies or merchants; (b) to comply with orders issued by a legal court or government agencies; (c) when necessary to complete or process a transfer; or (d) if you give us your written authorization. 
+
+IX. Bank's Liability for Failure to Make Transfers 
+
+If the Bank does not process a transaction on time and for the correct amount, we will be liable for your losses or damages. However, the Bank will not be responsible under the following circumstances: (1) if for any reason outside the Bank's control, you have not enough funds or credit available in your account to make the transfer or withdrawal; (2) if the ATH machine where you make the transaction does not have enough cash; (3) if the transfer amount exceeds the available funds on your checking, savings, reserve; (4) if the ATH machine is not working properly and you knew about the breakdown when you started the transfer; (5) if you have not notified us the loss, theft, or possible unauthorized use of your card; (6) if circumstances beyond our control, such as fire or flood, prevent the transfer, despite reasonable precautions taken by the Bank; (7) if the account funds are subject to a legal process, restriction or attachment that restrains the funds transfer. 
+
+X. Procedure Applicable to Resolution of Errors in Electronic Transfers 
+
+In case or errors or questions about your account statement or the receipt issued by the ATH machine or POS terminal: 
+
+In accounts with ATH card, call us at: 724-3659 or at 1-888-724-3659 (for P.R. Depositors); 1-888-724-3659 (for U.S.V.I. and Tortola Depositors). Telephone available for hearing impaired (TDD): 753-9677 (metropolitan area) or 1-800-981-9666 (outside metropolitan area, U.S.V.I. and Tortola ). You can also send us your claim to the following address: 
+
+BANCO POPULAR DE PUERTO RICO, CUSTOMER RESOLUTION CENTER (685), PO BOX 362708, SAN JUAN , PUERTO RICO 00936-2708. 
+
+We must have knowledge of your complaint within sixty (60) days following the day the FIRST account statement containing the error was sent. When contacting us, you must provide: 
+-your name and account number, 
+-transaction date and reference number, 
+-description of the claim or doubt, and 
+-the dollar amount of the alleged error 
+
+If your claim is made through the telephone, to protect your rights, you must confirm it in writing within the next ten (10) business days. 
+
+If necessary, the Bank can take up to forty-five (45) calendar days to investigate, if the transaction took place in Puerto Rico, the U.S., or U.S.V.I. (local), or ninety (90) calendar days if the transaction took place outside Puerto Rico, the U.S. or U.S.V.I. (foreign) or at a point of sale. In such case, the Bank will credit your account for the amount you think is in error, within ten (10) business days if the transaction is local, foreign or at a point of sale, so you can use said amount during the period of time it takes us to finish the investigation. If we do not receive written confirmation of your complaint within the ten (10) business days mentioned above we may not provisionally credit the amount in question. 
+
+The Bank will send you a written explanation within three (3) business days following the day the Bank finishes the investigation. You can ask the Bank for copies of the documents used in the investigation. 
+
+XI. Right to Stop a Pre-Authorized Transfer 
+
+If you have authorized us to make debits from your Account, you can stop any of these debits. Call us at: 724-3659 or 1-888-724-3659 (for P.R. Depositors); 1-888-724-3659 (for U.S.V.I. and Tortola Depositors). Telephone available for hearing impaired (TDD): 753-9677 (metropolitan area) or 1-800-981-9666 (outside metropolitan area, U.S.V.I. and Tortola), or write us at BANCO POPULAR DE PUERTO RICO - TELEBANCO POPULAR, PO BOX 362708, SAN JUAN, PUERTO RICO 00936-2708 so that we receive your stop payment order at least three (3) business days before the date scheduled for the payment. If the stop payment order is made verbally, it must be confirmed in writing within fourteen (14) days following the call. 
+
+XII. Bank's Responsibility for Failure to Stop Payment of Pre-Authorized Transfer 
+
+The Bank will be liable to the Depositor for damages suffered for failure to carry out a stop payment order over a pre-authorized transfer by the Account Holder, as long as the stop payment instructions are received according to the dispositions and terms of this disclosure. 

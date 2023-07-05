@@ -1,0 +1,10 @@
+#Tue Jul 04 22:18:18 CEST 2023
+path.2=classes3.dex
+path.1=classes2.dex
+path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.2=/Users/iroyinlozano/Documents/popular/popular/mi-banco/build/intermediates/dex/qa/mergeDexQa/classes3.dex
+base.1=/Users/iroyinlozano/Documents/popular/popular/mi-banco/build/intermediates/dex/qa/mergeDexQa/classes2.dex
+base.0=/Users/iroyinlozano/Documents/popular/popular/mi-banco/build/intermediates/dex/qa/mergeDexQa/classes.dex

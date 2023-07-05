@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/receipt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtMcWithdrawalAccountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text=""
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout
+                android:id="@+id/tranInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtMcWithdrawalAccountName"
+                android:layout_marginBottom="18dp"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:id="@+id/accountImg"
+                    android:layout_width="55dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/account_image_default" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toEndOf="@+id/accountImg"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtAthType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mc_ath_regular"
+                        android:textColor="@color/grey_dark"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtLast4Num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mc_pickup_last4num"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/linearLayout2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtTrxAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text=""
+                        android:textColor="@color/athm_header"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtTrxExpirationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/mc_pickup_expiration"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/grey"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="BankActionBar" parent="@android:style/Widget.Holo.Light.ActionBar" tools:ignore="NewApi">
+        <item name="android:background">@color/title_bar_background</item>
+        <item name="android:backgroundStacked">@color/title_bar_background</item>
+        <item name="android:backgroundSplit">@color/title_bar_background</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitleText</item>
+        <item name="android:height">50dp</item>
+    </style>
+
+    <!-- Payments screen styles -->
+    <style name="PaymentsWheel">
+        <item name="android:layout_height">260dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="PaymentsWheelsSeparator">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">top</item>
+    </style>
+
+    <style name="PaymentsAmountText">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PaymentsAmountTitle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:text">@string/amount_title</item>
+        <item name="android:textColor">@color/payments_blue</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="PaymentsDateScheduleText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/payments_gray_dark</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="PaymentsDateText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="PaymentsCalendarButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/list_selector_holo_light</item>
+        <item name="android:src">@drawable/calendar_dark_holo</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:gravity">right|center_vertical</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Wheel item styles -->
+    <style name="WheelItemImage">
+        <item name="android:layout_height">115dp</item>
+        <item name="android:layout_width">164dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/transaction_card_default</item>
+    </style>
+
+    <style name="WheelItemOpacityLayer">
+        <item name="android:layout_height">115dp</item>
+        <item name="android:layout_width">164dp</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:background">@color/payments_white_70_opacity</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Login styles -->
+    <style name="LoginWelcomeBar">
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="LoginEnterUsernameBox">
+        <item name="android:padding">15dp</item>
+    </style>
+    <!-- *********** -->
+
+    <!-- Amount keypad styles -->
+    <style name="AmountKeypadKeyPadding">
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="AmountKeypadNumber">
+        <item name="android:textSize">37sp</item>
+    </style>
+
+    <style name="AmountKeypadLetters">
+        <item name="android:textSize">15sp</item>
+        <item name="android:paddingBottom">3dp</item>
+    </style>
+
+    <style name="AmountKeypadAmountText">
+        <item name="android:textSize">44sp</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="AmountKeypadGridBox">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="AmountKeypadButton">
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Ebills list styles -->
+    <style name="EbillListItemDate">
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <style name="EbillListItemDateText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="EbillListItemCodeText">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Cover flow styles -->
+    <style name="CoverflowView">
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="imageHeight">225dp</item>
+        <item name="imageWidth">355dp</item>
+    </style>
+
+    <style name="CoverflowButton">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:background">@drawable/list_selector_holo_light</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="CoverflowDescription">
+        <item name="android:layout_width">355dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Receipt styles -->
+    <style name="ReceiptTextTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="ReceiptTextContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:maxWidth">270dp</item>
+    </style>
+
+    <style name="ReceiptAccountNicknameBox">
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="ReceiptStamp">
+        <item name="android:layout_marginBottom">-35dp</item>
+        <item name="android:layout_marginRight">-35dp</item>
+    </style>
+
+    <style name="ReceiptContentBox">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="ReceiptTitleDivider">
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <!-- *********** -->
+
+
+    <!-- Calendar styles -->
+    <style name="CalendarItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarGrid">
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="CalendarGridLine">
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+    <!-- *********** -->
+
+    <style name="AccountsNotice">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/athm_header</item>
+        <item name="android:textColorPrimary">@color/grey_dark</item>
+    </style>
+
+    <!-- Notification Center -->
+
+    <style name="NotificationCenterNotice">
+        <item name="android:background">@null</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <style name="NotificationCenterRelativeLayout">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/nc_background_color</item>
+    </style>
+
+    <style name="NotificationCenterBackground">
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/nc_background_color</item>
+    </style>
+
+    <style name="NotificationCenterText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+    </style>
+
+    <style name="NotificationCenterCloseButton">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:src">@drawable/close</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+</resources>

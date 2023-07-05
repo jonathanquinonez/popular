@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/abc_list_divider_material.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e200f3fe286c94b6b7166176b650822f/appcompat-1.0.0/res/drawable-v21/abc_list_divider_material.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/notification_action_background.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/7ef0459dea410659a63b7749a79c862d/core-1.0.0/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/abc_dialog_material_background.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e200f3fe286c94b6b7166176b650822f/appcompat-1.0.0/res/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e200f3fe286c94b6b7166176b650822f/appcompat-1.0.0/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e200f3fe286c94b6b7166176b650822f/appcompat-1.0.0/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e200f3fe286c94b6b7166176b650822f/appcompat-1.0.0/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/build/intermediates/res/merged/qa/drawable-v21/selectable_item_background.xml",
+        "source": "/Users/iroyinlozano/Documents/popular/popular/spinner-extended/src/main/res/drawable-v21/selectable_item_background.xml"
+    }
+]

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_box"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/accounts_section_bottom_line"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/header_text"
+        style="@style/AccountDetailsHeaderText"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textColor="@color/white"
+        android:textIsSelectable="false" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/accounts_section_bottom_line" />
+
+</LinearLayout>

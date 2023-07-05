@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+
+	<string name="welcome_back">¡Bienvenido!</string>
+	<string name="please_sign_in">Favor de ingresar para comenzar</string>
+	<string name="see_balance_instructions">Por favor conéctate primero a Mi Banco Móvil y selecciona recordar usuario.</string>
+	<string name="last_updated_on">Última actualización</string>
+	<string name="refresh_message">Actualización disponible en aproximadamente (?) minuto(s)</string>
+	<string name="refresh_message2">Actualización disponible en unos segundos</string>
+
+	<!-- Content descriptors -->
+    <string name="logo_description">El logo de Popular</string>
+    <string name="login_description">Boton para acceder login desde la aplicacion</string>
+    <string name="payments_description">Boton para acceder pagos desde la aplicacion</string>
+    <string name="transfers_description">Boton para acceder transferencias desde la aplicacion</string>
+    <string name="locator_description">Boton para abrir el localizador desde la aplicacion</string>
+    <string name="refresh_description">Boton para refrescar los balances</string>
+    
+</resources>

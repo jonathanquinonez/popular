@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout style="@style/OnOffPlastics"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/onoff_header_background">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@color/onoff_header_background">
+
+                <ImageView
+                    android:id="@+id/item_image"
+                    style="@style/AccountsItemImage"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:contentDescription="@string/on_off_plasticimage_header_desc"
+                    android:src="@drawable/account_image_default" />
+
+                <TextView
+                    android:id="@+id/item_name"
+                    style="@style/AccountDetailsAmount"
+                    android:layout_alignTop="@+id/item_image"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_toEndOf="@+id/item_image" />
+
+                <TextView
+                    android:id="@+id/item_value"
+                    style="@style/AccountDetailsAmount"
+                    android:layout_alignBottom="@+id/item_image"
+                    android:layout_marginStart="6dp"
+                    android:layout_toEndOf="@+id/item_image"
+                    android:textColor="@color/btn_blue" />
+
+                <TextView
+                    android:id="@+id/item_comment"
+                    style="@style/AccountsItemNumber"
+                    android:layout_alignBottom="@+id/item_image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/grey_darkest" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/onoff_description"
+                style="@style/OnOffDescription"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/on_off_desc"
+                android:textColor="@color/grey_darkest" />
+
+            <TextView
+                android:id="@+id/onoff_description3"
+                style="@style/OnOffDescription"
+                android:layout_below="@+id/onoff_description"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/on_off_description_3"
+                android:autoLink="phone"
+                android:textColor="@color/grey_darkest" />
+
+            <TextView
+                android:id="@+id/onoff_description_2"
+                style="@style/OnOffDescription2"
+                android:layout_below="@+id/onoff_description3"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/on_off_description_2"
+                android:textColor="@color/grey_darkest" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/onoff_description_plastics"
+            style="@style/OnOffDescription"
+            android:text="@string/on_off_plastics"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/btn_blue"
+            android:layout_alignTop="@+id/onoff_description" />
+
+        <LinearLayout
+            style="@style/AccountsSectionBottomLine"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout3" />
+
+        <LinearLayout
+            android:id="@+id/onoff_cards_section"
+            android:background="@color/onoff_header_background"
+            style="@style/OnOffSection">
+
+            <LinearLayout
+                android:id="@+id/onoff_cards_list"
+                style="@style/AccountsSectionList" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

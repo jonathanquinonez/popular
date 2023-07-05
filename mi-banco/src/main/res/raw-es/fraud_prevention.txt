@@ -1,0 +1,75 @@
+
+Mi Banco Mejores Prácticas para Prevención de Fraude
+agosto 2011
+
+Consejitos para prevenir fraude en línea.
+
+ID de usuario y guias para su contraseña
+
+• Cambie su contraseña frecuentemente. 
+
+• Nunca comparta su nombre de usuario o información de contraseña con terceros. 
+
+• Evite usar la función de conexión automática que guarda los nombres de usuario y contraseñas. 
+
+Directrices Generales
+
+• No utilice computadoras públicas que no estén en una red segura para iniciar su sesión en Mi Banco.
+
+• Revise los balances de las cuentas y detalles de transacciones regularmente (preferiblemente todos los días) para confirmar el pago y otros datos de transacciones e inmediatamente informe sobre cualquier transacción sospechosa a su institución financiera.
+
+• Vea el historial de transferencias disponible a través de la información de la actividad de la cuenta.
+
+• Siempre que sea posible, utilice “Bill Pay” en lugar de cheques para limitar la difusión y la exposición del número de cuenta y lograr un mejor mantenimiento de registros electrónicos.
+
+• Aproveche y regularmente lea las alertas del sistema; por ejemplo: 
+    
+    • Alertas de Balances
+    • Alertas de Transferencias
+    • Alertas de cambios de Contraseñas
+
+• No utilice números de cuenta, su número de seguridad social, u otra cuenta o información personal al crear apodos de cuenta u otros títulos.
+
+• Siempre que sea posible, registre su computadora para no tener que volver a entrar preguntas de seguridad y otra información de autenticación con cada inicio de sesión. 
+
+• Nunca deje una computadora desatendida durante el uso de Banca Electrónica.
+
+Consejos para prevenir ”Phishing”, “Spyware” y “Malware” 
+
+• No abra correo electrónicos de fuentes desconocidas. Desconfíe de los correos electrónicos que dicen ser de una institución financiera, agencia gubernamental u otro organismo, solicitando información de la cuenta, verificación de la cuenta o credenciales bancarias de acceso tales como nombres de usuario, contraseñas, códigos PIN y otra información similar. Abrir archivos adjuntos o hacer clic en enlaces dentro de e-mails sospechosos podrían exponer su sistema a código malicioso que podría apropiarse de su equipo.
+
+• Nunca responda a un correo electrónico sospechoso o haga clic en cualquier enlace incluido en un correo electrónico sospechoso.
+
+• Si un correo electrónico que dice provenir de su entidad financiera le parece sospechoso, se recomienda que verifique con BPPR.
+
+• Instale software antivirus y de detección de “spyware” en todos los sistemas de información. El software libre no puede proporcionar protección contra las últimas amenazas en comparación con un producto estándar de la industria
+
+• Actualice todos los equipos regularmente con las últimas versiones y parches tanto de anti-virus y anti-spyware
+
+• Asegúrese de que las computadoras y los dispositivos móviles sean revisados ​​y actualizados regularmente, especialmente el sistema operativo y las aplicaciones clave.
+
+• Instale un servidor dedicado de seguridad, especialmente si se utiliza una conexión de banda ancha o dedicada a Internet, como DSL o cable. Un servidor de seguridad limita la posibilidad de acceso no autorizado a su red y los equipos
+
+• Verifique la configuración y seleccione, por lo menos, un nivel intermediomedio de seguridad para su navegador.
+
+• Mi Banco no utiliza ventanas “pop-up” para mostrar los mensajes de inicio de sesión o errores y nunca muestra mensajes “pop-up” que indican que usted no puede utilizar su navegador. 
+
+• Los mensajes de error de Mi Banco no incluyen una cantidad de tiempo para esperar antes de intentar acceder de nuevo.
+
+• Tenga en cuenta que si el sistema le pide veces varias veces que introduzca su nombre de usuario o la contraseña, pueden ser signos de actividad potencialmente peligrosa.
+
+• Si le hacen preguntas de que si su equipo ha sido previamente registrado, es una señal de actividad potencialmente peligrosa. 
+
+Consejos para manejar la red inalámbrica 
+
+Las redes inalámbricas pueden abrir una puerta abierta no deseada a la red. Si una red inalámbrica se va a utilizar para fines comerciales legítimos, se recomienda asegurar la red de la siguiente manera
+
+• Cambie la contraseña administrativa del equipo de la red inalámbrica (enrutador/punto de acceso) que viene fábrica a una contraseña compleja. Guarde la contraseña en un lugar seguro, ya que será necesaria para hacer cambios futuros en el dispositivo.
+
+• Desactive la administración remota del hardware de la red inalámbrica (enrutador/punto de acceso).
+
+• Si posible, desactive la difusión del SSID de la red.
+
+• Si el dispositivo cuenta con encriptación WPA, proteja su red inalámbrica permitiendo la encriptación WPA de la red inalámbrica. Si el dispositivo no es compatible con la encriptación WPA, habilite la encriptación WEP.
+
+• Si la red inalámbrica será utilizada únicamente por equipos conocidos, considere activar la filtración de MAC en el hardware de red. A cada tarjeta de red se le asigna una dirección única MAC. La filtración MAC sólo permitirá aquellas computadoras autorizadas con direcciones MAC acceder la red inalámbrica.

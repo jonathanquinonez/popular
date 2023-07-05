@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtReceiptIdTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/mc_stage_receipt_tranid"
+        android:textColor="@color/mc_grey_font"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/mc_grey_font"
+        android:id="@+id/txtReceiptId"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_from"
+        android:id="@+id/txtFromTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtAccountName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_to"
+        android:id="@+id/txtToTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtRecipient"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_amount"
+        android:id="@+id/txtAmountTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_expiration"
+        android:id="@+id/txtExpirationTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtExpirationDate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_note"
+        android:id="@+id/txtNoteTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtNote"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/mc_stage_receipt_location"
+        android:id="@+id/txtLocationTitle"
+        android:textColor="@color/mc_grey_font"
+        android:layout_marginTop="14dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:id="@+id/txtLocation"
+        android:visibility="gone"/>
+
+</LinearLayout>

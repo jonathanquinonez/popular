@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rootView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/coverflow_use_default"
+        style="@style/ButtonDialogHoloLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/undo_dark"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:minWidth="300dp"
+        android:padding="10dp"
+        android:text="@string/coverflow_use_default"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/coverflow_use_default_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_lighter"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/coverflow_button_take_photo"
+        style="@style/ButtonDialogHoloLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/camera"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:minWidth="300dp"
+        android:padding="10dp"
+        android:text="@string/coverflow_take_photo"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_lighter"
+        tools:ignore="PxUsage" />
+
+    <Button
+        android:id="@+id/coverflow_button_my_photos"
+        style="@style/ButtonDialogHoloLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/my_photos"
+        android:drawablePadding="10dp"
+        android:gravity="left|center_vertical"
+        android:minWidth="300dp"
+        android:padding="10dp"
+        android:text="@string/coverflow_my_photos"
+        android:textSize="16sp" />
+</LinearLayout>

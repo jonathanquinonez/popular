@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SpinnerExtended">
+        <attr name="spinnerHint" format="string" />
+        <attr name="spinnerHintColor" format="color" />
+        <attr name="spinnerSelectedItemColor" format="color" />
+        <attr name="spinnerSelectedItemTextStyle" format="reference" />
+        <attr name="spinnerDialogMode" format="boolean" />
+        <attr name="spinnerSelectedItemLayout" format="integer" />
+    </declare-styleable>
+
+</resources>

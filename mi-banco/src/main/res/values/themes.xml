@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="BankTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:buttonStyle">@style/Button.Green</item>
+        <item name="buttonStyle">@style/Button.Green</item>
+        <item name="colorButtonNormal">@color/btn_green</item>
+        <item name="android:actionButtonStyle">@style/BankActionButton</item>
+        <item name="actionButtonStyle">@style/BankActionButton</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="colorAccent">@color/holo_blue_light</item>
+        <item name="colorPrimary">@color/title_bar_background</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">
+            @drawable/activated_background_holo_light
+        </item>
+        <item name="android:checkboxStyle">@style/CheckBoxHolo</item>
+        <item name="android:progressBarStyle">@style/ProgressBarHolo</item>
+        <item name="android:radioButtonStyle">@style/RadioHoloLight</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="editTextStyle">@style/EditTextHoloLight</item>
+        <item name="android:spinnerStyle">@style/StandardSpinner</item>
+        <item name="android:spinnerItemStyle">@style/StandardSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/StandardSpinnerDropDownItem</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="OverFlow" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/action_overflow</item>
+    </style>
+
+    <style name="BorderlessActivityDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="BankActionButton" parent="@android:style/Widget.Holo.ActionButton">
+        <item name="android:minWidth">48dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+
+    <style name="ActionBarTitleText" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#00000000</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+
+    <style name="BankThemeActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:buttonStyle">@style/Button.Green</item>
+        <item name="android:actionBarStyle">@style/BankActionBar</item>
+        <item name="android:actionButtonStyle">@style/BankActionButton</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:listChoiceBackgroundIndicator">@drawable/list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">
+            @drawable/activated_background_holo_light
+        </item>
+        <item name="android:checkboxStyle">@style/CheckBoxHolo</item>
+        <item name="android:progressBarStyle">@style/ProgressBarHolo</item>
+        <item name="android:radioButtonStyle">@style/RadioHoloLight</item>
+        <item name="android:listViewStyle">@style/ListViewStyle</item>
+        <item name="android:editTextStyle">@style/EditTextHoloLight</item>
+        <item name="android:spinnerStyle">@style/StandardSpinner</item>
+        <item name="android:spinnerItemStyle">@style/StandardSpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/StandardSpinnerDropDownItem</item>
+        <item name="android:alertDialogStyle">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="ActionBarPopup">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Dialog" parent="BankTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+    </style>
+
+</resources>

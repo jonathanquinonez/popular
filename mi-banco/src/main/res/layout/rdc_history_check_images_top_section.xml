@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+			android:id="@+id/review_checks_in_process_title"
+			style="@style/AccountsSectionTitle"
+			android:text="@string/deposit_check_deposited_to"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+    
+    <LinearLayout
+        style="@style/AccountsItem"
+        android:background="@color/black" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp" >
+
+            <ImageView
+                android:id="@+id/item_image"
+                style="@style/AccountsItemImage"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout style="@style/AccountsItemInfoSection" >
+
+                <TextView
+                    android:id="@+id/item_name"
+                    style="@style/AccountsItemTitle"
+                    android:textColor="@color/white" />
+
+               	<LinearLayout style="@style/AccountsItemInfoBottomSection" >
+
+                    <TextView
+                        android:id="@+id/item_comment"
+                        style="@style/AccountsItemNumber"
+                        android:gravity="left" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

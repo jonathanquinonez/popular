@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.popular.android.mibanco.activity.CashRewardsConfirmation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/TsysLoyaltyRewardsLinear"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:id="@+id/amount_box"
+                style="@style/TsysLoyaltyRewardsRedemptionAmountBox">
+
+                <TextView
+                    style="@style/TsysLoyaltyRewardsRedemptionConfirmationTitle"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_title" />
+
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/cash_back_background"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TsysLoyaltyRewardsRedemptionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TsysLoyaltyRewardsRedemptionText"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_date"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/redeem_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:gravity="bottom|start"
+                    android:paddingStart="10dp"
+                    android:paddingTop="15dp"
+                    android:textAlignment="gravity"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TsysLoyaltyRewardsRedemptionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TsysLoyaltyRewardsRedemptionText"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_deposit"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/redeem_acct"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="bottom|start"
+                    android:paddingStart="10dp"
+                    android:paddingTop="1dp"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/cash_back_redemption_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/TsysLoyaltyRewardsRedemptionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TsysLoyaltyRewardsRedemptionText"
+                    android:paddingStart="1dp"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_type"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/redeem_type"
+                    style="@style/TsysLoyaltyRewardsRedemptionConfirmationRedemptionType" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/HeaderSeparator"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/grey_light"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                style="@style/TsysLoyaltyRewardsRedemptionLayout"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_information"
+                    android:textColor="#3f4855"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_information1"
+                    android:textColor="#3f4855"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_information2"
+                    android:textColor="#3f4855"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:text="@string/tsys_loyalty_rewards_confirmation_redemption_information3"
+                    android:textColor="#3f4855"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/redeem_btn"
+                style="@style/TsysLoyaltyRewardsRedemptionConfirmationBtn"
+                android:text="@string/tsys_loyalty_rewards_confirmation_redemption_continue" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

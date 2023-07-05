@@ -1,0 +1,75 @@
+
+Mi Banco Fraud Prevention Best Practices
+August 2011
+
+Find tips on what you can do to prevent online fraud.
+
+User ID and Password Guidelines
+
+• Change your password frequently. 
+
+• Never share username and password information with third-party providers. 
+
+• Avoid using an automatic login feature that saves usernames and passwords. 
+
+General Guidelines
+
+• Do not use public or other unsecured computers for logging into Mi Banco.
+
+• Review account balances and detail transactions regularly (preferably daily) to confirm payment and other transaction data and immediately report any suspicious transactions to your financial institution.
+
+• View transfer history available through viewing account activity information.  
+
+• Whenever possible, use Bill Pay instead of checks to limit account number dissemination exposure and to obtain better electronic record keeping.
+
+• Take advantage of and regularly view system alerts; examples include:
+
+    • Balance alerts
+    • Transfer alerts
+    • Password change alerts
+
+• Do not use account numbers, your social security number, or other account or personal information when creating account nicknames or other titles.
+
+• Whenever possible, register your computer to avoid having to re-enter challenge questions and other authentication information with each login. 
+
+• Never leave a computer unattended while using Consumer eBanking. 
+
+Tips to Avoid Phishing, Spyware and Malware
+
+• Do not open e-mail from unknown sources. Be suspicious of e-mails purporting to be from a financial institution, government department, or other agency requesting account information, account verification, or banking access credentials such as usernames, passwords, PIN codes, and similar information.  Opening file attachments or clicking on web links in suspicious e-mails could expose your system to malicious code that could hijack your computer. 
+
+• Never respond to a suspicious e-mail or click on any hyperlink embedded in a suspicious e-mail. 
+
+• If an e-mail claiming to be from your financial organization seems suspicious, checking with BPPR is recommended. 
+
+• Install anti-virus and spyware detection software on all computer systems. Free software may not provide protection against the latest threats compared with an industry standard product. 
+
+• Update all of your computers regularly with the latest versions and patches of both anti-virus and anti-spyware software.
+
+• Ensure computers and mobile devices are patched and updated regularly, particularly operating system and key applications.
+ 
+• Install a dedicated, actively managed firewall, especially if using a broadband or dedicated connection to the Internet, such as DSL or cable.  A firewall limits the potential for unauthorized access to your network and computers. 
+
+• Check your settings and select, at least, a medium level of security for your browser. 
+
+• Mi Banco does not use pop-up windows to display login messages or errors and never displays pop-up messages indicating that you cannot use your current browser. 
+
+• Mi Banco error messages never include an amount of time to wait before trying to login again. 
+
+• Be advised that repeatedly being asked to enter your user ID or password are signs of potentially harmful activity. 
+
+• Being asked challenge questions if your computer was previously registered is a sign of potentially harmful activity. 
+
+Tips for Wireless Network Management
+
+Wireless networks can provide an unintended open door to your network. If a wireless network is to be used for legitimate business purposes, it is recommended to secure the network as follows:
+
+• Change the wireless network hardware (router /access point) administrative password from the factory default to a complex password. Save the password in a secure location as it will be needed to make future changes to the device. 
+
+• Disable remote administration of the wireless network hardware (router / access point). 
+
+• If possible, disable broadcasting the network SSID. 
+
+• If your device offers WPA encryption, secure your wireless network by enabling WPA encryption of the wireless network. If your device does not support WPA encryption, enable WEP encryption. 
+
+• If only known computers will access the wireless network, consider enabling MAC filtering on the network hardware. Every computer network card is assign

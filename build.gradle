@@ -1,0 +1,29 @@
+buildscript {
+    repositories {
+        maven {
+            credentials  {
+                username ="${NEXUS_USERNAME}"
+                password ="${NEXUS_PASSWORD}"
+            }
+            url "${NEXUS_URL}/repository/maven-mibanco-android"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.1'
+        classpath 'com.google.gms:google-services:4.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        flatDir { dirs 'libs' }
+        maven {
+            credentials  {
+                username ="${NEXUS_USERNAME}"
+                password ="${NEXUS_PASSWORD}"
+
+            }
+            url "${NEXUS_URL}/repository/maven-mibanco-android"
+        }
+    }
+}

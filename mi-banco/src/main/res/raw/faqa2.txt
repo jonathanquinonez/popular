@@ -1,0 +1,11 @@
+
+MOBILE BANKING SECURITY
+
+Our Mobile Banking uses the same security standard as our online banking service. 
+Accounts are protected by 128-bit encryption, as they are when you access My Online Bank. 
+
+Each time you log on you will be asked for your user name, answer a secret question and password. If you choose to remember username and devise, next time you will only have to type your password.
+
+If you forget your password, you can change it online at www.bancopopular.com/password or by contacting our customer service representatives at TeleBanco Popular (787) 724-3655 (Puerto Rico) or 1-888-724-3655 (United States / Virgin Islands) and they will issue you a new one for you.
+
+Always download the Android App from Google Play. 

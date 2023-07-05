@@ -1,0 +1,71 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    style="@style/AccountsItem">
+	    <TextView
+	        android:id="@+id/weightedWidgetAcctName"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+	        android:layout_gravity="left|center_vertical"
+	        android:gravity="left|center_vertical"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:visibility="gone"
+	        android:textColor="#000000"
+            android:textSize="16sp" />
+	    
+	    <TextView
+	        android:id="@+id/widgetAcctName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+	        android:layout_gravity="left|center_vertical"
+	        android:gravity="left|center_vertical"
+	        android:ellipsize="end"
+	        android:singleLine="true"
+	        android:visibility="visible"
+	        android:textColor="#000000"
+            android:textSize="16sp" />
+	    
+	    <TextView
+            android:id="@+id/widgetAcctSuffix"
+            android:layout_width="0dp"
+	        android:layout_weight="1"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="4dp"
+            android:layout_gravity="left|center_vertical"
+	        android:gravity="left|center_vertical"
+			android:textColor="#CCCCCC"
+            android:textSize="16sp" />
+ 
+       	<TextView 
+            android:id="@+id/widgetAcctBalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_marginRight="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="right|center_vertical"
+	        android:gravity="right|center_vertical"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+       	
+	</LinearLayout>
+	<LinearLayout
+	    style="@style/WidgetItemBottomLine"
+	    android:layout_width="match_parent"
+		android:layout_marginLeft="14dp"
+	    android:layout_marginRight="14dp" />
+</LinearLayout>

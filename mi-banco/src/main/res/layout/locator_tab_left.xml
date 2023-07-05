@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:layout_marginRight="-3dp"
+    android:layout_weight="1"
+    android:background="@drawable/lselector_tab_left"
+    android:gravity="center"
+    android:minHeight="38dp"
+    android:textColor="@drawable/ltab_selector_text"
+    android:textSize="16sp" />

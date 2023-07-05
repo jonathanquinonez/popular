@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/custom_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    android:id="@+id/tvAccountHint"
+                    style="@style/Text.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="16dp"
+                    android:text="Enter custom port"
+                    android:textColor="@color/black_54" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/spinner_grey_background" />
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/HeaderText"
+            android:id="@+id/tvPortsHeader"
+            android:text="Change Port"
+            android:layout_marginTop="32dp"/>
+
+        <LinearLayout style="@style/HeaderSeparator" />
+
+        <TextView
+            android:id="@+id/tvPortsOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:singleLine="true"
+            android:textColor="@color/athm_header"
+            android:textSize="46sp" />
+
+        <LinearLayout
+            style="@style/HeaderSeparator"
+            android:layout_height="1px"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="0dp" />
+
+        <ListView
+            android:id="@+id/listUsers"
+            android:layout_width="match_parent"
+            android:layout_height="254dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnConfirm"
+                style="@style/Button.BlueAthm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/Button.BlueAthm" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

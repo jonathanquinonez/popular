@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:padding="0dp"
+            tools:ignore="UnusedAttribute" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp">
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnCancel"
+            style="@style/AlertDialogButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/btnSet"
+            style="@style/AlertDialogButton"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

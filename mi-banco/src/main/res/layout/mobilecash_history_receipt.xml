@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_above="@+id/btnOk"
+    android:layout_alignParentTop="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/statusAndAction"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:text="@string/ec_history_inprocess" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deleteAction"
+                android:text="@string/mc_deletetrx_title"
+                android:textColor="@color/red"
+                android:layout_alignParentEnd="true"/>
+
+            <LinearLayout style="@style/AccountsSectionBottomLine"
+                android:layout_below="@+id/status"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+        <include
+            layout="@layout/mobilecash_helper_receiptinfo"
+            android:layout_marginTop="4dp"
+            android:id="@+id/transactionInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusAndAction"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:id="@+id/imageStamp"
+            android:src="@drawable/stamp_retiro_facil_sp"
+            android:layout_marginRight="-20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/btnOk"
+        style="@style/Button.Green"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/ok"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

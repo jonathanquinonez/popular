@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en" tools:ignore="MissingTranslation">
+
+    <string name="api_url_dev">integration</string>
+    <string name="api_url_qa">api_url_qa_cert</string>
+    <string name="api_ssl_port">api_ssl_port_qa</string>
+    <!--Test with SDG 64.178.217.158-->
+    <string name="api_url_production">https://mobile.bancopopular.com/cibp-web/</string>
+    <string name="api_url_pilot">https://piloto.bancopopular.com/cibp-web/</string>
+    <string name="api_url_qa_cert">https://cert3.bppr.com/cibp-web/</string>
+
+    <!-- Integration -->
+    <string name="integration">https://integration2.bppr.com/cibp-web/</string>
+<!--    cert1.bppr.com/-->
+<!--    integration2.bppr.com/-->
+    <string name="mbdva">https://mbdva.bppr.com/cibp-web/</string>
+
+
+    <!-- Cert1 and Cert 5 -->
+    <string name="api_url_qa_cert1">https://cibpqa1.bppr.com:8443/cibp-web/</string>
+    <string name="api_url_qa_cert2">https://cibpqa1.bppr.com:9443/cibp-web/</string>
+    <string name="api_url_qa_cert3">https://cibpqa1.bppr.com:7443/cibp-web/</string>
+    <string name="api_url_qa_cert4">https://cibpqa1.bppr.com:6443/cibp-web/</string>
+    <string name="api_url_test_1212">http://192.168.37.107:1212/cibp-web/</string>
+    <string name="api_url_test_2020">http://192.168.37.107:2020/cibp-web/</string>
+
+    <string name="api_url_test_3030">http://192.168.37.107:3030/cibp-web/</string>
+    <string name="api_url_test_3131">http://64.178.217.158:3131/cibp-web/</string>
+    <string name="api_url_test_4040">http://64.178.217.158:4040/cibp-web/</string>
+    <string name="api_url_test_5050">http://64.178.217.158:5050/cibp-web/</string>
+    <string name="api_url_test_5151">http://64.178.217.158:5151/cibp-web/</string>
+    <string name="api_url_test_4747">http://192.168.37.107:4747/cibp-web/</string>
+    <string name="api_url_test_4141">http://64.178.217.158:4141/cibp-web/</string>
+    <string name="api_url_test_6060">http://64.178.217.158:6060/cibp-web/</string>
+    <string name="api_url_test_8181">http://192.168.37.107:8181/cibp-web/</string>
+    <string name="api_url_test_6565">http://192.168.37.107:6565/cibp-web/</string>
+    <string name="api_url_eduardo">http://10.1.52.44:8080/cibp-web/</string>
+    <string name="api_url_diego">http://10.1.52.105:8080/cibp-web/</string>
+    <string name="api_url_raul">http://10.1.53.70:8080/cibp-web/</string>
+    <string name="api_url_luis">http://10.1.52.247:8080/cibp-web/</string>
+    <string name="api_url_armando">http://10.1.52.163:8080/cibp-web/</string>
+    <string name="api_url_michael">http://10.1.52.216:8080/cibp-web/</string>
+    <string name="api_url_mock">http://10.1.53.60:8080/</string>
+    <string name="api_ssl_port_production">443</string>
+    <string name="api_ssl_port_qa">443</string>
+
+    <string name="google_maps_api_key">0aRonJcl1CZVeRteDgib35t7r1XW789N_hTMirQ</string>
+    <string name="flurry_api_key">Q2GCQT7H3GRYYQBQWMY8</string>
+    <string name="bugsense_key">26fc1d26</string>
+    <string name="bugsense_active">false</string>
+    <string name="log_network_calls">false</string>
+    <string name="current_api_version">2</string>
+    <string name="market_base_url">market://details?id=</string>
+    <string name="popular_center_latitude">18.425152</string>
+    <string name="popular_center_longitude">-66.058507</string>
+    <string name="intro_image_url">https://apps.popular.com/mobile/bg-splashpage@2x.jpg</string>
+    <string name="enrollment_url">actions/enrollment?agentType=android&amp;lang=</string>
+    <string name="regain_access_url">actions/regainaccess?agentType=android&amp;resource=%1$s&amp;lang=%2$s</string>
+    <string name="reset_password_url">actions/resetpassword?agentType=android&amp;lang=</string>
+    <string name="switch_desktop_url">actions/mobileSwitch?target=login&amp;version=classic</string>
+    <string name="outreach_url">actions/outreach?lang=</string>
+    <string name="interruption_url">actions/loginInterruptionPage?lang=</string>
+    <string name="loginRsaEnroll_url">actions/loginRsaEnroll?agentType=android</string>
+    <string name="loginSsdsForced_url">actions/loginSsdsForced?agentType=android</string>
+    <string name="open_account_url">actions/tokenOpac?agentType=android</string>
+    <string name="add_payee_url">actions/mobileAddPayee</string>
+    <string name="edit_payee_url">actions/mobileEditPayee</string>
+    <string name="rsa_enroll_url">actions/rsaEnroll</string>
+    <string name="rsa_edit_questions_url">actions/rsaEditQuestions</string>
+    <string name="mobile_alerts_url">actions/mobileAlerts</string>
+    <string name="athm_sso_bundle_id">com.evertec.athmovil.android</string>
+    <string name="mb_sso_app_id">73C28DFB99C38EB4BB26B27B3C92E001</string>
+    <string name="mb_sso_app_token">BA7E1E71712ACC18556D6CECFEF7D</string>
+    <!-- NEW RELIC -->
+    <string name="new_relic_active">true</string>
+    <string name="new_relic_application_token">AA47642747281cc1726d474b4117d0337204eaeaf3</string>
+
+    <!-- Push Notifications -->
+    <string name="parse_application_id">MOZYbo5Stn7VkPNqmJ7mQYgyexDq8m33pgLZTTYc</string>
+    <string name="parse_client_key">z4DZvs7JoNW9xKFxseG2lq3OZBixL4tAh75GrNrx</string>
+
+    <!-- MBFIS -->
+    <string name="account_information_sec_url">actions/accountinformationsec?appMobile=true</string>
+    <string name="forgot_password_sec_url">actions/forgotpasswordsec</string>
+    <string name="security_information_sec_url">actions/securityinformationsec</string>
+
+    <!-- NOTIFICATION CENTER -->
+    <string name="notification_center_url">actions/notificationCenter</string>
+
+    <string name="mobileSwitch">actions/mobileSwitch?target=portal&amp;version=classic</string>
+    <string name="actionsLogin">actions/login</string>
+    
+    <string-array name="web_view_url_blacklist">
+        <item>actions/welcome</item>
+        <item>actions/portal</item>
+        <item>actions/login</item>
+    </string-array>
+
+    <string-array name="web_view_url_external">
+        <item>https://www.popular.com/mi-banco/seguridad/</item>
+        <item>https://www.popular.com/en/mi-banco/security/</item>
+        <item>@string/help_section_url</item>
+        <item>http://www.youtube.com/</item>
+        <item>https://www.youtube.com/</item>
+    </string-array>
+    <string-array name="mbdp_external_pdf">
+        <item>://documents.popular.com/terms/depositos/oao-en</item>
+        <item>://documents.popular.com/terms/depositos/oao-es</item>
+        <item>://www.popular.vi/assets/pdf/vi/characteristics-fees-of-eaccount.pdf</item>
+        <item>://www.popular.com/assets/pdf/Caracteristicas-Cargos-E-account-es.pdf</item>
+        <item>://www.popular.com/assets/pdf/CaracteristicsandFeesEaccount-en.pdf</item>
+        <item>://www.popular.com/assets/pdf/CharacteristicsandFeesEaccount-en.pdf</item>
+        <item>https://www.popular.com/assets/pdf/CharacteristicsandFeesEaccount-en.pdf</item>
+    </string-array>
+    
+    <string name="transaction_detail">actions/transAddScreen?account=%1&amp;trace=</string>
+
+    <!-- MBSD-4028 -->
+    <string name="email_change_url">actions/mobileChangeEmail</string>
+
+    <!-- MBSE-2388 -->
+    <string name="cookies_privacy_setting_url">actions/cookiePreference</string>
+
+    <!-- MBCI-2088 -->
+    <string name="origin_host">http://192.168.37.107:</string>
+    <string name="final_host">http://64.178.217.158:</string>
+
+    <!-- MBCI-2134 -->
+    <string-array name="allowed_host">
+        <item>192.168.37.107</item>
+        <item>192.168.37.112</item>
+        <item>mbfc.bppr.com</item>
+        <item>mbdp.bppr.com</item>
+        <item>mbca.bppr.com</item>
+        <item>mbma.bppr.com</item>
+        <item>onoff.bppr.com</item>
+        <item>mbci1.bppr.com</item>
+        <item>mbci2.bppr.com</item>
+        <item>mbse.bppr.com</item>
+        <item>mbim.bppr.com</item>
+        <item>mbdva.bppr.com</item>
+        <item>mbse-qa.bppr.com</item>
+        <item>mbim-sanity.bppr.com</item>
+        <item>integration.bppr.com</item>
+        <item>integration1.bppr.com</item>
+        <item>integration2.bppr.com</item>
+        <item>integration3.bppr.com</item>
+        <item>onoff-sanity.bppr.com</item>
+        <item>mbse-sanity.bppr.com</item>
+        <item>mbci-sanity.bppr.com</item>
+        <item>mbdp-sanity.bppr.com</item>
+        <item>cert1.bppr.com</item>
+        <item>cert2.bppr.com</item>
+        <item>cert3.bppr.com</item>
+        <item>cert4.bppr.com</item>
+        <item>cert5.bppr.com</item>
+        <item>cert6.bppr.com</item>
+        <item>cert7.bppr.com</item>
+        <item>cert8.bppr.com</item>
+        <item>cert9.bppr.com</item>
+        <item>cert10.bppr.com</item>
+        <item>cert11.bppr.com</item>
+        <item>cert12.bppr.com</item>
+        <item>cert13.bppr.com</item>
+        <item>cert14.bppr.com</item>
+        <item>cert15.bppr.com</item>
+        <item>cert16.bppr.com</item>
+        <item>cibpqa1.bppr.com</item>
+        <item>cibpqa2.bppr.com</item>
+        <item>cibpqa3.bppr.com</item>
+        <item>cibpqa4.bppr.com</item>
+        <item>mbdpqa1.bppr.com</item>
+        <item>mobilecert1.bppr.com</item>
+        <item>mobilecert2.bppr.com</item>
+        <item>mobilecert3.bppr.com</item>
+        <item>mobilecert4.bppr.com</item>
+        <item>mobilecert5.bppr.com</item>
+        <item>mobilecert6.bppr.com</item>
+        <item>mobilecert7.bppr.com</item>
+        <item>mobilecert8.bppr.com</item>
+        <item>mobilecert9.bppr.com</item>
+        <item>mobilecert10.bppr.com</item>
+        <item>mobilecert11.bppr.com</item>
+        <item>mobilecert12.bppr.com</item>
+        <item>mobilecert13.bppr.com</item>
+        <item>mobilecert14.bppr.com</item>
+        <item>mobilecert15.bppr.com</item>
+        <item>mobilecert16.bppr.com</item>
+        <item>popular.vi</item>
+        <item>popular.com</item>
+        <item>popularbank.com</item>
+        <item>apps.popular.com</item>
+        <item>applications.bancopopular.com</item>
+        <item>premia.com</item>
+        <item>bancopopular.com</item>
+        <item>mbdp.popular.com</item>
+        <item>m.bancopopular.com</item>
+        <item>locator.popular.com</item>
+        <item>documents.popular.com</item>
+        <item>helpcenter.popular.com</item>
+        <item>piloto.bancopopular.com</item>
+        <item>piloto.mbdp.popular.com</item>
+        <item>mobile.bancopopular.com</item>
+    </string-array>
+</resources>

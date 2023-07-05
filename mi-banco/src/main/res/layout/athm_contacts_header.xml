@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/viewRecents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/HeaderText"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/athm_recents_header" />
+
+        <LinearLayout
+            style="@style/HeaderSeparator"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <GridView
+            android:id="@+id/gridViewRecents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth" />
+    </LinearLayout>
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tvEmptyList"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/athm_no_contacts"
+        android:visibility="gone" />
+</LinearLayout>

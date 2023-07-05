@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/item_image"
+            style="@style/AccountsItemImage"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout style="@style/AccountsItemInfoSection" >
+
+            <TextView
+                android:id="@+id/item_name"
+                style="@style/AccountsItemTitle"
+                android:textColor="@color/white" />
+
+            <LinearLayout style="@style/AccountsItemInfoBottomSection" >
+
+                <TextView
+                    android:id="@+id/item_value"
+                    style="@style/AccountsAccountHeaderBalance" />
+
+                <TextView
+                    android:id="@+id/item_comment"
+                    style="@style/AccountsItemNumber" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/button_more_transactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/see_more_transactions"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/transaction_list"
+            style="@style/AccountDetailsListCoverflow"
+            android:layout_above="@+id/button_more_transactions"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+</LinearLayout>

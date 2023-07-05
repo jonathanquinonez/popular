@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.viewpagerindicator",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "AAPT_FRIENDLY_MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 65,
+        "versionName": "2.4.1",
+        "outputFile": "view-pager-indicator-qa.aar",
+        "fullName": "qa",
+        "baseName": "qa",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.viewpagerindicator",
+        "split": ""
+      }
+    }
+  ]
+}

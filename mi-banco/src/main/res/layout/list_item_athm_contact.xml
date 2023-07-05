@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <com.devspark.robototextview.widget.RobotoTextView
+        android:id="@+id/tvContactGroup"
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/athm_contact_secondary"
+        android:textSize="16sp"
+        app:robotoTypeface="roboto_medium" />
+
+
+    <RelativeLayout
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/imgContactPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/contact_photo_placeholder"
+            app:siBorderColor="@color/white"
+            app:siBorderWidth="1dp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactPhotoSection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:robotoTypeface="roboto_medium" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:id="@+id/tvContactPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/athm_contact_secondary"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

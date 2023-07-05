@@ -1,0 +1,1400 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.popular.android.mibanco.cert"
+4    android:versionCode="147"
+5    android:versionName="4.13.8.0-SNAPSHOT" >
+6
+7    <uses-sdk
+7-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:32:5-58
+8        android:minSdkVersion="26"
+8-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:32:5-58
+9        android:targetSdkVersion="31" />
+9-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:32:5-58
+10
+11    <uses-feature
+11-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:6:5-8:36
+12        android:name="android.hardware.telephony"
+12-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:7:9-50
+13        android:required="false" />
+13-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:8:9-33
+14    <uses-feature android:name="android.hardware.camera" />
+14-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:9:5-60
+14-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:9:19-57
+15    <uses-feature
+15-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:10:5-11:35
+16        android:name="android.hardware.camera.autofocus"
+16-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:10:19-67
+17        android:required="false" />
+17-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:11:9-33
+18
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:13:5-81
+19-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:13:22-78
+20    <uses-permission
+20-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:14:5-15:38
+21        android:name="android.permission.READ_PHONE_STATE"
+21-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:14:22-72
+22        android:maxSdkVersion="29" />
+22-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:15:9-35
+23    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS" />
+23-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:16:5-77
+23-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:16:22-74
+24    <uses-permission android:name="android.permission.CALL_PHONE" />
+24-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:17:5-69
+24-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:17:22-66
+25    <uses-permission android:name="android.permission.INTERNET" />
+25-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:18:5-67
+25-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:18:22-64
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:19:5-79
+26-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:19:22-76
+27    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+27-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:20:5-79
+27-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:20:22-76
+28    <uses-permission android:name="android.permission.CAMERA" />
+28-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:21:5-65
+28-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:21:22-62
+29    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+29-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:22:5-81
+29-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:22:22-78
+30    <uses-permission android:name="android.permission.VIBRATE" />
+30-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:23:5-66
+30-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:23:22-63
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:24:5-68
+31-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:24:22-65
+32    <uses-permission android:name="android.permission.READ_CONTACTS" />
+32-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:25:5-72
+32-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:25:22-69
+33    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+33-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:26:5-82
+33-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:26:22-79
+34    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+34-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:27:5-74
+34-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:27:22-71
+35    <uses-permission android:name="android.permission.BLUETOOTH" />
+35-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:28:5-68
+35-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:28:22-65
+36    <uses-permission android:name="com.popular.android.mibanco.permission.C2D_MESSAGE" />
+36-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:30:5-90
+36-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:30:22-87
+37
+38    <supports-screens
+38-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:33:5-37:40
+39        android:largeScreens="true"
+39-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:34:9-36
+40        android:normalScreens="true"
+40-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:35:9-37
+41        android:smallScreens="true"
+41-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:36:9-36
+42        android:xlargeScreens="true" />
+42-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:37:9-37
+43
+44    <queries>
+44-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:39:5-51:15
+45        <intent>
+45-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:40:9-42:18
+46            <action android:name="android.media.action.IMAGE_CAPTURE" />
+46-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:41:13-73
+46-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:41:21-70
+47        </intent>
+48        <intent>
+48-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:40:9-42:18
+49            <action android:name="android.intent.action.GET_CONTENT" />
+49-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:44:13-72
+49-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:44:21-69
+50
+51            <data android:mimeType="image/*" />
+51-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:46:19-45
+52        </intent>
+53
+54        <package android:name="com.evertec.athmovil.android" />
+54-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:49:9-64
+54-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:49:18-61
+55        <package android:name="com.evertec.athmovil.android.qa" />
+55-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:50:9-67
+55-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:50:18-64
+56    </queries>
+57
+58    <uses-feature
+58-->[com.google.android.gms:play-services-maps:16.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/a8037f79add3a1341f54279743633509/jetified-play-services-maps-16.0.0/AndroidManifest.xml:26:5-28:35
+59        android:glEsVersion="0x00020000"
+59-->[com.google.android.gms:play-services-maps:16.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/a8037f79add3a1341f54279743633509/jetified-play-services-maps-16.0.0/AndroidManifest.xml:27:9-41
+60        android:required="true" />
+60-->[com.google.android.gms:play-services-maps:16.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/a8037f79add3a1341f54279743633509/jetified-play-services-maps-16.0.0/AndroidManifest.xml:28:9-32
+61
+62    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+62-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:26:5-110
+62-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:26:22-107
+63
+64    <uses-feature
+64-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:29:5-31:36
+65        android:name="android.hardware.camera.front"
+65-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:30:9-53
+66        android:required="false" />
+66-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:31:9-33
+67    <uses-feature
+67-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:37:5-39:36
+68        android:name="android.hardware.camera.flash"
+68-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:38:9-53
+69        android:required="false" />
+69-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:39:9-33
+70    <uses-feature
+70-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:40:5-42:36
+71        android:name="android.hardware.screen.landscape"
+71-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:41:9-57
+72        android:required="false" />
+72-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:42:9-33
+73    <uses-feature
+73-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:43:5-45:36
+74        android:name="android.hardware.wifi"
+74-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:44:9-45
+75        android:required="false" />
+75-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:45:9-33
+76
+77    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+77-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:15:5-76
+77-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:15:22-73
+78    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+78-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:16:5-89
+78-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:16:22-86
+79    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+79-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:21:5-81
+79-->[:collection-sdk-4.3:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/fecedb7bc06313cf824ffcb28424ced0/jetified-collection-sdk-4.3/AndroidManifest.xml:21:22-78
+80
+81    <application
+81-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:53:5-573:19
+82        android:name="com.popular.android.mibanco.App"
+82-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:54:9-28
+83        android:allowBackup="false"
+83-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:55:9-36
+84        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+84-->[androidx.core:core:1.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ffd1abca03faade92d7d04038d5da6b5/core-1.2.0/AndroidManifest.xml:24:18-86
+85        android:configChanges="orientation|screenSize|fontScale"
+85-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:56:9-65
+86        android:extractNativeLibs="false"
+87        android:hardwareAccelerated="true"
+87-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:57:9-43
+88        android:icon="@mipmap/ic_launcher"
+88-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:58:9-43
+89        android:label="@string/app_name"
+89-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:59:9-41
+90        android:logo="@drawable/logo_med_white_x2"
+90-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:60:9-51
+91        android:requestLegacyExternalStorage="true"
+91-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:61:9-52
+92        android:testOnly="true"
+93        android:theme="@style/BankTheme"
+93-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:62:9-41
+94        android:usesCleartextTraffic="true" >
+94-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:63:9-44
+95        <activity android:name="com.popular.android.mibanco.activity.AutomaticRedemptionActivity" />
+95-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:64:9-74
+95-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:64:19-71
+96        <activity android:name="com.popular.android.mibanco.activity.CashRewardsAccountDepositConfiguration" />
+96-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:65:9-85
+96-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:65:19-82
+97        <activity android:name="com.popular.android.mibanco.activity.CashRewardsRedemptionResult" />
+97-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:66:9-74
+97-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:66:19-71
+98        <activity
+98-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:67:9-69:52
+99            android:name="com.popular.android.mibanco.activity.PushWelcomeSplash"
+99-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:68:13-55
+100            android:screenOrientation="portrait" />
+100-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:69:13-49
+101        <activity
+101-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:71:9-73:52
+102            android:name="com.popular.android.mibanco.activity.MaintenanceWithBalances"
+102-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:72:13-61
+103            android:screenOrientation="portrait" />
+103-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:73:13-49
+104
+105        <provider
+106            android:name="androidx.core.content.FileProvider"
+106-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:77:13-62
+107            android:authorities="com.popular.android.mibanco.cert.fileprovider"
+107-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:78:13-64
+108            android:exported="false"
+108-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:79:13-37
+109            android:grantUriPermissions="true" >
+109-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:80:13-47
+110            <meta-data
+110-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:81:13-83:54
+111                android:name="android.support.FILE_PROVIDER_PATHS"
+111-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:82:17-67
+112                android:resource="@xml/file_paths" />
+112-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:83:17-51
+113        </provider>
+114
+115        <meta-data
+115-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:86:9-88:58
+116            android:name="com.google.firebase.messaging.default_notification_icon"
+116-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:87:13-83
+117            android:resource="@drawable/ic_transparent" />
+117-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:88:13-56
+118        <meta-data
+118-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:90:9-92:65
+119            android:name="com.google.firebase.messaging.default_notification_color"
+119-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:91:13-84
+120            android:resource="@color/icon_notification_color" />
+120-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:92:13-62
+121        <meta-data
+121-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:94:9-96:70
+122            android:name="com.google.firebase.messaging.default_notification_channel_id"
+122-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:95:13-89
+123            android:value="@string/default_notification_channel_id" />
+123-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:96:13-68
+124
+125        <receiver
+125-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:98:9-109:20
+126            android:name="com.popular.android.mibanco.widget.BalanceWidgetProvider"
+126-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:99:13-57
+127            android:exported="false"
+127-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:101:13-37
+128            android:permission="android.permission.BIND_REMOTEVIEWS" >
+128-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:100:13-69
+129            <intent-filter>
+129-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:102:13-104:29
+130                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+130-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:103:17-84
+130-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:103:25-81
+131            </intent-filter>
+132
+133            <meta-data
+133-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:106:13-108:50
+134                android:name="android.appwidget.provider"
+134-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:107:17-58
+135                android:resource="@xml/widget" />
+135-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:108:17-47
+136        </receiver>
+137
+138        <service
+138-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:111:9-114:72
+139            android:name="com.popular.android.mibanco.widget.ListWidgetService"
+139-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:112:13-53
+140            android:exported="false"
+140-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:113:13-37
+141            android:permission="android.permission.BIND_REMOTEVIEWS" />
+141-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:114:13-69
+142        <service
+142-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:116:9-122:19
+143            android:name="com.popular.android.mibanco.ws.MiBancoMessagingService"
+143-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:116:18-60
+144            android:exported="false"
+144-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:117:13-37
+145            android:stopWithTask="false" >
+145-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:118:13-41
+146            <intent-filter>
+146-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:119:13-121:29
+147                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+147-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:120:17-78
+147-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:120:25-75
+148            </intent-filter>
+149        </service>
+150
+151        <uses-library
+151-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:124:9-87
+152            android:name="org.apache.http.legacy"
+152-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:124:23-60
+153            android:required="false" />
+153-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:124:61-85
+154
+155        <activity
+155-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:126:9-153:20
+156            android:name="com.popular.android.mibanco.IntroScreen"
+156-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:127:13-40
+157            android:exported="true"
+157-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:130:13-36
+158            android:icon="@mipmap/ic_launcher"
+158-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:128:13-47
+159            android:label="@string/app_name"
+159-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:129:13-45
+160            android:screenOrientation="portrait" >
+160-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:131:13-49
+161            <intent-filter>
+161-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:132:13-136:29
+162                <action android:name="android.intent.action.MAIN" />
+162-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:133:17-69
+162-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:133:25-66
+163
+164                <category android:name="android.intent.category.LAUNCHER" />
+164-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:135:17-77
+164-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:135:27-74
+165            </intent-filter>
+166            <intent-filter>
+166-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:137:13-141:29
+167                <action android:name="com.popular.android.mibanco.a2a" />
+167-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:138:17-74
+167-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:138:25-71
+168
+169                <category android:name="android.intent.category.DEFAULT" />
+169-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:17-76
+169-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:27-73
+170            </intent-filter>
+171            <intent-filter android:label="@string/app_name" >
+171-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:142:13-152:29
+171-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:142:28-60
+172                <action android:name="android.intent.action.VIEW" />
+172-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:17-69
+172-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:25-66
+173
+174                <data
+175                    android:host="www.bancopopular.com"
+175-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:146:21-56
+176                    android:pathPrefix="/cibp-web/actions/login"
+176-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:147:21-65
+177                    android:scheme="https" />
+177-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:148:21-43
+178
+179                <category android:name="android.intent.category.DEFAULT" />
+179-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:17-76
+179-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:27-73
+180                <category android:name="android.intent.category.BROWSABLE" />
+180-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:17-78
+180-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:27-75
+181            </intent-filter>
+182        </activity>
+183        <activity
+183-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:155:9-159:15
+184            android:name="com.popular.android.mibanco.PermissionInfoActivity"
+184-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:156:13-51
+185            android:screenOrientation="portrait"
+185-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:157:13-49
+186            android:theme="@style/Theme.AppCompat.Translucent" />
+186-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:158:13-63
+187        <activity
+187-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:160:9-164:55
+188            android:name="com.popular.android.mibanco.activity.EnterUsername"
+188-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:161:13-51
+189            android:label=""
+189-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:162:13-29
+190            android:screenOrientation="portrait"
+190-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:163:13-49
+191            android:windowSoftInputMode="adjustPan" />
+191-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:164:13-52
+192        <activity
+192-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:165:9-168:52
+193            android:name="com.popular.android.mibanco.activity.SelectStatement"
+193-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:166:13-53
+194            android:label="@string/select_statement"
+194-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:167:13-53
+195            android:screenOrientation="portrait" />
+195-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:168:13-49
+196        <activity
+196-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:169:9-172:70
+197            android:name="com.popular.android.mibanco.activity.WalletAuthenticationError"
+197-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:170:13-63
+198            android:screenOrientation="portrait"
+198-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:171:13-49
+199            android:windowSoftInputMode="adjustResize|stateHidden" />
+199-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:172:13-67
+200        <activity
+200-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:173:9-176:70
+201            android:name="com.popular.android.mibanco.activity.WalletAuthenticationSuccessful"
+201-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:174:13-68
+202            android:screenOrientation="portrait"
+202-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:175:13-49
+203            android:windowSoftInputMode="adjustResize|stateHidden" />
+203-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:176:13-67
+204        <activity
+204-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:177:9-181:48
+205            android:name="com.popular.android.mibanco.activity.CoverFlowActivity"
+205-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:178:13-55
+206            android:configChanges="orientation|keyboardHidden|screenSize"
+206-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:179:13-74
+207            android:hardwareAccelerated="false"
+207-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:180:13-48
+208            android:label="@string/app_name" />
+208-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:181:13-45
+209        <activity
+209-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:182:9-184:48
+210            android:name="com.popular.android.mibanco.activity.AlignPhoto"
+210-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:183:13-48
+211            android:label="@string/app_name" />
+211-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:184:13-45
+212        <activity
+212-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:185:9-189:58
+213            android:name="com.popular.android.mibanco.activity.Accounts"
+213-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:186:13-46
+214            android:configChanges="orientation|keyboardHidden|screenSize"
+214-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:187:13-74
+215            android:launchMode="singleTask"
+215-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:188:13-44
+216            android:logo="@drawable/logo_med_white_x2" />
+216-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:189:13-55
+217        <activity
+217-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:190:9-194:52
+218            android:name="com.popular.android.mibanco.activity.Payments"
+218-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:191:13-46
+219            android:launchMode="singleTask"
+219-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:192:13-44
+220            android:logo="@drawable/logo_med_white_x2"
+220-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:193:13-55
+221            android:screenOrientation="portrait" />
+221-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:194:13-49
+222        <activity
+222-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:195:9-198:52
+223            android:name="com.popular.android.mibanco.activity.AccountDetails"
+223-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:196:13-52
+224            android:label="@string/details"
+224-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:197:13-44
+225            android:screenOrientation="portrait" />
+225-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:198:13-49
+226        <activity
+226-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:199:9-203:58
+227            android:name="com.popular.android.mibanco.activity.EnterPassword"
+227-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:200:13-51
+228            android:label="@string/enter_password"
+228-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:201:13-51
+229            android:screenOrientation="portrait"
+229-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:202:13-49
+230            android:windowSoftInputMode="stateVisible" />
+230-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:203:13-55
+231        <activity
+231-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:204:9-208:58
+232            android:name="com.popular.android.mibanco.activity.SecurityQuestion"
+232-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:205:13-54
+233            android:label="@string/title_security_question"
+233-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:206:13-60
+234            android:screenOrientation="portrait"
+234-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:207:13-49
+235            android:windowSoftInputMode="stateVisible" />
+235-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:208:13-55
+236        <activity
+236-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:209:9-212:52
+237            android:name="com.popular.android.mibanco.activity.Contact"
+237-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:210:13-45
+238            android:label="@string/contactus"
+238-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:211:13-46
+239            android:screenOrientation="portrait" />
+239-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:212:13-49
+240        <activity
+240-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:213:9-216:52
+241            android:name="com.popular.android.mibanco.activity.About"
+241-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:214:13-43
+242            android:label="@string/about"
+242-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:215:13-42
+243            android:screenOrientation="portrait" />
+243-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:216:13-49
+244        <activity
+244-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:217:9-220:52
+245            android:name="com.popular.android.mibanco.activity.Faq"
+245-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:218:13-41
+246            android:label="@string/faq"
+246-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:219:13-40
+247            android:screenOrientation="portrait" />
+247-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:220:13-49
+248        <activity
+248-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:221:9-224:52
+249            android:name="com.popular.android.mibanco.activity.Terms"
+249-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:222:13-43
+250            android:label="@string/terms"
+250-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:223:13-42
+251            android:screenOrientation="portrait" />
+251-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:224:13-49
+252        <activity
+252-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:225:9-228:52
+253            android:name="com.popular.android.mibanco.activity.ManageUsers"
+253-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:226:13-49
+254            android:label="@string/manage_users"
+254-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:227:13-49
+255            android:screenOrientation="portrait" />
+255-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:228:13-49
+256        <activity
+256-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:229:9-233:73
+257            android:name="com.popular.android.mibanco.activity.EnterAmount"
+257-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:230:13-49
+258            android:label="@string/enter_amount"
+258-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:231:13-49
+259            android:screenOrientation="portrait"
+259-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:232:13-49
+260            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+260-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:233:13-70
+261        <activity
+261-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:234:9-237:52
+262            android:name="com.popular.android.mibanco.activity.PaymentReceipt"
+262-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:235:13-52
+263            android:label="@string/payment_processed"
+263-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:236:13-54
+264            android:screenOrientation="portrait" />
+264-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:237:13-49
+265        <activity
+265-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:238:9-241:52
+266            android:name="com.popular.android.mibanco.activity.EBill"
+266-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:239:13-43
+267            android:label="@string/ebills"
+267-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:240:13-43
+268            android:screenOrientation="portrait" />
+268-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:241:13-49
+269        <activity
+269-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:242:9-244:54
+270            android:name="com.popular.android.mibanco.activity.CalendarView"
+270-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:243:13-50
+271            android:theme="@style/DialogHoloLight" />
+271-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:244:13-51
+272        <!-- <activity -->
+273        <!-- android:name=".activity.LocatorTabs" -->
+274        <!-- android:label="@string/locator" -->
+275        <!-- android:screenOrientation="portrait" -->
+276        <!-- android:theme="@style/BankThemeActionBar" /> -->
+277        <!-- <activity -->
+278        <!-- android:name=".activity.LocatorFacilityList" -->
+279        <!-- android:label="@string/locator" -->
+280        <!-- android:screenOrientation="portrait" /> -->
+281        <!-- <activity -->
+282        <!-- android:name=".activity.LocatorMap" -->
+283        <!-- android:label="@string/locator" -->
+284        <!-- android:screenOrientation="portrait" /> -->
+285        <!-- <activity -->
+286        <!-- android:name=".activity.LocatorFacilityDetails" -->
+287        <!-- android:label="@string/locator" -->
+288        <!-- android:screenOrientation="portrait" /> -->
+289        <!-- <activity -->
+290        <!-- android:name=".activity.LocatorFacilityGroup" -->
+291        <!-- android:label="@string/locator" -->
+292        <!-- android:screenOrientation="portrait" /> -->
+293        <activity
+293-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:266:9-269:52
+294            android:name="com.popular.android.mibanco.activity.LanguageSettings"
+294-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:267:13-54
+295            android:label="@string/language"
+295-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:268:13-45
+296            android:screenOrientation="portrait" />
+296-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:269:13-49
+297        <activity
+297-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:270:9-273:54
+298            android:name="com.popular.android.mibanco.activity.ErrorView"
+298-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:271:13-47
+299            android:label="@string/app_name"
+299-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:272:13-45
+300            android:theme="@style/DialogHoloLight" />
+300-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:273:13-51
+301        <activity
+301-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:274:9-277:52
+302            android:name="com.popular.android.mibanco.activity.SettingsList"
+302-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:275:13-50
+303            android:label="@string/title_settings"
+303-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:276:13-51
+304            android:screenOrientation="portrait" />
+304-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:277:13-49
+305        <activity
+305-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:278:9-281:52
+306            android:name="com.popular.android.mibanco.activity.FraudPrevention"
+306-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:279:13-53
+307            android:label="@string/fraud_prevention"
+307-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:280:13-53
+308            android:screenOrientation="portrait" />
+308-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:281:13-49
+309        <activity
+309-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:282:9-286:52
+310            android:name="com.popular.android.mibanco.activity.Receipts"
+310-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:283:13-46
+311            android:label=""
+311-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:284:13-29
+312            android:launchMode="singleTask"
+312-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:285:13-44
+313            android:screenOrientation="portrait" />
+313-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:286:13-49
+314        <activity
+314-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:287:9-291:52
+315            android:name="com.popular.android.mibanco.activity.RDCHistory"
+315-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:288:13-48
+316            android:label=""
+316-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:289:13-29
+317            android:launchMode="singleTask"
+317-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:290:13-44
+318            android:screenOrientation="portrait" />
+318-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:291:13-49
+319        <activity
+319-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:292:9-296:52
+320            android:name="com.popular.android.mibanco.activity.RDCHistoryImages"
+320-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:293:13-54
+321            android:label=""
+321-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:294:13-29
+322            android:launchMode="singleTask"
+322-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:295:13-44
+323            android:screenOrientation="portrait" />
+323-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:296:13-49
+324        <activity
+324-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:297:9-301:53
+325            android:name="com.popular.android.mibanco.activity.RDCHistoryImageZoom"
+325-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:298:13-57
+326            android:label=""
+326-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:299:13-29
+327            android:launchMode="singleTask"
+327-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:300:13-44
+328            android:screenOrientation="landscape" />
+328-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:301:13-50
+329        <activity
+329-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:302:9-306:52
+330            android:name="com.popular.android.mibanco.activity.DepositCheck"
+330-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:303:13-50
+331            android:label=""
+331-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:304:13-29
+332            android:launchMode="singleTask"
+332-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:305:13-44
+333            android:screenOrientation="portrait" />
+333-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:306:13-49
+334        <activity
+334-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:307:9-311:53
+335            android:name="com.popular.android.mibanco.activity.DepositCheckCamera"
+335-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:308:13-56
+336            android:label=""
+336-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:309:13-29
+337            android:launchMode="singleTop"
+337-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:310:13-43
+338            android:screenOrientation="landscape" />
+338-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:311:13-50
+339        <activity
+339-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:312:9-316:52
+340            android:name="com.popular.android.mibanco.activity.DepositCheckReceipt"
+340-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:313:13-57
+341            android:label=""
+341-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:314:13-29
+342            android:launchMode="singleTop"
+342-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:315:13-43
+343            android:screenOrientation="portrait" />
+343-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:316:13-49
+344        <activity
+344-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:317:9-321:70
+345            android:name="com.popular.android.mibanco.activity.WebViewActivity"
+345-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:318:13-53
+346            android:label=""
+346-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:319:13-29
+347            android:screenOrientation="portrait"
+347-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:320:13-49
+348            android:windowSoftInputMode="adjustResize|stateHidden" />
+348-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:321:13-67
+349        <activity
+349-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:322:9-326:70
+350            android:name="com.popular.android.mibanco.activity.MarketplaceActivity"
+350-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:323:13-57
+351            android:label=""
+351-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:324:13-29
+352            android:screenOrientation="portrait"
+352-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:325:13-49
+353            android:windowSoftInputMode="adjustResize|stateHidden" />
+353-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:326:13-67
+354        <activity
+354-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:327:9-331:52
+355            android:name="com.popular.android.mibanco.activity.Downtime"
+355-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:328:13-46
+356            android:label=""
+356-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:329:13-29
+357            android:launchMode="singleTask"
+357-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:330:13-44
+358            android:screenOrientation="portrait" />
+358-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:331:13-49
+359        <activity
+359-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:332:9-335:70
+360            android:name="com.popular.android.mibanco.activity.SelectAccount"
+360-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:333:13-51
+361            android:screenOrientation="portrait"
+361-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:334:13-49
+362            android:windowSoftInputMode="adjustResize|stateHidden" />
+362-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:335:13-67
+363        <activity
+363-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:336:9-339:70
+364            android:name="com.popular.android.mibanco.activity.SelectCard"
+364-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:337:13-48
+365            android:screenOrientation="portrait"
+365-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:338:13-49
+366            android:windowSoftInputMode="adjustResize|stateHidden" />
+366-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:339:13-67
+367        <activity
+367-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:340:9-344:70
+368            android:name="com.popular.android.mibanco.activity.AthmActivity"
+368-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:341:13-50
+369            android:launchMode="singleTask"
+369-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:342:13-44
+370            android:screenOrientation="portrait"
+370-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:343:13-49
+371            android:windowSoftInputMode="adjustResize|stateHidden" />
+371-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:344:13-67
+372        <activity
+372-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:345:9-349:70
+373            android:name="com.popular.android.mibanco.activity.AthmAccountInfo"
+373-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:346:13-53
+374            android:launchMode="singleTask"
+374-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:347:13-44
+375            android:screenOrientation="portrait"
+375-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:348:13-49
+376            android:windowSoftInputMode="adjustResize|stateHidden" />
+376-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:349:13-67
+377        <activity
+377-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:350:9-354:70
+378            android:name="com.popular.android.mibanco.activity.AthmRegistrationInfo"
+378-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:351:13-58
+379            android:launchMode="singleTask"
+379-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:352:13-44
+380            android:screenOrientation="portrait"
+380-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:353:13-49
+381            android:windowSoftInputMode="adjustResize|stateHidden" />
+381-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:354:13-67
+382        <activity
+382-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:355:9-358:70
+383            android:name="com.popular.android.mibanco.activity.AthmTermsAndConditions"
+383-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:356:13-60
+384            android:screenOrientation="portrait"
+384-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:357:13-49
+385            android:windowSoftInputMode="adjustResize|stateHidden" />
+385-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:358:13-67
+386        <activity
+386-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:359:9-363:70
+387            android:name="com.popular.android.mibanco.activity.AthmLoginInfo"
+387-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:360:13-51
+388            android:launchMode="singleTask"
+388-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:361:13-44
+389            android:screenOrientation="portrait"
+389-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:362:13-49
+390            android:windowSoftInputMode="adjustResize|stateHidden" />
+390-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:363:13-67
+391        <activity
+391-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:364:9-368:70
+392            android:name="com.popular.android.mibanco.activity.AthmPhoneCall"
+392-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:365:13-51
+393            android:launchMode="singleTask"
+393-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:366:13-44
+394            android:screenOrientation="portrait"
+394-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:367:13-49
+395            android:windowSoftInputMode="adjustResize|stateHidden" />
+395-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:368:13-67
+396        <activity
+396-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:369:9-373:70
+397            android:name="com.popular.android.mibanco.activity.AthmPhoneNumber"
+397-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:370:13-53
+398            android:launchMode="singleTask"
+398-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:371:13-44
+399            android:screenOrientation="portrait"
+399-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:372:13-49
+400            android:windowSoftInputMode="adjustResize|stateHidden" />
+400-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:373:13-67
+401        <activity
+401-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:374:9-378:70
+402            android:name="com.popular.android.mibanco.activity.AthmTransfer"
+402-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:375:13-50
+403            android:launchMode="singleTask"
+403-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:376:13-44
+404            android:screenOrientation="portrait"
+404-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:377:13-49
+405            android:windowSoftInputMode="adjustResize|stateHidden" />
+405-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:378:13-67
+406        <activity
+406-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:379:9-382:70
+407            android:name="com.popular.android.mibanco.activity.AthmContacts"
+407-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:380:13-50
+408            android:screenOrientation="portrait"
+408-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:381:13-49
+409            android:windowSoftInputMode="adjustResize|stateHidden" />
+409-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:382:13-67
+410        <activity
+410-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:383:9-386:70
+411            android:name="com.popular.android.mibanco.activity.AthmTransferSent"
+411-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:384:13-54
+412            android:screenOrientation="portrait"
+412-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:385:13-49
+413            android:windowSoftInputMode="adjustResize|stateHidden" />
+413-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:386:13-67
+414        <activity
+414-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:387:9-391:70
+415            android:name="com.popular.android.mibanco.activity.AthmRegistrationCompleted"
+415-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:388:13-63
+416            android:launchMode="singleTask"
+416-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:389:13-44
+417            android:screenOrientation="portrait"
+417-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:390:13-49
+418            android:windowSoftInputMode="adjustResize|stateHidden" />
+418-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:391:13-67
+419        <activity
+419-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:392:9-396:70
+420            android:name="com.popular.android.mibanco.activity.AthmEnroll"
+420-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:393:13-48
+421            android:launchMode="singleTask"
+421-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:394:13-44
+422            android:screenOrientation="portrait"
+422-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:395:13-49
+423            android:windowSoftInputMode="adjustResize|stateHidden" />
+423-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:396:13-67
+424        <activity
+424-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:397:9-401:70
+425            android:name="com.popular.android.mibanco.activity.AthmWelcomeSplash"
+425-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:398:13-55
+426            android:launchMode="singleTask"
+426-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:399:13-44
+427            android:screenOrientation="portrait"
+427-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:400:13-49
+428            android:windowSoftInputMode="adjustResize|stateHidden" />
+428-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:401:13-67
+429        <activity
+429-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:402:9-406:70
+430            android:name="com.popular.android.mibanco.activity.AthmRedirectSplash"
+430-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:403:13-56
+431            android:launchMode="singleTask"
+431-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:404:13-44
+432            android:screenOrientation="portrait"
+432-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:405:13-49
+433            android:windowSoftInputMode="adjustResize|stateHidden" />
+433-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:406:13-67
+434        <!--
+435        <activity
+436            android:name=".util.MobileCashUtils"
+437            android:launchMode="singleTask"
+438            android:screenOrientation="portrait"
+439            android:windowSoftInputMode="adjustResize|stateHidden" />
+440        -->
+441        <!--
+442        <activity
+443            android:name=".activity.MobileCashStaging"
+444            android:launchMode="singleTask"
+445            android:screenOrientation="portrait"
+446            android:windowSoftInputMode="adjustResize|stateHidden" />
+447        -->
+448        <activity
+448-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:421:9-425:70
+449            android:name="com.popular.android.mibanco.activity.EasyCashStagingReceipt"
+449-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:422:13-60
+450            android:launchMode="singleTask"
+450-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:423:13-44
+451            android:screenOrientation="portrait"
+451-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:424:13-49
+452            android:windowSoftInputMode="adjustResize|stateHidden" />
+452-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:425:13-67
+453        <activity
+453-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:426:9-430:70
+454            android:name="com.popular.android.mibanco.activity.EasyCashRedeem"
+454-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:427:13-52
+455            android:launchMode="singleTask"
+455-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:428:13-44
+456            android:screenOrientation="portrait"
+456-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:429:13-49
+457            android:windowSoftInputMode="adjustResize|stateHidden" />
+457-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:430:13-67
+458        <activity
+458-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:431:9-435:70
+459            android:name="com.popular.android.mibanco.activity.EasyCashRedeemReceipt"
+459-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:432:13-59
+460            android:launchMode="singleTask"
+460-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:433:13-44
+461            android:screenOrientation="portrait"
+461-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:434:13-49
+462            android:windowSoftInputMode="adjustResize|stateHidden" />
+462-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:435:13-67
+463        <activity
+463-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:436:9-440:70
+464            android:name="com.popular.android.mibanco.activity.OobEnterAuthCode"
+464-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:437:13-54
+465            android:label=""
+465-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:438:13-29
+466            android:screenOrientation="portrait"
+466-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:439:13-49
+467            android:windowSoftInputMode="adjustResize|stateHidden" />
+467-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:440:13-67
+468        <activity
+468-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:441:9-445:70
+469            android:name="com.popular.android.mibanco.activity.OobUseMyRecoveryCode"
+469-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:442:13-58
+470            android:launchMode="singleTask"
+470-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:443:13-44
+471            android:screenOrientation="portrait"
+471-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:444:13-49
+472            android:windowSoftInputMode="adjustResize|stateHidden" />
+472-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:445:13-67
+473        <activity
+473-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:446:9-450:70
+474            android:name="com.popular.android.mibanco.activity.OobNoneOfTheCodes"
+474-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:447:13-55
+475            android:launchMode="singleTask"
+475-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:448:13-44
+476            android:screenOrientation="portrait"
+476-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:449:13-49
+477            android:windowSoftInputMode="adjustResize|stateHidden" />
+477-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:450:13-67
+478        <activity
+478-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:451:9-455:70
+479            android:name="com.popular.android.mibanco.activity.CampaignActivity"
+479-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:452:13-54
+480            android:launchMode="singleTask"
+480-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:453:13-44
+481            android:screenOrientation="portrait"
+481-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:454:13-49
+482            android:windowSoftInputMode="adjustResize|stateHidden" />
+482-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:455:13-67
+483        <activity
+483-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:456:9-460:55
+484            android:name="com.popular.android.mibanco.activity.EnrollmentLiteProfileInformation"
+484-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:457:13-70
+485            android:label=""
+485-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:458:13-29
+486            android:screenOrientation="portrait"
+486-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:459:13-49
+487            android:windowSoftInputMode="adjustPan" />
+487-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:460:13-52
+488        <activity
+488-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:461:9-465:55
+489            android:name="com.popular.android.mibanco.activity.EnrollmentLiteTermsAndConditions"
+489-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:462:13-70
+490            android:label=""
+490-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:463:13-29
+491            android:screenOrientation="portrait"
+491-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:464:13-49
+492            android:windowSoftInputMode="adjustPan" />
+492-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:465:13-52
+493        <activity
+493-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:466:9-470:55
+494            android:name="com.popular.android.mibanco.activity.EnrollmentLiteSmsCode"
+494-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:467:13-59
+495            android:label=""
+495-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:468:13-29
+496            android:screenOrientation="portrait"
+496-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:469:13-49
+497            android:windowSoftInputMode="adjustPan" />
+497-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:470:13-52
+498        <activity
+498-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:471:9-475:55
+499            android:name="com.popular.android.mibanco.activity.EnrollmentLiteRegistrationComplete"
+499-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:472:13-72
+500            android:label=""
+500-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:473:13-29
+501            android:screenOrientation="portrait"
+501-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:474:13-49
+502            android:windowSoftInputMode="adjustPan" />
+502-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:475:13-52
+503        <activity
+503-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:476:9-481:55
+504            android:name="com.popular.android.mibanco.activity.EasyCashHistoryActivity"
+504-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:477:13-61
+505            android:label=""
+505-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:478:13-29
+506            android:launchMode="singleTask"
+506-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:479:13-44
+507            android:screenOrientation="portrait"
+507-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:480:13-49
+508            android:windowSoftInputMode="adjustPan" />
+508-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:481:13-52
+509        <activity
+509-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:482:9-487:55
+510            android:name="com.popular.android.mibanco.activity.EasyCashNonCustHistoryActivity"
+510-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:483:13-68
+511            android:label=""
+511-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:484:13-29
+512            android:launchMode="singleTask"
+512-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:485:13-44
+513            android:screenOrientation="portrait"
+513-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:486:13-49
+514            android:windowSoftInputMode="adjustPan" />
+514-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:487:13-52
+515        <activity
+515-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:488:9-493:55
+516            android:name="com.popular.android.mibanco.activity.EnrollmentLiteWelcomeActivity"
+516-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:489:13-67
+517            android:label=""
+517-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:490:13-29
+518            android:launchMode="singleTask"
+518-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:491:13-44
+519            android:screenOrientation="portrait"
+519-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:492:13-49
+520            android:windowSoftInputMode="adjustPan" />
+520-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:493:13-52
+521        <activity
+521-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:494:9-499:55
+522            android:name="com.popular.android.mibanco.activity.EasyCashStaging"
+522-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:495:13-53
+523            android:label=""
+523-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:496:13-29
+524            android:launchMode="singleTask"
+524-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:497:13-44
+525            android:screenOrientation="portrait"
+525-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:498:13-49
+526            android:windowSoftInputMode="adjustPan" />
+526-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:499:13-52
+527        <activity
+527-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:500:9-504:55
+528            android:name="com.popular.android.mibanco.activity.EasyCashHistoryReceipt"
+528-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:501:13-60
+529            android:label=""
+529-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:502:13-29
+530            android:screenOrientation="portrait"
+530-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:503:13-49
+531            android:windowSoftInputMode="adjustPan" />
+531-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:504:13-52
+532        <activity
+532-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:505:9-509:55
+533            android:name="com.popular.android.mibanco.activity.EasyCashFaqs"
+533-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:506:13-50
+534            android:label=""
+534-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:507:13-29
+535            android:screenOrientation="portrait"
+535-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:508:13-49
+536            android:windowSoftInputMode="adjustPan" />
+536-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:509:13-52
+537        <activity
+537-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:510:9-514:55
+538            android:name="com.popular.android.mibanco.activity.EasyCashLocator"
+538-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:511:13-53
+539            android:label=""
+539-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:512:13-29
+540            android:screenOrientation="portrait"
+540-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:513:13-49
+541            android:windowSoftInputMode="adjustPan" />
+541-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:514:13-52
+542        <activity
+542-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:515:9-519:55
+543            android:name="com.popular.android.mibanco.activity.OnOffAccountPlastics"
+543-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:516:13-58
+544            android:label=""
+544-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:517:13-29
+545            android:screenOrientation="portrait"
+545-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:518:13-49
+546            android:windowSoftInputMode="adjustPan" />
+546-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:519:13-52
+547        <activity
+547-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:520:9-524:55
+548            android:name="com.popular.android.mibanco.activity.DeveloperActivity"
+548-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:521:13-55
+549            android:label=""
+549-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:522:13-29
+550            android:screenOrientation="portrait"
+550-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:523:13-49
+551            android:windowSoftInputMode="adjustPan" />
+551-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:524:13-52
+552        <activity android:name="com.popular.android.mibanco.activity.InformativeActivity" />
+552-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:525:9-66
+552-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:525:19-63
+553        <activity android:name="com.popular.android.mibanco.activity.OpenAccount" />
+553-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:526:9-58
+553-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:526:19-55
+554        <activity
+554-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:527:9-531:15
+555            android:name="com.yalantis.ucrop.UCropActivity"
+555-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:528:13-60
+556            android:label=""
+556-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:530:13-29
+557            android:screenOrientation="portrait" />
+557-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:529:13-49
+558        <activity
+558-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:532:9-535:51
+559            android:name="com.popular.android.mibanco.activity.AcceptTermsActivity"
+559-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:532:19-63
+560            android:label=""
+560-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:533:13-29
+561            android:launchMode="singleTask"
+561-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:534:13-44
+562            android:screenOrientation="portrait" />
+562-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:535:13-49
+563        <!-- MBSFE-1712 -->
+564        <!-- END MBSFE-1712 -->
+565        <meta-data
+565-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:538:9-540:72
+566            android:name="io.fabric.ApiKey"
+566-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:539:13-44
+567            android:value="54ac7f2954d3e619b6d42b90b2ad96b323fb60a0" />
+567-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:540:13-69
+568
+569        <activity
+569-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:542:9-545:52
+570            android:name="com.popular.android.mibanco.activity.CashRewardsConfiguration"
+570-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:543:13-62
+571            android:label=""
+571-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:544:13-29
+572            android:screenOrientation="portrait" />
+572-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:545:13-49
+573        <activity android:name="com.popular.android.mibanco.activity.CashRewardsConfirmation" />
+573-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:546:9-70
+573-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:546:19-67
+574        <activity
+574-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:547:9-551:55
+575            android:name="com.popular.android.mibanco.activity.SsoWealthTerms"
+575-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:548:13-52
+576            android:label=""
+576-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:549:13-29
+577            android:screenOrientation="portrait"
+577-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:550:13-49
+578            android:windowSoftInputMode="adjustPan" />
+578-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:551:13-52
+579        <activity
+579-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:552:9-572:20
+580            android:name="com.popular.android.mibanco.AppLinkActivity"
+580-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:553:13-44
+581            android:exported="true"
+581-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:554:13-36
+582            android:launchMode="singleTask" >
+582-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:555:13-44
+583            <intent-filter android:autoVerify="true" >
+583-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:556:13-571:29
+583-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:556:28-53
+584                <action android:name="android.intent.action.VIEW" />
+584-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:17-69
+584-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:25-66
+585
+586                <category android:name="android.intent.category.DEFAULT" />
+586-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:17-76
+586-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:27-73
+587                <category android:name="android.intent.category.BROWSABLE" />
+587-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:17-78
+587-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:27-75
+588
+589                <data android:scheme="https" />
+589-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:148:21-43
+590                <data android:pathPattern="/cibp-web/actions/resetpassword*" />
+590-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:563:23-77
+591                <data android:pathPattern="/cibp-web/actions/regainaccess*" />
+591-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:563:23-77
+592                <data android:pathPattern="/cibp-web/actions/recoveryaccess*" />
+592-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:563:23-77
+593                <data android:host="cert1.bppr.com" />
+593-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:146:21-56
+594                <data android:host="cert3.bppr.com" />
+594-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:146:21-56
+595                <data android:host="cert8.bppr.com" />
+595-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:146:21-56
+596                <data android:host="" />
+596-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:146:21-56
+597            </intent-filter>
+598        </activity>
+599        <!--
+600             FirebaseMessagingService performs security checks at runtime,
+601             no need for explicit permissions despite exported="true"
+602        -->
+603        <service
+603-->[com.google.firebase:firebase-messaging:17.3.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4c20a694f15bb96f607ba53ac997ceb2/jetified-firebase-messaging-17.3.4/AndroidManifest.xml:28:9-34:19
+604            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+604-->[com.google.firebase:firebase-messaging:17.3.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4c20a694f15bb96f607ba53ac997ceb2/jetified-firebase-messaging-17.3.4/AndroidManifest.xml:29:13-82
+605            android:exported="true" >
+605-->[com.google.firebase:firebase-messaging:17.3.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4c20a694f15bb96f607ba53ac997ceb2/jetified-firebase-messaging-17.3.4/AndroidManifest.xml:30:13-36
+606            <intent-filter android:priority="-500" >
+606-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:119:13-121:29
+607                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+607-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:120:17-78
+607-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:120:25-75
+608            </intent-filter>
+609        </service>
+610        <service
+610-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:27:9-30:40
+611            android:name="com.google.android.gms.tagmanager.TagManagerService"
+611-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:28:13-79
+612            android:enabled="true"
+612-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:29:13-35
+613            android:exported="false" />
+613-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:30:13-37
+614
+615        <activity
+615-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:32:9-44:20
+616            android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity"
+616-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:33:13-87
+617            android:exported="true"
+617-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:34:13-36
+618            android:noHistory="true" > <!-- optional, removes the previewActivity from the activity stack. -->
+618-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:35:13-37
+619            <intent-filter>
+619-->[com.google.android.gms:play-services-tagmanager-api:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/4a441bb2446f4a95fac50b5bf9d337ad/jetified-play-services-tagmanager-api-16.0.4/AndroidManifest.xml:36:13-43:29
+620                <data android:scheme="tagmanager.c.com.popular.android.mibanco.cert" />
+620-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:148:21-43
+621
+622                <action android:name="android.intent.action.VIEW" />
+622-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:17-69
+622-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:143:25-66
+623
+624                <category android:name="android.intent.category.DEFAULT" />
+624-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:17-76
+624-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:140:27-73
+625                <category android:name="android.intent.category.BROWSABLE" />
+625-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:17-78
+625-->/Users/iroyinlozano/Documents/popular/popular/mi-banco/src/main/AndroidManifest.xml:151:27-75
+626            </intent-filter>
+627        </activity>
+628
+629        <service
+629-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/928cae0eeaae591f378ea8b003aacd7f/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:27:9-31:19
+630            android:name="com.google.firebase.components.ComponentDiscoveryService"
+630-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/928cae0eeaae591f378ea8b003aacd7f/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:27:18-89
+631            android:exported="false" >
+631-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:31:13-37
+632            <meta-data
+632-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/928cae0eeaae591f378ea8b003aacd7f/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:28:13-30:85
+633                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+633-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/928cae0eeaae591f378ea8b003aacd7f/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:29:17-139
+634                android:value="com.google.firebase.components.ComponentRegistrar" />
+634-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/928cae0eeaae591f378ea8b003aacd7f/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:30:17-82
+635            <meta-data
+635-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:32:13-34:85
+636                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+636-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:33:17-96
+637                android:value="com.google.firebase.components.ComponentRegistrar" />
+637-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:34:17-82
+638        </service>
+639
+640        <receiver
+640-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:29:9-33:20
+641            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+641-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:30:13-85
+642            android:enabled="true"
+642-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:31:13-35
+643            android:exported="false" >
+643-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:32:13-37
+644        </receiver>
+645        <receiver
+645-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:34:9-42:20
+646            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+646-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:35:13-100
+647            android:enabled="true"
+647-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:36:13-35
+648            android:exported="true"
+648-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:37:13-36
+649            android:permission="android.permission.INSTALL_PACKAGES" >
+649-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:38:13-69
+650            <intent-filter>
+650-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:39:13-41:29
+651                <action android:name="com.android.vending.INSTALL_REFERRER" />
+651-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:40:17-79
+651-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:40:25-76
+652            </intent-filter>
+653        </receiver>
+654
+655        <service
+655-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:44:9-47:40
+656            android:name="com.google.android.gms.measurement.AppMeasurementService"
+656-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:45:13-84
+657            android:enabled="true"
+657-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:46:13-35
+658            android:exported="false" />
+658-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:47:13-37
+659        <service
+659-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:48:9-52:72
+660            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+660-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:49:13-87
+661            android:enabled="true"
+661-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:50:13-35
+662            android:exported="false"
+662-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:51:13-37
+663            android:permission="android.permission.BIND_JOB_SERVICE" />
+663-->[com.google.firebase:firebase-analytics:16.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ff5b99a79a142aeea7da4007782e0c73/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:52:13-69
+664
+665        <receiver
+665-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:37:9-44:20
+666            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+666-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:38:13-78
+667            android:exported="true"
+667-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:39:13-36
+668            android:permission="com.google.android.c2dm.permission.SEND" >
+668-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:40:13-73
+669            <intent-filter>
+669-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:41:13-43:29
+670                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+670-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:42:17-81
+670-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:42:25-78
+671            </intent-filter>
+672        </receiver>
+673        <!--
+674             FirebaseInstanceIdService performs security checks at runtime,
+675             no need for explicit permissions despite exported="true"
+676        -->
+677        <service
+677-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:50:9-56:19
+678            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+678-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:51:13-77
+679            android:exported="true" >
+679-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:52:13-36
+680            <intent-filter android:priority="-500" >
+680-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:53:13-55:29
+680-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:53:28-51
+681                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+681-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:54:17-80
+681-->[com.google.firebase:firebase-iid:17.0.4] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/94553987f9f3e46a2060611317924ee0/jetified-firebase-iid-17.0.4/AndroidManifest.xml:54:25-77
+682            </intent-filter>
+683        </service>
+684
+685        <activity
+685-->[com.google.android.gms:play-services-base:16.0.1] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/56085fb0dde294da28e75ecd98cd4f19/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+686            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+686-->[com.google.android.gms:play-services-base:16.0.1] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/56085fb0dde294da28e75ecd98cd4f19/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+687            android:exported="false"
+687-->[com.google.android.gms:play-services-base:16.0.1] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/56085fb0dde294da28e75ecd98cd4f19/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+688            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+688-->[com.google.android.gms:play-services-base:16.0.1] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/56085fb0dde294da28e75ecd98cd4f19/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+689        <activity
+689-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:48:9-54:63
+690            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+690-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:49:13-74
+691            android:clearTaskOnLaunch="true"
+691-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:50:13-45
+692            android:screenOrientation="sensorLandscape"
+692-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:51:13-56
+693            android:stateNotNeeded="true"
+693-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:52:13-42
+694            android:theme="@style/zxing_CaptureTheme"
+694-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:53:13-54
+695            android:windowSoftInputMode="stateAlwaysHidden" />
+695-->[com.journeyapps:zxing-android-embedded:3.0.2] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/e8014867dea935727b638a312476793b/jetified-zxing-android-embedded-3.0.2/AndroidManifest.xml:54:13-60
+696
+697        <provider
+697-->[com.crashlytics.sdk.android:crashlytics:2.8.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/05832f944ec1a2f95a0e9a5a40c5e3d3/jetified-crashlytics-2.8.0/AndroidManifest.xml:12:9-16:39
+698            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+698-->[com.crashlytics.sdk.android:crashlytics:2.8.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/05832f944ec1a2f95a0e9a5a40c5e3d3/jetified-crashlytics-2.8.0/AndroidManifest.xml:13:13-75
+699            android:authorities="com.popular.android.mibanco.cert.crashlyticsinitprovider"
+699-->[com.crashlytics.sdk.android:crashlytics:2.8.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/05832f944ec1a2f95a0e9a5a40c5e3d3/jetified-crashlytics-2.8.0/AndroidManifest.xml:14:13-75
+700            android:exported="false"
+700-->[com.crashlytics.sdk.android:crashlytics:2.8.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/05832f944ec1a2f95a0e9a5a40c5e3d3/jetified-crashlytics-2.8.0/AndroidManifest.xml:15:13-37
+701            android:initOrder="100" />
+701-->[com.crashlytics.sdk.android:crashlytics:2.8.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/05832f944ec1a2f95a0e9a5a40c5e3d3/jetified-crashlytics-2.8.0/AndroidManifest.xml:16:13-36
+702        <provider
+702-->[com.flurry.android:analytics:14.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/8a3b1791600b76bf2612147fb047b00b/jetified-analytics-14.0.0/AndroidManifest.xml:13:9-16:40
+703            android:name="com.flurry.android.agent.FlurryContentProvider"
+703-->[com.flurry.android:analytics:14.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/8a3b1791600b76bf2612147fb047b00b/jetified-analytics-14.0.0/AndroidManifest.xml:14:13-74
+704            android:authorities="com.popular.android.mibanco.cert.FlurryContentProvider"
+704-->[com.flurry.android:analytics:14.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/8a3b1791600b76bf2612147fb047b00b/jetified-analytics-14.0.0/AndroidManifest.xml:15:13-73
+705            android:exported="false" />
+705-->[com.flurry.android:analytics:14.0.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/8a3b1791600b76bf2612147fb047b00b/jetified-analytics-14.0.0/AndroidManifest.xml:16:13-37
+706
+707        <activity
+707-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:32:9-36:58
+708            android:name="com.shieldsquare.ss2_android_sdk.activity.view.CaptchaSolverActivity"
+708-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:33:13-96
+709            android:exported="true"
+709-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:34:13-36
+710            android:launchMode="singleTop"
+710-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:35:13-43
+711            android:windowSoftInputMode="adjustResize" />
+711-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:36:13-55
+712        <activity
+712-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:37:9-41:51
+713            android:name="com.shieldsquare.ss2_android_sdk.activity.BlockActivity"
+713-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:38:13-83
+714            android:configChanges="orientation|screenSize"
+714-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:39:13-59
+715            android:exported="true"
+715-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:40:13-36
+716            android:launchMode="singleInstance" />
+716-->[:ss2_android_sdk_v5.1.2_release:] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/f41247d5af95eb70e5ffb2ea47d39659/jetified-ss2_android_sdk_v5.1.2_release/AndroidManifest.xml:41:13-48
+717
+718        <provider
+718-->[com.google.firebase:firebase-common:16.0.3] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ab2b13f4b620d1a9762d74b86494ce90/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+719            android:name="com.google.firebase.provider.FirebaseInitProvider"
+719-->[com.google.firebase:firebase-common:16.0.3] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ab2b13f4b620d1a9762d74b86494ce90/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+720            android:authorities="com.popular.android.mibanco.cert.firebaseinitprovider"
+720-->[com.google.firebase:firebase-common:16.0.3] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ab2b13f4b620d1a9762d74b86494ce90/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+721            android:exported="false"
+721-->[com.google.firebase:firebase-common:16.0.3] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ab2b13f4b620d1a9762d74b86494ce90/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+722            android:initOrder="100" />
+722-->[com.google.firebase:firebase-common:16.0.3] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/ab2b13f4b620d1a9762d74b86494ce90/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+723
+724        <meta-data
+724-->[com.google.android.gms:play-services-basement:18.1.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/d29e7b2292e75569a8f872751ecb5d57/jetified-play-services-basement-18.1.0/AndroidManifest.xml:21:9-23:69
+725            android:name="com.google.android.gms.version"
+725-->[com.google.android.gms:play-services-basement:18.1.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/d29e7b2292e75569a8f872751ecb5d57/jetified-play-services-basement-18.1.0/AndroidManifest.xml:22:13-58
+726            android:value="@integer/google_play_services_version" />
+726-->[com.google.android.gms:play-services-basement:18.1.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/d29e7b2292e75569a8f872751ecb5d57/jetified-play-services-basement-18.1.0/AndroidManifest.xml:23:13-66
+727
+728        <provider
+728-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/2acce3af1aded619fc764307bb7a6918/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+729            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+729-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/2acce3af1aded619fc764307bb7a6918/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+730            android:authorities="com.popular.android.mibanco.cert.lifecycle-process"
+730-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/2acce3af1aded619fc764307bb7a6918/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+731            android:exported="false"
+731-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/2acce3af1aded619fc764307bb7a6918/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+732            android:multiprocess="true" />
+732-->[androidx.lifecycle:lifecycle-process:2.2.0] /Users/iroyinlozano/.gradle/caches/transforms-2/files-2.1/2acce3af1aded619fc764307bb7a6918/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+733    </application>
+734
+735</manifest>

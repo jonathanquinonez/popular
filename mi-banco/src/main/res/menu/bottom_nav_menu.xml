@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_goBack"
+        android:title=""
+        android:icon="@drawable/ic_arrow_back"/>
+    <item
+        android:id="@+id/space_between_items"
+        android:title=""
+        android:checked="true"/>
+    <item
+        android:id="@+id/action_goForward"
+        android:title=""
+        android:icon="@drawable/ic_arrow_forward"/>
+</menu>
+
+

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/top_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/deposit_check_top_section" />
+
+    <ScrollView
+        android:id="@+id/deposit_check_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_section" >
+
+        <LinearLayout
+            android:id="@+id/amount_section"
+            style="@style/PaymentsMenuBox"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/amount_button"
+                style="@style/PaymentsAmountButtonBox"
+                android:baselineAligned="false" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        style="@style/PaymentsAmountTitle"
+                        android:text="@string/deposit_check_amount" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/amount_text"
+                        style="@style/PaymentsAmountText"
+                        android:text="@string/zero_amount" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/amount_arrow_holo_cut"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/PaymentsThinRuler"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:id="@+id/deposit_check_info_title"
+                style="@style/AccountsSectionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/deposit_check_add_check"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/deposit_check_info_line"
+                style="@style/AddCheckTitleLine"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/take_picture_rl_step2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="top"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/take_picture_rl_step_2_ll_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        style="@style/AddCheckBullets"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.65"
+                        android:gravity="center"
+                        android:text="@string/deposit_check_change_front_picture" />
+
+                    <ImageView
+                        android:id="@+id/front_check_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="0.35"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_picture_rl_step_2_ll_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/take_picture_rl_step_2_ll_1"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        style="@style/ReviewCheckItemBottomLine"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/take_picture_rl_step_2_ll_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/take_picture_rl_step_2_ll_2"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/AddCheckBullets"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.65"
+                        android:gravity="center"
+                        android:paddingBottom="80dp"
+                        android:text="@string/deposit_check_change_back_picture" />
+
+                    <ImageView
+                        android:id="@+id/back_check_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="6dp"
+                        android:layout_weight="0.35"
+                        android:adjustViewBounds="true"
+                        android:paddingBottom="80dp"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/deposit_check_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minLines="2"
+        android:text="@string/deposit_check_front_instructions" />
+
+    <Button
+        android:id="@+id/deposit_check_back_side_camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minLines="2"
+        android:text="@string/deposit_check_back_instructions"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/deposit_check_send_deposit_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:minLines="2"
+        android:text="@string/deposit_check_deposit"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/deposit_check_popular_text_border"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/deposit_check_scrollview"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/customborder"
+        android:orientation="vertical" >
+
+        <WebView
+            android:id="@+id/deposit_check_popular_text"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+    
+</RelativeLayout>

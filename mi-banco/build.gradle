@@ -1,0 +1,289 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'newrelic'
+
+def keystoreKeyAlias
+def keystoreKeyPassword
+def keystoreRelease
+def keystorePassword
+
+task getSigningProperties() {
+   def props = new Properties()
+    if (rootProject.file('local.properties').exists()) {
+        rootProject.file('local.properties').withInputStream { props.load(it) }
+    }
+
+    keystoreKeyAlias = props.getProperty("KEYSTORE_KEY_ALIAS") == null ? "${KEYSTORE_KEY_ALIAS}" : props.getProperty("KEYSTORE_KEY_ALIAS")
+    keystoreKeyPassword = props.getProperty("KEYSTORE_KEY_PASSWORD") == null ? "${KEYSTORE_KEY_PASSWORD}" : props.getProperty("KEYSTORE_KEY_PASSWORD")
+    keystoreRelease = props.getProperty("KEYSTORE_RELEASE") == null ? "${KEYSTORE_RELEASE}" : props.getProperty("KEYSTORE_RELEASE")
+    keystorePassword = props.getProperty("KEYSTORE_PASSWORD") == null ? "${KEYSTORE_PASSWORD}" : props.getProperty("KEYSTORE_PASSWORD")
+
+}
+
+android {
+
+    signingConfigs {
+        /*keystorebppr {
+            keyAlias keystoreKeyAlias
+            keyPassword keystoreKeyPassword
+            //storeFile file(keystoreRelease)
+            storePassword keystorePassword
+        }*/
+    }
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.popular.android.mibanco"
+        minSdkVersion 26
+        targetSdkVersion 31
+        versionCode "${VERSION_CODE}".toInteger()
+        versionName "${VERSION_NAME}"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes.all { buildType ->
+        sourceSets[buildType.name].java.srcDir 'var/base/java'
+    }
+    packagingOptions {
+        exclude 'AndroidManifest.xml'
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    productFlavors {
+    }
+    buildTypes {
+        debug {
+            //signingConfig signingConfigs.keystorebppr
+            applicationIdSuffix ".debug"
+            resValue "string", "app_name", "MiBanco Dev"
+            ext.betaDistributionReleaseNotes="Testing Crashlytics."
+            ext.betaDistributionGroupAliases="mi-banco"
+            apply plugin:'base'
+            apply plugin: 'jacoco'
+            testCoverageEnabled false
+            manifestPlaceholders = [hostAppLinks1:"integration.bppr.com", hostAppLinks2:"integration1.bppr.com", hostAppLinks3:"integration2.bppr.com", hostAppLinks4:"integration3.bppr.com"]
+            buildConfigField "String", "radware_cid", "\"debug\""
+            buildConfigField "String", "radware_secret", "\"debug\""
+        }
+        qa {
+            debuggable false
+            //signingConfig signingConfigs.keystorebppr
+            applicationIdSuffix ".cert"
+            resValue "string", "app_name", "MiBanco QA"
+            manifestPlaceholders = [hostAppLinks1:"cert1.bppr.com", hostAppLinks2:"cert3.bppr.com", hostAppLinks3:"cert8.bppr.com", hostAppLinks4:""]
+            buildConfigField "String", "radware_cid", "\"qa\""
+            buildConfigField "String", "radware_secret", "\"qa\""
+            signingConfig signingConfigs.debug
+        }
+        pilot {
+            //signingConfig signingConfigs.keystorebppr
+            applicationIdSuffix ".pilot"
+            resValue "string", "app_name", "MiBanco Pilot"
+            manifestPlaceholders = [hostAppLinks1:"piloto.bancopopular.com", hostAppLinks2:"", hostAppLinks3:"", hostAppLinks4:""]
+            buildConfigField "String", "radware_cid", "\"bt7p\""
+            buildConfigField "String", "radware_secret", "\"792a2ef379\""
+        }
+        release {
+            debuggable false
+            //signingConfig signingConfigs.keystorebppr
+            resValue "string", "app_name", "MiBanco"
+            manifestPlaceholders = [
+                    hostAppLinks1:"www.bancopopular.com",
+                    hostAppLinks2:"bancopopular.com",
+                    hostAppLinks3:"m.bancopopular.com",
+                    hostAppLinks4:"mobile.bancopopular.com"
+            ]
+            buildConfigField "String", "radware_cid", "\"bt85\""
+            buildConfigField "String", "radware_secret", "\"792a2ef379\""
+        }
+    }
+    buildToolsVersion "30.0.0"
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+                showExceptions true
+                showCauses true
+                showStackTraces true
+                outputs.upToDateWhen { false }
+                showStandardStreams = true
+                showExceptions = true
+                exceptionFormat 'full'
+                afterSuite { desc, result ->
+                    if (!desc.parent) { // will match the outermost suite
+                        def output = "Results: ${result.resultType} (${result.testCount} tests, ${result.successfulTestCount} passed, ${result.failedTestCount} failed, ${result.skippedTestCount} skipped)"
+                        def startItem = '|  ', endItem = '  |'
+                        def repeatLength = startItem.length() + output.length() + endItem.length()
+                        println('\n' + ('-' * repeatLength) + '\n' + startItem + output + endItem + '\n' + ('-' * repeatLength))
+                    }
+                }
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+buildscript {
+    repositories {
+        maven {
+            credentials  {
+                username ="${NEXUS_USERNAME}"
+                password ="${NEXUS_PASSWORD}"
+            }
+            url "${NEXUS_URL}/repository/maven-mibanco-android"
+        }
+    }
+
+    dependencies {
+        classpath "com.newrelic.agent.android:agent-gradle-plugin:6.0.0"
+        classpath 'io.fabric.tools:gradle:1.28.0'
+    }
+}
+
+repositories {
+    maven {
+        credentials  {
+            username ="${NEXUS_USERNAME}"
+            password ="${NEXUS_PASSWORD}"
+        }
+        url "${NEXUS_URL}/repository/maven-mibanco-android"
+    }
+} 
+
+dependencies {
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':spinner-extended')
+    implementation project(':view-pager-indicator')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.media:media:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.siyamed:android-shape-imageview:0.9.3'
+    implementation 'com.google.android.gms:play-services-base:16.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-tagmanager:16.0.4'
+    implementation 'com.google.code.gson:gson:2.8.8'
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.zxing:core:3.2.0'
+    implementation 'com.jeremyfeinstein.slidingmenu:library:1.3@aar'
+    implementation 'com.journeyapps:zxing-android-embedded:3.0.2@aar'
+    implementation 'com.kyleduo.switchbutton:library:2.0.0'
+    implementation 'com.newrelic.agent.android:android-agent:6.9.2'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.1'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.splunk.mint:mint:4.4.0'
+    implementation 'org.apache.commons:commons-lang3:3.4' 
+    implementation 'se.emilsjolander:stickylistheaders:2.7.0'
+    implementation ('com.github.yalantis:ucrop:2.2.2') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    implementation('com.crashlytics.sdk.android:crashlytics:2.8.0@aar') {
+        transitive = true
+    }
+    implementation 'com.flurry.android:analytics:14.0.0'
+    implementation group: 'io.fabric.sdk.android', name: 'fabric', version: '1.4.4'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'net.zetetic:android-database-sqlcipher:4.5.1@aar'
+    implementation 'androidx.security:security-crypto:1.0.0-rc01'
+    testImplementation project(path: ':mi-banco')
+
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0-alpha06'
+    androidTestImplementation 'androidx.test:rules:1.4.0-alpha06'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    implementation(name: 'collection-sdk-4.3', ext: 'aar')
+    implementation(name: 'ss2_android_sdk_v5.1.2_release', ext: 'aar')
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    androidTestImplementation 'org.mockito:mockito-android:2.7.22'
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.0.42-beta'
+    testImplementation 'org.powermock:powermock-api-mockito2:1.6.6'
+    testImplementation 'org.powermock:powermock-module-junit4:1.6.6'
+    testImplementation 'org.powermock:powermock-core:1.6.6'
+    testImplementation 'org.powermock:powermock-module-junit4-rule:1.6.6'
+    testImplementation 'org.json:json:20200518'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:4.10.0'
+    
+    implementation 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    // DSAEncoding [must required to generate keyPair]
+    implementation 'org.bouncycastle:bcpkix-jdk15on:1.70'
+
+    implementation 'com.google.android.play:integrity:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+}
+
+android.applicationVariants.all { variant ->
+    variant.outputs.all {
+        outputFileName = "MiBanco-${variant.name}-${variant.versionName}.apk"
+    }
+}
+
+android.applicationVariants.all { variant ->
+    delete("${rootDir}/proguard-mappings")
+    variant.outputs.each { output ->
+        def buildId = new Date().format("YYYY-MM-dd_HH-mm-ss")
+        if (variant.mappingFile != null && variant.mappingFile.exists()) {
+            variant.assemble.doLast {
+                copy {
+                    from variant.mappingFile
+                    into "${rootDir}/proguard-mappings"
+                    rename { String fileName ->
+                        "proguard-mapping-${variant.name}-${android.defaultConfig.versionName}_${buildId}.txt"
+                    }
+                }
+            }
+        }
+    }
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+task jacocoTestReport(type: JacocoReport, dependsOn: 'testDebugUnitTest') {
+    group = 'Reporting'
+    description = 'Generate Jacoco coverage reports after running tests.'
+    doFirst {
+        executionData(tasks.withType(Test).findAll { it.state.executed })
+    }
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+
+    doLast {
+		println("Jacoco tests coverage report: " + project.projectDir.toString() + "/build/reports/jacoco/test/html/index.html")
+	}
+    getSourceDirectories().setFrom(files('src/main/java/com/popular/android/mibanco'))
+    getClassDirectories().setFrom(files('build/intermediates/javac/debug/classes'))
+    getExecutionData().setFrom(files('build/jacoco/testDebugUnitTest.exec'))
+}
+
+task jacocoTestCoverageVerification(type: JacocoCoverageVerification) {
+    getSourceDirectories().setFrom(files('src/main/java/com/popular/android/mibanco'))
+    getClassDirectories().setFrom(files('build/intermediates/javac/debug/classes'))
+    getExecutionData().setFrom(files('build/jacoco/testDebugUnitTest.exec'))
+    violationRules {
+        failOnViolation = true
+        rule {
+            limit {
+                counter = 'INSTRUCTION'
+                value = 'COVEREDRATIO'
+                minimum = 0.04083
+            }
+        }
+    }
+}
+

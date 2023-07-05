@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ssqLogo">
+        <item name="android:background">@drawable/ic_radware_logo</item>
+    </style>
+
+    <style name="ssqPrimaryText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:text">Disculpa las molestias que esto pueda ocasionar...</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:lines">2</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ssqSecondaryText">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:text">...pero tu actividad y comportamiento en esta página nos hace pensar que eres un bot.</item>
+    </style>
+
+    <style name="ssqDigest">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ssqNextButton">
+        <item name="android:text">Resolver CAPTCHA</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ssqTextPopupText">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:text">Ingresa los caracteres que se muestran en la imagen y presiona ENVIAR.</item>
+    </style>
+
+    <style name="ssqTextCaptchaButton" parent="Theme.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:text">Enviar</item>
+    </style>
+
+    <style name="errorMessage">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:fontFamily" >@font/montserrat</item>
+        <item name="android:textAlignment">1</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#E03A3E</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <string name="ssqCaptchaEmpty">¡Resuelva este captcha!</string>
+    <string name="ssqCaptchaMismatch">¡Respuesta invalida!</string>
+
+    <color name="ssqNextButtonColor">#2275D2</color>
+    <color name="ssqPopupBackground">#ffffff</color>
+    <color name="ssqCaptchaBackground">#E8F0F8</color>
+    <color name="ssqCaptchaTextColor">#000000</color>
+    <color name="ssqCaptchaBorder">#E8F0F8</color>
+    <color name="ssqButtonColor">#2275D2</color>
+
+</resources>

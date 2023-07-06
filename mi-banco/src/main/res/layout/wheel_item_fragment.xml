@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:id="@+id/account_image"
+            style="@style/CardSelection_image"
+            android:layout_weight="1"
+            android:clipToOutline="true"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            >
+
+            <TextView
+                android:id="@+id/item_name"
+                android:text="nombre del item"
+                style="@style/WheelItemTitle" />
+
+
+            <TextView
+                android:id="@+id/item_last4num"
+                android:text="x0355"
+                style="@style/WheelItemCode" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_balance"
+            android:text="$1,000.00"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_weight="1"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/filler"
+        android:orientation="horizontal"
+        style="@style/WheelItemFiller" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/opacity_layer"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>
+

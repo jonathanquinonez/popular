@@ -1089,4 +1089,5 @@
     <string name="warning_transfer_text">Disponibilidad de fondos transferidos utilizando una \n cuenta externa (otro banco) podrían tomar hasta 5 \n días laborables.</string>
     <string name="change">Cambiar</string>
     <string name="send_transfer">Enviar transferencia</string>
+    <string name="choose_account">Escoge una cuenta</string>
 </resources>

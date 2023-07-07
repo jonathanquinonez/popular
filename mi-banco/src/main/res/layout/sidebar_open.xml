@@ -53,4 +53,14 @@
         android:contentDescription="@string/image"
         android:src="@drawable/logo_min_popular" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hola"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:paddingLeft="5dp"
+        android:gravity="center"
+        android:layout_gravity="center"/>
+
 </LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1037797805577-4luf0dul8u2tpn79dquv6nsl59kfbr14.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://popular-ios-app.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1037797805577</string>
+    <string name="google_api_key" translatable="false">AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM</string>
+    <string name="google_app_id" translatable="false">1:1037797805577:android:7d276c2e6ad1d17b</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCTKnY7O_eNrr8tu7V9-I0EeidGg4U2pGM</string>
+    <string name="google_storage_bucket" translatable="false">popular-ios-app.appspot.com</string>
+    <string name="project_id" translatable="false">popular-ios-app</string>
+</resources>

@@ -56,6 +56,7 @@ import com.popular.android.mibanco.model.Transfer;
 import com.popular.android.mibanco.model.TransferActive;
 import com.popular.android.mibanco.model.TransferActiveAccount;
 import com.popular.android.mibanco.model.TransferActiveTransfer;
+import com.popular.android.mibanco.util.AmountEditor;
 import com.popular.android.mibanco.util.BPAnalytics;
 import com.popular.android.mibanco.util.KiuwanUtils;
 import com.popular.android.mibanco.util.Utils;
@@ -234,7 +235,7 @@ public class PaymentsTransfersFragment extends Fragment {
     private BottomSheetDialog bottomSheetAccountFrom;
     private BottomSheetDialog bottomSheetAccountTo;
 
-    private BottomSheetDialog bottomSheetAmountEditor;
+    AmountEditor amountEditor;
 
     @Override
     public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
@@ -1754,25 +1755,10 @@ public class PaymentsTransfersFragment extends Fragment {
     }
 
     private void initBottonSheetAmountEditor(){
-        bottomSheetAmountEditor = new BottomSheetDialog(getContext());
-        bottomSheetAmountEditor.setContentView(R.layout.botton_sheet_amount_editor);
-
-        bottomSheetAmountEditor.findViewById(R.id.closeBottonSheet).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                bottomSheetAmountEditor.dismiss();
-            }
-        });
-
-        bottomSheetAmountEditor.findViewById(R.id.btnAmountEditor).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(final View v) {
-                bottomSheetAmountEditor.dismiss();
-            }
-        });
+        amountEditor = new AmountEditor(getContext());
     }
 
     private void showBottomSheetDialogAmountEditor(){
-        bottomSheetAmountEditor.show();
+        amountEditor.show();
     }
 }

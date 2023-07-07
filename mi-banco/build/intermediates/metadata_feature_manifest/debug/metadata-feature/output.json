@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "applicationId": "com.popular.android.mibanco.debug",
+  "variantType": "BASE_APK",
+  "elements": [
+    {
+      "outputType": {
+        "type": "METADATA_FEATURE_MANIFEST"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 147,
+        "versionName": "4.13.8.0-SNAPSHOT",
+        "outputFile": "MiBanco-debug-4.13.8.0-SNAPSHOT.apk",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {}
+    }
+  ]
+}

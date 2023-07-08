@@ -6,9 +6,14 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.popular.android.mibanco.R;
+
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class AmountEditor extends BottomSheetDialog {
 
@@ -18,9 +23,12 @@ public class AmountEditor extends BottomSheetDialog {
     TextView valorPuntoCero;
     LinearLayout borrar;
 
-    public AmountEditor(@NonNull Context context) {
+    private OnDataCallback onDataCallback;
+
+    public AmountEditor(@NonNull Context context, OnDataCallback callback) {
         super(context);
 
+        this.onDataCallback = callback;
         super.setContentView(R.layout.botton_sheet_amount_editor);
 
         initView();
@@ -50,6 +58,7 @@ public class AmountEditor extends BottomSheetDialog {
         this.findViewById(R.id.closeBottonSheet).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
+                onDataCallback.onErrorAmountEditor();
                 dismiss();
             }
         });
@@ -57,6 +66,9 @@ public class AmountEditor extends BottomSheetDialog {
         this.findViewById(R.id.btnAmountEditor).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
+                String amountStr = amount.getText().toString() ;
+                amountStr = amountStr.replaceAll("\\$","");
+                onDataCallback.onSuccessAmountEditor(amountStr);
                 dismiss();
             }
         });
@@ -80,7 +92,16 @@ public class AmountEditor extends BottomSheetDialog {
         valor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
+                valor.setBackgroundResource(R.drawable.btn_amount_editor_blue);
+                valor.setTextAppearance(R.style.BtnAmountEditorBlue);
                 addValue(strValor);
+                new Timer().schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        valor.setBackgroundResource(R.drawable.btn_amount_editor);
+                        valor.setTextAppearance(R.style.BtnAmountEditorGray);
+                    }
+                }, 500);
             }
         });
     }
@@ -90,6 +111,13 @@ public class AmountEditor extends BottomSheetDialog {
             @Override
             public void onClick(final View v) {
                 delValue();
+                delete.setBackgroundResource(R.drawable.btn_amount_editor_blue);
+                new Timer().schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        delete.setBackgroundResource(R.drawable.btn_amount_editor);
+                    }
+                }, 500);
             }
         });
     }
@@ -131,6 +159,9 @@ public class AmountEditor extends BottomSheetDialog {
         }
 
         amountStr = amountStr.substring(0, amountStr.length() - 1);
+        if(amountStr.length() <= 0){
+            amountStr = "0";
+        }
 
         int inAmount = Integer.parseInt(amountStr);
         String valorFormateado = Utils.formatAmount(inAmount);
@@ -144,4 +175,11 @@ public class AmountEditor extends BottomSheetDialog {
     protected AmountEditor(@NonNull Context context, boolean cancelable, OnCancelListener cancelListener) {
         super(context, cancelable, cancelListener);
     }
+
+    public interface OnDataCallback {
+        void onSuccessAmountEditor(String data);
+        void onErrorAmountEditor();
+    }
 }
+
+

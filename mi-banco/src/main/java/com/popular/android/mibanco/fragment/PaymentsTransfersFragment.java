@@ -29,10 +29,13 @@ import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.DecelerateInterpolator;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.popular.android.mibanco.App;
@@ -46,7 +49,7 @@ import com.popular.android.mibanco.activity.PaymentReceipt;
 import com.popular.android.mibanco.activity.Payments;
 import com.popular.android.mibanco.activity.Receipts;
 import com.popular.android.mibanco.activity.WebViewActivity;
-import com.popular.android.mibanco.animation.FadeViewAnimation;
+import com.popular.android.mibanco.adapter.TransferAccountAdapter;
 import com.popular.android.mibanco.listener.ResponderListener;
 import com.popular.android.mibanco.listener.SimpleListener;
 import com.popular.android.mibanco.model.FormField;
@@ -65,6 +68,7 @@ import com.popular.android.mibanco.view.DialogHolo;
 import com.popular.android.mibanco.view.pickerview.ArrayBankWheelAdapter;
 import com.popular.android.mibanco.view.pickerview.ArrayBankWheelItem;
 import com.popular.android.mibanco.view.pickerview.OnWheelChangedListener;
+import com.popular.android.mibanco.view.pickerview.OnWheelClickedListener;
 import com.popular.android.mibanco.view.pickerview.OnWheelScrollListener;
 import com.popular.android.mibanco.view.pickerview.WheelScrollListener;
 import com.popular.android.mibanco.view.pickerview.WheelView;
@@ -78,7 +82,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class PaymentsTransfersFragment extends Fragment {
+public class PaymentsTransfersFragment extends Fragment implements AmountEditor.OnDataCallback {
 
     private View rootView;
 
@@ -230,12 +234,22 @@ public class PaymentsTransfersFragment extends Fragment {
     private LinearLayout lyAccountTo;
     private LinearLayout warningTransfers;
 
-    private LinearLayout lyAmount;
+    private LinearLayout lyAmount, amountBox, amountBoxHead;
+    private LinearLayout calendarContainer;
     private Button btnChange;
     private BottomSheetDialog bottomSheetAccountFrom;
     private BottomSheetDialog bottomSheetAccountTo;
 
     AmountEditor amountEditor;
+    TextView amountValue;
+    CalendarView simpleCalendarView;
+    ListView lvAccountFrom;
+    ListView lvAccountTo;
+
+    LinearLayout acount_select_from, acount_select_from_data, acount_select_to, acount_select_to_data;
+    TextView nameAccountFrom, numberAccountFrom, amountAccountFrom;
+    TextView nameAccountTo, numberAccountTo, amountAccountTo;
+    ImageView iconTransfer, cardFromAccount, cardToAccount;
 
     @Override
     public void onActivityResult(final int requestCode, final int resultCode, final Intent data) {
@@ -331,6 +345,26 @@ public class PaymentsTransfersFragment extends Fragment {
             lyAccountFrom = view.findViewById(R.id.lyAccountFrom);
             lyAccountTo = view.findViewById(R.id.lyAccountTo);
             lyAmount = view.findViewById(R.id.lyAmount);
+            amountBox = view.findViewById(R.id.amountBox);
+            amountBoxHead = view.findViewById(R.id.amountBoxHead);
+            calendarContainer = view.findViewById(R.id.calendarContainer);
+            amountValue = view.findViewById(R.id.amountValue);
+
+            acount_select_from = view.findViewById(R.id.acount_select_from);
+            acount_select_from_data = view.findViewById(R.id.acount_select_from_data);
+            acount_select_to = view.findViewById(R.id.acount_select_to);
+            acount_select_to_data = view.findViewById(R.id.acount_select_to_data);
+            nameAccountFrom = view.findViewById(R.id.nameAccountFrom);
+            numberAccountFrom = view.findViewById(R.id.numberAccountFrom);
+            amountAccountFrom = view.findViewById(R.id.amountAccountFrom);
+            nameAccountTo = view.findViewById(R.id.nameAccountTo);
+            numberAccountTo = view.findViewById(R.id.numberAccountTo);
+            amountAccountTo = view.findViewById(R.id.amountAccountTo);
+            iconTransfer = view.findViewById(R.id.iconTransfer);
+            cardFromAccount = view.findViewById(R.id.cardFromAccount);
+            cardToAccount = view.findViewById(R.id.cardToAccount);
+
+            //simpleCalendarView = (CalendarView) view.findViewById(R.id.simpleCalendarView);
 
             warningTransfers = view.findViewById(R.id.warningTransfers);
             if (isTransfer) {
@@ -552,16 +586,16 @@ public class PaymentsTransfersFragment extends Fragment {
                     int message = R.string.no_payees;
                     if (FeatureFlags.ADD_PAYEES()) {
                         message = R.string.no_payees_add_new_payees;
-                        toList.invalidateWheel(true);
-                        toList.setViewAdapter(new ArrayBankWheelAdapter<>(getActivity(), new ArrayList<ArrayBankWheelItem>()));
+                        //toList.invalidateWheel(true);
+                        //toList.setViewAdapter(new ArrayBankWheelAdapter<>(getActivity(), new ArrayList<ArrayBankWheelItem>()));
                     }
                     if (Utils.showNoPayeesDialog(getActivity(), message, !FeatureFlags.ADD_PAYEES(), new SimpleListener() {
                         @Override
                         public void done() {
                             if (FeatureFlags.ADD_PAYEES()) {
-                                //openAddPayeesWebView();
-                                fromList.setEnabled(false);
-                                toList.setEnabled(false);
+                                openAddPayeesWebView();
+                                //fromList.setEnabled(false);
+                                //toList.setEnabled(false);
                             }
                         }
                     })) { return; }
@@ -586,7 +620,29 @@ public class PaymentsTransfersFragment extends Fragment {
                             final int tempFromPosition = positionFrom;
                             final int tempToPosition = positionTo;
 
-                            adapterFrom = new ArrayBankWheelAdapter<>(getActivity(), R.layout.wheel_item_fragment, outItemsFrom);
+                            TransferAccountAdapter accountAdapterFrom = new TransferAccountAdapter(getContext(),  outItemsFrom);
+                            lvAccountFrom.setAdapter(accountAdapterFrom);
+                            lvAccountFrom.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                                    ArrayBankWheelItem objeto = outItemsFrom.get(position);
+                                    setDataFromAccount(objeto);
+                                }
+                            });
+
+                            TransferAccountAdapter accountAdapterTo = new TransferAccountAdapter(getContext(),  outItemsTo);
+                            lvAccountTo.setAdapter(accountAdapterTo);
+
+                            lvAccountTo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                                    ArrayBankWheelItem objeto = outItemsTo.get(position);
+                                    setDataToAccount(objeto);
+                                }
+                            });
+
+
+                            /*adapterFrom = new ArrayBankWheelAdapter<>(getActivity(), R.layout.wheel_item_fragment, outItemsFrom);
                             if (outItemsFrom.size() > 0 && positionFrom < outItemsFrom.size()) {
                                 itemFrom = outItemsFrom.get(positionFrom);
                             }
@@ -605,7 +661,7 @@ public class PaymentsTransfersFragment extends Fragment {
                             toList.setCyclic(false);
 
                             fromList.setCurrentItem(tempFromPosition);
-                            toList.setCurrentItem(tempToPosition);
+                            toList.setCurrentItem(tempToPosition);*/
 
                             if (FeatureFlags.MBMT_477()) {
                                 if (!Utils.isBlankOrNull(itemTo.getLastPayment()) && !Utils.isBlankOrNull(itemTo.getLastPaymentDate())) {
@@ -626,7 +682,7 @@ public class PaymentsTransfersFragment extends Fragment {
                                 initialDateRealTime = paymentInstance.getRealTimeEffectiveDate();
                             }
 
-                            validateRealTimePayee();
+                            //validateRealTimePayee();
 
                             if (forceReload) {
                                 resetControls();
@@ -683,7 +739,30 @@ public class PaymentsTransfersFragment extends Fragment {
 
                         @Override
                         public void done() {
-                            adapterFrom = new ArrayBankWheelAdapter<>(getActivity(), R.layout.wheel_item_fragment, outItemsFrom);
+
+                            TransferAccountAdapter accountAdapterFrom = new TransferAccountAdapter(getContext(),  outItemsFrom);
+                            lvAccountFrom.setAdapter(accountAdapterFrom);
+                            lvAccountFrom.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                                    ArrayBankWheelItem objeto = outItemsFrom.get(position);
+                                    setDataFromAccount(objeto);
+                                }
+                            });
+
+                            TransferAccountAdapter accountAdapterTo = new TransferAccountAdapter(getContext(),  outItemsTo);
+                            lvAccountTo.setAdapter(accountAdapterTo);
+
+                            lvAccountTo.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                @Override
+                                public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                                    ArrayBankWheelItem objeto = outItemsTo.get(position);
+                                    setDataToAccount(objeto);
+                                }
+                            });
+
+
+                            /*adapterFrom = new ArrayBankWheelAdapter<>(getActivity(), R.layout.wheel_item_fragment, outItemsFrom);
                             if (outItemsFrom.size() > 0 && positionFrom < outItemsFrom.size()) {
                                 itemFrom = outItemsFrom.get(positionFrom);
                             }
@@ -703,14 +782,14 @@ public class PaymentsTransfersFragment extends Fragment {
 
                             fromList.setCurrentItem(positionFrom);
                             toList.setCurrentItem(positionTo);
-                            levelLists();
+                            levelLists();*/
 
-                            effectiveDate = ((Transfer) data).getEfectiveDate();
-                            initialDate = effectiveDate;
+                            //effectiveDate = ((Transfer) data).getEfectiveDate();
+                            //initialDate = effectiveDate;
 
-                            if (selectedDate == null) {
+                            /*if (selectedDate == null) {
                                 selectDate(effectiveDate);
-                            }
+                            }*/
 
                             if (forceReload) {
                                 resetControls();
@@ -746,7 +825,7 @@ public class PaymentsTransfersFragment extends Fragment {
         Date ebillDate = (Date) request.getSerializable("ebillDate");
         int ebillAmount = request.getInt("ebillAmount", 0);
 
-        if (adapterTo != null && toList != null) {
+        /*if (adapterTo != null && toList != null) {
             for (int i = 0; i < adapterTo.getItemsCount(); ++i) {
                 final ArrayBankWheelItem item = adapterTo.getItemAt(i);
                 if (item.getPayeeId() != 0 && item.getPayeeId() == ebillPayeeId && item.getCode().equals(ebillPayeeCode)) {
@@ -767,7 +846,7 @@ public class PaymentsTransfersFragment extends Fragment {
 
             selectDate(ebillDate);
             setAmount(ebillAmount);
-        }
+        }*/
     }
 
     public boolean isGoToReceipt() {
@@ -778,10 +857,10 @@ public class PaymentsTransfersFragment extends Fragment {
      * Level "From" and "To" lists so the bottom rulers are on the same level.
      */
     private void levelLists() {
-        final boolean fromFiller = adapterFrom.getFiller();
-        final boolean toFiller = adapterTo.getFiller();
+        //final boolean fromFiller = adapterFrom.getFiller();
+        //final boolean toFiller = adapterTo.getFiller();
 
-        if (fromList.getCurrentItem() == 0 && toList.getCurrentItem() != 0) {
+        /*if (fromList.getCurrentItem() == 0 && toList.getCurrentItem() != 0) {
             adapterFrom.setFiller(true);
         } else {
             adapterFrom.setFiller(false);
@@ -799,7 +878,7 @@ public class PaymentsTransfersFragment extends Fragment {
 
         if (toFiller != adapterTo.getFiller()) {
             toList.invalidateWheel(true);
-        }
+        }*/
     }
 
     private void onTransactionError(final String title, final String description, final String detailedMessage) {
@@ -972,10 +1051,10 @@ public class PaymentsTransfersFragment extends Fragment {
      * Reset controls.
      */
     private void resetControls() {
-        fromList.setCurrentItem(0);
+        /*fromList.setCurrentItem(0);
         fromList.scrollTo(0, 0);
         toList.setCurrentItem(0);
-        toList.scrollTo(0, 0);
+        toList.scrollTo(0, 0);*/
 
         setAmount(0);
         selectDate(effectiveDate);
@@ -1101,6 +1180,18 @@ public class PaymentsTransfersFragment extends Fragment {
             }
         });
 
+        /*fromList.addClickingListener(new OnWheelClickedListener() {
+
+            @Override
+            public void onItemClicked(WheelView wheel, int itemIndex) {
+                final ArrayBankWheelAdapter<ArrayBankWheelItem> adapter = (ArrayBankWheelAdapter<ArrayBankWheelItem>) wheel.getViewAdapter();
+                itemFrom = adapter.getItemAt(itemIndex);
+                levelLists();
+                changeWheelViewItemOpacity(wheel, itemIndex);
+                positionFrom = itemIndex;
+            }
+        });
+
         fromList.addChangingListener(new OnWheelChangedListener() {
 
             @Override
@@ -1164,7 +1255,7 @@ public class PaymentsTransfersFragment extends Fragment {
             }
         });
 
-        toList.invalidateWheel(true);
+        toList.invalidateWheel(true);*/
 
         seeMoreTextView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1198,6 +1289,18 @@ public class PaymentsTransfersFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 showBottomSheetDialogAmountEditor();
+            }
+        });
+
+        btnChange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int visible = calendarContainer.getVisibility();
+                if(visible > 0){
+                    calendarContainer.setVisibility(View.VISIBLE);
+                }else{
+                    calendarContainer.setVisibility(View.GONE);
+                }
             }
         });
     }
@@ -1723,7 +1826,8 @@ public class PaymentsTransfersFragment extends Fragment {
     private void initBottonSheetAccountFrom(){
         bottomSheetAccountFrom = new BottomSheetDialog(getContext());
         bottomSheetAccountFrom.setContentView(R.layout.fragment_payment_account);
-        fromList = bottomSheetAccountFrom.findViewById(R.id.wheel_from_fragment);
+        //fromList = bottomSheetAccountFrom.findViewById(R.id.wheel_from_fragment);
+        lvAccountFrom = bottomSheetAccountFrom.findViewById(R.id.lvAccount);
 
         bottomSheetAccountFrom.findViewById(R.id.closeBottonSheet).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1740,7 +1844,8 @@ public class PaymentsTransfersFragment extends Fragment {
     private void initBottonSheetAccountTo(){
         bottomSheetAccountTo = new BottomSheetDialog(getContext());
         bottomSheetAccountTo.setContentView(R.layout.fragment_payment_account);
-        toList = bottomSheetAccountTo.findViewById(R.id.wheel_from_fragment);
+        //toList = bottomSheetAccountTo.findViewById(R.id.wheel_from_fragment);
+        lvAccountTo = bottomSheetAccountTo.findViewById(R.id.lvAccount);
 
         bottomSheetAccountTo.findViewById(R.id.closeBottonSheet).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -1755,10 +1860,84 @@ public class PaymentsTransfersFragment extends Fragment {
     }
 
     private void initBottonSheetAmountEditor(){
-        amountEditor = new AmountEditor(getContext());
+        amountEditor = new AmountEditor(getContext(), this);
     }
 
     private void showBottomSheetDialogAmountEditor(){
         amountEditor.show();
+    }
+
+
+    @Override
+    public void onSuccessAmountEditor(String data) {
+        if(getIntValue(data) == 0){
+            setDisableAmount();
+        }else{
+            amountValue.setText(data);
+            setEnableAmount();
+        }
+    }
+
+    @Override
+    public void onErrorAmountEditor() {
+        setDisableAmount();
+    }
+
+    public void setEnableAmount(){
+        amountBox.setBackgroundResource(R.drawable.amount_border_blue);
+        amountBoxHead.setBackgroundResource(R.drawable.amount_head_border_blue);
+    }
+
+    public void setDisableAmount(){
+        amountValue.setText("0.00");
+        amountBox.setBackgroundResource(R.drawable.amount_border);
+        amountBoxHead.setBackgroundResource(R.drawable.amount_head_border);
+    }
+
+    public int getIntValue(String amountStr){
+        amountStr = amountStr.replaceAll("\\.","");
+        amountStr = amountStr.replaceAll(",","");
+        amountStr = amountStr.replaceAll("\\$","");
+
+        if (amountStr.length() <= 0 || Integer.parseInt(amountStr) == 0) {
+            amountStr = "0";
+        }
+
+        if (amountStr == null || amountStr.length() == 0  && amountStr.length() < 2) {
+            amountStr = "0";
+        }
+
+        int inAmount = Integer.parseInt(amountStr);
+        return inAmount;
+    }
+
+    public void setDataFromAccount(ArrayBankWheelItem objeto){
+        lyAccountFrom.setBackgroundResource(R.drawable.account_selector);
+        acount_select_from.setVisibility(View.GONE);
+        acount_select_from_data.setVisibility(View.VISIBLE);
+
+        cardFromAccount.setImageResource(objeto.getImgResource());
+
+        nameAccountFrom.setText(objeto.getName());
+        numberAccountFrom.setText(objeto.getCode());
+        amountAccountFrom.setText(objeto.getAmount());
+
+        iconTransfer.setImageResource(R.drawable.arrow_right_blue);
+
+        bottomSheetAccountFrom.dismiss();
+    }
+
+    public void setDataToAccount(ArrayBankWheelItem objeto){
+
+        lyAccountTo.setBackgroundResource(R.drawable.account_selector);
+        acount_select_to.setVisibility(View.GONE);
+        acount_select_to_data.setVisibility(View.VISIBLE);
+
+        cardToAccount.setImageResource(objeto.getImgResource());
+        nameAccountTo.setText(objeto.getName());
+        numberAccountTo.setText(objeto.getCode());
+        amountAccountTo.setText(objeto.getAmount());
+
+        bottomSheetAccountTo.dismiss();
     }
 }

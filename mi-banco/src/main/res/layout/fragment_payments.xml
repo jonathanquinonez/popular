@@ -30,13 +30,14 @@
                     <LinearLayout
                         android:id="@+id/lyAccountFrom"
                         style="@style/CardSelection_box"
-                        android:background="@drawable/account_selector">
+                        android:background="@drawable/account_selector_disc">
 
                         <TextView
                             style="@style/CardSelection"
                             android:text="@string/from_account" />
 
                         <ImageButton
+                            android:id="@+id/cardFromAccount"
                             style="@style/CardSelection_image"
                             android:background="@drawable/image_corner"
                             android:clipToOutline="true"/>
@@ -68,14 +69,17 @@
                             android:orientation="vertical"
                             android:visibility="gone">
                             <TextView
+                                android:id="@+id/nameAccountFrom"
                                 style="@style/CardSelection"
                                 android:text="Ahorro"/>
 
                             <TextView
+                                android:id="@+id/numberAccountFrom"
                                 style="@style/CardSelection_card_number"
                                 android:text="x3214"/>
 
                             <TextView
+                                android:id="@+id/amountAccountFrom"
                                 style="@style/CardSelection_ammount"
                                 android:text="$103,123.98"/>
                         </LinearLayout>
@@ -89,13 +93,15 @@
                     <LinearLayout
                         android:id="@+id/lyAccountTo"
                         style="@style/CardSelection_box"
-                        android:background="@drawable/account_selector">
+                        android:background="@drawable/account_selector_disc">
 
                         <TextView
                             style="@style/CardSelection"
                             android:text="@string/to_account"/>
 
-                        <ImageButton style="@style/CardSelection_image"
+                        <ImageButton
+                            android:id="@+id/cardToAccount"
+                            style="@style/CardSelection_image"
                             android:background="@drawable/image_corner"
                             android:clipToOutline="true"/>
 
@@ -127,14 +133,17 @@
                             android:visibility="gone">
 
                             <TextView
+                                android:id="@+id/nameAccountTo"
                                 style="@style/CardSelection"
                                 android:text="Corriente"/>
 
                             <TextView
+                                android:id="@+id/numberAccountTo"
                                 style="@style/CardSelection_card_number"
                                 android:text="x3214"/>
 
                             <TextView
+                                android:id="@+id/amountAccountTo"
                                 style="@style/CardSelection_ammount"
                                 android:text="$1,123.98"/>
 
@@ -145,9 +154,11 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/amountBox"
                     style="@style/AmountBox">
 
                     <LinearLayout
+                        android:id="@+id/amountBoxHead"
                         style="@style/AmountBoxHead">
 
                         <TextView
@@ -164,6 +175,7 @@
                                 android:text="$"/>
 
                             <TextView
+                                android:id="@+id/amountValue"
                                 style="@style/AmountValue"
                                 android:text="0.00"/>
                         </LinearLayout>
@@ -173,21 +185,44 @@
                     <LinearLayout
                         style="@style/AmountBoxFoot">
 
-                        <ImageButton
-                            style="@style/AmountBoxFootIconCalendar"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp">
+                            <ImageButton
+                                style="@style/AmountBoxFootIconCalendar"/>
 
-                        <TextView
-                            style="@style/CardSelection_card_number"
-                            android:text="14 de Julio del 2023"
-                            android:layout_weight="0.7"
-                            android:layout_marginEnd="5dp"/>
+                            <TextView
+                                android:id="@+id/date_text"
+                                style="@style/CardSelection_card_number"
+                                android:text=""
+                                android:layout_weight="0.7"
+                                android:layout_marginEnd="5dp"/>
 
-                        <Button
-                            android:id="@+id/btnChange"
-                            style="@style/AmountBoxFootBtn"
-                            android:background="@color/bg_amount_gray_light">
+                            <Button
+                                android:id="@+id/btnChange"
+                                style="@style/AmountBoxFootBtn"
+                                android:background="@color/bg_amount_gray_light"/>
 
-                        </Button>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:id="@+id/calendarContainer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <CalendarView
+                                android:id="@+id/simpleCalendarView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent" />
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -220,7 +255,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/accounts_box"
                 android:orientation="vertical"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <LinearLayout
                     android:id="@+id/linearLayout6"
@@ -292,8 +327,9 @@
                                     style="@style/PaymentsDateText"
                                     android:text="@string/on_payment" />
 
+                                <!-- android:id="@+id/date_text"-->
                                 <TextView
-                                    android:id="@+id/date_text"
+
                                     style="@style/PaymentsDateText" />
                             </LinearLayout>
                         </LinearLayout>

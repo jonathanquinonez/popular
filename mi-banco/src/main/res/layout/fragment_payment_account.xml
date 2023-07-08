@@ -59,7 +59,13 @@
 
         <com.popular.android.mibanco.view.pickerview.WheelView
             android:id="@+id/wheel_from_fragment"
-            style="@style/PaymentsWheel" />
+            style="@style/PaymentsWheel"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/lvAccount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

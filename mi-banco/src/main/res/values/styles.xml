@@ -2008,7 +2008,6 @@
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:layout_margin">10dp</item>
-        <item name="background">@drawable/account_selector</item>
     </style>
 
     <style name="CardSelection">
@@ -2056,13 +2055,13 @@
     </style>
 
     <style name="CardSelectionIconTransfer">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_marginStart">-20dp</item>
-        <item name="android:layout_marginEnd">-20dp</item>
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginStart">-10dp</item>
+        <item name="android:layout_marginEnd">-10dp</item>
         <item name="android:layout_marginTop">-20dp</item>
         <item name="android:translationZ">1dp</item>
-        <item name="android:src">@drawable/arrow_right_blue</item>
+        <item name="android:src">@drawable/arrow_right_grey</item>
     </style>
 
     <style name="CardNumber">
@@ -2093,10 +2092,11 @@
 
     <style name="AmountBox">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:layout_margin">10dp</item>
         <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">50dp</item>
         <item name="android:background">@drawable/amount_border</item>
     </style>
 
@@ -2110,7 +2110,7 @@
     <style name="AmountBoxFoot">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:orientation">horizontal</item>
+        <item name="android:orientation">vertical</item>
         <item name="android:gravity">center_vertical</item>
     </style>
 
@@ -2194,5 +2194,32 @@
         <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
     </style>
+
+    <style name="BtnAmountEditorGray">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:background">@drawable/btn_amount_editor</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="BtnAmountEditorBlue">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:background">@drawable/btn_amount_editor_blue</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#3784D2</item>
+    </style>
+
 
 </resources>

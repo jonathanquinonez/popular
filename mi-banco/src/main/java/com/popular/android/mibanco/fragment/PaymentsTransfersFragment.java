@@ -604,13 +604,13 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
                     final List<ArrayBankWheelItem> outItemsTo = new ArrayList<>();
 
                     if (App.getApplicationInstance().getValidEbills() != null && App.getApplicationInstance().getValidEbills().size() > 0) {
-                        fromList.post(new Runnable() {
+                        /*fromList.post(new Runnable() {
 
                             @Override
                             public void run() {
                                 getActivity().invalidateOptionsMenu();
                             }
-                        });
+                        });*/
                     }
 
                     App.getApplicationInstance().getAsyncTasksManager().loadPaymentsCards(getActivity(), new SimpleListener() {
@@ -727,13 +727,13 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
                     final List<ArrayBankWheelItem> outItemsFrom = new ArrayList<ArrayBankWheelItem>();
                     final List<ArrayBankWheelItem> outItemsTo = new ArrayList<ArrayBankWheelItem>();
 
-                    fromList.post(new Runnable() {
+                    /*fromList.post(new Runnable() {
 
                         @Override
                         public void run() {
                             getActivity().invalidateOptionsMenu();
                         }
-                    });
+                    });*/
 
                     App.getApplicationInstance().getAsyncTasksManager().loadTransfersCards(getActivity(), new SimpleListener() {
 

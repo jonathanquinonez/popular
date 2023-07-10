@@ -13,7 +13,8 @@
 
         <RelativeLayout style="@style/PaymentsPage"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
 
             <LinearLayout
                 android:id="@+id/accounts_box"
@@ -218,7 +219,7 @@
                             android:visibility="gone">
 
                             <CalendarView
-                                android:id="@+id/simpleCalendarView"
+                                android:id="@+id/transferCalendar"
                                 android:layout_width="fill_parent"
                                 android:layout_height="fill_parent" />
 
@@ -450,14 +451,16 @@
 
     <LinearLayout
         android:id="@+id/custon_pay_button"
-        style="@style/BtnTransfer"
+        style="@style/BtnTransferDisable"
         android:visibility="visible">
 
         <ImageView
-            style="@style/BtnTransferIcon"/>
+            android:id="@+id/iconBtnTransfers"
+            style="@style/BtnTransferIconDisable"/>
 
         <TextView
-            style="@style/BtnTransferText"/>
+            android:id="@+id/textBtnTransfers"
+            style="@style/BtnTransferTextDisable"/>
 
     </LinearLayout>
 

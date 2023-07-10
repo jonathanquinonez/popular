@@ -10,11 +10,11 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:background="?android:attr/selectableItemBackground"
-        android:padding="8dp">
+        android:padding="5dp">
 
         <ImageView
             android:layout_width="0dp"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:id="@+id/account_image"
             style="@style/CardSelection_image"
             android:layout_weight="1"
@@ -49,20 +49,10 @@
             android:layout_gravity="center_vertical"
             android:gravity="right"
             android:layout_weight="1"
+            android:textColor="@color/blue"
             android:layout_margin="5dp"/>
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/filler"
-        android:orientation="horizontal"
-        style="@style/WheelItemFiller" />
-
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:id="@+id/opacity_layer"
-        android:layout_centerInParent="true" />
 
 </LinearLayout>
 

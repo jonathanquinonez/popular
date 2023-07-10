@@ -31,7 +31,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:id="@+id/download"
             android:background="?android:attr/selectableItemBackground"
             android:padding="8dp"
@@ -45,6 +45,15 @@
                 android:gravity="center"
                 android:textSize="25dp"
                 android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/select_account_subtitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="18sp"/>
 
         </LinearLayout>
 

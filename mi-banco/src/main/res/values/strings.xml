@@ -1111,4 +1111,5 @@
     <string name="change">Change</string>
     <string name="send_transfer">Send transfer</string>
     <string name="choose_account">Choose an account</string>
+    <string name="select_account_subtitle">Amount to be transfered</string>
 </resources>

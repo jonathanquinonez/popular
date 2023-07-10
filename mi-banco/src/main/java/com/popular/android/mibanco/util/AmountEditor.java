@@ -59,6 +59,7 @@ public class AmountEditor extends BottomSheetDialog {
             @Override
             public void onClick(final View v) {
                 onDataCallback.onErrorAmountEditor();
+                amount.setText("0.00");
                 dismiss();
             }
         });
@@ -69,6 +70,7 @@ public class AmountEditor extends BottomSheetDialog {
                 String amountStr = amount.getText().toString() ;
                 amountStr = amountStr.replaceAll("\\$","");
                 onDataCallback.onSuccessAmountEditor(amountStr);
+                amount.setText("0.00");
                 dismiss();
             }
         });

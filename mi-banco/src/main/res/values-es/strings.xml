@@ -1090,4 +1090,5 @@
     <string name="change">Cambiar</string>
     <string name="send_transfer">Enviar transferencia</string>
     <string name="choose_account">Escoge una cuenta</string>
+    <string name="select_account_subtitle">Cantidad a ser transferida</string>
 </resources>

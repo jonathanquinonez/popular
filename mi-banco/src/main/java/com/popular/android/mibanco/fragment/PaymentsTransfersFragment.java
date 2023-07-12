@@ -35,6 +35,7 @@ import android.widget.CalendarView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -250,6 +251,7 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
     TextView nameAccountFrom, numberAccountFrom, amountAccountFrom;
     TextView nameAccountTo, numberAccountTo, amountAccountTo, textBtnTransfers;
     ImageView iconTransfer, cardFromAccount, cardToAccount, iconBtnTransfers;
+    ScrollView scrollView;
 
 
 
@@ -367,6 +369,8 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
             iconTransfer = view.findViewById(R.id.iconTransfer);
             cardFromAccount = view.findViewById(R.id.cardFromAccount);
             cardToAccount = view.findViewById(R.id.cardToAccount);
+            scrollView = view.findViewById(R.id.scrollView);
+
 
             custon_pay_button = view.findViewById(R.id.custon_pay_button);
             iconBtnTransfers = view.findViewById(R.id.iconBtnTransfers);
@@ -1332,6 +1336,12 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
                 int visible = calendarContainer.getVisibility();
                 if(visible > 0){
                     calendarContainer.setVisibility(View.VISIBLE);
+                    scrollView.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            scrollView.fullScroll(View.FOCUS_DOWN);
+                        }
+                    });
                 }else{
                     calendarContainer.setVisibility(View.GONE);
                 }

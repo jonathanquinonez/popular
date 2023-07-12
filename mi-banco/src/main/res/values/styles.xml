@@ -2177,6 +2177,16 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
+    <style name="BtnTransferXS">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/btn_transfer_blue</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
     <style name="BtnTransferDisable">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">50dp</item>
@@ -2230,6 +2240,19 @@
         <item name="android:layout_gravity">center</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:background">@drawable/btn_amount_editor</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="BtnAmountEditorGrayXS">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">23dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_weight">0.1</item>
         <item name="android:background">@drawable/btn_amount_editor</item>

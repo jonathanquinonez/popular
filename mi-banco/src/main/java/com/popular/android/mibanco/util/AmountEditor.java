@@ -1,14 +1,20 @@
 package com.popular.android.mibanco.util;
 
+import android.app.Activity;
 import android.content.Context;
+import android.util.DisplayMetrics;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
+
+import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.popular.android.mibanco.R;
 
@@ -23,16 +29,42 @@ public class AmountEditor extends BottomSheetDialog {
     TextView valorPuntoCero;
     LinearLayout borrar;
 
+    Context context;
+
     private OnDataCallback onDataCallback;
 
     public AmountEditor(@NonNull Context context, OnDataCallback callback) {
         super(context);
 
+        this.context = context;
         this.onDataCallback = callback;
         super.setContentView(R.layout.botton_sheet_amount_editor);
 
+
         initView();
+        setupFullHeight(this);
         dismissView();
+    }
+
+
+
+    private void setupFullHeight(BottomSheetDialog bottomSheetDialog) {
+        FrameLayout bottomSheet = (FrameLayout) bottomSheetDialog.findViewById(R.id.design_bottom_sheet);
+        BottomSheetBehavior behavior = BottomSheetBehavior.from(bottomSheet);
+        ViewGroup.LayoutParams layoutParams = bottomSheet.getLayoutParams();
+
+        int windowHeight = getWindowHeight();
+        if (layoutParams != null) {
+            layoutParams.height = windowHeight;
+        }
+        bottomSheet.setLayoutParams(layoutParams);
+        behavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+    }
+
+    private int getWindowHeight() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        ((Activity) context).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        return displayMetrics.heightPixels;
     }
 
     public void initView(){

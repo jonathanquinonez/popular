@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_drag_sheet"
+        android:contentDescription="imagen"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/closeBottonSheet"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/close_modal"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/download"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="8dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_amount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/select_account_subtitle"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#cccccc"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:id="@+id/lyAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                style="@style/AmountValueSimbol"
+                android:text="$"/>
+
+            <TextView
+                android:id="@+id/amount"
+                style="@style/AmountValue"
+                android:layout_width="wrap_content"
+                android:textSize="40dp"
+                android:text="0.00"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valorUno"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="1"/>
+
+                    <TextView
+                        android:id="@+id/valorDos"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="2"/>
+
+                    <TextView
+                        android:id="@+id/valorTres"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="3"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valorCuatro"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="4"/>
+
+                    <TextView
+                        android:id="@+id/valorCinco"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="5"/>
+
+                    <TextView
+                        android:id="@+id/valorSeis"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="6"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valorSiete"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="7"/>
+
+                    <TextView
+                        android:id="@+id/valorOcho"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="8"/>
+
+                    <TextView
+                        android:id="@+id/valorNueve"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="9"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/valorPuntoCero"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text=".00"/>
+
+                    <TextView
+                        android:id="@+id/valorCero"
+                        style="@style/BtnAmountEditorGrayL"
+                        android:text="0"/>
+
+                    <LinearLayout
+                        android:id="@+id/borrar"
+                        style="@style/BtnAmountEditorGrayL">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/delete"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnAmountEditor"
+            style="@style/BtnTransfer"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/BtnTransferText"
+                android:text="@string/continue_phrase"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

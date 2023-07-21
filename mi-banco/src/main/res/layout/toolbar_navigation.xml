@@ -55,6 +55,7 @@
         android:id="@+id/close_cash_rewards"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font_16"
         android:textSize="20sp"
         android:textColor="@color/white"
         android:text="@string/automatic_redemption_close_title"

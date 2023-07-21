@@ -1,61 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/marketplace_banner"
-    style="@style/AccountsSection">
-
-    <View
-        android:id="@+id/marketplace_top_line"
-        android:layout_height="1dp"
-        android:layout_width="match_parent"
-        android:layout_marginTop="25dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="#F5F5F5"/>
-
-    <ImageView
-        android:id="@+id/marketplace_banner_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="19dp"
-        android:layout_marginStart="14dp"
-        app:layout_constraintStart_toStartOf="@+id/marketplace_top_line"
-        app:layout_constraintTop_toTopOf="@+id/marketplace_top_line"
-        android:tint="@color/marketplace_banner_title_color"
-        app:srcCompat="@drawable/ic_banner_marketplace" />
-
-    <TextView
-        android:id="@+id/marketplace_banner_title"
-        style="@style/MarketplaceBannerTitle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/marketplace_sidebar"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@id/marketplace_banner_icon"
-        app:layout_constraintTop_toTopOf="@+id/marketplace_top_line" />
-
-    <TextView
-        android:id="@+id/marketplace_banner_description"
-        style="@style/MarketplaceBannerDescription"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="16dp"
-        android:maxLines="3"
-        android:text="@string/marketplace_banner_desc"
-        app:layout_constraintBottom_toBottomOf="@+id/marketplace_bottom_line"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/marketplace_banner_title"
-        app:layout_constraintTop_toBottomOf="@id/marketplace_banner_title" />
-
-    <View
-        android:id="@+id/marketplace_bottom_line"
-        android:layout_height="1dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        style="@style/MarketplaceBannerLine" />
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    android:id="@+id/marketplace_bannerOff"
+    android:layout_marginHorizontal="16dp">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 

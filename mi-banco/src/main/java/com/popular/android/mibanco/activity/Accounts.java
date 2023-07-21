@@ -3,14 +3,20 @@ package com.popular.android.mibanco.activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.bottomnavigation.LabelVisibilityMode;
 import com.popular.android.mibanco.MiBancoConstants;
 import com.popular.android.mibanco.MiBancoPreferences;
 import com.popular.android.mibanco.R;
@@ -45,9 +51,9 @@ public class Accounts extends BaseSessionActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.accounts);
-
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         bottomNav.setOnNavigationItemSelectedListener(navListener);
+        bottomNav.setLabelVisibilityMode(LabelVisibilityMode.LABEL_VISIBILITY_LABELED);
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new AccountsFragment()).commit();
         String requestedUrl = getRdcInstructionsUrl(application.getLoggedInUser());
@@ -63,23 +69,36 @@ public class Accounts extends BaseSessionActivity {
                 @Override
                 public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     Accounts accounts = currentFragment;
+                    LinearLayout linearLayout = findViewById(R.id.sidebar_open_container);
+                    LinearLayout bell = linearLayout.findViewById(R.id.notification_center);
+                    ImageView logoPopular = linearLayout.findViewById(R.id.logo_min_popular);
+                    TextView titlePage = linearLayout.findViewById(R.id.title_page_toolbar);
 //                    selectedFragment = null;
                     Bundle bundle = new Bundle();
                     switch (item.getItemId()) {
                         case R.id.nav_accounts_icons:
                             selectedFragment = new AccountsFragment();
+                            bell.setVisibility(View.VISIBLE);
+                            logoPopular.setVisibility(View.VISIBLE);
+                            titlePage.setText(null);
                             break;
                         case R.id.nav_payments_icons:
                             selectedFragment = new PaymentsTransfersFragment();
-                            accounts.setSelectedFragment(selectedFragment);
+                            accounts.setSelectedSubFragment(selectedFragment);
                             bundle.putBoolean("transfers", false);
                             selectedFragment.setArguments(bundle);
+                            bell.setVisibility(View.INVISIBLE);
+                            logoPopular.setVisibility(View.INVISIBLE);
+                            titlePage.setText(R.string.menu_nav_payments);
                             break;
                         case R.id.nav_transfer_icon:
                             selectedFragment = new PaymentsTransfersFragment();
-                            accounts.setSelectedFragment(selectedFragment);
+                            accounts.setSelectedSubFragment(selectedFragment);
                             bundle.putBoolean("transfers", true);
                             selectedFragment.setArguments(bundle);
+                            bell.setVisibility(View.INVISIBLE);
+                            logoPopular.setVisibility(View.INVISIBLE);
+                            titlePage.setText(R.string.menu_nav_transfers);
                             break;
                         case R.id.nav_ath_icon:
                             boolean isFragmentStored = getSharedPreferences("MyPrefs", MODE_PRIVATE).getBoolean("isFragmentStored", false);
@@ -108,6 +127,9 @@ public class Accounts extends BaseSessionActivity {
                                     }
                                 });
                             }
+                            bell.setVisibility(View.INVISIBLE);
+                            logoPopular.setVisibility(View.INVISIBLE);
+                            titlePage.setText(R.string.menu_nav_ath_movil);
                             break;
                         case R.id.nav_more_icon:
 
@@ -118,6 +140,9 @@ public class Accounts extends BaseSessionActivity {
                             }
                             Log.v("openMoreInfoFragment", "MoreFragment" + selectedFragment);
                             selectedFragment = new MoreFragment();
+                            bell.setVisibility(View.INVISIBLE);
+                            logoPopular.setVisibility(View.INVISIBLE);
+                            titlePage.setText(R.string.menu_nav_more);
                             break;
                         default:
                             break;
@@ -160,11 +185,6 @@ public class Accounts extends BaseSessionActivity {
         return segmentType;
     }
 
-    public void onNotificationCenterClicked() {
-        notificationCenterWebView();
-        recallOnPrepareMenu();
-    }
-
     private void notificationCenterWebView (){
         final Intent intentWebView = new Intent(Accounts.this, WebViewActivity.class);
         intentWebView.putExtra(MiBancoConstants.WEB_VIEW_URL_KEY, Utils.getAbsoluteUrl(getString(R.string.notification_center_url)));
@@ -190,5 +210,10 @@ public class Accounts extends BaseSessionActivity {
 
     public void setSelectedFragment(Fragment fragment) {
         selectedFragment = fragment;
+    }
+
+    public void onNotificationCenterClicked(View view) {
+        notificationCenterWebView();
+        recallOnPrepareMenu();
     }
 }

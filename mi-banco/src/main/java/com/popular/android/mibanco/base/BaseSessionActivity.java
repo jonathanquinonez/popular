@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.ActionBar;
@@ -104,6 +105,7 @@ public abstract class BaseSessionActivity extends BaseActivity implements OnClic
         if(actionBar != null) {
             actionBar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
             LayoutInflater inflater = getLayoutInflater();
+
             View customView = inflater.inflate(R.layout.sidebar_open, null);
             actionBar.setCustomView(customView);
         }
@@ -190,6 +192,9 @@ public abstract class BaseSessionActivity extends BaseActivity implements OnClic
 
         menuContact.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menuLocator.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
+
+        ImageView bell = findViewById(R.id.bell_toolbar);
+        bell.setVisibility(View.VISIBLE);
 
         return true;
     }
@@ -532,7 +537,7 @@ public abstract class BaseSessionActivity extends BaseActivity implements OnClic
         }
     }
 
-    public void setSelectedFragment(Fragment fragment) {
+    public void setSelectedSubFragment(Fragment fragment) {
         selectedFragment = fragment;
     }
 

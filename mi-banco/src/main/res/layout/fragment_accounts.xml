@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -41,7 +41,7 @@
             style="@style/Accounts">
 
 
-            =<LinearLayout
+            <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="222dp"
             android:layout_marginBottom="16dp"
@@ -56,7 +56,7 @@
                 android:layout_height="114dp"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="16dp"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="15dp"
                 android:scrollbars="horizontal" />
 
 
@@ -90,6 +90,7 @@
 
         </LinearLayout>
 
+
             <LinearLayout
                 android:id="@+id/nuevo_y_borrar"
                 android:layout_width="match_parent"
@@ -99,20 +100,7 @@
                 >
 
 
-                <LinearLayout
-                    android:id="@+id/cards_view"
-                    style="@style/AccountsSection">
 
-                    <TextView
-                        style="@style/AccountsSectionTitle"
-                        android:text="@string/account_list_cca_type" />
-
-                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
-
-                    <LinearLayout
-                        android:id="@+id/cards_list"
-                        style="@style/AccountsSectionList" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/accounts_view"
@@ -130,6 +118,88 @@
 
                 </LinearLayout>
 
+                    <LinearLayout
+                        android:id="@+id/marketplace_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:background="@drawable/accounts_section_background_markplace"
+                        android:padding="16dp"
+                        android:layout_marginVertical="16dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingLeft="5dp"
+                            android:paddingBottom="20dp"
+                            android:paddingRight="20dp">
+
+                            <ImageView
+                                android:id="@+id/marketplace_banner_icon"
+                                android:layout_width="28dp"
+                                android:layout_height="28dp"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center_horizontal"
+                                android:tint="@color/marketplace_banner_title_color"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:srcCompat="@drawable/ic_banner_marketplace" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <LinearLayout
+                            android:layout_width="253dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/marketplace_banner_title"
+                                style="@style/MarketplaceBannerTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/marketplace_sidebar"
+                                app:layout_constraintStart_toEndOf="@id/marketplace_banner_icon"
+                                app:layout_constraintTop_toTopOf="@+id/marketplace_top_line" />
+
+                            <TextView
+                                android:id="@+id/marketplace_banner_description"
+                                style="@style/MarketplaceBannerDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxWidth="80dp"
+                                android:maxLines="3"
+                                android:text="@string/marketplace_banner_desc" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/back_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="15dp"
+                            android:tint="#999999"
+                            app:srcCompat="@drawable/back_icon" />
+
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cards_view"
+                    style="@style/AccountsSection">
+
+                    <TextView
+                        style="@style/AccountsSectionTitle"
+                        android:text="@string/account_list_cca_type" />
+
+                    <!--                <LinearLayout style="@style/AccountsSectionBottomLine" />-->
+
+                    <LinearLayout
+                        android:id="@+id/cards_list"
+                        style="@style/AccountsSectionList" />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/loans_view"
                     style="@style/AccountsSection">

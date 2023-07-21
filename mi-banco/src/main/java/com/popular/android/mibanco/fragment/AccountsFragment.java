@@ -15,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
@@ -66,6 +67,7 @@ import com.popular.android.mibanco.object.ViewHolder;
 import com.popular.android.mibanco.task.PremiaTasks;
 import com.popular.android.mibanco.task.RetirementPlanTasks;
 import com.popular.android.mibanco.util.BPAnalytics;
+import com.popular.android.mibanco.util.ImageCarouselListener;
 import com.popular.android.mibanco.util.KiuwanUtils;
 import com.popular.android.mibanco.util.Utils;
 import com.popular.android.mibanco.view.DialogCoverup;
@@ -89,7 +91,7 @@ import java.util.Locale;
  * Use the {@link AccountsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class AccountsFragment extends Fragment {
+public class AccountsFragment extends Fragment implements ImageCarouselListener {
 
     private View rootView;
     private ImageView imageViewNotificationClose;
@@ -97,6 +99,8 @@ public class AccountsFragment extends Fragment {
     private SharedViewModel viewModel;
     protected Button retPlanNewBadge;
     protected ImageView retPlanLoading;
+
+    private LinearLayout marketplaceBanner;
 
     private RelativeLayout relativeLayoutNotificationCenter;
     /**
@@ -115,6 +119,8 @@ public class AccountsFragment extends Fragment {
      * Max number of successful logins to which accounts personalization notice should be displayed.
      */
     private static final int MAX_LOGINS_TO_SHOW_NOTICE = 2;
+
+    private ImageCarouselListener imageCarouselListener;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -144,6 +150,27 @@ public class AccountsFragment extends Fragment {
             }
         });
         return rootView;
+    }
+
+    @Override
+    public void setImageCarousel(BannerResponse response) {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        ArrayList mImageUrls = new ArrayList<>();
+        ArrayList mIUrlsAction = new ArrayList<>();
+
+        if (response.getCarousel() != null) {
+            for (int i = 0; i < response.getCarousel().size(); i++) {
+                mImageUrls.add(response.getCarousel().get(i).getImage_url());
+                mIUrlsAction.add(response.getCarousel().get(i).getAction_url());
+            }
+        } else {
+            mImageUrls.add(response.getImage_url());
+        }
+
+        ImageAdapter adapter = new ImageAdapter(mImageUrls, mIUrlsAction);
+        recyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -349,28 +376,15 @@ public class AccountsFragment extends Fragment {
     private void addMarketplaceBannerIfNecessary() {
         if(getActivity() instanceof Accounts) {
             Accounts accounts = (Accounts) getActivity();
-        if (accounts.hasMarketplaceProducts() && rootView.findViewById(R.id.marketplace_banner) == null) {
-            LinearLayout accountsContainer = rootView.findViewById(R.id.accounts_container);
-            LayoutInflater inflater = (LayoutInflater) getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            ConstraintLayout marketplaceBanner = (ConstraintLayout) inflater.inflate(R.layout.marketplace_banner, null, false);
-
+        if (accounts.hasMarketplaceProducts()) {
+            marketplaceBanner = rootView.findViewById(R.id.marketplace_banner);
+            marketplaceBanner.setVisibility(View.VISIBLE);
             marketplaceBanner.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v){
                     accounts.marketplaceActivity();
                     BPAnalytics.logEvent(BPAnalytics.EVENT_MARKETPLACE_BANNER);
                 }
             });
-
-            Integer marketplaceBannerIndex = 0;
-
-            for (int i = 0; i < accountsContainer.getChildCount(); i++) {
-                if (accountsContainer.getChildAt(i).getVisibility() == View.VISIBLE) {
-                    marketplaceBannerIndex = i + 1;
-                    break;
-                }
-            }
-
-            accountsContainer.addView(marketplaceBanner, marketplaceBannerIndex);
             }
         }
     }
@@ -382,26 +396,6 @@ public class AccountsFragment extends Fragment {
         Utils.showDialog(App.getApplicationInstance().getDialogCoverupUpdateBalances(), getActivity());
     }
 
-    public void setImageCarousel(BannerResponse response) {
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(layoutManager);
-
-        ArrayList mImageUrls = new ArrayList<>();
-        ArrayList mIUrlsAction = new ArrayList<>();
-
-        if (response.getCarousel() != null) {
-            for (int i = 0; i < response.getCarousel().size(); i++) {
-                mImageUrls.add(response.getCarousel().get(i).getImage_url());
-                mIUrlsAction.add(response.getCarousel().get(i).getAction_url());
-            }
-        } else {
-            mImageUrls.add(response.getImage_url());
-        }
-
-        ImageAdapter adapter = new ImageAdapter(mImageUrls, mIUrlsAction);
-        recyclerView.setAdapter(adapter);
-    }
 
     public void notificationCenterSetup() {
 

@@ -1077,7 +1077,7 @@
     <!-- MENU NAVIATION BUTTOM -->
     <string name="menu_nav_accounts">Cuentas</string>
     <string name="menu_nav_payments">Pagos</string>
-    <string name="menu_nav_transfers">Transfers</string>
+    <string name="menu_nav_transfers">Transferencias</string>
     <string name="menu_nav_ath_movil">ATH Móvil</string>
     <string name="menu_nav_more">Mas</string>
 

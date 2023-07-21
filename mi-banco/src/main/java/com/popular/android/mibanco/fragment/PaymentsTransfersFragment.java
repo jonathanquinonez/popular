@@ -12,6 +12,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProvider;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.text.Spannable;
 import android.text.SpannedString;
@@ -38,6 +42,7 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.popular.android.mibanco.App;
@@ -46,11 +51,14 @@ import com.popular.android.mibanco.MiBancoConstants;
 import com.popular.android.mibanco.R;
 import com.popular.android.mibanco.activity.EBill;
 import com.popular.android.mibanco.activity.EnterAmount;
+import com.popular.android.mibanco.activity.ImageAdapter;
 import com.popular.android.mibanco.activity.PaymentReceipt;
 import com.popular.android.mibanco.activity.Payments;
 import com.popular.android.mibanco.activity.Receipts;
 import com.popular.android.mibanco.activity.WebViewActivity;
 import com.popular.android.mibanco.adapter.TransferAccountAdapter;
+import com.popular.android.mibanco.base.BaseActivity;
+import com.popular.android.mibanco.base.BaseSessionActivity;
 import com.popular.android.mibanco.listener.ResponderListener;
 import com.popular.android.mibanco.listener.SimpleListener;
 import com.popular.android.mibanco.model.FormField;
@@ -62,6 +70,7 @@ import com.popular.android.mibanco.model.TransferActiveAccount;
 import com.popular.android.mibanco.model.TransferActiveTransfer;
 import com.popular.android.mibanco.util.AmountEditor;
 import com.popular.android.mibanco.util.BPAnalytics;
+import com.popular.android.mibanco.util.ImageCarouselListener;
 import com.popular.android.mibanco.util.KiuwanUtils;
 import com.popular.android.mibanco.util.Utils;
 import com.popular.android.mibanco.view.DialogCoverup;
@@ -73,6 +82,8 @@ import com.popular.android.mibanco.view.pickerview.OnWheelClickedListener;
 import com.popular.android.mibanco.view.pickerview.OnWheelScrollListener;
 import com.popular.android.mibanco.view.pickerview.WheelScrollListener;
 import com.popular.android.mibanco.view.pickerview.WheelView;
+import com.popular.android.mibanco.viewModel.SharedViewModel;
+import com.popular.android.mibanco.ws.response.BannerResponse;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -83,11 +94,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
-public class PaymentsTransfersFragment extends Fragment implements AmountEditor.OnDataCallback {
+public class PaymentsTransfersFragment extends Fragment implements AmountEditor.OnDataCallback, ImageCarouselListener {
 
     private View rootView;
-
     private Context mContext;
+
+    private SharedViewModel viewModel;
+
+    private RecyclerView recyclerView;
     /**
      * Constant that define the duration animation for real time views indicatotr
      */
@@ -247,12 +261,13 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
     ListView lvAccountFrom;
     ListView lvAccountTo;
 
-    LinearLayout acount_select_from, acount_select_from_data, acount_select_to, acount_select_to_data, custon_pay_button;
+    LinearLayout acount_select_from, acount_select_from_data, acount_select_to, acount_select_to_data, custon_pay_button, paymentsBanner;
     TextView nameAccountFrom, numberAccountFrom, amountAccountFrom;
     TextView nameAccountTo, numberAccountTo, amountAccountTo, textBtnTransfers;
     ImageView iconTransfer, cardFromAccount, cardToAccount, iconBtnTransfers;
     ScrollView scrollView;
 
+    private ImageCarouselListener imageCarouselListener;
 
 
     @Override
@@ -370,7 +385,8 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
             cardFromAccount = view.findViewById(R.id.cardFromAccount);
             cardToAccount = view.findViewById(R.id.cardToAccount);
             scrollView = view.findViewById(R.id.scrollView);
-
+            paymentsBanner = view.findViewById(R.id.payments_banner);
+            recyclerView = view.findViewById(R.id.recycler_view);
 
             custon_pay_button = view.findViewById(R.id.custon_pay_button);
             iconBtnTransfers = view.findViewById(R.id.iconBtnTransfers);
@@ -381,21 +397,32 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
             warningTransfers = view.findViewById(R.id.warningTransfers);
             if (isTransfer) {
                 warningTransfers.setVisibility(View.VISIBLE);
+                paymentsBanner.setVisibility(View.GONE);
+
             } else {
                 warningTransfers.setVisibility(View.GONE);
+                paymentsBanner.setVisibility(View.VISIBLE);
+
             }
 
             btnChange = view.findViewById(R.id.btnChange);
 
             setListeners();
         }
+
+        viewModel.getBannerResponse().observe(getViewLifecycleOwner(), new Observer<BannerResponse>() {
+            @Override
+            public void onChanged(BannerResponse response) {
+                setImageCarousel(response);
+            }
+        });
     }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
-
+        viewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
     }
 
     public void handleNewIntent(boolean isTransfer) {
@@ -2059,5 +2086,26 @@ public class PaymentsTransfersFragment extends Fragment implements AmountEditor.
         }
 
         setEnableButtonTransaction();
+    }
+
+    @Override
+    public void setImageCarousel(BannerResponse response) {
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+        recyclerView.setLayoutManager(layoutManager);
+
+        ArrayList mImageUrls = new ArrayList<>();
+        ArrayList mIUrlsAction = new ArrayList<>();
+
+        if (response.getCarousel() != null) {
+            for (int i = 0; i < response.getCarousel().size(); i++) {
+                mImageUrls.add(response.getCarousel().get(i).getImage_url());
+                mIUrlsAction.add(response.getCarousel().get(i).getAction_url());
+            }
+        } else {
+            mImageUrls.add(response.getImage_url());
+        }
+
+        ImageAdapter adapter = new ImageAdapter(mImageUrls, mIUrlsAction);
+        recyclerView.setAdapter(adapter);
     }
 }

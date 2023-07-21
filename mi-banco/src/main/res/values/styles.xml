@@ -3,6 +3,13 @@
 
     <style name="AlertDialogText" parent="Base.TextAppearance.AppCompat"></style>
 
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionMenuTextColor">@color/white</item>
+        <item name="background">@color/title_bar_background</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
     <style name="AlertDialogText.Header">
         <item name="robotoTypeface">roboto_medium</item>
         <item name="android:textSize">20sp</item>
@@ -274,8 +281,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
-<!--        <item name="android:layout_marginLeft">16dp</item>-->
-<!--        <item name="android:layout_marginRight">16dp</item>-->
+        <!--        <item name="android:layout_marginLeft">16dp</item>-->
+        <!--        <item name="android:layout_marginRight">16dp</item>-->
     </style>
 
     <style name="AccountsSectionTitle">
@@ -352,6 +359,7 @@
         <item name="android:adjustViewBounds">false</item>
         <item name="android:scaleType">fitXY</item>
         <item name="android:gravity">left</item>
+        <item name="background">@drawable/border_img_account</item>
     </style>
 
     <style name="AccountsItemInfoSection">
@@ -366,7 +374,7 @@
 
     <style name="AccountsItemInfoBottomSection">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:weightSum">1</item>
         <item name="android:layout_weight">1</item>
     </style>
@@ -374,7 +382,17 @@
     <style name="AccountsItemTitle">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:textSize">18dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/accounts_item_title</item>
+        <item name="android:gravity">left</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="AccountsTitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:textColor">@color/accounts_item_title</item>
         <item name="android:gravity">left</item>
         <item name="android:singleLine">true</item>
@@ -386,8 +404,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/accounts_item_number</item>
-        <item name="android:gravity">right</item>
-        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_gravity">left</item>
     </style>
 
     <style name="AccountsItemBottomLine">
@@ -426,9 +444,9 @@
 
     <style name="AccountsAccountHeaderBalance">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:textSize">14sp</item>
-        <item name="android:textColor">@color/account_details_header_credit_balance</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">left</item>
         <item name="android:layout_weight">1</item>
@@ -608,10 +626,11 @@
 
     <!-- Payments screen styles -->
     <style name="PaymentsPage">
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@color/white</item>
+        <item name="android:layout_marginTop">10dp</item>
         <item name="android:padding">5dp</item>
     </style>
 
@@ -1922,16 +1941,16 @@
 
     <style name="MarketPlaceMenuButton" parent="@android:style/TextAppearance.Widget.TextView">
 
-    <item name="android:background">@drawable/roundedbuttonblue</item>
-    <item name="android:layout_height">45dp</item>
-    <item name="android:layout_width">0dp</item>
+        <item name="android:background">@drawable/roundedbuttonblue</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_width">0dp</item>
 
-    <item name="colorButtonNormal">@color/btn_marketplace_blue</item>
-    <item name="android:textColor">@color/white</item>
-    <item name="android:textAllCaps">false</item>
-    <item name="android:textStyle">normal</item>
-    <item name="android:textSize">18sp</item>
-    <item name="android:fontFamily">sans-serif</item>
+        <item name="colorButtonNormal">@color/btn_marketplace_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">sans-serif</item>
 
     </style>
 
@@ -1950,7 +1969,7 @@
         <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">sans-serif</item>
     </style>
-    
+
     <!-- Transactions Detail -->
     <style name="TransactionDetailArrow">
         <item name="android:layout_height">wrap_content</item>
@@ -2177,40 +2196,11 @@
         <item name="android:gravity">center_horizontal</item>
     </style>
 
-    <style name="BtnTransferXS">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:background">@drawable/btn_transfer_blue</item>
-        <item name="android:layout_margin">10dp</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center_horizontal</item>
-    </style>
-
-    <style name="BtnTransferDisable">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">50dp</item>
-        <item name="android:background">@drawable/btn_transfer_gray</item>
-        <item name="android:layout_margin">20dp</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:orientation">horizontal</item>
-        <item name="android:gravity">center_horizontal</item>
-    </style>
-
     <style name="BtnTransferIcon">
         <item name="android:layout_width">30dp</item>
         <item name="android:layout_height">30dp</item>
         <item name="android:layout_marginEnd">5dp</item>
         <item name="android:src">@drawable/transfer_white</item>
-        <item name="android:layout_gravity">center_vertical</item>
-    </style>
-
-    <style name="BtnTransferIconDisable">
-        <item name="android:layout_width">30dp</item>
-        <item name="android:layout_height">30dp</item>
-        <item name="android:layout_marginEnd">5dp</item>
-        <item name="android:src">@drawable/transfer_white</item>
-        <item name="tint">#A5A5A5</item>
         <item name="android:layout_gravity">center_vertical</item>
     </style>
 
@@ -2224,6 +2214,51 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="LayoutListView_settings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#F0F0F0</item>
+
+    </style>
+    <style name="ListView_settings">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/layout_list_view_settings</item>
+        <item name="android:layout_margin">20dp</item>
+    </style>
+
+    <style name="BtnAmountEditorBlue">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="android:background">@drawable/btn_amount_editor_blue</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:textColor">#3784D2</item>
+    </style>
+
+    <style name="BtnTransferDisable">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/btn_transfer_gray</item>
+        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="BtnTransferIconDisable">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:src">@drawable/transfer_white</item>
+        <item name="tint">#A5A5A5</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
     <style name="BtnTransferTextDisable">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -2232,6 +2267,16 @@
         <item name="android:textColor">#A5A5A5</item>
         <item name="android:textSize">20dp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BtnTransferXS">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/btn_transfer_blue</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="BtnAmountEditorGray">
@@ -2272,19 +2317,5 @@
         <item name="android:layout_margin">20dp</item>
         <item name="android:textColor">#000</item>
     </style>
-
-    <style name="BtnAmountEditorBlue">
-        <item name="android:layout_width">100dp</item>
-        <item name="android:layout_height">80dp</item>
-        <item name="android:layout_gravity">center</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textSize">25dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:layout_weight">0.1</item>
-        <item name="android:background">@drawable/btn_amount_editor_blue</item>
-        <item name="android:layout_margin">20dp</item>
-        <item name="android:textColor">#3784D2</item>
-    </style>
-
 
 </resources>

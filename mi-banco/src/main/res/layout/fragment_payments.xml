@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myapp="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,433 +13,467 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="70dp">
 
-        <RelativeLayout style="@style/PaymentsPage"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/accounts_box"
-                style="@style/PaymentsAccountsBox"
-                android:layout_alignParentTop="true">
-
+                android:id="@+id/payments_banner"
+                style="@style/Accounts">
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="230dp"
-                    android:orientation="horizontal"
-                    android:layout_gravity="center_vertical"
-                    android:gravity="center_vertical">
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#1C3665"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:clipToPadding="false"
+                        android:layout_width="match_parent"
+                        android:paddingRight="12dp"
+                        android:layout_height="114dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="15dp"
+                        android:scrollbars="horizontal" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout style="@style/PaymentsPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:id="@+id/accounts_box"
+                    style="@style/PaymentsAccountsBox"
+                    android:layout_alignParentTop="true">
 
                     <LinearLayout
-                        android:id="@+id/lyAccountFrom"
-                        style="@style/CardSelection_box"
-                        android:background="@drawable/account_selector_disc">
-
-                        <TextView
-                            style="@style/CardSelection"
-                            android:text="@string/from_account" />
-
-                        <ImageButton
-                            android:id="@+id/cardFromAccount"
-                            style="@style/CardSelection_image"
-                            android:background="@drawable/image_corner"
-                            android:clipToOutline="true"/>
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical">
 
                         <LinearLayout
-                            android:id="@+id/acount_select_from"
-                            style="@style/CardSelectionNoData"
-                            android:visibility="visible">
-
-                            <ImageView
-                                style="@style/CardNumber"/>
+                            android:id="@+id/lyAccountFrom"
+                            style="@style/CardSelection_box"
+                            android:background="@drawable/account_selector_disc">
 
                             <TextView
                                 style="@style/CardSelection"
-                                android:text="Seleccione la"
-                                android:gravity="center"/>
+                                android:text="@string/from_account" />
 
-                            <TextView
-                                style="@style/CardSelection"
-                                android:text="Cuenta"
-                                android:gravity="center"/>
+                            <ImageButton
+                                android:id="@+id/cardFromAccount"
+                                style="@style/CardSelection_image"
+                                android:background="@drawable/image_corner"
+                                android:clipToOutline="true"/>
+
+                            <LinearLayout
+                                android:id="@+id/acount_select_from"
+                                style="@style/CardSelectionNoData"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    style="@style/CardNumber"/>
+
+                                <TextView
+                                    style="@style/CardSelection"
+                                    android:text="Seleccione la"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    style="@style/CardSelection"
+                                    android:text="Cuenta"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/acount_select_from_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+                                <TextView
+                                    android:id="@+id/nameAccountFrom"
+                                    style="@style/CardSelection"
+                                    android:text="Ahorro"/>
+
+                                <TextView
+                                    android:id="@+id/numberAccountFrom"
+                                    style="@style/CardSelection_card_number"
+                                    android:text="x3214"/>
+
+                                <TextView
+                                    android:id="@+id/amountAccountFrom"
+                                    style="@style/CardSelection_ammount"
+                                    android:text="$103,123.98"/>
+                            </LinearLayout>
 
                         </LinearLayout>
 
+                        <ImageView
+                            android:id="@+id/iconTransfer"
+                            style="@style/CardSelectionIconTransfer"/>
+
                         <LinearLayout
-                            android:id="@+id/acount_select_from_data"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:visibility="gone">
+                            android:id="@+id/lyAccountTo"
+                            style="@style/CardSelection_box"
+                            android:background="@drawable/account_selector_disc">
+
                             <TextView
-                                android:id="@+id/nameAccountFrom"
                                 style="@style/CardSelection"
-                                android:text="Ahorro"/>
+                                android:text="@string/to_account"/>
 
-                            <TextView
-                                android:id="@+id/numberAccountFrom"
-                                style="@style/CardSelection_card_number"
-                                android:text="x3214"/>
+                            <ImageButton
+                                android:id="@+id/cardToAccount"
+                                style="@style/CardSelection_image"
+                                android:background="@drawable/image_corner"
+                                android:clipToOutline="true"/>
 
-                            <TextView
-                                android:id="@+id/amountAccountFrom"
-                                style="@style/CardSelection_ammount"
-                                android:text="$103,123.98"/>
+                            <LinearLayout
+                                android:id="@+id/acount_select_to"
+                                style="@style/CardSelectionNoData"
+                                android:visibility="visible">
+
+                                <ImageView
+                                    style="@style/CardNumber"/>
+
+                                <TextView
+                                    style="@style/CardSelection"
+                                    android:text="Seleccione la"
+                                    android:gravity="center"/>
+
+                                <TextView
+                                    style="@style/CardSelection"
+                                    android:text="Cuenta"
+                                    android:gravity="center"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/acount_select_to_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <TextView
+                                    android:id="@+id/nameAccountTo"
+                                    style="@style/CardSelection"
+                                    android:text="Corriente"/>
+
+                                <TextView
+                                    android:id="@+id/numberAccountTo"
+                                    style="@style/CardSelection_card_number"
+                                    android:text="x3214"/>
+
+                                <TextView
+                                    android:id="@+id/amountAccountTo"
+                                    style="@style/CardSelection_ammount"
+                                    android:text="$1,123.98"/>
+
+                            </LinearLayout>
+
                         </LinearLayout>
 
                     </LinearLayout>
 
-                    <ImageView
-                        android:id="@+id/iconTransfer"
-                        style="@style/CardSelectionIconTransfer"/>
+                    <LinearLayout
+                        android:id="@+id/amountBox"
+                        style="@style/AmountBox">
+
+                        <LinearLayout
+                            android:id="@+id/amountBoxHead"
+                            style="@style/AmountBoxHead">
+
+                            <TextView
+                                style="@style/CardSelection"
+                                android:text="@string/amount"/>
+
+                            <LinearLayout
+                                android:id="@+id/lyAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    style="@style/AmountValueSimbol"
+                                    android:text="$"/>
+
+                                <TextView
+                                    android:id="@+id/amountValue"
+                                    style="@style/AmountValue"
+                                    android:text="0.00"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/AmountBoxFoot">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp">
+                                <ImageButton
+                                    style="@style/AmountBoxFootIconCalendar"/>
+
+                                <TextView
+                                    android:id="@+id/date_text"
+                                    style="@style/CardSelection_card_number"
+                                    android:text=""
+                                    android:layout_weight="0.7"
+                                    android:layout_marginEnd="5dp"/>
+
+                                <Button
+                                    android:id="@+id/btnChange"
+                                    style="@style/AmountBoxFootBtn"
+                                    android:background="@color/bg_amount_gray_light"/>
+
+                            </LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/calendarContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="gone">
+
+                                <CalendarView
+                                    android:id="@+id/transferCalendar"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
 
                     <LinearLayout
-                        android:id="@+id/lyAccountTo"
-                        style="@style/CardSelection_box"
-                        android:background="@drawable/account_selector_disc">
+                        style="@style/WarningBox"
+                        android:id="@+id/warningTransfers"
+                        android:background="@drawable/warning_message">
+
+                        <ImageView
+                            style="@style/WarningBoxImg"/>
 
                         <TextView
-                            style="@style/CardSelection"
-                            android:text="@string/to_account"/>
-
-                        <ImageButton
-                            android:id="@+id/cardToAccount"
-                            style="@style/CardSelection_image"
-                            android:background="@drawable/image_corner"
-                            android:clipToOutline="true"/>
-
-                        <LinearLayout
-                            android:id="@+id/acount_select_to"
-                            style="@style/CardSelectionNoData"
-                            android:visibility="visible">
-
-                            <ImageView
-                                style="@style/CardNumber"/>
-
-                            <TextView
-                                style="@style/CardSelection"
-                                android:text="Seleccione la"
-                                android:gravity="center"/>
-
-                            <TextView
-                                style="@style/CardSelection"
-                                android:text="Cuenta"
-                                android:gravity="center"/>
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/acount_select_to_data"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:visibility="gone">
-
-                            <TextView
-                                android:id="@+id/nameAccountTo"
-                                style="@style/CardSelection"
-                                android:text="Corriente"/>
-
-                            <TextView
-                                android:id="@+id/numberAccountTo"
-                                style="@style/CardSelection_card_number"
-                                android:text="x3214"/>
-
-                            <TextView
-                                android:id="@+id/amountAccountTo"
-                                style="@style/CardSelection_ammount"
-                                android:text="$1,123.98"/>
-
-                        </LinearLayout>
+                            style="@style/CardSelection_card_number"
+                            android:text="@string/warning_transfer_text"
+                            android:layout_weight="0.7"
+                            android:layout_margin="5dp"
+                            android:textAlignment="textStart"/>
 
                     </LinearLayout>
 
                 </LinearLayout>
 
+
                 <LinearLayout
-                    android:id="@+id/amountBox"
-                    style="@style/AmountBox">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accounts_box"
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <LinearLayout
-                        android:id="@+id/amountBoxHead"
-                        style="@style/AmountBoxHead">
-
-                        <TextView
-                            style="@style/CardSelection"
-                            android:text="@string/amount"/>
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:id="@+id/lyAmount"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-                            <TextView
-                                style="@style/AmountValueSimbol"
-                                android:text="$"/>
+                            android:id="@+id/amount_button"
+                            style="@style/PaymentsAmountButtonBox"
+                            android:baselineAligned="false">
 
-                            <TextView
-                                android:id="@+id/amountValue"
-                                style="@style/AmountValue"
-                                android:text="0.00"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="2">
+
+                                <TextView style="@style/PaymentsAmountTitle" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:id="@+id/amount_text"
+                                    style="@style/PaymentsAmountText"
+                                    android:text="@string/zero_amount" />
+                            </LinearLayout>
                         </LinearLayout>
 
-                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:gravity="right">
 
-                    <LinearLayout
-                        style="@style/AmountBoxFoot">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/amount_arrow_holo_cut"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/PaymentsThinRuler"
+                            android:layout_marginTop="0dp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:orientation="horizontal"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp">
-                            <ImageButton
-                                style="@style/AmountBoxFootIconCalendar"/>
+                            android:weightSum="2">
 
-                            <TextView
-                                android:id="@+id/date_text"
-                                style="@style/CardSelection_card_number"
-                                android:text=""
-                                android:layout_weight="0.7"
-                                android:layout_marginEnd="5dp"/>
-
-                            <Button
-                                android:id="@+id/btnChange"
-                                style="@style/AmountBoxFootBtn"
-                                android:background="@color/bg_amount_gray_light"/>
-
-                        </LinearLayout>
-
-
-
-                        <LinearLayout
-                            android:id="@+id/calendarContainer"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:visibility="gone">
-
-                            <CalendarView
-                                android:id="@+id/transferCalendar"
-                                android:layout_width="fill_parent"
-                                android:layout_height="fill_parent" />
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-
-                <LinearLayout
-                    style="@style/WarningBox"
-                    android:id="@+id/warningTransfers"
-                    android:background="@drawable/warning_message">
-
-                    <ImageView
-                        style="@style/WarningBoxImg"/>
-
-                    <TextView
-                        style="@style/CardSelection_card_number"
-                        android:text="@string/warning_transfer_text"
-                        android:layout_weight="0.7"
-                        android:layout_margin="5dp"
-                        android:textAlignment="textStart"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/accounts_box"
-                android:orientation="vertical"
-                android:visibility="gone">
-
-                <LinearLayout
-                    android:id="@+id/linearLayout6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:id="@+id/amount_button"
-                        style="@style/PaymentsAmountButtonBox"
-                        android:baselineAligned="false">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2">
-
-                            <TextView style="@style/PaymentsAmountTitle" />
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:id="@+id/amount_text"
-                                style="@style/PaymentsAmountText"
-                                android:text="@string/zero_amount" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:gravity="right">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:src="@drawable/amount_arrow_holo_cut"
-                            tools:ignore="ContentDescription" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        style="@style/PaymentsThinRuler"
-                        android:layout_marginTop="0dp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
-
-                        <LinearLayout style="@style/PaymentsDateBox">
-
-                            <TextView
-                                android:id="@+id/schedule_text"
-                                style="@style/PaymentsDateScheduleText"
-                                android:text="@string/schedule_payment" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:gravity="left|center_vertical">
+                            <LinearLayout style="@style/PaymentsDateBox">
 
                                 <TextView
-                                    style="@style/PaymentsDateText"
-                                    android:text="@string/on_payment" />
+                                    android:id="@+id/schedule_text"
+                                    style="@style/PaymentsDateScheduleText"
+                                    android:text="@string/schedule_payment" />
 
-                                <!-- android:id="@+id/date_text"-->
-                                <TextView
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="left|center_vertical">
 
-                                    style="@style/PaymentsDateText" />
+                                    <TextView
+                                        style="@style/PaymentsDateText"
+                                        android:text="@string/on_payment" />
+
+                                    <!-- android:id="@+id/date_text"-->
+                                    <TextView
+
+                                        style="@style/PaymentsDateText" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout style="@style/PaymentsCalendarBox">
+
+                                <LinearLayout style="@style/PaymentsAmountSeparator" />
+
+                                <ImageButton
+                                    android:id="@+id/calendar_button"
+                                    style="@style/PaymentsCalendarButton"
+                                    tools:ignore="ContentDescription" />
                             </LinearLayout>
                         </LinearLayout>
 
-                        <LinearLayout style="@style/PaymentsCalendarBox">
+                        <LinearLayout style="@style/PaymentsThinRuler" />
 
-                            <LinearLayout style="@style/PaymentsAmountSeparator" />
+                        <Button
+                            android:id="@+id/last_ammount_btn"
+                            style="?android:attr/borderlessButtonStyle"
 
-                            <ImageButton
-                                android:id="@+id/calendar_button"
-                                style="@style/PaymentsCalendarButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+
+                            android:background="@drawable/btn_lastamount_style"
+                            android:text="@string/last_payment"
+                            android:textAllCaps="false"
+                            android:textColor="@color/account_details_header_credit_balance"
+                            android:textSize="16sp"
+                            android:visibility="gone"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayoutRealTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="11.5dp"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/imageView5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginStart="5dp"
+                                android:padding="3.5dp"
+                                myapp:srcCompat="@drawable/ic_realtimepayments"
                                 tools:ignore="ContentDescription" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center|left"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="@string/pay_instant"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/textViewSeeMore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:layout_weight="100"
+                                android:gravity="right|center"
+                                android:paddingLeft="6dp"
+                                android:paddingRight="6dp"
+                                android:text="@string/pay_see_more"
+                                android:textColor="@color/payments_banner_blue"
+                                android:textSize="15sp" />
+
                         </LinearLayout>
-                    </LinearLayout>
 
-                    <LinearLayout style="@style/PaymentsThinRuler" />
-
-                    <Button
-                        android:id="@+id/last_ammount_btn"
-                        style="?android:attr/borderlessButtonStyle"
-
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-
-
-                        android:background="@drawable/btn_lastamount_style"
-                        android:text="@string/last_payment"
-                        android:textAllCaps="false"
-                        android:textColor="@color/account_details_header_credit_balance"
-                        android:textSize="16sp"
-                        android:visibility="gone"
-
-                        />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/linearLayoutRealTime"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="11.5dp"
-                    android:weightSum="2">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:id="@+id/imageView5"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:padding="3.5dp"
-                            myapp:srcCompat="@drawable/ic_realtimepayments"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:id="@+id/textView13"
-                            android:layout_width="wrap_content"
+                        <LinearLayout
+                            android:id="@+id/linearLayoutSeeMore"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:gravity="center|left"
-                            android:paddingLeft="5dp"
-                            android:paddingRight="5dp"
-                            android:text="@string/pay_instant"
-                            android:textSize="15sp" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textViewSeeMore"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="5dp"
-                            android:layout_weight="100"
-                            android:gravity="right|center"
-                            android:paddingLeft="6dp"
-                            android:paddingRight="6dp"
-                            android:text="@string/pay_see_more"
-                            android:textColor="@color/payments_banner_blue"
-                            android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/textViewDetail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="40dp"
+                                android:paddingRight="40dp"
+                                android:text="@string/description_pay_instant"
+                                android:textSize="15sp" />
+                        </LinearLayout>
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:id="@+id/linearLayoutSeeMore"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewDetail"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="40dp"
-                            android:paddingRight="40dp"
-                            android:text="@string/description_pay_instant"
-                            android:textSize="15sp" />
-                    </LinearLayout>
 
                 </LinearLayout>
 
 
-            </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
 
-
-        </RelativeLayout>
 
     </ScrollView>
 

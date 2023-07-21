@@ -2,46 +2,51 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootView"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:minHeight="20dp"
     android:orientation="vertical"
     >
 
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/pushView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:minHeight="20dp"
-        android:orientation="vertical">
-
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/push_switch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:theme="@style/SwitchStyle" />
-
-        <TextView
-            android:id="@+id/title_text"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            tools:text="Push Notifications" />
-    </RelativeLayout>
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:layout_margin="@dimen/padding_16dp"
+            >
 
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/notification_push_icon"></ImageView>
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="196dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="@color/black"
+                tools:text="Push Notifications" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/push_switch"
+                android:layout_width="53dp"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/SwitchStyle" />
+
+
+        </LinearLayout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/warningView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/pushView"
         android:gravity="center_vertical"
         android:minHeight="10dp"
         android:orientation="vertical"
@@ -77,7 +82,6 @@
 
     </LinearLayout>
 
-
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/alertsView"
@@ -91,7 +95,7 @@
         android:gravity="center_vertical"
         android:minHeight="20dp"
         android:orientation="vertical"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -113,18 +117,25 @@
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:scaleType="centerInside"
-            android:src="@drawable/ic_next"
+            android:src="@drawable/back_icon"
             tools:ignore="ContentDescription" />
 
-        <TextView
-            android:id="@+id/title_text_alerts"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/arrow"
-            android:padding="10dp"
-            android:textColor="@color/black" />
+            android:paddingBottom="20dp">
 
+            <TextView
+                android:id="@+id/title_text_alerts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/arrow"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
 
     </RelativeLayout>
-
 </RelativeLayout>
+

@@ -80,7 +80,7 @@
         android:visible="false" />
     <item
         android:id="@+id/menu_logout"
-        android:icon="@drawable/ic_logout"
+        android:titleCondensed="@string/logout"
         android:orderInCategory="99"
         app:showAsAction="ifRoom"
         android:title="@string/logout"

@@ -63,7 +63,7 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link MoreInfoFragment#newInstance} factory method to
+ * Use the {@link MoreInfoFragment newInstance} factory method to
  * create an instance of this fragment.
  */
 public class MoreInfoFragment extends Fragment {
@@ -145,15 +145,15 @@ public class MoreInfoFragment extends Fragment {
         if (settingsList != null) {
             final SettingsListAdapter adapter = new SettingsListAdapter(getContext(), isSessionActive);
             SettingsItem infoTitle = new SettingsItem(getString(R.string.more_info));
-            infoTitle.setTitle(true);
+            infoTitle.setTitle(true, true);
             adapter.addItem(infoTitle);
 
-            adapter.addItem(new SettingsItem(getString(R.string.about), About.class));
-            adapter.addItem(new SettingsItem(getString(R.string.faq), Faq.class));
-            adapter.addItem(new SettingsItem(getString(R.string.faq) + " " + getString(R.string.mobilecash_sidebar), EasyCashFaqs.class));
-            adapter.addItem(new SettingsItem(getString(R.string.fraud_prevention), FraudPrevention.class));
-            adapter.addItem(new SettingsItem(getString(R.string.policy), getString(R.string.privacy_policy_url)));
-            adapter.addItem(new SettingsItem(getString(R.string.terms), getString(R.string.terms_and_conditions_url)));
+            adapter.addItem(new SettingsItem(0,getString(R.string.about), About.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.faq), Faq.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.faq) + " " + getString(R.string.mobilecash_sidebar), EasyCashFaqs.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.fraud_prevention), FraudPrevention.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.policy), getString(R.string.privacy_policy_url)));
+            adapter.addItem(new SettingsItem(0,getString(R.string.terms), getString(R.string.terms_and_conditions_url)));
 
             settingsList.setAdapter(adapter);
             adapterBack = adapter;
@@ -439,7 +439,7 @@ public class MoreInfoFragment extends Fragment {
                     } else if (data != null && data.hasExtra(MiBancoConstants.RSA_OOB_ENROLLED)) {
                         boolean enrolled = data.getBooleanExtra(MiBancoConstants.RSA_OOB_ENROLLED, false);
                         if (!enrolled) {
-                            SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                            SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                             rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                             rsaQItem.setPushSettings(false);
                             rsaQItem.setIsWebView(true);
@@ -453,7 +453,7 @@ public class MoreInfoFragment extends Fragment {
                             adapterBack.notifyDataSetChanged();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);
@@ -478,7 +478,7 @@ public class MoreInfoFragment extends Fragment {
                             showRegainAccess();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);

@@ -32,18 +32,13 @@ import com.popular.android.mibanco.App;
 import com.popular.android.mibanco.FeatureFlags;
 import com.popular.android.mibanco.MiBancoConstants;
 import com.popular.android.mibanco.R;
-import com.popular.android.mibanco.activity.About;
 import com.popular.android.mibanco.activity.Accounts;
 import com.popular.android.mibanco.activity.Contact;
-import com.popular.android.mibanco.activity.EasyCashFaqs;
 import com.popular.android.mibanco.activity.ErrorView;
-import com.popular.android.mibanco.activity.Faq;
-import com.popular.android.mibanco.activity.FraudPrevention;
 import com.popular.android.mibanco.activity.LanguageSettings;
 import com.popular.android.mibanco.activity.ManageUsers;
 import com.popular.android.mibanco.activity.WebViewActivity;
 import com.popular.android.mibanco.adapter.SettingsListAdapter;
-import com.popular.android.mibanco.base.BaseSessionActivity;
 import com.popular.android.mibanco.fragment.more.MoreInfoFragment;
 import com.popular.android.mibanco.listener.AsyncTaskListener;
 import com.popular.android.mibanco.model.User;
@@ -80,6 +75,8 @@ public class MoreFragment extends Fragment {
     private Accounts activity;
 
     private BottomNavigationView bottomNav;
+
+    SettingsItem infoTitle;
 
     @Nullable
     @Override
@@ -144,29 +141,86 @@ public class MoreFragment extends Fragment {
 
             final SettingsListAdapter adapter = new SettingsListAdapter(getContext(), isSessionActive);
 
+            //primera sección
+            infoTitle = new SettingsItem(0, getString(R.string.title_info), getString(R.string.title_info));
+            infoTitle.setTitle(true, false);
+            adapter.addItem(infoTitle);
+
+            String urlDesktop = App.getApplicationInstance().getApiUrl();
+
+            adapter.addItem(new SettingsItem(R.drawable.img_localizator,getString(R.string.locator),urlDesktop));
+            adapter.addItem(new SettingsItem(R.drawable.img_phone_blue,getString(R.string.contactus), Contact.class));
+            adapter.addItem(new SettingsItem(R.drawable.img_info_blue,getString(R.string.more_info),urlDesktop));
+            adapter.addItem(new SettingsItem(R.drawable.img_page_blue,getString(R.string.request_documents),urlDesktop));
+            //MBSFE-1712
+
+            urlDesktop = urlDesktop + getString(R.string.go_to_desktop_url);
+            adapter.addItem(new SettingsItem(R.drawable.img_pc_blue,getString(R.string.go_to_desktop_sidebar), urlDesktop));
+            //END MBSFE-1712
+
+
+            if (isSessionActive && Utils.isOnsenSupported() &&  (PushUtils.isPushEnabled() || FeatureFlags.RSA_ENROLLMENT())) {
+
+                SettingsItem servicesTitle = new SettingsItem(0, getString(R.string.services), getString(R.string.services));
+                servicesTitle.setTitle(true, true);
+                adapter.addItem(servicesTitle);
+
+                if (PushUtils.isPushEnabled()) {
+                    SettingsItem pushSettings = new SettingsItem(R.drawable.img_alert_blue, getString(R.string.push_notifications), getString(R.string.push_notifications));
+                    pushSettings.setPushSettings(true);
+                    pushSettings.setSubItemTitle(getString(R.string.alerts_tab));
+                    pushSettings.setAlertsOnClickListener(alertsOnClickListener());
+                    adapter.addItem(pushSettings);
+                }
+                if (FeatureFlags.RSA_ENROLLMENT() && Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
+
+                    SettingsItem rsaItem = new SettingsItem(R.drawable.img_2factor_blue,getString(R.string.rsa_enroll_sidebar), WebViewActivity.class);
+                    rsaItem.setWebViewOnClickListener(rsaOnClickListener());
+                    rsaItem.setPushSettings(false);
+                    rsaItem.setIsWebView(true);
+                    adapter.addItem(rsaItem);
+
+                    SettingsItem rsaQItem = new SettingsItem(R.drawable.img_card_blue,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                    rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
+                    rsaQItem.setPushSettings(false);
+                    rsaQItem.setIsWebView(true);
+                    adapter.addItem(rsaQItem);
+
+                    psQuestionItem = adapter.getCount() - 1;
+                    showRsaQuestions(adapter, rsaQItem);
+
+
+                }
+
+            }
+
+
+
             if (PermissionsManagerUtils.missingPermissions(mContext).size() == 0) {
 
-                SettingsItem settingsTitle = new SettingsItem(getString(R.string.title_settings));
-                settingsTitle.setTitle(true);
+                SettingsItem settingsTitle = new SettingsItem(R.drawable.top_image,getString(R.string.title_settings), getString(R.string.title_settings));
+                settingsTitle.setTitle(true, true);
                 adapter.addItem(settingsTitle);
 
                 //MBSD-4028 - add email menu
                 if (isSessionActive && Utils.isOnsenSupported() && app.getLoggedInUser().getIsTransactional()) {
-                    SettingsItem emailItem = new SettingsItem(getString(R.string.email_change), WebViewActivity.class);
+                    SettingsItem emailItem = new SettingsItem(R.drawable.img_email_blue,getString(R.string.email_change), WebViewActivity.class);
                     emailItem.setWebViewOnClickListener(emailChangeClickListener());
                     emailItem.setPushSettings(false);
                     emailItem.setIsWebView(true);
                     adapter.addItem(emailItem);
                 }
 
-                adapter.addItem(new SettingsItem(getString(R.string.manage_users), ManageUsers.class));
-                adapter.addItem(new SettingsItem(getString(R.string.language), LanguageSettings.class));
-
                 if (AutoLoginUtils.osFingerprintRequirements(mContext, false)) {
                     adapter.addItem(new SettingsItem(getString(R.string.settings_fingerprint_auth), true));
                 }
+
+                adapter.addItem(new SettingsItem(R.drawable.img_language_blue,getString(R.string.language), LanguageSettings.class));
+                adapter.addItem(new SettingsItem(R.drawable.img_protect_blue,getString(R.string.manage_users), ManageUsers.class));
+
+
                 if (isSessionActive && app.getLoggedInUser().isFlagGDPREnabled()) {
-                    SettingsItem cookiesPreference = new SettingsItem(getString(R.string.cookies_preference_settings), WebViewActivity.class);
+                    SettingsItem cookiesPreference = new SettingsItem(R.drawable.img_protect_blue,getString(R.string.cookies_preference_settings), WebViewActivity.class);
                     cookiesPreference.setWebViewOnClickListener(cookiesPreferenceClickListener());
                     cookiesPreference.setPushSettings(false);
                     cookiesPreference.setIsWebView(true);
@@ -174,46 +228,15 @@ public class MoreFragment extends Fragment {
                 }
             }
 
-            if (isSessionActive && Utils.isOnsenSupported() &&
-                    (PushUtils.isPushEnabled() || FeatureFlags.RSA_ENROLLMENT())) {
 
-                SettingsItem servicesTitle = new SettingsItem(getString(R.string.services));
-                servicesTitle.setTitle(true);
-                adapter.addItem(servicesTitle);
-
-                if (PushUtils.isPushEnabled()) {
-                    SettingsItem pushSettings = new SettingsItem(getString(R.string.push_notifications));
-                    pushSettings.setPushSettings(true);
-                    pushSettings.setSubItemTitle(getString(R.string.alerts_tab));
-                    pushSettings.setAlertsOnClickListener(alertsOnClickListener());
-                    adapter.addItem(pushSettings);
-                }
-                if (FeatureFlags.RSA_ENROLLMENT() && Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
-                    SettingsItem rsaItem = new SettingsItem(getString(R.string.rsa_enroll_sidebar), WebViewActivity.class);
-                    SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
-                    rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
-                    rsaQItem.setPushSettings(false);
-                    rsaQItem.setIsWebView(true);
-
-                    rsaItem.setWebViewOnClickListener(rsaOnClickListener());
-                    rsaItem.setPushSettings(false);
-                    rsaItem.setIsWebView(true);
-                    adapter.addItem(rsaQItem);
-                    psQuestionItem = adapter.getCount() - 1;
-                    showRsaQuestions(adapter, rsaQItem);
-
-                    adapter.addItem(rsaItem);
-                }
-
-            }
 
             if (isSessionActive) {
                 if (isAthmSsoBound) {
-                    SettingsItem infoTitle = new SettingsItem(getString(R.string.athm_sidebar));
-                    infoTitle.setTitle(true);
+                    infoTitle = new SettingsItem(0,getString(R.string.athm_sidebar), getString(R.string.athm_sidebar));
+                    infoTitle.setTitle(true, true);
                     adapter.addItem(infoTitle);
 
-                    SettingsItem athmLogout = new SettingsItem(getString(R.string.athm_settings_logout));
+                    SettingsItem athmLogout = new SettingsItem(R.drawable.img_logout_blue,getString(R.string.athm_settings_logout), getString(R.string.athm_settings_logout));
                     athmLogout.setIsAction(true);
                     adapter.addItem(athmLogout);
                 }
@@ -223,11 +246,11 @@ public class MoreFragment extends Fragment {
                         && app.getCustomerEntitlements().hasCashDrop();
 
                 if (userHasCashDrop && !Utils.isBlankOrNull(App.getApplicationInstance().getCustomerPhone(mContext))) {
-                    SettingsItem infoTitle = new SettingsItem(getString(R.string.mobilecash_sidebar));
-                    infoTitle.setTitle(true);
+                    infoTitle = new SettingsItem(R.drawable.top_image,getString(R.string.mobilecash_sidebar), getString(R.string.mobilecash_sidebar));
+                    infoTitle.setTitle(true, true);
                     adapter.addItem(infoTitle);
 
-                    SettingsItem retiroMovilUnbound = new SettingsItem(getString(R.string.easycash_unbound));
+                    SettingsItem retiroMovilUnbound = new SettingsItem(R.drawable.top_image,getString(R.string.easycash_unbound), getString(R.string.easycash_unbound));
 
                     String phoneNumber = App.getApplicationInstance().getCustomerPhone(mContext);
                     try {
@@ -239,28 +262,15 @@ public class MoreFragment extends Fragment {
                     retiroMovilUnbound.setDescription(phoneNumber);
                     adapter.addItem(retiroMovilUnbound);
 
-                    SettingsItem retiroMovilFooter = new SettingsItem(getString(R.string.easycash_settings_unbound_message));
+                    SettingsItem retiroMovilFooter = new SettingsItem(R.drawable.top_image,getString(R.string.easycash_settings_unbound_message), getString(R.string.easycash_settings_unbound_message));
                     retiroMovilFooter.setFooter(true);
                     adapter.addItem(retiroMovilFooter);
                 }
             }
 
-            SettingsItem infoTitle = new SettingsItem(getString(R.string.title_info));
-            infoTitle.setTitle(true);
-            adapter.addItem(infoTitle);
 
-            String urlDesktop = App.getApplicationInstance().getApiUrl();
 
-            adapter.addItem(new SettingsItem(getString(R.string.locator),urlDesktop));
-            adapter.addItem(new SettingsItem(getString(R.string.contactus), Contact.class));
-            adapter.addItem(new SettingsItem(getString(R.string.more_info),urlDesktop));
-            adapter.addItem(new SettingsItem(getString(R.string.request_documents),urlDesktop));
 
-            //MBSFE-1712
-
-            urlDesktop = urlDesktop + getString(R.string.go_to_desktop_url);
-            adapter.addItem(new SettingsItem(getString(R.string.go_to_desktop_sidebar), urlDesktop));
-            //END MBSFE-1712
 
             settingsList.setAdapter(adapter);
             adapterBack = adapter;
@@ -558,7 +568,7 @@ public class MoreFragment extends Fragment {
                     } else if (data != null && data.hasExtra(MiBancoConstants.RSA_OOB_ENROLLED)) {
                         boolean enrolled = data.getBooleanExtra(MiBancoConstants.RSA_OOB_ENROLLED, false);
                         if (!enrolled) {
-                            SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                            SettingsItem rsaQItem = new SettingsItem(R.drawable.top_image,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                             rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                             rsaQItem.setPushSettings(false);
                             rsaQItem.setIsWebView(true);
@@ -572,7 +582,7 @@ public class MoreFragment extends Fragment {
                             adapterBack.notifyDataSetChanged();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(R.drawable.top_image,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);
@@ -597,7 +607,7 @@ public class MoreFragment extends Fragment {
                             showRegainAccess();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(R.drawable.top_image,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);

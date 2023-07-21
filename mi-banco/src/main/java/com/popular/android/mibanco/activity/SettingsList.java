@@ -109,27 +109,27 @@ public class SettingsList extends BaseActivity {
             if (PermissionsManagerUtils.missingPermissions(mContext).size() == 0) {
 
                 SettingsItem settingsTitle = new SettingsItem(getString(R.string.title_settings));
-                settingsTitle.setTitle(true);
+                settingsTitle.setTitle(true, true);
                 adapter.addItem(settingsTitle);
 
                 //MBSD-4028 - add email menu
                 if (isSessionActive && Utils.isOnsenSupported() && app.getLoggedInUser().getIsTransactional()) {
-                    SettingsItem emailItem = new SettingsItem(getString(R.string.email_change), WebViewActivity.class);
+                    SettingsItem emailItem = new SettingsItem(0,getString(R.string.email_change), WebViewActivity.class);
                     emailItem.setWebViewOnClickListener(emailChangeClickListener());
                     emailItem.setPushSettings(false);
                     emailItem.setIsWebView(true);
                     adapter.addItem(emailItem);
                 }
 
-                adapter.addItem(new SettingsItem(getString(R.string.manage_users), ManageUsers.class));
-                adapter.addItem(new SettingsItem(getString(R.string.language), LanguageSettings.class));
+                adapter.addItem(new SettingsItem(0,getString(R.string.manage_users), ManageUsers.class));
+                adapter.addItem(new SettingsItem(0,getString(R.string.language), LanguageSettings.class));
 
                 if (AutoLoginUtils.osFingerprintRequirements(mContext, false)) {
                     adapter.addItem(new SettingsItem(getString(R.string.settings_fingerprint_auth), true));
                 }
                 //Cookies preference settings
                 if (isSessionActive && app.getLoggedInUser().isFlagGDPREnabled()) {
-                    SettingsItem cookiesPreference = new SettingsItem(getString(R.string.cookies_preference_settings), WebViewActivity.class);
+                    SettingsItem cookiesPreference = new SettingsItem(0,getString(R.string.cookies_preference_settings), WebViewActivity.class);
                     cookiesPreference.setWebViewOnClickListener(cookiesPreferenceClickListener());
                     cookiesPreference.setPushSettings(false);
                     cookiesPreference.setIsWebView(true);
@@ -142,7 +142,7 @@ public class SettingsList extends BaseActivity {
             (PushUtils.isPushEnabled() || FeatureFlags.RSA_ENROLLMENT())) {
 
                 SettingsItem servicesTitle = new SettingsItem(getString(R.string.services));
-                servicesTitle.setTitle(true);
+                servicesTitle.setTitle(true, true);
                 adapter.addItem(servicesTitle);
 
                 //Alerts
@@ -156,8 +156,8 @@ public class SettingsList extends BaseActivity {
 
                 //RSA Enroll
                 if (FeatureFlags.RSA_ENROLLMENT() && Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
-                    SettingsItem rsaItem = new SettingsItem(getString(R.string.rsa_enroll_sidebar), WebViewActivity.class);
-                    SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                    SettingsItem rsaItem = new SettingsItem(0,getString(R.string.rsa_enroll_sidebar), WebViewActivity.class);
+                    SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                     rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                     rsaQItem.setPushSettings(false);
                     rsaQItem.setIsWebView(true);
@@ -177,7 +177,7 @@ public class SettingsList extends BaseActivity {
             if (isSessionActive) {
                 if (isAthmSsoBound) {
                     SettingsItem infoTitle = new SettingsItem(getString(R.string.athm_sidebar));
-                    infoTitle.setTitle(true);
+                    infoTitle.setTitle(true, true);
                     adapter.addItem(infoTitle);
 
                     SettingsItem athmLogout = new SettingsItem(getString(R.string.athm_settings_logout));
@@ -191,7 +191,7 @@ public class SettingsList extends BaseActivity {
 
                 if (userHasCashDrop && !Utils.isBlankOrNull(App.getApplicationInstance().getCustomerPhone(mContext))) {
                     SettingsItem infoTitle = new SettingsItem(getString(R.string.mobilecash_sidebar));
-                    infoTitle.setTitle(true);
+                    infoTitle.setTitle(true, true);
                     adapter.addItem(infoTitle);
 
                     SettingsItem retiroMovilUnbound = new SettingsItem(getString(R.string.easycash_unbound));
@@ -213,20 +213,20 @@ public class SettingsList extends BaseActivity {
             }
 
             SettingsItem infoTitle = new SettingsItem(getString(R.string.title_info));
-            infoTitle.setTitle(true);
+            infoTitle.setTitle(true, true);
             adapter.addItem(infoTitle);
 
-            adapter.addItem(new SettingsItem(getString(R.string.about), About.class));
-            adapter.addItem(new SettingsItem(getString(R.string.faq), Faq.class));
-            adapter.addItem(new SettingsItem(getString(R.string.faq) + " " + getString(R.string.mobilecash_sidebar), EasyCashFaqs.class));
-            adapter.addItem(new SettingsItem(getString(R.string.fraud_prevention), FraudPrevention.class));
-            adapter.addItem(new SettingsItem(getString(R.string.policy), getString(R.string.privacy_policy_url)));
-            adapter.addItem(new SettingsItem(getString(R.string.terms), getString(R.string.terms_and_conditions_url)));
+            adapter.addItem(new SettingsItem(0,getString(R.string.about), About.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.faq), Faq.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.faq) + " " + getString(R.string.mobilecash_sidebar), EasyCashFaqs.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.fraud_prevention), FraudPrevention.class));
+            adapter.addItem(new SettingsItem(0,getString(R.string.policy), getString(R.string.privacy_policy_url)));
+            adapter.addItem(new SettingsItem(0,getString(R.string.terms), getString(R.string.terms_and_conditions_url)));
 
             //MBSFE-1712
             String urlDesktop = App.getApplicationInstance().getApiUrl();
             urlDesktop = urlDesktop + getString(R.string.go_to_desktop_url);
-            adapter.addItem(new SettingsItem(getString(R.string.go_to_desktop_sidebar), urlDesktop));
+            adapter.addItem(new SettingsItem(0,getString(R.string.go_to_desktop_sidebar), urlDesktop));
             //END MBSFE-1712
 
             settingsList.setAdapter(adapter);
@@ -508,7 +508,7 @@ public class SettingsList extends BaseActivity {
                     } else if (data != null && data.hasExtra(MiBancoConstants.RSA_OOB_ENROLLED)) {
                         boolean enrolled = data.getBooleanExtra(MiBancoConstants.RSA_OOB_ENROLLED, false);
                         if (!enrolled) {
-                            SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                            SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                             rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                             rsaQItem.setPushSettings(false);
                             rsaQItem.setIsWebView(true);
@@ -522,7 +522,7 @@ public class SettingsList extends BaseActivity {
                             adapterBack.notifyDataSetChanged();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);
@@ -547,7 +547,7 @@ public class SettingsList extends BaseActivity {
                             showRegainAccess();
                         }
                     } else {
-                        SettingsItem rsaQItem = new SettingsItem(getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
+                        SettingsItem rsaQItem = new SettingsItem(0,getString(R.string.rsa_edit_questions_sidebar), WebViewActivity.class);
                         rsaQItem.setWebViewOnClickListener(rsaEditQuestionsOnClickListener());
                         rsaQItem.setPushSettings(false);
                         rsaQItem.setIsWebView(true);

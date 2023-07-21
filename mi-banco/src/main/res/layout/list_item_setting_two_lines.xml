@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
     android:minHeight="20dp"
-    android:orientation="vertical" >
-
-    <ImageView
-        android:id="@+id/arrow"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:background="@null"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/ic_next"
-        tools:ignore="ContentDescription" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_alignParentTop="true"
-        android:background="@color/grey_light"
-        tools:ignore="PxUsage" />
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toLeftOf="@+id/arrow"
-        android:padding="10dp"
-        android:textColor="@color/black" />
+    android:orientation="horizontal" >
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_alignParentBottom="true"
-        android:background="@color/grey_light"
-        tools:ignore="PxUsage" />
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/iconImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/back_icon"
+            android:layout_weight="1"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:lineHeight="16dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_weight="6"
+            />
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/back_icon"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

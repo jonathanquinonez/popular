@@ -8,6 +8,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -48,8 +49,8 @@ public class SettingsListAdapter extends BaseAdapter {
     private final Context mContext;
     private SwitchCompat swt;
     private SwitchCompat pushToggle;
-    private RelativeLayout alertsLayout;
-    private LinearLayout warningLayout;
+    private LinearLayout alertsLayout;
+    private LinearLayout warningLayout, lineDivider;
     private TextView goToSettings;
     private boolean pushTogglePressed = true;
 
@@ -139,6 +140,13 @@ public class SettingsListAdapter extends BaseAdapter {
             myConvertView = inflater.inflate(R.layout.list_item_holo_header, parent, false);
             myConvertView.setEnabled(false);
             myConvertView.setClickable(false);
+
+            lineDivider = myConvertView.findViewById(R.id.lineDivider);
+            if(item.isShowDivider()){
+                lineDivider.setVisibility(View.VISIBLE);
+            }else{
+                lineDivider.setVisibility(View.GONE);
+            }
 
         } else if (item.isFooter()) {
             myConvertView = inflater.inflate(R.layout.list_item_holo_footer, parent, false);
@@ -243,6 +251,18 @@ public class SettingsListAdapter extends BaseAdapter {
 
 
         ((TextView) myConvertView.findViewById(R.id.title_text)).setText(item.getTitle());
+
+
+        ImageView img =  ((ImageView) myConvertView.findViewById(R.id.iconImg));
+        if(img != null){
+            if(item.getImage() != 0){
+                img.setVisibility(View.VISIBLE);
+                img.setImageResource(item.getImage());
+            }else{
+                img.setVisibility(View.GONE);
+            }
+        }
+
         FontChanger.changeFonts(myConvertView);
 
         return myConvertView;

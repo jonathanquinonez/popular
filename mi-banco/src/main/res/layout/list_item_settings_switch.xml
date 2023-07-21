@@ -9,32 +9,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:orientation="horizontal"
-        android:layout_margin="@dimen/padding_16dp"
-        >
+        android:gravity="center">
 
 
-    <ImageView
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/notification_push_icon"
+            android:layout_weight="1"/>
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:src="@drawable/notification_push_icon"></ImageView>
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
 
-    <TextView
-        android:id="@+id/title_text"
-        android:layout_width="196dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:textColor="@color/black" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switchOption"
-        android:layout_width="53dp"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content"
-        android:theme="@style/SwitchStyle" />
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchOption"
+            android:layout_width="53dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/SwitchStyle"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 </RelativeLayout>

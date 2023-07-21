@@ -12,11 +12,32 @@ public class SettingsItem {
     private boolean isTitle = false;
     private boolean isFooter = false;
     private boolean displaySwitch = false;
+
+    public boolean isShowDivider() {
+        return showDivider;
+    }
+
+    public void setShowDivider(boolean showDivider) {
+        this.showDivider = showDivider;
+    }
+
     private boolean isAction = false;
     private boolean isPushSettings = false;
     private boolean isWebView=false;
     private View.OnClickListener alertsOnClickListener;
     private View.OnClickListener webViewOnClickListener;
+
+    boolean showDivider = true;
+
+    int image;
+
+    public int getImage() {
+        return image;
+    }
+
+    public void setImage(int image) {
+        this.image = image;
+    }
 
     public SettingsItem(final String title) {
         this.title = title;
@@ -28,14 +49,16 @@ public class SettingsItem {
     }
 
 
-    public SettingsItem(final String title, final Class<?> intentClass) {
+    public SettingsItem(int image, final String title, final Class<?> intentClass) {
         this.title = title;
         this.intentClass = intentClass;
+        this.image = image;
     }
 
-    public SettingsItem(final String title, final String url) {
+    public SettingsItem(int image, final String title, final String url) {
         this.title = title;
         this.url = url;
+        this.image = image;
     }
 
     public Class<?> getIntentClass() {
@@ -58,8 +81,9 @@ public class SettingsItem {
         return isTitle;
     }
 
-    public void setTitle(boolean title) {
+    public void setTitle(boolean title, boolean showDivider) {
         isTitle = title;
+        this.showDivider = showDivider;
     }
 
     public boolean isFooter() {

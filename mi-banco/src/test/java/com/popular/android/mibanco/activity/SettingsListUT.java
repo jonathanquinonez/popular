@@ -131,7 +131,7 @@ public class SettingsListUT {
         PowerMockito.whenNew(SettingsListAdapter.class).withAnyArguments().thenReturn(adapter);
         when(cust.getIsTransactional()).thenReturn(false);
         when(context.getString(R.string.email_change)).thenReturn("Edit e-mail");
-        SettingsItem editEmail = new SettingsItem("Edit e-mail", WebViewActivity.class);
+        SettingsItem editEmail = new SettingsItem(0,"Edit e-mail", WebViewActivity.class);
 
         PowerMockito.when(activity.findViewById(R.id.list_settings)).thenReturn(settingsList);
         PowerMockito.when(app.getCustomerEntitlements()).thenReturn(null);
@@ -147,7 +147,7 @@ public class SettingsListUT {
         PowerMockito.whenNew(SettingsListAdapter.class).withAnyArguments().thenReturn(adapter);
         PowerMockito.doReturn(null).when(app).getLoggedInUser();
         when(context.getString(R.string.email_change)).thenReturn("Edit e-mail");
-        SettingsItem editEmail = new SettingsItem("Edit e-mail", WebViewActivity.class);
+        SettingsItem editEmail = new SettingsItem(0,"Edit e-mail", WebViewActivity.class);
         PowerMockito.when(activity.findViewById(R.id.list_settings)).thenReturn(settingsList);
         PowerMockito.when(app.getCustomerEntitlements()).thenReturn(null);
 

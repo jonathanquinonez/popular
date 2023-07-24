@@ -11,7 +11,16 @@ public class SettingsItem {
     private String subItemTitle;
     private boolean isTitle = false;
     private boolean isFooter = false;
+    private boolean isFooterSetting = false;
     private boolean displaySwitch = false;
+
+    public boolean isFooterSetting() {
+        return isFooterSetting;
+    }
+
+    public void setFooterSetting(boolean footerSetting) {
+        isFooterSetting = footerSetting;
+    }
 
     public boolean isShowDivider() {
         return showDivider;

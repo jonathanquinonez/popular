@@ -198,7 +198,7 @@ public class MoreFragment extends Fragment {
 
             if (PermissionsManagerUtils.missingPermissions(mContext).size() == 0) {
 
-                SettingsItem settingsTitle = new SettingsItem(R.drawable.top_image,getString(R.string.title_settings), getString(R.string.title_settings));
+                SettingsItem settingsTitle = new SettingsItem(0,getString(R.string.title_settings), getString(R.string.title_settings));
                 settingsTitle.setTitle(true, true);
                 adapter.addItem(settingsTitle);
 
@@ -246,11 +246,11 @@ public class MoreFragment extends Fragment {
                         && app.getCustomerEntitlements().hasCashDrop();
 
                 if (userHasCashDrop && !Utils.isBlankOrNull(App.getApplicationInstance().getCustomerPhone(mContext))) {
-                    infoTitle = new SettingsItem(R.drawable.top_image,getString(R.string.mobilecash_sidebar), getString(R.string.mobilecash_sidebar));
+                    infoTitle = new SettingsItem(0,getString(R.string.mobilecash_sidebar), getString(R.string.mobilecash_sidebar));
                     infoTitle.setTitle(true, true);
                     adapter.addItem(infoTitle);
 
-                    SettingsItem retiroMovilUnbound = new SettingsItem(R.drawable.top_image,getString(R.string.easycash_unbound), getString(R.string.easycash_unbound));
+                    SettingsItem retiroMovilUnbound = new SettingsItem(R.drawable.img_logout_blue,getString(R.string.easycash_unbound), getString(R.string.easycash_unbound));
 
                     String phoneNumber = App.getApplicationInstance().getCustomerPhone(mContext);
                     try {
@@ -262,13 +262,34 @@ public class MoreFragment extends Fragment {
                     retiroMovilUnbound.setDescription(phoneNumber);
                     adapter.addItem(retiroMovilUnbound);
 
-                    SettingsItem retiroMovilFooter = new SettingsItem(R.drawable.top_image,getString(R.string.easycash_settings_unbound_message), getString(R.string.easycash_settings_unbound_message));
+                    SettingsItem retiroMovilFooter = new SettingsItem(0,getString(R.string.easycash_settings_unbound_message), getString(R.string.easycash_settings_unbound_message));
                     retiroMovilFooter.setFooter(true);
                     adapter.addItem(retiroMovilFooter);
+
+
+                    //profile
+                    infoTitle = new SettingsItem(0,getString(R.string.profile), getString(R.string.profile));
+                    infoTitle.setTitle(true, true);
+                    adapter.addItem(infoTitle);
+
+
+
+                    SettingsItem profile = new SettingsItem(R.drawable.img_tash_v2_blue,getString(R.string.profile_remove), getString(R.string.profile_remove));
+                    profile.setDescription("");
+                    adapter.addItem(profile);
+
+
+                    SettingsItem profileFooter = new SettingsItem(0,getString(R.string.profile_remove_desc), getString(R.string.profile_remove_desc));
+                    profileFooter.setFooter(true);
+                    adapter.addItem(profileFooter);
+
                 }
             }
 
 
+            infoTitle = new SettingsItem(0,getString(R.string.footer_setting), getString(R.string.footer_setting));
+            infoTitle.setFooterSetting(true);
+            adapter.addItem(infoTitle);
 
 
 

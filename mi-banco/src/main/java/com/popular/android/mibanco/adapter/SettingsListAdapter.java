@@ -153,6 +153,11 @@ public class SettingsListAdapter extends BaseAdapter {
             myConvertView.setEnabled(false);
             myConvertView.setClickable(false);
 
+        }else if (item.isFooterSetting()) {
+            myConvertView = inflater.inflate(R.layout.list_item_holo_footer_setting, parent, false);
+            myConvertView.setEnabled(false);
+            myConvertView.setClickable(false);
+
         } else if (item.isDescription()) {
             myConvertView = inflater.inflate(R.layout.list_item_holo_description, parent, false);
             myConvertView.setEnabled(false);

@@ -1112,4 +1112,10 @@
     <string name="send_transfer">Send transfer</string>
     <string name="choose_account">Choose an account</string>
     <string name="select_account_subtitle">Amount to be transfered</string>
+
+    <string name="profile">Profile</string>
+    <string name="profile_remove">Remove profile from My Bank</string>
+    <string name="profile_remove_desc">By removing the profile from Mi Banco you will not have access to the electronic statements. Fees and services may apply.</string>
+    <string name="footer_setting">Banco Popular Routing Number</string>
+    <string name="footer_setting_number">021502011</string>
 </resources>

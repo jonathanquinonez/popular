@@ -11,31 +11,35 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:orientation="horizontal"
-        android:gravity="center">
-
+        android:gravity="center"
+        android:visibility="visible"
+        >
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:src="@drawable/notification_push_icon"
-            android:layout_weight="1"/>
+            android:src="@drawable/img_fingerprint_blue"
+            android:layout_weight="1"
+            android:visibility="visible"
+            />
 
         <TextView
             android:id="@+id/title_text"
-            android:layout_width="196dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:textColor="@color/black"
-            android:layout_weight="1"/>
+            android:text=""
+            android:layout_weight="6"/>
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switchOption"
-            android:layout_width="53dp"
-            android:layout_margin="10dp"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:theme="@style/SwitchStyle"
             android:layout_weight="1"/>
+
 
     </LinearLayout>
 </RelativeLayout>

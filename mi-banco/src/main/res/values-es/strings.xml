@@ -1091,4 +1091,10 @@
     <string name="send_transfer">Enviar transferencia</string>
     <string name="choose_account">Escoge una cuenta</string>
     <string name="select_account_subtitle">Cantidad a ser transferida</string>
+
+    <string name="profile">Perfil</string>
+    <string name="profile_remove">Remover perfil de Mi Banco</string>
+    <string name="profile_remove_desc">Al remover el perfil de Mi Banco no tendrás acceso a los estados electrónicos. Pudieran aplicar cargos y servicios.</string>
+    <string name="footer_setting">Banco Popular Numero de Ruta</string>
+    <string name="footer_setting_number">021502011</string>
 </resources>

@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:gravity="center_vertical"
+    android:gravity="center"
     android:minHeight="20dp"
+    android:layout_height="40dp"
     android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/iconImg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/img_logout_blue"
+        android:visibility="visible"
+        />
 
 
     <TextView
@@ -16,7 +25,8 @@
         android:layout_alignParentLeft="true"
         android:layout_toLeftOf="@+id/title_description"
         android:padding="10dp"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:layout_weight="3"/>
 
     <TextView
         android:id="@+id/title_description"
@@ -25,6 +35,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:padding="10dp"
-        android:textColor="@color/grey_dark" />
+        android:textColor="@color/grey_dark"
+        android:layout_weight="3"/>
 
-</RelativeLayout>
+</LinearLayout>

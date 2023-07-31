@@ -471,6 +471,8 @@
     <string name="deposit_check_instructions">Snap photos of the front and back</string>
     <string name="deposit_check_popular_text"><Data><![CDATA[ Deposit checks to your account easily by taking a picture, just follow these steps:<br/><ol style="margin-bottom:0;margin-left:10;padding-left:10"><li>Sign the back of your check; write &quot;For Deposit only at BPPR&quot; and the account number.</li><br/><li>Snap photos of the front and back of the check.</li></ol><br/><ul style="margin-top:0;margin-left:15;padding-left:15"><li>We reserve the right to refuse any image for processing.</li><li>Deposit made before 6:00 pm on Business Day will be processed on the same day, subject to deposit verification and validation.</li><li>Once accepted, your deposit will be available according to our Availability of Funds Policy.</li><li>Deposit limits: $1,500 per check, $1,500 per day total and $4,500 per month.</li><li>For more information about Mobile Easy Deposit and our Availability of Funds Policy, visit popular.com.</li></ul> ]]> </Data></string>
     <string name="deposit_check_select_account">Select Account</string>
+    <string name="deposit_check_select_account1">Select</string>
+    <string name="deposit_check_select_account2">Account</string>
     <string name="deposit_check_change_front_picture">Front</string>
     <string name="deposit_check_change_back_picture">Back</string>
     <string name="deposit_check_front_instructions">Snap Front Photo</string>
@@ -1097,7 +1099,7 @@
     <string name="menu_nav_accounts">Accounts</string>
     <string name="menu_nav_payments">Payments</string>
     <string name="menu_nav_transfers">Transfers</string>
-    <string name="menu_nav_ath_movil">ATH Móvil</string>
+    <string name="menu_nav_ath_movil">ATH Movil</string>
     <string name="menu_nav_more">More</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

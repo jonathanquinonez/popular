@@ -291,7 +291,7 @@
                 </LinearLayout>
 
 
-                <RelativeLayout
+                <LinearLayout
                     android:id="@+id/retplan_view"
                     style="@style/AccountsSection">
 
@@ -320,7 +320,7 @@
                         android:autoLink = "web"
                         android:visibility="gone"
                         style="@style/RetPlanCsrDowntimeText"/>
-                </RelativeLayout>
+                </LinearLayout>
 
                 <RelativeLayout
                     android:id="@+id/loading_ret_plan"

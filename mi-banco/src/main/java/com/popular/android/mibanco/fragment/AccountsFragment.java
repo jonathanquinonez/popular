@@ -34,6 +34,7 @@ import android.text.style.ForegroundColorSpan;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
@@ -283,6 +284,7 @@ public class AccountsFragment extends Fragment implements ImageCarouselListener 
     @Override
     public void onPrepareOptionsMenu(@NonNull Menu menu) {
         super.onPrepareOptionsMenu(menu);
+        final MenuItem menuLogout = menu.findItem(R.id.menu_logout);
         if (FeatureFlags.NOTIFICATION_CENTER()) {
             int bellType;
             if (MiBancoPreferences.isNewNotificationsFlag()) {
@@ -290,6 +292,9 @@ public class AccountsFragment extends Fragment implements ImageCarouselListener 
             } else {
                 bellType = R.id.notification_center_normal;
                 rootView.findViewById(R.id.notification_center_notice).setVisibility(View.GONE);
+            }
+            if(App.getApplicationInstance().isSessionNeeded()) {
+                menuLogout.setVisible(true);
             }
             menu.findItem(bellType).setVisible(false);
         }

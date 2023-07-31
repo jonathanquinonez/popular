@@ -281,8 +281,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <!--        <item name="android:layout_marginLeft">16dp</item>-->
-        <!--        <item name="android:layout_marginRight">16dp</item>-->
     </style>
 
     <style name="AccountsSectionTitle">
@@ -320,7 +318,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:gravity">center</item>
+        <item name="android:gravity">bottom</item>
     </style>
 
     <style name="AccountSectionNewAlert">
@@ -348,7 +346,7 @@
 
     <style name="AccountsItem">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:orientation">vertical</item>
         <item name="android:background">@android:color/transparent</item>
     </style>
@@ -374,8 +372,9 @@
 
     <style name="AccountsItemInfoBottomSection">
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:weightSum">1</item>
+        <item name="android:gravity">left</item>
         <item name="android:layout_weight">1</item>
     </style>
 
@@ -432,7 +431,7 @@
     </style>
 
     <style name="AccountsAccountBalance">
-        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:textSize">14sp</item>
         <item name="android:textColor">@color/accounts_credit_balance</item>
@@ -599,14 +598,12 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="AccountDetailsTitlePageIndicator" parent="Widget.TabPageIndicator">
+    <style name="AccountDetailsTitlePageIndicator">
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/account_details_tab_indicator</item>
-        <item name="android:paddingLeft">22dip</item>
-        <item name="android:paddingRight">22dip</item>
+        <item name="android:background">@drawable/account_rounded_corners_tabs</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>-->
         <item name="android:textSize">12sp</item>
         <item name="android:maxLines">1</item>
         <item name="footerColor">@color/black</item>
@@ -615,11 +612,13 @@
         <item name="footerLineHeight">0dp</item>
         <item name="footerPadding">10dp</item>
         <item name="topPadding">5dp</item>
-        <item name="selectedColor">@color/white</item>
-        <item name="android:textColor">@color/account_details_pager_text_color</item>
+        <item name="selectedColor">#000000</item>
+        <item name="selectableItemBackground">@drawable/account_rounded_corners</item>
+        <item name="android:selectableItemBackground">@drawable/account_rounded_corners</item>
+        <item name="android:textColor">#000000</item>
         <item name="centered">true</item>
-        <item name="selectedBold">false</item>
-        <item name="clipPadding">-10dp</item>
+        <item name="selectedBold">true</item>
+        <item name="clipPadding">0dp</item>
     </style>
     <!-- *********** -->
 
@@ -1078,7 +1077,7 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="SelectStatementTitlePageIndicator" parent="Widget.TabPageIndicator">
+    <style name="SelectStatementTitlePageIndicator">
         <item name="footerColor">@color/black</item>
         <item name="footerIndicatorStyle">none</item>
         <item name="footerIndicatorHeight">0dp</item>
@@ -2065,6 +2064,15 @@
         <item name="android:scaleType">centerCrop</item>
     </style>
 
+    <style name="CardSelection_image_detail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">@drawable/account_rounded_corners</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
     <style name="CardSelectionNoData">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -2315,6 +2323,15 @@
         <item name="android:background">@drawable/btn_amount_editor</item>
         <item name="android:layout_margin">20dp</item>
         <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="BottomNavigationInactiveText">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#555555</item>
+    </style>
+
+    <style name="BottomNavigationActiveText">
+        <item name="android:textSize">12sp</item>
     </style>
 
 </resources>

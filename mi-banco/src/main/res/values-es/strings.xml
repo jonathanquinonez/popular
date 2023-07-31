@@ -471,6 +471,8 @@
     <string name="deposit_check_instructions">Toma fotos del frente y el dorso</string>
     <string name="deposit_check_popular_text"><Data><![CDATA[ Depositar cheques a tu cuenta es tan f&aacute;cil como sacarles una foto, siguiendo estos pasos:<ol style="margin-bottom:0;margin-left:10;padding-left:10"><li>Firma el cheque al dorso y escribe &quot;For Deposit only at BPPR&quot; con el n&uacute;mero de cuenta.</li><br/><li>Toma fotos del frente y reverso del cheque.</li></ol><br/><ul style="margin-top:0;margin-left:15;padding-left:15"><li>Nos reservamos el derecho de rechazar las im&aacute;genes sometidas para procesamiento.</li><li>Dep&oacute;sitos antes de las 6:00pm en d&iacute;as laborables ser&aacute;n procesados el mismo d&iacute;a, sujetos a verificaci&oacute;n y validaci&oacute;n del dep&oacute;sito.</li><li>Una vez aceptado, tu dep&oacute;sito estar&aacute; disponible de acuerdo a nuestra Pol&iacute;tica de Disponibilidad de Fondos.</li><li>L&iacute;mites de Dep&oacute;sitos: $1,500 por cheque, $1,500 diarios total y $4,500 mensuales.</li><li>Visita Popular.com para m&aacute;s informaci&oacute;n sobre Dep&oacute;sito F&aacute;cil M&oacute;vil y nuestra Pol&iacute;tica de Disponibilidad de Fondos.</li></ul> ]]> </Data></string>
     <string name="deposit_check_select_account">Escoge una cuenta</string>
+    <string name="deposit_check_select_account1">Seleccione la</string>
+    <string name="deposit_check_select_account2">cuenta</string>
     <string name="deposit_check_change_front_picture">Frente</string>
     <string name="deposit_check_change_back_picture">Dorso</string>
     <string name="deposit_check_front_instructions">Toma foto del frente</string>

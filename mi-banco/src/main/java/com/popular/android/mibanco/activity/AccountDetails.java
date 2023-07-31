@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.Adapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -25,6 +26,7 @@ import androidx.core.content.ContextCompat;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.gson.Gson;
 import com.popular.android.mibanco.App;
 import com.popular.android.mibanco.FeatureFlags;
@@ -43,6 +45,8 @@ import com.popular.android.mibanco.util.BPAnalytics;
 import com.popular.android.mibanco.util.MobileCashUtils;
 import com.popular.android.mibanco.util.Utils;
 import com.viewpagerindicator.TitlePageIndicator;
+
+import org.apache.commons.lang3.text.WordUtils;
 
 /**
  * Account details Activity class.
@@ -215,9 +219,11 @@ public class AccountDetails extends BaseSessionActivity {
 
             ((TextView) findViewById(R.id.item_name)).setText(account.getNickname());
             ((TextView) findViewById(R.id.item_value)).setText(account.getPortalBalance());
-
+            LinearLayout linearLayout = findViewById(R.id.sidebar_open_container);
+            TextView titlePage = linearLayout.findViewById(R.id.txt_title_sub_page);
+            String titleCase = WordUtils.capitalizeFully(account.getNickname());
+            titlePage.setText(titleCase);
             if (account.isBalanceColorRed()) {
-
                 ((TextView) findViewById(R.id.item_value)).setTextColor(ContextCompat.getColor(this, R.color.account_details_header_debit_balance));
                 ((TextView) findViewById(R.id.item_value)).setText(((TextView) findViewById(R.id.item_value)).getText());
             }

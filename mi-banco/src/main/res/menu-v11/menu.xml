@@ -62,7 +62,7 @@
         android:orderInCategory="99"
         app:showAsAction="ifRoom"
         android:title="@string/logout"
-        android:visible="true" />
+        android:visible="false" />
     <item
         android:id="@+id/menu_close"
         android:icon="@drawable/ic_close"

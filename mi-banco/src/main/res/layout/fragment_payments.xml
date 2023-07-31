@@ -86,12 +86,12 @@
 
                                 <TextView
                                     style="@style/CardSelection"
-                                    android:text="Seleccione la"
+                                    android:text="@string/deposit_check_select_account1"
                                     android:gravity="center"/>
 
                                 <TextView
                                     style="@style/CardSelection"
-                                    android:text="Cuenta"
+                                    android:text="@string/deposit_check_select_account2"
                                     android:gravity="center"/>
 
                             </LinearLayout>
@@ -149,12 +149,12 @@
 
                                 <TextView
                                     style="@style/CardSelection"
-                                    android:text="Seleccione la"
+                                    android:text="@string/deposit_check_select_account1"
                                     android:gravity="center"/>
 
                                 <TextView
                                     style="@style/CardSelection"
-                                    android:text="Cuenta"
+                                    android:text="@string/deposit_check_select_account2"
                                     android:gravity="center"/>
 
                             </LinearLayout>

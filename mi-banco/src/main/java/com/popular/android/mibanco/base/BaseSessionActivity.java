@@ -178,13 +178,6 @@ public abstract class BaseSessionActivity extends BaseActivity implements OnClic
         final MenuItem menuContact = menu.findItem(R.id.menu_contact);
         final MenuItem menuLocator = menu.findItem(R.id.menu_locator);
         final MenuItem menuSettings = menu.findItem(R.id.menu_settings);
-        final MenuItem menuLogout = menu.findItem(R.id.menu_logout);
-
-        if(App.getApplicationInstance().isSessionNeeded()) {
-            menuLogout.setVisible(true);
-        }else{
-            menuLogout.setVisible(false);
-        }
 
         menuContact.setVisible(false);
         menuLocator.setVisible(false);
@@ -193,9 +186,10 @@ public abstract class BaseSessionActivity extends BaseActivity implements OnClic
         menuContact.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
         menuLocator.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 
-        ImageView bell = findViewById(R.id.bell_toolbar);
-        bell.setVisibility(View.VISIBLE);
-
+        if(getApplication().getApplicationContext() instanceof Accounts){
+            ImageView bell = findViewById(R.id.bell_toolbar);
+            bell.setVisibility(View.VISIBLE);
+        }
         return true;
     }
 

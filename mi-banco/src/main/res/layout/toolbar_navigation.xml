@@ -19,6 +19,16 @@
         android:src="@drawable/back_light"
         android:id="@+id/up"/>
 
+    <TextView
+        android:id="@+id/txt_title_sub_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:gravity="start"
+        android:textColor="@color/white"
+        android:textSize="18sp" >
+    </TextView>
+
     <ImageView
         android:id="@+id/popular_logo"
         android:layout_width="wrap_content"
@@ -26,6 +36,8 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/image"
         android:src="@drawable/logo_med_white_x2"
+        android:gravity="start"
+        android:visibility="invisible"
         />
 
     <TextView

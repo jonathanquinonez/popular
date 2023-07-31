@@ -10,8 +10,13 @@
     <com.viewpagerindicator.TitlePageIndicator
         android:id="@+id/titles_indicator"
         style="@style/AccountDetailsTitlePageIndicator"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
 
     <RelativeLayout
         android:layout_width="match_parent"

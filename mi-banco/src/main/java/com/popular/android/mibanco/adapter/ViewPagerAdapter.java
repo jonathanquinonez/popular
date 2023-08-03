@@ -44,7 +44,10 @@ public class ViewPagerAdapter extends PagerAdapter {
 
     private final AccountTransactions transactionsObject;
 
-    public ViewPagerAdapter(final Context context, final AccountTransactions transactionsObject, final List<AccountTransaction> transactionsList, final int cycle, final String accNr, final String accSubtype) {
+    public ViewPagerAdapter(final Context context, final AccountTransactions transactionsObject,
+                            final List<AccountTransaction> transactionsList, final int cycle,
+                            final String accNr, final String accSubtype
+    ) {
         this.context = context;
         this.transactionsList = transactionsList;
         this.transactionsObject = transactionsObject;
@@ -55,8 +58,8 @@ public class ViewPagerAdapter extends PagerAdapter {
         }
         else {
             tabTitles = new String[MAX_TAB_TITLES];
-            tabTitles[0] = context.getString(R.string.debit).toUpperCase();
-            tabTitles[1] = context.getString(R.string.all).toUpperCase();
+            tabTitles[0] = context.getString(R.string.all).toUpperCase();
+            tabTitles[1] = context.getString(R.string.debit).toUpperCase();
             tabTitles[2] = context.getString(R.string.credit).toUpperCase();
         }
 
@@ -129,10 +132,10 @@ public class ViewPagerAdapter extends PagerAdapter {
         else {
             switch (position) {
                 case 0:
-                    filteredTransactions = AccountStatementsLoader.filter("-", transactions);
+                    filteredTransactions = AccountStatementsLoader.filter("", transactions);
                     break;
                 case 1:
-                    filteredTransactions = AccountStatementsLoader.filter("", transactions);
+                    filteredTransactions = AccountStatementsLoader.filter("-", transactions);
                     break;
                 case 2:
                     filteredTransactions = AccountStatementsLoader.filter("+", transactions);
@@ -147,4 +150,6 @@ public class ViewPagerAdapter extends PagerAdapter {
         listView.setAdapter(listAdapter);
         listAdapter.notifyDataSetChanged();
     }
+
+
 }

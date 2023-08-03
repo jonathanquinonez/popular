@@ -603,7 +603,7 @@
         <item name="android:background">@drawable/account_rounded_corners_tabs</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
-        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.TabPageIndicator</item>
         <item name="android:textSize">12sp</item>
         <item name="android:maxLines">1</item>
         <item name="footerColor">@color/black</item>

@@ -1,22 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <include layout="@layout/account_details_top_section" />
 
-    <com.viewpagerindicator.TitlePageIndicator
+    <com.google.android.material.tabs.TabLayout
         android:id="@+id/titles_indicator"
-        style="@style/AccountDetailsTitlePageIndicator"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        app:tabRippleColor="@null"
+        app:tabIndicatorColor="@android:color/transparent"
+        app:tabBackground="@drawable/tab_background_color_selector"
+        android:background="@drawable/account_rounded_corners_tabs"
+        app:tabTextColor="@color/black"
+        app:tabSelectedTextColor="@color/black"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debit"
+            />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"
+            />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
-        />
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:text="Filtrar:"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/btn_filtrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:onClick="filtrar"
+            android:background="@drawable/btn_account_filter">
+
+            <ImageView
+                android:src="@drawable/calendar_dark_holo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"/>
+
+            <TextView
+                android:id="@+id/strDescripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="Estado: "
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"

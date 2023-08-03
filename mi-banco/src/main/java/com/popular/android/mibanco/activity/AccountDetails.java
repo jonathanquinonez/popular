@@ -110,7 +110,7 @@ public class AccountDetails extends BaseSessionActivity {
     /**
      *  TitlePageIndicator
      */
-    private TitlePageIndicator indicator; // TitlePageIndicator
+    private TabLayout indicator; // TitlePageIndicator
 
     /**
      *  TextView
@@ -121,6 +121,9 @@ public class AccountDetails extends BaseSessionActivity {
      *  View
      */
     private View cashRewardsView; // View
+
+    LinearLayout btn_filtrar;
+    TextView strDescripcion;
 
     /**
      *
@@ -138,6 +141,11 @@ public class AccountDetails extends BaseSessionActivity {
             if (resultCode == RESULT_OK && requestCode == SELECT_STATEMENT_RESULT) {
 
                 final int tempCycle = data.getIntExtra("cycle", 1); // int value
+                final String descrip = data.getStringExtra("descripcion");
+                if(descrip != null){
+                    strDescripcion = findViewById(R.id.strDescripcion);
+                    strDescripcion.setText(descrip);
+                }
 
                 if (helper.getCycle() != tempCycle) {
 
@@ -248,7 +256,14 @@ public class AccountDetails extends BaseSessionActivity {
 
             LocalBroadcastManager.getInstance(this).registerReceiver(mMessageReceiver,
                     new IntentFilter(MiBancoConstants.ONOFF_RELOAD_INDICATOR));
+
+            btn_filtrar = findViewById(R.id.btn_filtrar);
+
         }
+    }
+
+    public void filtrar(View view){
+        selectStatement();
     }
 
     /**
@@ -411,8 +426,10 @@ public class AccountDetails extends BaseSessionActivity {
 
             pagerAdapter = new ViewPagerAdapter(AccountDetails.this, helper.getCurrentTransactions(), helper.getAllSortedTransactions(), helper.getCycle(), accFrontEndId, account.getSubtype());
             pager.setAdapter(pagerAdapter);
-            pager.setCurrentItem(1);
-            indicator.setViewPager(pager);
+            pager.setCurrentItem(0);
+            pager.setAnimation(null);
+            indicator.setupWithViewPager(pager);
+
             pager.invalidate();
         }
     }

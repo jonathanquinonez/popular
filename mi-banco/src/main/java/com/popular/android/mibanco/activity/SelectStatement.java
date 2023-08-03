@@ -122,6 +122,7 @@ public class SelectStatement extends BaseSessionActivity {
                                 final TransactionsCycle item = (TransactionsCycle) arg0.getAdapter().getItem(arg2);
                                 final Intent intent = new Intent();
                                 intent.putExtra("cycle", Integer.parseInt(item.getCycle()));
+                                intent.putExtra("descripcion", item.getDescription());
                                 setResult(RESULT_OK, intent);
                                 finish();
                             } catch (final Exception ex) {

@@ -10,7 +10,7 @@
     <string name="api_url_qa_cert">https://cert3.bppr.com/cibp-web/</string>
 
     <!-- Integration -->
-    <string name="integration">https://cert1.bppr.com/cibp-web/</string>
+    <string name="integration">https://integration2.bppr.com/cibp-web/</string>
 <!--    cert1.bppr.com/-->
 <!--    integration2.bppr.com/-->
     <string name="mbdva">https://mbdva.bppr.com/cibp-web/</string>
